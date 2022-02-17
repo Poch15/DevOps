@@ -1,0 +1,11 @@
+$ ansible-galaxy search mysql
+$ ansible-galaxy install geerlingguy.mysql
+
+-
+	name: Install and Configure MySQL
+	hosts: db-server
+	roles:
+		- role: geerlingguy.mysql
+		  become: yes
+		  vars:
+			mysql_user_name: db-user

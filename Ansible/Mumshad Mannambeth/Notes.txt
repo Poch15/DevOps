@@ -1,0 +1,22 @@
+================================================
+SKILLUP ASSIGMENT 4
+================================================
+
+ansible <hosts> -a <command>
+
+ansible <hosts> -m <module>
+ansible all -m ping -i inventory.txt
+
+ansible target1 -m ping
+
+ansible-playbook my-playbook.yml -i inventory.txt
+
+
+change hostname
+sudo hostnamectl set-hostname <hostname>
+
+dpkg -l | grep ansible
+
+cat /etc/ansible/hosts
+ansible_become_sudo ansible_host ansible_user
+

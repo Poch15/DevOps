@@ -1,0 +1,52 @@
+- name: Deploy a web application
+  hosts: db_and_web_server1, db_and_web_server2
+  vars:
+	db_name: employee_db
+	db_user: db_user
+	db_user_password: Passw0rd
+  tasks:
+	- name: Install all required dependencies
+	  apt: name={{ item }} state=installed
+	  with_items:
+		- python
+		- python-setuptools
+		- python-dev
+		- build-essential
+		- python-pip
+
+	- name: Install MySQL database
+	  apt: name={{ item }} state=installed
+	  with_items:
+		- mysql-server
+		- mysql-client
+		
+	- name: Start MySQL Service
+	  service:
+		name: mysql
+		state: started
+		enabled: yes
+		
+	- name: Create Application Database
+	  mysql_db: name={{ db_name }} state=present
+	  
+	- name: Create Database User
+	  mysql_user:
+		name: "{{ db_user }}"
+		password: "{{ db_user_password }}"
+		priv: '*.*:ALL'
+		state: present
+		host: '%'
+		
+	- name: Install Python Flask dependency
+	  pip:
+		name: '{{ item }}'
+	  with_items:
+		- flask
+		- flask-mysql
+		
+	- name: Copy the source code from local to the target server
+	  copy: src=app.py dest=/opt/app.py
+	  
+    - name: Start the Web Server
+	  shell: FLASH_APP=/opt/app.py nohup flask run --host=0.0.0.0 &
+	  

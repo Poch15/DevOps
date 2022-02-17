@@ -1,0 +1,1 @@
+{{ lookup('csvfile', 'target1 file=/tmp/credentials.csv delimiter=,') }}  => Passw0rd

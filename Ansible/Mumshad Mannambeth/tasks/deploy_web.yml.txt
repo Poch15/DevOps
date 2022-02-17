@@ -1,0 +1,12 @@
+	- name: Install Python Flask dependency
+	  pip:
+		name: '{{ item }}'
+	  with_items:
+		- flask
+		- flask-mysql
+		
+	- name: Copy the source code from local to the target server
+	  copy: src=app.py dest=/opt/app.py
+	  
+    - name: Start the Web Server
+	  shell: FLASH_APP=/opt/app.py nohup flask run --host=0.0.0.0 &

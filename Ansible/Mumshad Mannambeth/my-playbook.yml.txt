@@ -1,0 +1,20 @@
+-
+	name: Play1
+	hosts: localhost
+	tasks:
+		- name: Execute the command 'date'
+		  command: date
+		
+		- name: Display resolv.conf contents
+		  command: cat /etc/resolv.conf
+		  
+		- name: Display resolve.conf contents
+		  command: cat resolv.conf chrdir=/etc/resolv
+		  
+		- name: Display resolv.conf contents
+		  command: mkdir /folder creates=/folder
+		  
+		- name: Copy file from source to destination
+		  command: src=/source dest=/destination
+		  
+		

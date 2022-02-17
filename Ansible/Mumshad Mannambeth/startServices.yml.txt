@@ -1,0 +1,14 @@
+-
+  name: Start Services in order
+  hosts: localhosts
+  tasks:
+   - name: Start the database service
+     services: name=postgresql state=started
+
+   - name: Start the httpd service
+     service: name=httpd state=started
+
+   - name: Start the nginx service
+     service:
+     	name: nginx
+      	state: started

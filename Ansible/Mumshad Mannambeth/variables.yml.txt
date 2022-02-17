@@ -1,0 +1,10 @@
+-
+	name: Add DSN server to ersolv.conf
+	hosts: localhost
+	vars:
+		dns_server: 10.1.250.10
+	tasks:
+		- lininfile:
+			path: /etc/resolv.conf
+			line: 'nameserver {{ dns_server }}'
+			

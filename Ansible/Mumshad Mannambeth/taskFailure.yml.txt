@@ -1,0 +1,24 @@
+-
+  name: Deploy Web Applications
+  hosts: server1, server2, server3
+  any_errors_fatal: true
+  
+  
+  
+  
+  
+  
+-
+  name: Deploy Web Applications
+  hosts: db_and_web_server
+  tasks:
+   - mail:
+		to: devops@corp.com
+		subject: Server deployed
+		body: Web Server deployed
+	 ignore_errors: yes
+	 
+	 
+   - command: cat /var/log/server.log/server
+     register: command_output
+	 failed_when: "'ERROR' in command_output.stdout"

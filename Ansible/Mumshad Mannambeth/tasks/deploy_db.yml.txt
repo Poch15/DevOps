@@ -1,0 +1,22 @@
+	- name: Install MySQL database
+	  apt: name={{ item }} state=installed
+	  with_items:
+		- mysql-server
+		- mysql-client
+		
+	- name: Start MySQL Service
+	  service:
+		name: mysql
+		state: started
+		enabled: yes
+		
+	- name: Create Application Database
+	  mysql_db: name={{ db_name }} state=present
+	  
+	- name: Create Database User
+	  mysql_user:
+		name: "{{ db_user }}"
+		password: "{{ db_user_password }}"
+		priv: '*.*:ALL'
+		state: present
+		host: '%'
