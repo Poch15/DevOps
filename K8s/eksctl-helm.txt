@@ -1,0 +1,107 @@
+------------
+EKSCTL
+------------
+# Create EKS cluster / advisable to use CLUSTERCONFIG obj instead of exec commond
+$ eksctl create cluster  => default parameters will be used
+$ eksctl create cluster -f <clusterconfig file loc>
+
+# Connect to EKS cluster
+$ aws eks update-kubeconfig --name ${clusterName} --region us-east-1
+
+------------
+HELM
+------------
+# Create HELM chart dir/template
+$ helm create <name>
+
+# Test the rendering of template
+$ helm template <name of chart/release>
+$ helm template <name of chart/release> <chart dir>
+
+# Validate and verify helm chart
+$ helm install <helm release> --debug --dry-run <chart dir>
+$ helm install test-app --debug --dry-run ./test-app
+
+# Install helm release
+$ helm install <helm release> <chart dir>
+helm install test-app ./test-app -n <namespace>
+
+# Upgrade helm release
+$ helm upgrade <helm release> <chart dir>
+$ helm upgrade test-app ./test-app
+$ helm upgrade --install test-app ./test-app -n test
+
+# List helm
+$ helm list
+
+# Inject values to the helm chart
+$ helm upgrade <name of chart/release> <chart dir> --value <values.yml dir>
+
+# Delete helm release
+$ helm delete <release>
+
+# Rollback helm release
+$ helm rollback <release> <revision #>
+$ helm rollback test-app 1
+
+# Search for repo
+$ helm search hub <app>
+
+# Add the repo to your repo list
+$ helm repo list
+$ helm repo add <app> <resource URL>
+
+# Show values
+$ helm show values <repo>/<app> --version <version>
+
+# Install wordpress helm chart
+$ helm install wordpress bitnami/wordpress --value=wordpress-values.yaml --namespace nswordpress --version 10.0.3
+
+
+
+
+
+
+
+
+
+
+
+
+helm install test-app ./test-app -n test
+
+helm repo add linkerd https://helm.linkerd.io/stable
+helm repo update
+
+# set expiry date one year from now, in Mac:
+exp=$(date -v+8760H +"%Y-%m-%dT%H:%M:%SZ")
+# in Linux:
+exp=$(date -d '+8760 hour' +"%Y-%m-%dT%H:%M:%SZ")
+
+helm install linkerd2 \
+  --set-file identityTrustAnchorsPEM=ca.crt \
+  --set-file identity.issuer.tls.crtPEM=issuer.crt \
+  --set-file identity.issuer.tls.keyPEM=issuer.key \
+  --set identity.issuer.crtExpiry=$exp \
+  linkerd/linkerd2
+
+https://linkerd.io/2.10/tasks/generate-certificates/
+
+install https://smallstep.com/cli/
+
+helm install -f ./values.yaml linkerd \
+  --set-file identityTrustAnchorsPEM=ca.crt \
+  --set-file identity.issuer.tls.crtPEM=issuer.crt \
+  --set-file identity.issuer.tls.keyPEM=issuer.key \
+  --set identity.issuer.crtExpiry=$(date -d '+8760 hour' +"%Y-%m-%dT%H:%M:%SZ") \
+  linkerd/linkerd2 -n kube-system
+
+https://artifacthub.io/packages/helm/linkerd2/linkerd2
+
+helm uninstall linkerd
+
+https://linkerd.io/2.10/tasks/ 
+
+helm install linkerd-viz -n kube-system linkerd/linkerd-viz
+helm template linkerd-viz -n kube-system linkerd/linkerd-viz
+helm uninstall linkerd-viz 

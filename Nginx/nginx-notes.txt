@@ -1,0 +1,32 @@
+-------------
+INSTALLATION
+-------------
+# Create repository
+
+# Install using yum package manager
+yum install nginx
+
+
+----------------------------
+LOG ANALYSIS TOOL AND UTILITY
+----------------------------
+1) ngxtop
+2) goaccess
+
+alb-sl-dev-sts-1143511825.ap-northeast-2.elb.amazonaws.com
+
+
+docker run -v /home/common/nginx:/etc/nginx/conf.d -v /home/common/nginx-log:/var/log/nginx -p 80:80 --name ngnix -itd --restart unless-stopped nginx:1.19.0
+
+curl -H 'Host: search.samsungmembers.com' localhost/solr/replica
+
+
+$(aws ecr get-login --no-include-email --region ap-northeast-2)
+
+
+docker run -v /home/common/docker:/sts-key \
+-e REGION=$REGION -e STS_AURORA_USERNAME=$STS_AURORA_USERNAME \
+-e STS_AURORA_PASSWORD=$STS_AURORA_PASSWORD -e STS_AURORA_URL=$STS_AURORA_URL \
+-e JASYPT_PASSWORD=$JASYPT_PASSWORD \
+-p 8080:8080 \
+-d --name com-pgl-sts 480586329294.dkr.ecr.ap-northeast-2.amazonaws.com/com-pgl-sts:1.0.0-82099aac-fed16492

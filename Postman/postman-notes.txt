@@ -1,0 +1,22 @@
+curl -d 'user=user1&pass=abcd' -H 'Content-Type: application/json' -X POST https://xcf4k2vgh5.execute-api.ap-northeast-2.amazonaws.com/stg-interceptor/webhook
+
+
+curl -d "{\"user\":\"user1\",\"pass\":\"abcd\"}" -H 'Content-Type: application/json' -X POST -k https://xcf4k2vgh5.execute-api.ap-northeast-2.amazonaws.com/stg-interceptor/webhook
+
+
+
+curl -d "user=user1&pass=abcd" -X POST -k https://xcf4k2vgh5.execute-api.ap-northeast-2.amazonaws.com/stg-interceptor/webhook
+
+
+curl https://xcf4k2vgh5.execute-api.ap-northeast-2.amazonaws.com/stg-interceptor/webhook
+
+curl -d "user=user1&pass=abcd" -X POST -k https://xcf4k2vgh5.execute-api.ap-northeast-2.amazonaws.com/stg-interceptor/webhook
+
+
+curl -v -H "Content-Type: application/json" -X POST -d "{'message':'Hello Pipeline'}" https://pencina:1185990100694a6678321b6bdc469acc09@deploy.samsungmembers.com:8080/generic-webhook-trigger/invoke?token=Qwerty12
+
+curl -v -H "Content-Type: application/json" -X POST -d "{'message':'Hello Pipeline'}" http://pencina:1185990100694a6678321b6bdc469acc09@localhost:8080/generic-webhook-trigger/invoke?token=Qwerty12
+
+
+
+curl -v -I -u $USERNAME:$PASSWORD "https://deploy.samsungmembers.com/view/PRD%20Care/job/care-logrotate/buildWithParameters?token=SMEM_LOG_ROTATE&SERVER_NAME=care-pgl-api-was-prd-1"

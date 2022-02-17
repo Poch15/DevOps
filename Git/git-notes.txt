@@ -1,0 +1,153 @@
+# Configure local git system
+git config --global user.name "Paul John Encina"
+git config --global user.email "p.encina@samsung.com"
+git config --global --list
+
+# Clone repository from Github to local
+git clone https://github.com/Poch15/github-demo.git
+
+# Check status of Project; add and commit
+git status
+
+# Move the added/modified file to staging area
+git add <file name>git re
+git add start.txt
+
+# Group several changes to be commited as a single unit
+git commit -m "Adding start text file"
+
+# Update local repository with the changes from remote repository - BEST PRACTICE!!
+git pull origin master
+
+# Make local repository aware of the commit made in the remote origin branch
+git pull --rebase origin master
+
+# Push changes to the origin repository from Github
+git push origin master
+
+# Show difference between files in Working Directory and Staging
+git diff
+
+# Show difference between files in Working Directory and local Repository
+git diff HEAD
+
+# Show difference between files in Staging Area and local Repository
+git diff --staged HEAD
+
+# Show difference between files in local and remote Repository
+git diff master origin/master
+
+# List all branch from local and remote Repository
+git branch -a
+git branch <branch name>  => create new branch
+git branch -m <branch> <new branch>  => rename branch
+git branch -d <branch>  => delete branch
+
+
+# Switch branch
+git checkout <branch>
+git checkout -b <branch>  => Create and switch to branch
+
+# Show difference between master and new branch
+git diff master <new branch>
+
+# Merge change
+(master) git merge <source>
+
+# Merge with the branch and allows you to review/maintain history of feature branch
+(master) git merge <new branch> --no-ff
+
+# Re-apply changes made of what happened to master
+(mynewbranch) git rebase master
+
+# Retrieve the latest meta-data info from the original
+git fetch origin master
+
+# Rebase changes from Github on top of local repository
+git pull --rebase origin master
+
+# Record the current state of the working directory and index
+git stash push <file>
+git stash -u => includes Untracked file
+git stash list => show list of stash with reference id
+git stash apply => revert back the file to original state
+git stash drop => drop the last stash
+git stash pop => apply stash and drop
+git stash save "message" => save
+git stash show stash@{1} => show details of stash index
+git stash apply stash@{1} => apply the stash
+git stash clear => empty list of stashes
+git stash branch newchanges => switch to the newly created branch. stash is applied and dropped
+
+
+# Show history
+git log
+
+# Add/Update all changes in the working directory
+git add -A
+
+# Change branch
+git branch -m <name of branch>
+git branch -m main
+
+# List files that are being tracked by Git Repository
+git ls-files
+
+# Show information about the commit
+git show <commit ID>
+
+# View change history of specific file
+git log -- <file>
+git log --oneline --graph --decorate => Change log view
+
+# Create alias
+git config --global alias.hist "log --all --oneline --graph --decorate"
+
+# Create lightweight tag for repo
+git tag myTag
+git tag --list
+git tag --delete myTag => delete tag
+git tag -a v-1.0 => Create annonated tag with message
+git tag -a v-2.0-alpha -f <commit id> => tag an ID forcely
+git diff <tag1> <tag2> => show diff between 2 tags
+git push origin <tag> => push tag to remote repository
+git push origin master --tags => push all tags
+git push origin :<tag> => delete tag 
+
+# Delete commit
+git reset HEAD^1
+git reset <commit id> => restore commit
+git reset HEAD@{2} => delete 2 commits from HEAD pointer
+
+# Show logs of everything done
+git reflog
+
+# Add new changes to the last commit 
+git commit --amend
+
+# Add local repository to remote origin where you want to publish commits/codes/files
+git remote add origin https://github.com/Poch15/DevOps.git
+
+
+SETUP REPO in WORK MACHINE
+git clone git@github.ecodesamsung.com:p-encina/inquisitor.git
+cd inquisitor/
+git remote -v
+git remote add upstream git@github.ecodesamsung.com:Members-OPS/inquisitor.git
+git fetch --all;git rebase upstream/master;git push origin master -f
+
+ 1069  git checkout master
+ 1070  git status
+ 1071  git stash save
+ 1072  git status
+ 1073  git fetch --all;git rebase upstream/master;git push origin master -f
+ 1074  git branch
+ 1075  git checkout update-sleep
+ 1076  git merge master
+ 1077  git stash pop
+ 1078  git status
+ 1079  git commit -am "Adding comma in jenkins file"
+ 1080  git status
+ 1081  git branch
+ 1082  git status
+ 1083  git push origin <branch> -f

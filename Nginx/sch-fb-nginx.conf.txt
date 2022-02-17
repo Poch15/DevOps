@@ -1,0 +1,29 @@
+server {
+    listen 80; # all requests with matching search.samsungmembers.com will go here
+    large_client_header_buffers 4 16k;
+    #       listen [::]:80 default_server;
+    #       root /var/www/html;#
+
+    server_name search.samsungmembers.com;
+    error_page 403 /403.html;
+
+    location = /403.html {
+        root /usr/share/nginx/html;
+        internal;
+    }
+
+    location /solr/feedback/main {
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_set_header X-Forwarded-Server $host;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_pass http://172.17.0.1:8983/solr;
+    }
+}
+
+
+server {
+   listen 80 default_server;
+   location / {
+      return 200 'ok'; 
+   }
+}

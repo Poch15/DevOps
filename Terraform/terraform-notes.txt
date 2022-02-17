@@ -1,0 +1,63 @@
+TERRAFORM WORKFLOW
+-------------------
+# download plugin for provider
+terraform init
+
+# check syntax
+terraform validate
+
+# preview / show the changes that will be applied 
+terraform plan
+terraform plan -out out.terraform  => output to a file
+
+# apply terraform state
+terraform apply -auto-approve
+
+# destroy all managed state 
+terraform destroy
+rm -rf .terraform*
+rm -rf terraform.tfstate*
+
+
+
+# destory specific resource
+terraform destroy -target=RESOURCE_TYPE.NAME
+
+# rewrite tf config files to a canonical format and style
+terraform fmt
+
+# download and get modules
+terraform get
+
+# create a visual representation of a config or execution plan / show dependencies
+terraform graph
+
+# import state using infra resource id
+terraform import [options] ADDRESS ID
+
+# output any resource using name
+terraform output [options] [NAME]
+
+# refresh remote state. identify diff between state and remote file
+terraform refresh
+
+# configure remote state storage
+terraform remote
+
+# show human readable output from a state or a plan
+terraform show
+
+# for advanced state management; rename a resource
+terraform state
+
+# taint a resource and it will be recreated at the next apply
+terraform taint
+
+# validate tf syntax
+terraform validate
+
+# execute terraform plan apply and remove
+terraform plan -out changes.terraform;
+terraform apply changes.terraform;
+rm changes.terraform;
+

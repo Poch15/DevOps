@@ -1,0 +1,50 @@
+------------------
+CLEAR CACHE MEMORY
+------------------
+https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/
+
+
+--------------------------------------------------
+LINUX COMMON ISSUES DEBUGGING AND TROUBLESHOOTING
+--------------------------------------------------
+DISK PARTITION IS FULL
+	Find and delete Huge files
+		$ du -sh *
+FIND FILE AND DIRECTORY
+	$ find / -iname <filename>
+	$ find /home -type d -name <directory name>
+COMPARE TWO DIFF FILES
+	$ diff <file1> <file2>	
+HIGH CPU or RAM USAGE
+	$ top
+	$ free -m
+	$ lscpu
+	$ sar
+NETWORK RELATED ISSUES
+	$ ip addr
+	$ dmesg
+	$ dmidecode
+	$tcpdump -i any -s0
+SSH LOGIN issues
+	$ vi /var/log/audit/audit.log
+	
+
+
+-----------------------
+DISK IO TROUBLESHOOTING
+-----------------------
+Using top command check the following:
+	1. CPU usage percentage
+	2. CPU load average = it should not exceed to the number of CPU core4
+	3. WA/Waiting time = if it exceeds to 10-20% the issue is with the Disk.
+		Use "iostat -hymx 1 4" to identify which disk is having high utilization
+		Identify the process that is hogging the resources using "iotop -o"
+
+
+-----------------------------------
+
+du -h / 2>/dev/null | grep '[0-9\.]\+G' = check folders that use the highest disk space
+
+
+
+

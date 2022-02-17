@@ -1,0 +1,10 @@
+https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/26/python-virtual-env/  = create virtual env
+
+python -m venv <path>
+python -m venv c:/applicationspyt/newpythonproject/venv
+
+
+source venv/Scripts/activate = activate virtual env
+
+
+pip install <package_name>

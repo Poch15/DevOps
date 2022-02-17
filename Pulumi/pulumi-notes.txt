@@ -1,0 +1,23 @@
+# create new project
+$ pulumi new 
+
+# pulumi update
+$ pulumi up -s <stack name>
+
+# destroy pulumi
+$ pulumi destroy
+
+# fully delete stack record
+$ pulumi stack rm <stack name>
+
+# create new stack
+$ pulumi stack init
+
+# display stack infor
+$ pulumi stack
+
+# select stack
+$ pulumi stack select <stack name>
+
+# 
+$ 

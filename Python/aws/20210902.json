@@ -1,0 +1,71 @@
+[
+    {
+        "User": "bixby_analytics_ses",
+        "Key": "AKIAIKHCM7LSCOPQAQWQ",
+        "Last Used": {
+            "LastUsedDate": "2021-09-01 21:04:00+00:00",
+            "ServiceName": "ses",
+            "Region": "us-west-2"
+        },
+        "Age of Key": 1387
+    },
+    {
+        "User": "bongjoo.seo@samsung.com",
+        "Key": "AKIAIFUOATMWKN3EBQSA",
+        "Last Used": {
+            "ServiceName": "N/A",
+            "Region": "N/A"
+        },
+        "Age of Key": 1685
+    },
+    {
+        "User": "jaeseok.park",
+        "Key": "AKIAI52OWWR5EV3PNS4A",
+        "Last Used": {
+            "LastUsedDate": "2021-09-01 01:57:00+00:00",
+            "ServiceName": "s3",
+            "Region": "N/A"
+        },
+        "Age of Key": 1661
+    },
+    {
+        "User": "jd.gutierrez",
+        "Key": "AKIATXPTVMAYF5MS4GOY",
+        "Last Used": {
+            "LastUsedDate": "2021-03-22 00:39:00+00:00",
+            "ServiceName": "ec2",
+            "Region": "ap-northeast-1"
+        },
+        "Age of Key": 177
+    },
+    {
+        "User": "np.cometa",
+        "Key": "AKIATXPTVMAYHZLMV4VU",
+        "Last Used": {
+            "LastUsedDate": "2021-01-22 09:36:00+00:00",
+            "ServiceName": "iam",
+            "Region": "us-east-1"
+        },
+        "Age of Key": 222
+    },
+    {
+        "User": "pang",
+        "Key": "AKIAJWDBWFQODPOZ5ZDA",
+        "Last Used": {
+            "LastUsedDate": "2017-11-02 11:31:00+00:00",
+            "ServiceName": "s3",
+            "Region": "N/A"
+        },
+        "Age of Key": 1640
+    },
+    {
+        "User": "veronica.ang",
+        "Key": "AKIATXPTVMAYMVZWNOXJ",
+        "Last Used": {
+            "LastUsedDate": "2021-04-29 01:33:00+00:00",
+            "ServiceName": "s3",
+            "Region": "ap-northeast-1"
+        },
+        "Age of Key": 147
+    }
+]

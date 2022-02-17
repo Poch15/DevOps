@@ -1,0 +1,65 @@
+server {
+    listen 80  default_server;
+
+    server_name community.samsungmembers.com;
+    proxy_set_header Host  $host;
+
+    location /home {
+            return 301  http://$server_name;
+    }
+
+    location / {
+            proxy_redirect off;
+            proxy_pass  http://localhost:51000/;
+    }
+}
+
+server {
+    listen 53000;
+
+    root /var/www/maintenance/community-maintenance-page/;
+    index index.html index.htm;
+
+    location ~ ^([^.\?]*[^/])$ {
+       try_files $uri /vi_VN/index.html;
+    }
+
+    location / {
+        try_files $uri $uri/ /vi_VN/index.html$is_args$args;
+        #try_files $uri $uri/ =404;
+    }
+}
+
+server {
+    listen 52000;
+
+    root /var/www/maintenance/community-maintenance-page;    
+    #index index.html index.htm;
+    
+    access_log /var/log/nginx/access-maint-glb.log;
+    error_log /var/log/nginx/error-maint-glb.log;
+
+    location ~ ^([^.\?]*[^/])$ {
+        return 301 https://webview.community.samsungmembers.com$uri/;
+    }
+
+    location /en_ZZ {
+        index index.html;
+    }
+
+    location /vi_VN {
+        index index.html;
+    }
+
+    location /ru_RU {
+        index index.html;
+    }
+
+
+    location / {
+        index index.html;
+        #try_files $uri $uri/index.html /index.html$is_args$args;
+        #try_files $uri $uri/ =404;
+        #index index.html;
+    }
+}
