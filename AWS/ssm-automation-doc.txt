@@ -1,0 +1,5 @@
+https://aws.amazon.com/blogs/infrastructure-and-automation/run-code-before-terminating-an-ec2-auto-scaling-instance/
+
+
+
+Attach SSMFullAccess policy to the instance profile of EC2

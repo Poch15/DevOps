@@ -1,0 +1,23 @@
+# Installing Oracle JRE or JDK 8 on Debian or Ubuntu
+https://docs.datastax.com/en/jdk-install/doc/jdk-install/installOracleJdkDeb.html
+
+# Set env var
+$ export JAVA_HOME=/usr/lib/jvm/java-8-oracle
+$ export PATH=$JAVA_HOME/bin:$PATH
+
+
+# Check available Java versions
+$ sudo update-alternatives --display java
+
+
+# Switch the default Java version
+$ sudo update-alternatives --config java
+
+# Uninstall oracle JDK
+$ sudo update-alternatives --remove "java" "/usr/lib/jvm/java-8-oracle/bin/java"
+$ sudo update-alternatives --remove "javac" "/usr/lib/jvm/java-8-oracle/bin/javac"
+$ sudo update-alternatives --remove "javaws" "/usr/lib/jvm/java-8-oracle/jre/bin/javaws"
+
+
+
+

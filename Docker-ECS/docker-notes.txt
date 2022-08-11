@@ -1,3 +1,51 @@
 Installation
 
 sudo apt-get install docker.io
+
+
+
+docker build --tag $module_name --build-arg JARNAME=$module_name"-2.0.0-SNAPSHOT.jar" .
+docker run --log-opt max-size=10m --log-opt max-file=2 -d -p $java_port:$java_port -v /home/common/members-log/$module_name:/members-log --net="host" --name $module_name $module_name:latest java -jar -Dspring.profiles.active=default $EUREKA_CONFIG -javaagent:/scouter/agent.java/scouter.agent.jar -Dscouter.config=/scouter/agent.host/conf/java_agent.conf /jar-image/$module_name-2.0.0-SNAPSHOT.jar
+
+
+docker build -t myweb2 .
+
+docker run -dit -p 80:8082 myweb2
+
+docker image rm <image>
+
+docker container rm <container>
+
+docker inspect <container>
+
+winpty docker exec -it 7ed15e9c77fb //bin//sh
+
+
+docker tag httpdweb2:latest 256598433840.dkr.ecr.ap-northeast-1.amazonaws.com/encina-skillup-repo2:latest
+
+docker push 256598433840.dkr.ecr.ap-northeast-1.amazonaws.com/encina-skillup-repo2:latest
+
+
+
+aws ecr create-repository \
+--repository-name encina-skillup-repo2 \
+--region ap-northeast-1 \
+--image-scanning-configuration scanOnPush=true
+
+==================
+PULL OUT JAR FILES
+=================
+#!/bin/bash
+
+aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 480586329294.dkr.ecr.ap-northeast-2.amazonaws.com
+
+array=(prd-bnf-admin prd-bnf-api prd-bnf-auth prd-bnf-batch prd-bnf-config prd-bnf-conversion-analysis-by-campaign prd-bnf-gateway prd-bnf-mig prd-bnf-redshift prd-bnf-registry prd-bnf-web)
+
+for i in "${array[@]}"
+do
+	docker pull 480586329294.dkr.ecr.ap-northeast-2.amazonaws.com/"$i":latest
+	docker run -itd --entrypoint sleep --name "$i" 480586329294.dkr.ecr.ap-northeast-2.amazonaws.com/prd-bnf-admin:latest 1000
+	docker cp $i:/app.jar ./$i-app.jar
+	docker stop $i
+	docker rm -f $i
+done

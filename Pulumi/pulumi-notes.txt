@@ -3,6 +3,7 @@ $ pulumi new
 
 # pulumi update
 $ pulumi up -s <stack name>
+	pulumi up -s shard-eks-smem01r-useast1
 
 # destroy pulumi
 $ pulumi destroy
@@ -19,5 +20,11 @@ $ pulumi stack
 # select stack
 $ pulumi stack select <stack name>
 
-# 
-$ 
+# list plugins
+$ pulumi plugin 
+
+#
+$ pulumi stack export < <stack name>
+
+
+pulumi plugin install resource kubernetes v3.12.1

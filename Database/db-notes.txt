@@ -1,0 +1,1 @@
+/home/common.smem-prod/v2-jar/members-v2-config/datasource.yml = DATABASE CONFIG / DB CONFIG @ JH

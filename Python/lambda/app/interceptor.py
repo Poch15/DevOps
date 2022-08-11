@@ -14,6 +14,21 @@ def lambda_handler(event, context):
     def listToString(s):  
         string = " "  
         return (string.join(s))
+        
+    def execJobs(jobs, jsonDumps):
+        retVal = []
+        for i in jobs:
+            token = getSSMSecret(i)
+            response = requests.post(jenkinsURL + token, data=jsonDumps, headers=headers)
+            print(response.text)
+            resLoads = json.loads(response.text, strict=False)
+            # return {
+            #     'statusCode': 200,
+            #     'body': json.dumps(resLoads)
+            # }
+            retVal.append(resLoads)
+        return(retVal)
+        
 
     jenkinsURL = 'https://deploy.samsungmembers.com/generic-webhook-trigger/invoke?token='
     headers = {'content-type': "application/json"}
@@ -36,14 +51,16 @@ def lambda_handler(event, context):
             myDict = {}
             for y in evokeOutput:
                 keyValOutput = re.split("\:", y)
-                if "evoked" in keyValOutput[0]:
-    
+                if "evoked" in keyValOutput[0]:  
                     keyVal = {
                         'service' : keyValOutput[1]
                     }
                     myDict.update(keyVal)    
                 elif "jenkinsJob" in keyValOutput[0]:
-                    jenkinsJob = keyValOutput[1]
+                   jenkinsJobs = re.split("\,", keyValOutput[1])
+#                   print(jenkinsJobs)
+#                   jenkinsJob = keyValOutput[1]
+#                    print(jenkinsJob)
                 else:
                     keyVal = {
                         keyValOutput[0] : keyValOutput[1]               
@@ -86,11 +103,20 @@ def lambda_handler(event, context):
     alertMessage["Alerting"] = alerting
     alertMessage["Resolved"] = resolved
     jsonDumps = json.dumps(alertMessage)
+    print(jenkinsJobs)
     print(jsonDumps)
     
-    token = getSSMSecret(jenkinsJob)
-    response = requests.post(jenkinsURL + token, data=jsonDumps, headers=headers)
-    print(response.text)
+    retVal = execJobs(jenkinsJobs, jsonDumps)
+    
+#    token = getSSMSecret(jenkinsJob)
+#    response = requests.post(jenkinsURL + token, data=jsonDumps, headers=headers)
+#    resLoads = json.loads(response.text, strict=False)
+#    print(response.text)
+    
+    return {
+       'statusCode': 200,
+        'body': json.dumps(retVal)
+    }
     
     
     

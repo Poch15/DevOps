@@ -1,0 +1,16 @@
+Reference: https://www.youtube.com/watch?v=ezX4D1ZK5mA
+Github: https://github.com/devops-by-example/tutorials/tree/master/lessons/011
+
+# Create Kubernetes Cluster
+
+# Initialize Helm 3
+
+# Install Nginx Ingress Helm Chart
+
+# Deploy Sample Application
+
+# Access Application via Ingress
+
+====================================================
+
+https://computingforgeeks.com/deploy-nginx-ingress-controller-on-kubernetes-using-helm-chart/

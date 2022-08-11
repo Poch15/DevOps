@@ -1,0 +1,22 @@
+# Update credentials config file / add profile
+[clusteradmin]
+access_key_id =
+secret_key = 
+region = 
+
+# identify aws profile use
+$ aws sts get-caller identity
+
+# Change AWS Profile
+$ export AWS_PROFILE="clusteradmin"
+$ aws sts get-caller identity
+
+$ setx AWS_PROFILE user1  (WINDOWS)
+
+
+https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html
+
+
+
+
+

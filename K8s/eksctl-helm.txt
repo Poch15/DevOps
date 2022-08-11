@@ -8,6 +8,16 @@ $ eksctl create cluster -f <clusterconfig file loc>
 # Connect to EKS cluster
 $ aws eks update-kubeconfig --name ${clusterName} --region us-east-1
 
+--------
+# Create EKS cluster  => https://eksctl.io/usage/creating-and-managing-clusters/
+$ eksctl create cluster
+$ eksctl create cluster -f clusterconfig.yaml
+# Display EKS cluster information
+$ eksctl get cluster
+
+$ eksctl get nodegroup --cluster my-cluster
+
+
 ------------
 HELM
 ------------
@@ -17,25 +27,28 @@ $ helm create <name>
 # Test the rendering of template
 $ helm template <name of chart/release>
 $ helm template <name of chart/release> <chart dir>
+$ helm template web-app ./test-app --values=./test-app/values.yaml > monitoring-stack.yaml
 
 # Validate and verify helm chart
 $ helm install <helm release> --debug --dry-run <chart dir>
-$ helm install test-app --debug --dry-run ./test-app
+$ helm install web-app --debug --dry-run ./test-app
 
 # Install helm release
 $ helm install <helm release> <chart dir>
-helm install test-app ./test-app -n <namespace>
+$ helm install web-app ./test-app -n <namespace>
+$ helm install web-app --values=myvalues.yaml ./test-app
 
 # Upgrade helm release
 $ helm upgrade <helm release> <chart dir>
-$ helm upgrade test-app ./test-app
+$ helm upgrade web-app ./test-app
 $ helm upgrade --install test-app ./test-app -n test
+$ helm upgrade web-app --values=myvalues.yaml ./test-app
 
 # List helm
 $ helm list
 
 # Inject values to the helm chart
-$ helm upgrade <name of chart/release> <chart dir> --value <values.yml dir>
+$ helm upgrade <name release> <chart dir> --value <values.yml dir>
 
 # Delete helm release
 $ helm delete <release>
@@ -47,12 +60,30 @@ $ helm rollback test-app 1
 # Search for repo
 $ helm search hub <app>
 
+# Search for package in repo
+$ helm search repo <repo name>
+
+# Search for package in repo / list versions
+$ helm search repo <repo name> -l
+$ helm search repo nginx -l
+
+# Download the repo/package source codes/files locally
+$ helm pull <repo/package> --untar=true
+$ helm pull ingress-nginx/ingress-nginx --untar
+$ helm pull ingress-nginx/ingress-nginx --untar --version 2.10.0
+
+
+
 # Add the repo to your repo list
 $ helm repo list
-$ helm repo add <app> <resource URL>
+$ helm repo add <repo label> <resource URL>
+
+
 
 # Show values
-$ helm show values <repo>/<app> --version <version>
+$ helm show values <repo>/<package> > values.yaml
+$ helm show values <repo>/<package> --version <version>
+
 
 # Install wordpress helm chart
 $ helm install wordpress bitnami/wordpress --value=wordpress-values.yaml --namespace nswordpress --version 10.0.3
@@ -60,8 +91,8 @@ $ helm install wordpress bitnami/wordpress --value=wordpress-values.yaml --names
 
 
 
-
-
+helm search repo nginx -l
+helm pull ingress-nginx/ingress-nginx --untar
 
 
 
@@ -72,6 +103,7 @@ helm install test-app ./test-app -n test
 
 helm repo add linkerd https://helm.linkerd.io/stable
 helm repo update
+helm list
 
 # set expiry date one year from now, in Mac:
 exp=$(date -v+8760H +"%Y-%m-%dT%H:%M:%SZ")

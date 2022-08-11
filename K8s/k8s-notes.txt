@@ -21,6 +21,19 @@ describe pod -n namespace
 logs pod/pod -n namespace
 
 
+-----------------------------------
+Not part of CKA exam
+-----------------------------------
+Auto scaling a cluster
+
+Horizontal POD autoscalers
+
+Stateful Sets
+
+Kubernetes Federation
+
+Admission Controllers
+
 
 
 aws eks update-kubeconfig --name <CLUSTER> --region us-east-1
@@ -198,10 +211,10 @@ MUMSHAD MA
 kubectl run <image name> --image=<image name>
 
 # Describe pod
-kubectl describe pod <pod name>
+kubectl describe pod <pod name> -o wide
 
 # Delete pod
-kubectl delete pod
+kubectl delete pod <pod name>
 
 # Create Redis pod using yml config
 kubectl create -f redis-pod.yml
@@ -209,7 +222,7 @@ kubectl create -f redis-pod.yml
 # Identiy which node the pods are placed
 kubectl get pods -o wide
 
-# Display replication controller / replicaset
+# Display replication controller / replicaset(latest)
 kubectl get replicationcontroller
 kubectl get replicaset
 
@@ -218,8 +231,8 @@ kubectl replace -f replicaset-definition.yml
 kubectl scale --replicas=6 -f replicaset-definition.yml
 kubectl scale --replicas=6 replicaset myapp-replicaset
 
-# Generate deployment YAML (-o yaml). Don't create it(--dry-run) with 4 Replicas (--replicas=4)
-kubectl create deployment --image=nginx nginx --dry-run=client -o yaml > nginx-deployment.yaml
+# Generate POD manifest YAML file (-o yaml). Don't create it(--dry-run) with 4 Replicas (--replicas=4)
+kubectl create deployment nginx --image=nginx --dry-run=client -o yaml > nginx-deployment.yaml
 
 # Display Pods in kube-system namespace
 kubectl get pods --namespace=kube-system
@@ -240,6 +253,9 @@ kubectl get componentstatus
 # Set taint to a node
 kubectl taint nodes node-name key=value:taint-effect
 
+# Untaint a node
+kubectl taint nodes node-name key=value:taint-effect-
+
 # Set toleration to a pod
 kubectl taint nodes node1 app
 
@@ -259,21 +275,69 @@ kubectl rollout status deployment/myapp-deployment
 # View rollout history and revision of deployments
 kubect rollout history deployment/myapp-deployment
 
-# Undo deployments
+# Rollback/Undo deployments
 kubect rollout undo deployment/myapp-deployment
 
-# Encode secrets
+# Edit deployments to upgrade
+kubect edit deployment <deployment-name>
+
+# Create config map
+kubectl create configmap <config-name> --from-literal=<key>=<value>
+
+# Create config map from file / the preferred way is using declaritive approach to create CM
+kubectl create configmap <config-name> --from-file=<path-to-file>
+
+# Lookup for configmap properties and syntax in Pod definition file
+kubectl explain pods --recursive | grep envFrom -A3
+
+# Create secret -> has the same option as configmap
+kubectl create secret generic <secret-name> --from-literal=<key>=<value>
+
+# Encode sensitive data
 echo -n 'mysqlpassword123' | base64
 
-# Encode secrets
+# Decode secrets
 echo -n 'bz1zy#1s' | base64 --decode
 
 # Drain node
 kubectl drain node01 --ignore-daemonsets
 kubectl drain node01 --ignore-daemonsets --force
 
-# Cordon / uncordon node = Make node unscheduleable
+# Cordon / uncordon node = Make node unscheduleable / Make node scheduleable
 kubectl cordon node01 / kubectl uncordon node01
+
+# Check the latest version available for upgrading core k8s components created by kubeadm
+kubeadm upgrade plan
+
+# How to upgrade k8s cluster version
+1. Drain node
+2. apt update
+3. apt install kubeadm=1.20.0-00
+4. kubeadm upgrade node | kubeadm upgrade apply 1.20.0-00 > use root user if necessary
+5. apt install kubelet=1.20.0-00
+6. systemctl restart kubelet
+7. Make the node schedulable again
+
+# Check kubernetest version
+kubectl version --short
+
+# Backup ETCD cluster
+1. Take a snapshot of the ETCD database using build-in snapshot functionality
+ETCDCTL_API=3 etcdctl --endpoints=https://[127.0.0.1]:2379 \
+--cacert=/etc/kubernetes/pki/etcd/ca.crt \
+--cert=/etc/kubernetes/pki/etcd/server.crt \
+--key=/etc/kubernetes/pki/etcd/server.key \
+snapshot save /opt/snapshot-pre-boot.db
+
+# Restore the ETCD from a snapshot
+ETCDCTL_API=3 etcdctl  --data-dir /var/lib/etcd-from-backup \
+snapshot restore /opt/snapshot-pre-boot.db
+
+# Check ETCD version
+ETCDCTL_API=3 etcdctl version
+
+# Copy a backup of all deployed services in a cluster
+kubectl get all --all-namespaces -o yaml > all-deploy-services.yaml
 
 # Generate private key
 openssl genrsa -out my-bank.key 1024
@@ -281,5 +345,223 @@ openssl genrsa -out my-bank.key 1024
 # Generate public key
 openssl rsa -in my-bank.key -pubout > mybank.pem
 
+# Generate csr
+openssl req -new -key my-bank.key -subj "/CN=KUBERNETES-CA" -out my-bank.csr
+
+# Decode certificate(public key)
+openssl x509 -in /etc/kubernetes/pki/apiserver.crt -text -noout
+
+# Inspect service logs
+journalctl -u etcd.service -l
+
+# Approve signing request
+kubectl certificate approve akshay
+
+# Deny signing request
+kubectl certificate deny agent-smith
+
+# List cluster, contexts and users
+kubectl config view
+kubectl config view --kubeconfig=my-customer-config
+
+# Change current context
+kubectl config use-context prod-user@production
+
+# Check if user has access and privilege to resources
+kubectl auth can-i create deployments
+kubectl auth can-i create deployments --as dev-user
+
+# View API resources, version, kind
+kubectl api resources
+
+# Login to private repository from a cluster
+kubectl create secret docker-registry regcred \
+  --docker-server= private-registry.io \
+  --docker-username= registry-user \
+  --docker-password=registry-password \
+  --docker-email=registry-user@org.com
+
+Then reference the regcred to the pod using 'imagePullSecrets' field
+
 # Create service account
 kubectl create serviceaccount dashboard-app
+
+# Identiy the user that executes the pods
+kubectl exec ubuntu-sleeper -- whoami
+
+=====================
+LIGHTNING LABS
+======================
+
+1) Upgrade the current version of kubernetes from 1.19 to 1.20.0 exactly using the kubeadm utility. Make sure that the upgrade is carried out one node at a time starting with the master node. To minimize downtime, the deployment gold-nginx should be rescheduled on an alternate node before upgrading each node.
+
+Upgrade controlplane node first and drain node node01 before upgrading it. Pods for gold-nginx should run on the controlplane node subsequently.
+
+2) Print the names of all deployments in the admin2406 namespace in the following format:
+DEPLOYMENT CONTAINER_IMAGE READY_REPLICAS NAMESPACE
+<deployment name> <container image used> <ready replica count> <Namespace>
+. The data should be sorted by the increasing order of the deployment name.
+
+Example:
+DEPLOYMENT CONTAINER_IMAGE READY_REPLICAS NAMESPACE
+deploy0 nginx:alpine 1 admin2406
+Write the result to the file /opt/admin2406_data.
+
+3) A kubeconfig file called admin.kubeconfig has been created in /root/CKA. There is something wrong with the configuration. Troubleshoot and fix it.
+
+4) A new deployment called alpha-mysql has been deployed in the alpha namespace. However, the pods are not running. Troubleshoot and fix the issue. The deployment should make use of the persistent volume alpha-pv to be mounted at /var/lib/mysql and should use the environment variable MYSQL_ALLOW_EMPTY_PASSWORD=1 to make use of an empty root password.
+
+
+5) Take the backup of ETCD at the location /opt/etcd-backup.db on the controlplane node.
+
+6) Create a pod called secret-1401 in the admin1401 namespace using the busybox image. The container within the pod should be called secret-admin and should sleep for 4800 seconds.
+
+The container should mount a read-only secret volume called secret-volume at the path /etc/secret-volume. The secret being mounted has already been created for you and is called dotfile-secret.
+
+
+===============================
+CKA Exam questions = Alok Kumar
+===============================
+1) Create a new pod called admin-pod with image busybox. Allow the pod to be able to set system_time. The container should sleep for 3200 seconds
+
+2) A kubeconfig file called test.kubeconfig has been created in /root/TEST. There is something woring with the configuration. Troubleshoot and fix it.
+
+3) Create a new deployment called web-proj-268, with this image nginx:1.16 and 1 replica. Next upgrade the deployment to version 1.17 using rolling update. Make sure that the version upgrade is recorded in the resource annotation.
+
+4) Create a new deployment called web-003. Scale the deployment to 3 replicas. Make sure desired number of pod are always running.
+
+5) Upgrade the cluster (Master and worker node) from 1.18.0 to 1.19.0. Make sure to first drain both Node and make it available after upgrade
+
+6) Deploy a web-load-5461 pod using the nginx:1.17 image with the labels set to tier=web
+
+7) Create a static pod on node01 called static-nginx with image nginx and you have to make sure that it is recreated/restarted automatically in case of any failure happens
+
+8) Create a pod called pod-multi with two containers, description mentioned below
+Container 1 => name: container1, image: nginx
+Container 2 => name: container2, image: busybox, command: sleep 4800
+
+9) Create a pod called delta-pod in defense namespace belonging to the development environment (env=dev) and frontend tier (tier=front). image:nginx:1.17
+
+10) Get the node01 in JSON format and store it in a file at /opt/outputs/nodes-fz456723.json
+
+11) Take a backup of the ETCD database and save it to root with name of back "etcd-backup.db"
+
+12) A new application finance-audit-pod is deployed in finance namespace. There is something wong with it. Identify and fix the issue. Note: No configuration changed allowed, you can only delete and recreate the pod(if required).
+
+13) Create a pod called web-pod using image nginx, expose it internally with a service called web-pod-svc. Check that you are able to look up the service and pod from within the cluster. Use the image: busybox:1.28 for dns lookup. Record results in /root/web-svc.svc and /root/web-pod.pod
+
+14) Use JSON PATH query to retrieve the osImages of all the nodes and store it in a file "allNodes_osImage_45CVB34Ji.txt" at root location. Note: The osImages are under the nodeInfo section udner status of each node
+$ kubectl get nodes -o jsonPath='{.item[*].status.nodeInfo.osImage}' > allNodes_osImage_45CVB34Ji.txt
+
+15) Create a persitent volume with the given specification.
+Volume Name: prv-rnd
+Storage: 100Mi
+Access modes: ReadWriteMany
+Host Path: /pv/host_data-rnd
+# Check the documentation for reference
+
+16) Expose the "audit-web-app" web pod as service "audit-web-app-service" application on port 30002 on the nodes on the cluster. Note: The web application listes on port 8080
+$ kubectl expose pod audit-web-app --name=audit-web-app-service --type=NodePort --dry-run=client -o yaml > svc-audit-web-app.yaml
+# add the NodePort 30002 in the file
+
+17) Taint the working node node01 with details provided below. Create a pod called dev-pod-nginx using image=nginx, make sure that workloads are not scheduled to this worker node (node01). Create another pod called prod-pod-nginx using image=nginx with toleration to be scheduled on node01.
+Details:
+key: env_type, value: production, operator: Equal and effect: NoSchedule
+
+$ kubectl taint node node01 env_type=production:NoSchedule
+$ kubectl describe node node01 | grep -i taint
+
+$ kubectl run dev-pod-nginx --image=nginx 
+$ kubectl get pods dev-pod-nginx -o wide
+
+$ kubectl run prod-pod-nginx --image=nginx --dry-run=client -o yaml > prod-pod-nginx.yaml
+# Add tolerations properties
+
+18) Create a pod called pod-jxc56fv, using details mentioned below:
+1. securityCOntext
+runAsUser: 1000
+fsGroup: 2000
+
+2. image=redis:alpine
+
+$ kubectl exec -it pod-jxc56fv -- whoami
+
+19) Worker Node "node01" not responding, have a look and fix the issue
+$ kubectl get node
+$ kubectl describe node node01
+$ kubectl logs node01
+$ ssh node01
+$ systemctl status kubelet
+$ systemctl restart kubelet
+
+20) List the internalIP of all nodes of the cluster. Save the result to a file /root/Internal_IP_List. Answer should be in the format: InternalIP of First Node<Space>InternalIP of Second Node (in a single line)
+$ kubectl get node -o wide
+# Go to kubernetes documentation and search for cheat sheet
+
+21) One Static Pod "web-static", image busybox, is currently running on control plane node, move that static pod to run on node01, don't need to do any other changes. Note: Static Pod name should be changed from web-static-controlplane to web-static-node01
+$ kubectl get pod -o wide
+$ ps -aux | grep kubelet
+# Search for --config and cat the path
+$ cat /var/lib/kubelet/config.yaml | grep -i staticPod
+$ cd /etc/kubernetes/manifests
+# copy the content of static.yaml to the worker node
+$ ssh node01 
+
+22) A new user named "alok" need to be created. Grant him access to the cluster. User "alok" should have permission to create, list, get, update and delte pods in the space namespace. The private key exists at location: /root/alok.key and csr at /root/alok.csr
+# Create certificate signing request object
+$ kubectl get csr
+$ kubectl -n space get pod --as alok  # test
+$ kubectl certificate approve alok
+# Create role and rolebindings for the user
+$ kubectl auth can-i get pods -n space --as alok  # test
+
+23) Create a PersistentVolume, PersistentVolumeClaim and Pod with below specifications
+PV
+==
+Volume Name: mypvlog
+Storage: 100Mi
+Access Mode: ReadWriteMany
+Host Path: /pv/log
+Reclaim Policy: Retain
+
+PVC
+===
+Volume Name: pv-claim-log
+Storage Request: 50Mi
+Access Modes: ReadWriteMany
+
+Pod
+===
+Name: my-nginx-pod
+Image Name: nginx
+Volume: PersistentVolumeCLaim=pv-claim-log
+Volume Mount: /log
+
+# Go to docu and create PV, PVC and pod object
+
+24) Worker node01 not responding
+$ journalctl -u kebelet
+
+25) A pod "my-nginx-pod" (image=nginx) in custom namespace is not running. Find the problem and fix it and make it running. Note: All the supported definition files has been placed at root.
+$ kubectl -n custom get pod
+$ kubectl -n customer describe pod my-nginx-pod
+# The problem is that the pvc is in default namesapce. It has to be recreated to custom namespace
+# Delete pv and pvc object. Create new object for both. PV namespace can be in default ns. PVC should be in custom
+
+26) Create a multi-container pod, "multi-pod" in development namspace using images: nginx and redis.
+$ kubectl get ns
+$ kubetl create ns development
+$ kubectl run multi-pod --image=nginx --dry-run=client -o yaml > multi-pod.yaml
+# Add the redis container
+$ kubectl -n development describe pod multi-pod
+
+27) A pod "nginx-pod" (image=nginx) in default namespace is not running. Find the problem and fix it and make it running.
+$ kubectl get pod
+$ kubectl describe pod nginx-pod
+# The pods have no tolerations
+$ kubectl describe node controlplane | grep -i taint
+$ kubectl describe node node01 | grep -i taint
+$ kubectl get pod nginx-pod -o yaml > nginx-pod.yaml
+# add toleration properties
+
+28) 

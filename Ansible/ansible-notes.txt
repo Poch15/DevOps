@@ -1,0 +1,72 @@
+============
+Installation
+=============
+1) Using yum command *recommended
+2) Using pip
+3) Using compile file
+
+=======================
+Install on Master Node
+=======================
+Open https://docs.ansible.com -> Installation Guide section -> Installing the control node
+
+# Run as root
+$ python --version
+$ yum install ansible
+
+# To install the desired ansible version, install additional package to your os -> epel release 
+# yum install ansible
+
+$ ansible --version
+
+
+=======================
+Install on Client Node
+=======================
+
+
+=======================
+For password less based auth
+=======================
+# Create same user across all servers and provide password
+$ useradd ansadm
+$ passwd ansadm
+
+# provide ansadm with root privilege that has no password
+$ visudo
+
+# Make sure that PasswordAuthentication yes in all servers under /etc/ssh/sshd_config
+
+# Generate ssh-keys using ssh-keygen command from ansadmin of Ansible Engine
+
+# Copy ssh public key using ssh-copy-id <hostname> from /home/ansadmin/.ssh location
+
+================================
+How to disable host key checking
+================================
+1. Export in command line
+$ export ANSIBLE_HOST_KEY_CHECKING=false
+
+2. In ansible config file
+[defaults]
+host_key_checkig = false
+
+
+===============
+BASIC COMMANDS
+===============
+
+# Test connection with all hosts cin inventory file, specific IP or group
+$ ansible all -m ping
+$ ansible all -m ping -a "uptime"
+$ ansible 3.88.165.32 -m ping
+$ ansible group1 -m ping
+
+# How to use ansible module
+$ ansible-doc <module>
+
+# List all modules
+$ ansible-doc l
+
+# Create roles
+$ ansible-galaxy init <role_name>

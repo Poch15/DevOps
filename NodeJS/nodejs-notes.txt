@@ -1,3 +1,50 @@
-npm init
-npm install express
+npm init   =  creates package.json that stores information about project
+
+npm install express -save  =  this will save express as dependencies in package.json
+
+npm install    =   installs all dependencies in package.json
+npm install <package>@<version>  =  install specific package version
+
+npm ci  =  install package with respect to package-lock.json
+
+npm uninstall express
 node <file.js>
+
+
+
+
+CAREOP-4145
+# Fix sec vul https://github.ecodesamsung.com/advisories/GHSA-xvch-5gv4-984h/dependabot
+delete yarn.lock
+npm audit fix
+npm install
+
+
+
+# Build image
+docker build -t webapp:1.0 .
+
+# Run container
+docker run -d -p 8080:8080 --name nodejs-app webapp:1.0
+
+# Push Image to ECR
+$ aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 963697571568.dkr.ecr.us-east-1.amazonaws.com
+
+$ docker tag webapp:1.0 963697571568.dkr.ecr.us-east-1.amazonaws.com/webapp:1.0
+
+$ docker push 963697571568.dkr.ecr.us-east-1.amazonaws.com/webapp:1.0
+
+
+# Create a registry secret
+$ kubectl create secret docker-registry regcred \
+  --docker-server=963697571568.dkr.ecr.us-east-1.amazonaws.com \
+  --docker-username=AWS \
+  --docker-password=$(aws$ kubectl create secret docker-registry regcred \
+  --docker-server=963697571568.dkr.ecr.us-east-1.amazonaws.com \
+  --docker-username=AWS \
+  --docker-password=$(aws ecr get-login-password) \
+  --namespace=paul
+
+# Implement nginx ingress controller
+https://www.qloudx.com/nginx-ingress-controller-for-amazon-eks-frequently-used-annotations/
+https://computingforgeeks.com/deploy-nginx-ingress-controller-on-kubernetes-using-helm-chart/

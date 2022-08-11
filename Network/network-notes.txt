@@ -1,0 +1,9 @@
+# Show IP address, MAC of other hosts in network
+arp 
+
+# Show list of network interface
+ip link
+ip addr
+
+# Display ports with more connection established 
+netstat -anp | grep <service>

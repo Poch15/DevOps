@@ -1,0 +1,60 @@
+# Creating Python Virtual environments
+$ python3 -m venv <path>
+$ python3 -m venv my-env
+
+# Activate the v-env
+$ source my-env/bin/activate
+
+# Install Flask
+$ pip install Flask
+
+# Create Python App / RESTFUL API
+https://flask.palletsprojects.com/en/2.1.x/quickstart/#a-minimal-application
+
+# Run the application
+$ export FLASK_APP=app
+$ flask run
+
+# Edit the app.py and add the following code to change the port
+if __name__ == '__main__':
+      app.run(host='localhost', port=8081)
+
+# Using Pip to freeze Python Dependecies
+$ pip freeze > requirements.txt
+
+# Install dependencies using pip
+$ pip install -r requirements.txt
+
+# Create dockerfile and docker ignore inside microservice dir
+
+# Build image
+docker build -t webapp:1.0 .
+
+# Run container
+docker run -d -p 9020:8090 --name flask-app webapp:1.0
+
+docker run -d -p 8090 --net=host --name flask-app webapp:1.0
+
+# Create kubernetes deployment and service yaml files
+
+$ kubectl apply -f deployment.yaml
+$ kubectl apply -f service.yaml
+
+
+# Push Image to ECR
+$ aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 963697571568.dkr.ecr.us-east-1.amazonaws.com
+
+$ docker tag webapp:1.0 963697571568.dkr.ecr.us-east-1.amazonaws.com/webapp:1.0
+
+$ docker push 963697571568.dkr.ecr.us-east-1.amazonaws.com/webapp:1.0
+
+# Create a registry secret
+$ kubectl create secret docker-registry regcred \
+  --docker-server=963697571568.dkr.ecr.us-east-1.amazonaws.com \
+  --docker-username=AWS \
+  --docker-password=$(aws ecr get-login-password) \
+  --namespace=paul
+
+$ kubectl exec -i -t python-webapp-785b4696f7-2jbts -- sh
+
+$ kubectl -n paul exec -it --tty curl -- sh

@@ -1,0 +1,10 @@
+1) Install helm 3 on kubernetes
+
+2) Install nginx ingress controller kubernetes using helm3
+
+$ helm repo add ingress-nginx http://kubernetes.github.io/ingress-nginx
+$ helm repo update
+$ helm install ingress-nginx ingress-nginx/ingress-nginx
+$ kubectl --namespace default get services -o wide -w ingress-nginx-controller
+
+ 

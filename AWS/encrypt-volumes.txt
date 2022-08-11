@@ -1,0 +1,10 @@
+https://medium.com/athennian-dev-life/encrypt-an-already-attached-unencrypted-ebs-volume-on-aws-ec2-c67f9923b228
+
+Encrypt EBS volume
+1) Find the EC2 instance with the unencrypted volume and stop it.
+2) Create a snapshot of the EBS volume you want to encrypt.
+3) Copy the EBS snapshot, encrypting the copy in the process using an available key
+4) Create a new EBS volume from your new encrypted EBS snapshot (This new EBS volume will be encrypted). I find this is also an excellent spot to check the type of storage being used if you are using older/more expensive technology or something not up to the task.
+5) Detach the original EBS volume and attach your new encrypted EBS volume, making sure to match the device name (/dev/sda1, etc.). While it says /dev/sdf through to /dev/sdp is available, if this is the root disk, you will need to use /dev/xvda1 in order for the instance to start up again, despite the implication that this might be an invalid device name.
+6) Start the EC2 instance up again. Verify that the server is doing the things as expected and that the data is correct.
+7) Delete the now detached unencrypted volume. Enjoy peaceful sleep!

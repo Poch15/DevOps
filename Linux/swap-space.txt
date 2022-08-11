@@ -1,0 +1,27 @@
+https://www.youtube.com/watch?v=Monqjo-3MOA
+
+swap file or swap partition
+
+$ swapon --show
+
+$ free -h 
+
+- for memory intensive application
+- to swap out pages that currently inacive
+- hibernation
+
+
+==========================================================
+
+How to Increase Java Heap Memory Size in Ubuntu Linux JVM
+
+https://www.youtube.com/watch?v=lABV64w560c
+
+$ java --version
+
+$ java -XX:+PrintFlagsFinal -version | 
+
+$ java -Xms512m -Xmx1024m SomeJavaApp
+
+$ export _JAVA_OPTIONS=-Xmx1024m  to .bashrc
+

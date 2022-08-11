@@ -1,0 +1,2 @@
+node app inspect app.js  =  debug app
+node app --inspect-brk app.js
