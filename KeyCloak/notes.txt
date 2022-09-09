@@ -1,0 +1,3 @@
+https://github.com/Versent/saml2aws
+
+https://scandiweb.com/blog/sign-in-to-amazon-aws-using-saml-protocol-and-keycloak-as-identity-provider/#:~:text=Amazon%20AWS%20Service%20Provider%20setup&text=2)%20Go%20to%20%E2%80%9CIAM%E2%80%9D,%E2%80%9D%20and%20then%20%E2%80%9CCreate%E2%80%9D.

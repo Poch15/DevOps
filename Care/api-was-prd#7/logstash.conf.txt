@@ -1,0 +1,50 @@
+input {
+    file {
+        path => "/home/common/members-log/members-common/api/api.log"
+        start_position => "beginning"
+        codec => json
+    }
+    file {
+        path => "/home/common/members-log/members-oauth2/api/api.log"
+        start_position => "beginning"
+        codec => json
+    }
+
+    file {
+        path => "/home/common/members-log/members-user/api/api.log"
+        start_position => "beginning"
+        codec => json
+    }
+}
+filter {
+    geoip {
+        source => "clientIp"
+    }
+    if [type] == "apiLog" {
+        kv {
+            field_split => "&"
+            source => "queryString"
+            target => "queryParams"
+        }
+    }
+}
+output {
+    if [message] == "API_Success" {
+        elasticsearch {
+                hosts => [ "search-members-es-prd-6toa2zrbkwfishtvtghfdeyrtm.ap-northeast-2.es.amazonaws.com:80" ]
+                index => "api_successlog-%{+yyyyMMdd}"
+        }
+        stdout {
+                codec => json
+        }
+    }
+    if [message] == "API_Error" {
+        elasticsearch {
+                hosts => [ "search-members-es-prd-6toa2zrbkwfishtvtghfdeyrtm.ap-northeast-2.es.amazonaws.com:80" ]
+                index => "api_errorlog-%{+yyyyMMdd}"
+        }
+        stdout {
+                codec => json
+        }
+    }
+}

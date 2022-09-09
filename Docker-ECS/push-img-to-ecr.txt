@@ -1,0 +1,20 @@
+1. Create Repo
+aws ecr create-repository \
+--repository-name encina-skillup-repo \
+--region ap-northeast-1 \
+--image-scanning-configuration scanOnPush=true
+
+2. Build Image or Fetch Image from docker hub
+docker build -t httpdweb2 .
+
+3. Tag Image
+docker tag httpdweb2:latest 256598433840.dkr.ecr.ap-northeast-1.amazonaws.com/encina-skillup-repo2:latest
+
+4 Push Image to Repo
+docker push 256598433840.dkr.ecr.ap-northeast-1.amazonaws.com/encina-skillup-repo2:latest
+
+
+
+============================
+Connecting to a private repo
+============================

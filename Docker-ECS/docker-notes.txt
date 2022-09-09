@@ -21,16 +21,8 @@ docker inspect <container>
 winpty docker exec -it 7ed15e9c77fb //bin//sh
 
 
-docker tag httpdweb2:latest 256598433840.dkr.ecr.ap-northeast-1.amazonaws.com/encina-skillup-repo2:latest
-
-docker push 256598433840.dkr.ecr.ap-northeast-1.amazonaws.com/encina-skillup-repo2:latest
 
 
-
-aws ecr create-repository \
---repository-name encina-skillup-repo2 \
---region ap-northeast-1 \
---image-scanning-configuration scanOnPush=true
 
 ==================
 PULL OUT JAR FILES

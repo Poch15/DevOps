@@ -1,2 +1,4 @@
 https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-profile.html
 
+create role and attach aws manage policy "AmazonSSMManagedInstanceCore"
+

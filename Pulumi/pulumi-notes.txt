@@ -1,3 +1,5 @@
+https://pulumi.awsworkshop.io/
+
 # create new project
 $ pulumi new 
 
@@ -28,3 +30,9 @@ $ pulumi stack export < <stack name>
 
 
 pulumi plugin install resource kubernetes v3.12.1
+
+
+# Set aws profile in pulumi
+pulumi config set aws:profile smem-releng
+
+pulumi config rm aws:profile smem-releng

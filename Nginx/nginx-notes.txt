@@ -30,3 +30,21 @@ docker run -v /home/common/docker:/sts-key \
 -e JASYPT_PASSWORD=$JASYPT_PASSWORD \
 -p 8080:8080 \
 -d --name com-pgl-sts 480586329294.dkr.ecr.ap-northeast-2.amazonaws.com/com-pgl-sts:1.0.0-82099aac-fed16492
+
+----------------------------
+LOG FORMATE
+----------------------------
+
+
+  log_format json_combined escape=json '{ "httpRequest": {'
+        '"timeLocal": "$time_local", '
+        '"httpUserAgent": "$http_user_agent", '
+        '"httpDeviceUid": "$http_deviceuid", '
+        '"httpd": "$http_d", '
+        '"httpc": "$http_c", '
+        '"remoteIp": "$http_userid", '
+        '"remoteAddr": "$remote_addr", '
+        '"httpXrealIp": "http_x_real_ip", '
+        '"request": "$request", '
+        '"status": "$status" }, '
+        '"bodyBytesSent": "$body_bytes_sent" }';

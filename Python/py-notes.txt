@@ -11,7 +11,9 @@ python3 -m venv <path>
 python3 -m venv c:/applicationspyt/newpythonproject/venv
 
 
-source venv/Scripts/activate = activate virtual env
+
+
+source venv/Scripts/activate = activate virtual env  (Linux)
 
 
 pip install <package_name>
