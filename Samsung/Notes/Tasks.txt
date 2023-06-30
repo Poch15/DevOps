@@ -1,0 +1,1173 @@
+https://mobilerndhub.sec.samsung.net/its/projects/USCAREOP/issues  - USCareOperations
+https://mobilerndhub.sec.samsung.net/its/projects/COMMOP/issues - CommOps
+https://mobilerndhub.sec.samsung.net/its/projects/LOYOP/issues  - Loyallty Ops
+https://mobilerndhub.sec.samsung.net/its/projects/CAREOP/issues/CAREOP-2233?filter=allopenissues - CareOp
+
+https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-2230 Create new AWS resources (MSK, Firehose, etc)
+ 
+https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-2528 deployment
+
+https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-2386 Add new MUSE server to whitelist
+
+Cloud Security Audit
+
+
+Join SRPH Expert Groups - Fiona Estoperez
+https://code.sec.samsung.net/confluence/display/SRPHEGC/SRPH+Expert+Groups+Home
+	Contact Jeff Kwong
+
+
+Trainings:
+Kubernetes
+	Stateful sets?
+	Admission Controllers / Mutating Webhooks
+Terraform
+ECS / EKS
+CLoudwatch
+OAI Cloudfront / CORS
+Deployment strategies
+	https://www.youtube.com/watch?v=efiMiaFjtn8
+AWS parameter store
+ELB Cipher
+Gradle
+Microservices vs Monolithic
+https://haydenjames.io/linux-server-performance-disk-io-slowing-application/
+	atop, iotop, top
+https://blog.cpanel.com/disk-io-errors-troubleshooting-on-linux-servers/
+
+How to Deploy NodeJS App to Kubernetes? (AWS | Express.js | Ingress | HTTPS | Cert Manager)
+	https://www.youtube.com/watch?v=_jEgzqyUWKE&list=PLiMWaCMwGJXmoKAmRh38U1-QEeh2dGEOX&index=5
+
+ACM - https://www.youtube.com/watch?v=Ge-dkZgqLKg
+CICD PROJECT - https://www.youtube.com/watch?v=adG0vq5boL8
+	https://www.youtube.com/watch?v=jBMaKMo2-mQ
+	https://www.youtube.com/watch?v=C1BlN66s9yo
+WAF
+Cloudwatch
+Log rotation
+Python Keylogger Tutorial
+Set up complete CI/CD Jenkins pipeline for kubernetes - Part 11
+
+	
+
+
+Will expire on Aug 30
+M-WIKI(CONFLUENCE)
+M-ITS(JIRA)
+
+ELK filebit
+EFK instead of logstash / fluentbit
+
+9/20 - 9/25
+Cloud security portal
+STI alert
+	https://soar.sec.samsung.net/alert/785/
+IPA reinstallation
+Community account deletion request and password reset
+Install Niffler/Telecare to care
+
+9/27 - 10/01
+Cloud security portal
+All hands September 28, 2021 13:30 - 17:30
+Tech Sharing September 30, 2021 2PM
+MembersCare Deployment - September 28
+US Care Deployment - September 29
+
+Delete prd-bnf-db-jh Work machine and 443 outbound
+-----
+10/04 - 10/08
+https://mobilerndhub.sec.samsung.net/its/browse/LOYOP-1264 = completed
+	FIX log extractor
+https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-2686 = completed
+	Request deployment for Care server on Oct. 5th
+update sec audit script = completed
+Security audit remaining items
+Issue with high traffic
+	Change DB endpoint to replica then restart members common
+-----
+10/11 - 10/15
+https://mobilerndhub.sec.samsung.net/its/browse/COMMOP-780 = DONE
+	[CommunityWeb]: Inhouse Fix  
+[eCODE] Your eCODE Account will be Suspended = DONE
+https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-2714 = DONE
+	Care deployment 
+-----
+10/18 - 10/22
+[Self-Eval] Proby Performance Eval - p.encina  = DONE
+update days inactive users = DONE
+Script that deletes sg rules with temporary word = DONE
+Request for SG anyopen rule exception = DONE
+[IPA][p.encina][Password Expiration :after 13 days] = DONE
+[Official] [SRPH] 2H 2021 Asset Confirmation per Employee (~11/05) = DONE 
+Accredited hospital and dental of Intellicare = DONE
+-----
+10/25 - 10/29
+https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-2822 = DONE 
+https://mobilerndhub.sec.samsung.net/its/projects/CAREOP/issues/CAREOP-2817 = DONE
+
+11/01 - 11/05
+https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-2906 = DONE
+	Upload files on S3
+https://mobilerndhub.sec.samsung.net/its/browse/LOYOP-1403 = DONE
+	Request for Benefit-Admin User Log ( 10/1 ~10/31)
+https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-2876
+	Request deployment for Care Server on Nov. 3rd
+	SYNC TIME
+http://mosaic.sec.samsung.net/kms/comtyMainPost.do?method=docsView&docsFileId=dyn3867gtArsTdVJJi0u5wz&comtyId=576341331&menuId=576356444
+	Xmas Wishlist
+FW: RE: RE(2): [Community Vietnam and Russia] PRD Activity - whole DB Encryption = 
+= 
+
+-------
+11/08 - 11/12
+-https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-2945 = DONE
+	Request deployment for Care Server on Nov. 11th.
+-FW: [Action Required][Samsung Members] 이상 행위 의심 탐지 = DONE
+-Sched peers feedback meeting with Sir Al = DONE
+-care-pgl-sgw-prx#2 sudo not working
+-Deadline of our Exchange gift and Christmas wishlist November 12. = DONE
+	http://mosaic.sec.samsung.net/kms/comtyMainPost.do?method=docsView&docsFileId=dyn3867gtArsTdVJJi0u5wz&comtyId=576341331&menuId=576356444
+
+https://mobilerndhub.sec.samsung.net/its/browse/COMMOP-800
+-------
+11/15 - 11/19
+-[Corp AD]사용자 ID 비밀번호 변경 알림(Corp AD Account Password expiration notification) = DONE
+- https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-2955 = DONE
+	Upload css file to the S3 bucket
+- https://mobilerndhub.sec.samsung.net/its/browse/COMMOP-800 = DONE
+	[CommunityWeb]: Inhouse Fix
+- https://www.youtube.com/watch?v=_M872LhrcD4
+	TUTORIALS
+- [HR][Greetings] Happy Birthday
+- Gift for Xmas party = DONE
+- Intrusion Detection response = DONE
+- CAREOP-2989 -> CAREOP-2988 -> CAREOP-2990
+- Allow IPA support access to CARE
+-------
+11/22 - 11/26
+- Medical Reimbursement = DONE
+- https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-3000 = DONE
+	Request deployment for Care Server on Nov. 22th.
+- https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-2990 = DONE
+	Update lambda and deploy
+- Restart BNF ASGs
+- Install Niffler
+- Niffler metrics
+- Move to new subnet care-pgl-sgw-was#1 and #2
+- COT PLM Tra185601ining November 22 (Mon) (1PM~2PM) = DONE
+- COT IP Training November 23 (Tue) (1PM~2PM) = DONE
+- Destroy resources in Skillup = DONE
+-------
+11/29 - 12/03
+- https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-3077 = DONE
+	Deployment Request
+- https://mobilerndhub.sec.samsung.net/wiki/display/MSO/Care
+	Infra arch https://mobilerndhub.sec.samsung.net/wiki/display/MSO/Samsung+Members+Architecture  = DONE
+- https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-3088  = DONE
+	IPA Issue - care-pgl-sch-slr6-mst
+
+
+benefit-ecr-uploader/AKIAW7ZJNNTHJWMV3R4D Age: 98
+	https://mobilerndhub.sec.samsung.net/its/browse/LOYOP-1529  = DONE
+community-snspublish-user/AKIAW7ZJNNTHLS232EH3 Age: 89
+	https://mobilerndhub.sec.samsung.net/its/browse/COMMOP-817
+dh211.lee Days Inactive: 97
+jh7.seo Days Inactive: 96
+ma.reyes Days Inactive: 97
+n.tolosa Days Inactive: 97
+eong-cheol.hong Days Inactive: 104
+
+Upgrade of ELB version =
+	// used TLSv1, v1.1
+	com-pgl-mwb-elb // updated to 1.2
+	care-pgl-members-api-elb // waiting forconfirmation with Dev
+	care-pgl-sgw-elb // waiting for confirmationwith Dev
+	care-pgl-members-api-2nd-elb // waiting forconfirmation with Dev
+	com-pgl-iapi-elb  // scheduled but not yet update
+Migration of EC2 instances to other subnets 
+
+-------
+12/06 - 12/10
+- [Change] Proby Eval: 5th Month - Pabs [Knox Connect]
+- https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-3109
+	Canary deployment of Common module - 12/08
+- https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-3126 = DONE
+	ELB TLS version upgrade
+- https://mobilerndhub.sec.samsung.net/its/browse/COMMOP-818 = DONE
+	ELB TLS version upgrade
+- https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-3129 = DONE
+	Unnecessary Page Exposure(NGINX version)
+- Zscaler = DONE
+
+-------
+12/13 - 12/17
+- [Change] Proby Eval: 5th Month - Pabs [Knox Connect]
+	Thursday 2pm
+- https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-3206
+	EC2 instance type upgrade (care-pgl-sch-slr6-mst)
+- https://mobilerndhub.sec.samsung.net/its/browse/COMMOP-845 = DONE
+	[Khoros GDPR] PRD Deployment
+- https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-3168 = DONE
+	Request deployment for Care Server on Dec 15th.
+- [Official] [Urgent update notice CVE-2021-44228] [긴급] Apache Log4j2 취약점 보안경보 및 조치 안내
+- https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-2991 = DONE
+	Add new module (contents kafka consumer)
+- https://mobilerndhub.sec.samsung.net/its/browse/USCAREOP-92 = DONE
+	need PUMI
+- https://mobilerndhub.sec.samsung.net/its/browse/LOYOP-1578  = DONE
+	Request for Benefit-Admin User Log ( 11/1 ~11/31)
+- USCAREOP-93  = DONE
+	Create PUMI for user creation
+- [GWP] Year-end Treats = DONE
+
+-------
+12/20 - 12/24
+- Community deployment Dec 21 = DONE
+- https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-3207  = DONE
+	Request deployment for Care Server on Dec 22th
+- Update old access key rotation to 75 days expiry
+- https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-3244  = DONE
+- Delete port incoming and outgoing port for sti - sg-f3bcb19a - care-isams-sg
+
+
+-------
+01/10 - 01/14
+- FW: [Members] 21년 개인정보보호 인프라 실사 이행점검을 위한 조치 현황 문의
+- Update old access key rotation to 75 days expiry
+- Remaining security audit items
+	 com-pgl-kibana-instance-sg
+- Access keys log rotation
+- LOYOP-1676 - [SI-23473] Information Leakage
+- https://mobilerndhub.sec.samsung.net/its/browse/COMMOP-860
+	confirm if completed
+- COMMOP-861
+- IT4U] ESCORT 차단해제 신청 만기 7일전 알림(Your ESCORT Unblock request will be expired in 7 days.) = DONE
+
+- COmmunity role
+	PUT S3 bucket
+-  [조치 필요] State Lifecycle을 사용하여 AWS Lambda 함수들을 배포하기 위해서 AWS Provider for Terraform 버전을 V2.70.1 이나 V3.41.0으로 업데이트 하십시오 | [Action Required] Update AWS Provider for Terraform Version to V2.70.1 or V3.41.0 to deploy AWS Lambda Functions Using State Lifecycle [Account ID: 480586329294] [AP-NORTHEAST-2]
+
+
+
+
+
+- Interceptor presentation
+- GWP finalize game
+- LOYOP-1917 [AWS IAM] Replace access key pair - benefit-ecr-uploader - 03032022 = DONE
+
+- USCAREOP-100 [AWS IAM] Replace access key pair - ussm-deployer  = DONE
+- Security Audit
+	Firewall Anyopen
+	VPC Flow logs = DONE
+- Send update email to Mr. Kang and Mr. Hwang
+
+
+
+
+[Cloud Security][Agent] Check unreachable security monitoring agent (SamsungMembers
+i-055169648084b9a14 care-pgl-sgw-was#2
+i-02413fb7da5867f66 care-pgl-api-was-prd#1 OK
+i-0f266aa72d5b94ef4
+
+- https://deploy.samsungmembers.com/job/admin-ip-cleaner/72/console
+	DEBUG
+	change cronjob = everyday cleanup
+	add number of sg deleted
+- COMMOP-917 [AWS IAM] Replace access key pair - community-snspublish-user - 03032022 = coodinating with Khoros
+- CAREOP-3865 Request deployment for Care Server on Mar. 16th = DONE
+- COMMOP-927 [COM&BNF] Admin IP Cleaner - Fix date and time
+- CAREOP-3884 create Ms. Jang acct in STG - create ticket = DONE
+- Application error reported by Mr. Kang  = DONE
+- Attended S-Habit = DONE
+- COT all hands = DONE
+- Review sg rules for risk approval = already sent Firewall Open Management request = DONE
+- CAREOP-3906 Create new AWS resources for realtime analytics poc 2022.03.21 = DONE
+	Created resources cost estimate
+
+- Cloud Security][Agent] Check unreachable security monitoring agent 
+	i-055169648084b9a14 care-pgl-sgw-was#2 30.0.152.70 = broken IPA
+	i-02413fb7da5867f66 care-pgl-api-was-prd#1 30.0.151.30 = 
+	i-0f266aa72d5b94ef4 does not exist = 
+	i-0576dc6a1a60c6927 care-pgl-api-prx-prd#1-new 30.0.151.22 = broken IPA
+	i-073d7d3ed5d24f253 care-pgl-api-prx-prd#2-new 30.0.152.22 = 
+	i-0fae5ff684a05f9a7 care-pgl-api-was-prd#2 30.0.152.30 = 
+
+- Deploy delete temp sg rules
+- Security Audit
+- Cloud Security][Agent] Check unreachable security monitoring agent (SamsungMembers)
+- CAREOP-4202 request to check failed API 
+- [Members-OPS] A security advisory on async affects at least one of your repositories = DONE 
+- ubuntu access server / security issue
+- Manually Transfer logs from API = DONE
+- [Reymond San Juan Purugganan] 4/19/2022 08:36
+Hi Team good morning. Since mag EOS na si IE. Sharing information lang on how you can use Edge for SVPN login.
+https://www.samsungvpn.com/Help/Filebox
+Click on "How to set Edge browser IE mode" then download the procedure.
+- LOYOP-2181 Rotate keys : loyalty.s3.all/AKIAW7ZJNNTHPX3OBWHD = Ongoing
+- Add /usr/bin and /bin dir to PATH env in ksqldb care server = DONE
+- [Official] [SRPH] 1H 2022 Employee Asset Confirmation (~04/29) = DONE
+- COMMOP-936 [Khoros GDPR] Update gdpr-invoker lambda environment variables = DONE
+=========
+- Cloud Security] [Attention] Requires Attention Detection Notification (Spring Expression Resource Access(CVE-2022-22963)) (SamsungMembers) [TCK220423000042] = Already informed Mr. Oh = DONE
+- CAREOP-4289 Care Admin Service Healthcheck script = DONE
+- Nginx documentation = Done
+- CAREOP-4202 request to check failed API
+- https://github.ecodesamsung.com/Members-OPS/inquisitor/pull/101 = DONE
+	Deploy temporary sg rule removal script 
+- [Samsung Members] Request to update the web content _20220426 - Create ticket = DONE
+- [Cloud Security][Agent] Check unreachable security monitoring agent (SamsungMembers) = DONE
+- Container CPU alert = DONE
+- Host Hardware failure = DONE
+============
+- File OT 04/30 - 05/01 / Create ticket = DONE
+- Marie Luchia Darianne Mercado Bitorio / Benefits HR
+- Investigate nginx failing issue = DONE
+- Create monthly report
+
+- Identify responsibilities of dev/ops in current setup
+- Reinstall telegraf in sgw prx
+
+User loyalty.s3.all/AKIAW7ZJNNTHPX3OBWHD Age: 117
+User s3.all/AKIAW7ZJNNTHHAVB2IN4 Age: 88
+User s3.galaxycare-betatest-all/AKIAW7ZJNNTHATFSAFGY Age: 88
+User: jeongsu.yun Days Inactive: 88
+User: loyalty.s3.all Days Inactive: 105
+User: shinil.kang
+- [클라우드관제][정기보고]  SamsungMembers 보안관제 월간보고서(04月)
+- 2 items closed
+- Nginx error logs
+=============
+
+- SVPN extension request
+- https://aws.amazon.com/premiumsupport/knowledge-center/eks-access-kubernetes-services/
+- Security Audit
+	https://medium.com/athennian-dev-life/encrypt-an-already-attached-unencrypted-ebs-volume-on-aws-ec2-c67f9923b228
+- Re-created com-pgl-rmc instance = DONE
+- COMMOP-947 05172022 Deployment = DONE
+- [공지][ISAMS]MFA관련 ISAMS에이전트 패치 진행 요청 = not using ISAMS = DONE
+- [지능형 위협관리 시스템 관제/STI] Samsung Members 로그 미수집 목록
+- ES Disk full = increase data nodes to 40
+	Ask for PUMI
+- Check care-pgl-analytics / insufficient disk space = DONE
+
+
+- CAREOP-4514 Deployment Request = DONE
+- CAREOP-4521 Request deployment for Care Server on May.24th.  = DONE
+- COMMOP-950 [CommunityWeb]: Inhouse Hotfix = DONE
+- LOYOP-2371 Request CSV log files from Log group "/ecs/prd-bnf-api" = DONE
+- CAREOP-4454 Access keys = DONE
+- Brownbag / Grammar = DONE
+- Brownbag / Niffler monitoring = DONE
+- KPI Discussion = DONE
+- Udemy finish 1 course = DONE
+- [Compliance Training] 2022 SRPH Personal Data Protection Training = DONE
+- COM SCH High CPU Util = Done
+	Create ticket
+
+
+
+- Security Audit items
+	Volume Encryption
+		com-pgl-admin downtime
+	IAM account deletion
+		j.javier, jeongsu.yun, jdbird.le
+- Install telegraf in RMC = DONE
+- care-pgl-api-was-prd#11 disk usage
+	Create ticket
+- TB fund - JENE = DONE
+- Linkedin Course = DONE
+- Setup SVPN to EDGE
+
+Summarize pending tasks from benefits
+
+https://aws.amazon.com/blogs/infrastructure-and-automation/run-code-before-terminating-an-ec2-auto-scaling-instance
+
+
+- CAREOP-4659 [AUDIT] Remove useless files in S3 bucket = DONE
+- CAREOP-4663 [AUDIT] EBS Access Control = DONE
+- CAREOP-4667 [AUDIT] Bastion Host - Connection between Bastion Host VPC and internal resources = DONE
+- CAREOP-4669 [AUDIT] S3 Security -  S3 ACL(Access Control List) configuration = DONE
+- COMMOP-966 AWS WAF - Security Alert - 06082022 = DONE
+- CAREOP-4674 Request to follow the guide on unable-to-login issue occurred in Aug-2021
+	Update IPA on hosts
+		- Startup care-pgl-api-was-prd#8
+- Follow up CAREOP-4609
+- GDPR Gatekeeper + KAM Dashboard Integration
+- File for benefits jenkins app firewall exception
+
+-----------
+- Setup SVPN to EDGE = Done
+- Any Open approval / FW: [2021년 개인정보보호 실사] 'Samsung Members' 잔여 이슈 개선일자 도래 알림
+	Create ticket
+- COMMOP-957 [AUDIT] community-snspublish-user - 05312022
+- CAREOP-4609 [AUDIT] care-samsungsearch-user - 05312022 = DONE
+- LOYOP-2433 Deletion of redshift AWS infrastructure  6/14 2PM = DONE
+- CAREOP-4721 Intrusion attempt detection - 06/15/2022 = DONE
+[Action Required][Samsung Members] AWS WAF 공격 이벤트 대응(IP 차단 권고)
+- 2022 SRE1 KPI - p.encina 
+- Benefits admin access issue
+- COMMOP-976 Community admin deployment issue= Done 
+-----------------
+
+- COMMOP-970 [Khoros GDPR] Khoros Change Soft Deletion Period 6/23 TBD
+- FW: [Github] Credential 검토 요청 = DONE
+- CAREOP-4755 [Members-OPS] A security advisory on shell-quote affects at least one of your repositories = DONE
+- COMMOP-957 [AUDIT] community-snspublish-user - 05312022 = DONE
+- COMMOP-980 Add "sts:TagSession" To Role = DONE
+- CAREOP-4674 Request to follow the guide on unable-to-login issue occurred in Aug-2021
+- USCAREOP-111 - [IPA][diskfull][smem-prod][i-0fde2f2c7f7a902ec] = Done
+- COT all hands
+- [Reserve] Agile Workshop Batch 5 - Day 1 [Knox Connect]
+- CAREOP-4751 Request deployment for Care Server on Jun 29th.
+- Install IPA in care-rmc = 500 internal server error / raised ticket
+- SecAudit - Export into excel and assign items to team and snow
+- ussm-deployer access key ticket = 
+
+- CAREOP-4792 Unable to install IPA on rmc-server = DONE
+- CAREOP-4786 [IMPVT] IP Exception for WAF IP Blocking = DONE
+- CAREOP-4800 [Members-OPS] A security advisory on protobufjs affects at least one of your repositories = DONE
+
+
+
+https://www.geeksforgeeks.org/difference-between-package-json-and-package-lock-json-files/
+
+- File PL and VL = Done
+- Workday = DONE
+	Change address
+	Workday Goal Setting Update 
+- [IT4U] Firewall rule expiration notification 21 days before
+- [조치 필요] 도메인에 대한 필수 업데이트 필요 | [Action required] - Mandatory update required for your domain [Account ID: 480586329294] [AP-NORTHEAST-2]
+- [Response Updated][Samsung Members] OS 계정보안 기술적통제 미흡 HOST 에서 운영작업 탐지
+	confirm IP with Migs = DONE
+- Paolo Resign from SMS - TB Budget update = DONE
+- Update WIKI tracker = DONE
+- Check Security email
+- SRE 1 SAMSUNG MEMBERS 2022 UPDATES architecture summary = DONE
+- RBS 2.0 사용자 만료 예정 안내 / RBS 2.0 User Expiration Scheduled Notice / extend RBS
+- https://mobilerndhub.sec.samsung.net/wiki/display/MSO/New+Hire+Onboarding+Process > last na, yung ISAMS, pachange to IPA
+
+User benefit-ecr-uploader/AKIAW7ZJNNTHIC4FVNNS Age: 144
+[4:00 PM] User loyalty.s3.all/AKIAW7ZJNNTHPX3OBWHD Age: 201
+[4:00 PM] User loyalty.s3.all/AKIAW7ZJNNTHOWX5QWEZ Age: 96
+[4:00 PM] User: hyunbin.lee Days Inactive: 116
+[4:00 PM] User: j.gavina Days Inactive: 111
+[4:00 PM] User: jh7.seo Days Inactive: 116
+[4:00 PM] User: loyalty.s3.all Days Inactive: 189
+[4:00 PM] User: ma.reyes Days Inactive: 110
+[4:00 PM] User: n.tolosa Days Inactive: 88
+[4:00 PM] User: ussm-deployer Days Inactive: 139
+
+- Help Terraform assignment 07/28
+	Zeke, JD, Kien
+- Checking terraform assignemnt with Nica and Clark
+
+- CAREOP-5017 (Samsung Members CHN) Request to update the web content _20220729
+- Set knox meeting for AWS 1
+
+
+
+- Spring Module update to Care Dev Team
+	LOYOP-2657 [Cloud Security] [Attention] Requires Attention Detection Notification (Spring Core RCE(CVE-2022-22965)) (SamsungMembers) [TCK220510000004]
+- Email HR for WFH recommendations
+
+- From PM,
+I am sending you an email to share Flip4/Fold4 Unpack / Launching schedule and ask for Members Traffic preparation.
+ - Unpack : Aug 10 2022
+ - Launching : Aug 26 2022
+For Flip4/Fold4 model, Please prepare traffic monitoring in below period.
+- Monitoring period that we request : Aug 19 2022 ~ Sep 16 2022 (As of Launching date, -1W ~+3W)
+- Intensive monitoring date that we request : Aug 16/23/26/29 2022
+
+08/04
+- Security Alert #952b9c6f / CAREOP-5030 = DONE
+- When RTO, have the NASCA updated = DONE
+
+
+- CAREOP-5083 SSL cert used by DEV server has expired = DONE
+- LOYOP-2657 [Cloud Security] [Attention] Requires Attention Detection Notification (Spring Core RCE(CVE-2022-22965)) (SamsungMembers) [TCK220510000004]
+- Security Audit
+	prohibition of sharing Access Key
+- Monitor service from 08/09
+- Skillup
+- RE: [Urgent request] FW: FW: 시스템 내 퇴사자 계정 확인 및 조치
+
+
+
+
+- COMMOP-1015 - [CommunityWeb]: Inhouse Hotfix and Param Store = DONE
+- COMMOP-970 - [Khoros GDPR] Khoros Change Soft Deletion Period = DONE
+- CAREOP-5141 - Security Alert #cb1b3842 = DONE
+- Manual IP reg = Done
+- AWS core service session with Gio = Done
+
+- FW: [조치 필요] Amazon EKS - EKS 버전 1.23으로 업그레이드 전 EBS CSI 드라이버를 설치 | [Action Required] Amazon EKS - Install EBS CSI driver before upgrading to EKS version 1.23 [Account ID: 480586329294] [AP-NORTHEAST-2]
+
+- [Compliance Training]: 2022 Understanding of Compliance 
+- Virtual ID
+- [Update] [보완] [공문] MX 클라우드 계정 보안 관련 / MX Cloud IAM Account Security Update = Update status
+- FW: [조치 필요] AWS Lambda Node.js 12에 대한 지원 종료 | [Action Required] AWS Lambda end of support for Node.js 12 [Account ID: 480586329294] [AP-NORTHEAST-2]  /  before November 14, 2022. 
+- FW: 시스템 소스코드 내 중요 정보 점검 및 조치 요청  - Security issue / Mr. Kang
+- Request for AWS User Account Access
+- Force IP Restriction Inquiry
+- Sync WAF ip sets in pulumi
+- Minimized the VPC endpoint - check in STG
+- Check IAM user of BNF dev team if still active
+- File OT - Aug 17 / EBS Encryption
+
+- COMMOP-1017 [CommunityWeb]: Inhouse Community Hotfix = DONE
+- CAREOP-5083 SSL cert used by DEV server has expired = DONE
+- CAREOP-5143 AWS IAM account status and confirmation request = DONE
+- CAREOP-4668 [AUDIT3] S3 Security - Safety of External Web Service Bucket = DONE
+- CAREOP-5200 Security Alert #8e912913
+- Check Skillup assignments
+- COMMOP-1021 Create New Accounts in PRD = DONE
+- Security audit
+	access keys = DONE
+
+- CAREOP-5151 Deployment Request = DONE
+- CAREOP-5225 Security Alert #1c90e2fc = DONE
+- CAREOP-5237 [TCK220901000031] Instrusion Attempt Detection - 09/02/2022 = DONE
+- Inform cecurity that instance are no longer existing = Done
+- Check Mr. Sohn policy / joshnee sec audit = Done
+- COMMOP-1036 Request for S3 download permission = DONE
+- Talk with Mr. Hwang about exception
+- Check Assignment of Abe
+- Update KPI
+
+- LOYOP-2657 [Cloud Security] [Attention] Requires Attention Detection Notification (Spring Core RCE(CVE-2022-22965)) (SamsungMembers) [TCK220510000004] = DONE 
+
+
+- USCAREOP-122 [IMPVT] Create, Deploy and Test tool in Testing Environment = DONE
+
+- SAMBA tasks
+- COMMOP-1039 [USSM] Hotfix
+	Looking for generic IAM role
+	Follow up
+
+	Ask for PUMI
+	Follow up
+- Create sec audit jira ticket for IAM
+- pod memory pressure k8s / az rebalance
+- temp in STG
+- Create JIRA ticket for sec audit items
+
+- [Cloud Security] [Normal] Instrusion Attempt Detection Notification (File Download) (SamsungMembers) [TCK220909000010]
+- Encrypt EBS
+- Send skillup assignments to Jene = DONE
+- COMMOP-1041 [USSM] Curl Taxonomy Server inside USSM PRD instance = DONE
+- USCAREOP-125 [USSM] Curl Request = DONE
+- CAREOP-5322 [AUDIT] prohibition of sharing Access Key = DONE
+- CAREOP-5327 Security Alert #a71c794c = DONE
+- CAREOP-5338 [Samsung Members] Request to update the web content _20220915 = DONE
+- Mr. Kang architectural design = DONE
+- USCAREOP-127 [USSM] Download USSM Logs = DONE
+
+
+
+- FW: [지능형 위협관리 시스템 관제/STI] Samsung Members 로그 미수집 목록 = DONE
+	 Reinstall STI to EKS workernodes = 
+- CAREOP-5254 create a new secret on Secret Manager = 
+	2022-09-20 2PM
+	Create PULUMI and delete the manually created one
+- CAREOP-5401 [AUDIT] PIA Infra Checklist - 2022 Sept = DONE
+- COMMOP-1035 [AUDIT] community-snspublish-user - 09012022 = DONE
+- CAREOP-5343 Security Alert #fc681777 = DONE
+- Add lambda read policy to DEV Care = DONE
+- CAREOP-5402 [AUDIT] AWS Instance connection method in company
+- CAREOP-5341 members-batch-inbox and members-batch-push modules stop and start = DONE
+- CAREOP-5400 Request to update the web content _20220923 = DONE
+- USCAREOP-130 [AUDIT] ussm-deployer - 09232022 = DONE
+- [4th Reminder - Compliance Training]: 2022 Understanding of Compliance = DONE
+- SCI
+- Checking and discussion SKILLUP ANSIBLE
+
+
+- CAREOP-5465 [DOC] Members Admin Nginx log listener = DONE
+
+- LOYOP-2827 Request to deploy benefit server = DONE
+- Fill out table for sec audit = DONE
+- CAREOP-5443 Request to extract file size of AWS S3 = DONE
+- USCAREOP-132 Curl Taxonomy Server in USSM PRD instance = DONE
+- CAREOP-5429 [TCK220929000032] Intrusion attempt detection - 09/29/2022 = DONE
+- Testing discovery instance in Dev for encryption = DONE
+	delete volume
+- EKS upgrade / continue testing
+- SRPH Audit Technical Measures Checklist for Data Processing with Jene
+- Export item is the date notice
+
+- Create Quarterly report = DONE
+- Load Balancer HTTP 500 notifier = 
+- LOYOP-2871 - [IMPVT] Benefit BDP Extraction Status Notif - 20221004 = DONE
+- Sec Audit S3 buckets / amiel 
+	Check if com-pgl-lb-logs is still logging access in s3
+- CAREOP-5491 Deployment Request = DONE
+- Update PIA file = DONE 
+- [S-Vault] Introduction of S-Vault process and turnover TASKS and KT session
+- Request for access in Managed Vault = DONE
+- [Email][Samsung Members] AWS S3 Bucket 접근 제어 확인 요청 - Multiple access denied error on S3 bucket = DONE
+- [REMIND] Request for Security Vulnerability remediation found in Security TF's inspection  = DONE
+- CAREOP-5515 - [TCK221010000004] Intrusion attempt detection - 10/10/2022 DONE
+- USCAREOP-133 [USSM] Curl Taxonomy Server inside USSM PRD = DONE
+
+
+- COMMOP-1054 [CommunityWeb]: Inhouse Update and Param Store = DONE
+- COMMOP-1056 [Community API] Inhouse Community Update = DONE
+- BENEFIT API and CONFIG deployment = DONE
+- COMMOP-1067 [CommunityWeb]: Invalidate Cloudfront = DONE
+- (USCAREOP-133) [USSM] Curl Taxonomy Server inside USSM PRD = DONE
+- USCAREOP-136 - [USSM] Curl Taxonomy Server inside USSM PRD instance = DONE
+- 2022 Online self-test!!!!!!!!!!!!!!! = DONE
+- Check assignment of GIO and Jane in ansible / Email = DONE
+- Setup productivity tool in Office laptop = DONE 
+- [S-Vault] Create new vault cluster = DONE
+- Delete Vault Cluster user via terraform = DONE
+- Sec Audit
+
+
+
+- CAREOP-5566 [Action Required][Samsung Members] Recommendation for AWS WAF Rule Block Setting = DONE
+	Caused access issue in benefits admin
+	strictly implemenent recommended rules only
+- CAREOP-5558 create new screts on secret manater = DONE
+- CAREOP-5559 Request Deployment = DONE
+	Deployed 22 modules
+-  MX AWS IAM 접근 제어 정책 Update 요청 件 / Request to update IAM Force_IP_Restriction Policy in STG = DONE 
+	Mr. Kang's acct / false positive
+- Follow up intellicare number
+- [log extraction] FW: RE: RE: RE: RE: [1차확인요청] 2021 Samsung Members 개인정보실사 = DONE
+- (업데이트) [PIA] Samsung Members 개인정보보호 실사 인프라 점검 관련 요청 Update = DONE
+- [SRPH] 2H 2022 Employee Asset Confirmation (~10/31) = DONE
+- Review bucket policy
+- Sec Audit / leave comment on all remaining items !!!!!!!!!!!!
+	access keys
+- PIA
+	files security group exemption request for 9 sg rules
+	update kms key policy
+	bucket policy khoros-gdpr-files-prd, ussm-pus-ccpa
+- Skillup terraform present
+- Brownbag session by Ian - Hashicorp Vault = DONE
+
+
+
+- LOYOP-2941 [AUDIT] benefit-ecr-uploader - 10212022 = DONE
+
+- PIA audit with Alex
+	s3 bucket policy update = DONE
+	ipa installation in benefit service = DONE
+	need to send sg rule exemption request
+- S3 bucket policy update with Migs
+- SVAULT - Brownbag session - Cluster version upgrade
+
+
+Infra Sec Aduit
+	- Updated na po lahat ng s3 bucket policies
+	- Inform ko rin po mamaya ung mga dev team para sa schedule nitong activity "Minimized VPC Endpoint" at "Script(DAT,DCT) for VM servers"
+	- Done na rin po sa Trusted advisors
+	
+PPI file
+	- installation of IPA sa Benefits service = DONE
+	- Will create SG rules exemption request later
+
+- Check Gio and Joshnee terraform assignment
+	Email result
+
+Delete temporary rule in SG
+
+
+- CAREOP-5676 Open SSL Security issues - CVE-2014-0160 = DONE
+- CAREOP-5690 Samsung Members - request fix the vulnerabilities = ONGOING
+-  Lambda function 'care-delete-adm-user' not working = 
+- COMMOP-1081 [Khoros GDPR] Update gdpr-invoker lambda environment variables = DONE
+- Send assignment to terraform part 2
+
+- Niffler alerts
+	mean(http_code_backend_5xx_sum)/request_count_sum     >=      3
+
+-----------
+- KPI file!!!!! = DONE
+- Samsung Members Architecture
+- Request for access to S-Vault cluster = DONE
+- SVAULT - KT Mikee for Linux 101
+- SVAULT - KT Mikee for AWS Core Services
+
+
+
+-------------------
+- [Survey] 2022 Peer Evaluation - John Denver Claveria [j.claveria] (CCF/Skill-Up) = DONE
+- [Survey] 2022 Lead evaluation - Maria Amiela Reyes [ma.reyes] = DONE
+- [Survey] 2022 Lead evaluation - Skill-up - Veronica Ang [veronica.ang]
+- [Survey] 2022 Lead evaluation - TB Fund-  Jenefer Gavina [j.gavina]
+- [Survey] 2022 Peer / Member  evaluation - Jenefer Gavina [j.gavina] = DONE
+- [Survey] 2022 Peer / Member  evaluation - Alexsander Garcia [aj.garcia] = DONE
+- [Survey] 2022 Peer / Member  evaluation - John Carlo Miguel Bolon [j.bolon] = DONE
+- [Survey] 2022 Peer / Member  evaluation - Mikee Alcedo [m.alcedo] = DONE
+- [Survey] 2022 Peer Evaluation - Aundre James Raymundo [a.raymundo] (COT TB Funds)
+
+- Leads meeting
+- Skill up checking
+- Intellicare Lois
+- [S-Vault] Bixby Management 매트릭 확인 요청 건
+
+
+Tue - Access list & Equipment needed | Request access 
+Wed - Productivity Tools and other operation docs
+Thu - Svault Infra Arch and Managed Vault
+Fri - Svault Infra Arch and Managed Vault 
+
+- [Approved] [Security Portal][Samsung Members ] Firewall Open Management Apply 20221123 = DONE
+- CAREOP-5690 Samsung Members - request fix the vulnerabilities = DONE
+- Added Force IP restriction to samba_monitoring = DONE
+- Peers Feedback = DONE
+- [Day 2] [Mandatory Training] Research 101: Introduction to Research and Proposal Writing (Batch 2) = DONE
+- Rotate access keys
+	CAREOP-5820 Access Key Rotation (s3.galaxycare-betatest-all) - 20221124 = ONGOING
+- Inquiry for possible expansion of Samsung Members Community to a new country = DONE
+- Agile assessment with M-Vault = DONE
+- Upgrade bnf jmp db with Jene = DONE
+- IP Restriction policy
+- Security Audit - VPC endpoint
+	Spay jam cabrera
+
+
+=====================================
+- COMMOP-1089 [CommunityWeb]: Inhouse Update = DONE
+- COMMOP-1088 [Community API] Inhouse Community Update = DONE
+
+- Reset password
+- [Reminder] RE: [STI 보안관제][Samsung Members][취약점 여부 확인 회신 요청] AWS WAF-Log4j 취약점 조치 여부 확인 요청 / Log4JRCE = DONE
+- CAREOP-5840 WAF Block - Log4J = DONE
+- CAREOP-5857 Security Alert #fb4d8006 = DONE
+- CAREOP-5850 Upload file on S3 = DONE
+- [Samsung Members] AWS S3 Bucket 접근 제어 확인 요청 = DONE
+	high access to s3 bucket
+- VPC endpoint policy = 
+	Can request for exception 
+	update ung security portal? 
+	get template from Jamie
+
+
+
+=================================-
+
+- Skillup kubernetes = DONE
+- Setup Niffler LB 500 PCT =
+	Care, Community, US Care = DONE
+	Benefit = Ongoing
+- CAREOP-5820 Access Key Rotation (s3.galaxycare-betatest-all) - 20221124 = DONE
+- CAREOP-5872 Access Key Rotation (care-samsungsearch-user) - 20221205 =  DONE
+- COMMOP-1095 Access Key Rotation (community-snspublish-user) - 20221205 =
+- Update Care Infra 
+- Upgrade OS version
+- VPC endpoint policy = 
+	Can request for exception 
+	update ung security portal? 
+	get template from Jamie
+- COMMOP-1094 [Cache Job] Redis Data Enhancement PRD deployment
+- Interview DevOps
+- Sent birth certificate to HR
+
+===================================
+
+
+
+- Check Mikee AWS Assignment = DONE
+- Update VPC endpoint/ Create ticket = DONE
+	CAREOP-5913 [AUDIT] Minimized the VPC endpoint connection scope
+- Preparation for upgrading vault version to 1.12.x
+- Docu for SMEM Archi
+
+====================================
+
+- COMMOP-1095 Access Key Rotation (community-snspublish-user) - 20221205 =
+- COMMOP-1097 [SMembers] Whitelist for a.perfecto = DONE
+- CAREOP-5904 add secret value to AWS Secret Manager Thurs = DONE
+====================================
+
+
+- Upgrade OS version
+	created endpoints checker
+- Revise SMEM archicteure
+- CAREOP-5946 Create AWS Lambda functions and update Step functions = DONE
+- CAREOP-5944 Members Care Deployment = DONE
+- Update IPA in mem-pgl-jmp
+
+==================================== 
+- Unable to login to Members Admin - Samsung account session terminated error 
+- File OT = DONE
+- 
+- Screenshot docu in mvault
+- Check Gio assignment skillup kubernetes = DONE
+
+===================================
+
+- USCAREOP-152 [AUDIT] ussm-deployer - 20220103 = DONE
+- About Members admin login problem(from China) - 
+- List servers that needs OS upgrade - Wednesday next week = DONE
+- CAREOP-6041 [Action Required][Samsung Members] AWS WAF ATTACK ALERT (IP BLOCK RECOMMENDATION) = DONE
+- [Agent] Check unreachable security monitoring agent (SamsungMembers) = DONE
+	restarted care-pgl-api-prx-prd#2-new
+
+
+
+==================================
+- [Agent] Check unreachable security monitoring agent (SamsungMembers) = DONE
+- CAREOP-6059 Security Alert #6697c207 - 20220112 = DONE
+- CAREOP-6036 Request deployment for Care Server on Jan. 11th = DONE
+- Mikee docker skillup = DONE
+- Mikee 3rd month evaluation = DONE
+- List of proj improve for GIO = DONE
+- Global care server configurations' = DONE
+- Members Benefit banner is missing = DONE
+
+===================================
+- CAREOP-6056 [Request] New S3 bucket for Samsung Members Care admin access logging = DONE
+- CAREOP-6078 [TCK230115000017] Intrusion attempt detection - 20220116 = DONE
+- Update COT Project TEchnologies and TA roles and responsibilities = DONE
+- COMMOP-1116 [Community PC Web] Request app logs from PRD environment = DONE
+
+===================================
+
+- [공문]전사 클라우드 취약점 조치 요청건 Security Audit in STG
+- CAREOP-6138 [AUDIT][stgv2c] Separate Root Account = DONE
+- CAREOP-6139 [AUDIT][stgv2c] Delete unused default VPC = DONE
+- CAREOP-6140 = [AUDIT][stgv2c] Minimum VPC connection between the other VPCs = DONE
+- CAREOP-6141 [AUDIT][stgv2c] Prohibiting to use NAT Gateway/Instance for private resources = DONE
+- Meeting with Skillup committee = DONE
+- Provision Vault Cluster 
+- CAREOP-5929 Upgrade Ubuntu Instances - 
+	com-pgl-adm can not connect to db
+- [Request] Status of Monitoring of IT System / Infrastructure
+- File PUMI for WFH extension
+- File WFH tagging this week
+- Installation of samsung dependencies using ansible
+
+=========================================
+
+- Provision Vault Cluster 
+- CAREOP-5929 Upgrade Ubuntu Instances - 
+	com-pgl-adm can not connect to db
+- [Request] Status of Monitoring of IT System / Infrastructure
+- File PUMI for WFH extension
+- File WFH tagging this week
+- Installation of samsung dependencies using ansible
+
+=========================================
+
+
+- SEI Survey = Done
+- CAREOP-6169 [AUDIT][stgv2c] EKS- API server endpoint is set to Private = DONE
+- CAREOP-6172 [AUDIT][stgv2c] Is the ECR image a vulnerability scan and vulnerable action = DONE
+- CAREOP-6173 [AUDIT][stgv2c] Is the ECR image encrypted = DONE
+- CAREOP-6175 [AUDIT][stgv2c] Minimize permission granting by IAM Role = DONE
+- Recreate mem-pgl-jmp = DONE
+- Scale out ECS instances for unpacked event = DONE
+- Free up some space in jump care = DONE
+- Manual Logrotation in Care = DONE
+- [Mandatory Training] Please Complete 2023 Global Information Security Course = DONE
+
+- File WFH in knox = DONE
+- Fix issue in sec-audit script = DONE
+
+
+==========================================
+
+- [Remind] [등록요청] 미등록도메인 SWAT 시스템 등록 요청 = 
+	Mr. Sohn sent invitation email
+- Create Monthly report !!!!!!!!!! - DONE
+- [SRPH] [HR] 2022 Income Tax Return (ITR) Filing = DONE
+- Attach report in mosaic = DONE
+- CAREOP-6178 MembersCare Deployment EKS = DONE
+- CAREOP-6205 Care Admin server encounters "InvalidSignatureException from AWS secret manager" = DONE
+- CAREOP-6213 MembersCare Deployment - 20230210 = DONE
+	need to follow up PUMI
+- CAREOP-6214 [AUDIT][stgv2c] Password complexity rules compliance = DONE
+- CAREOP-6220 CAREOP-6220 = DONE
+- CAREOP-6221 [AUDIT][stgv2c] Use of individual access key per account = DONE
+- CAREOP-6225 [AUDIT][stgv2c] prohibited server access through specific tools = DONE
+
+
+=============================================
+
+- Log rotation
+- Delete old snapshots
+- Upgrade ansible version of servers failing to log through pip
+- LOYOP-3279 [AUDIT] benefit-ecr-uploader - 20230202
+- LOYOP-3280 [AUDIT] loyalty.s3.all - 20230202
+- LOYOP-3293 Request to deploy benefit server = DONE
+- CAREOP-6228 [AUDIT][stgv2c] EBS Volume Encryption = ONGOING
+- COMMOP-1094 [Cache Job] Redis Data Enhancement PRD deployment = 
+	Attach rollback plan = DONE
+- [SEIB/IP registration] FW:(2) RE:(6) (2) samsung members = 
+	Jose Maria Barrado to add Zscaler on SVPN routing table
+- CAREOP-6233 Security Alert #d21fd301 = DONE
+- [지능형 위협관리 시스템 관제/STI] Samsung Members 로그 미수집 목록 
+- Benefits api app deployment = DONE
+- https://mobilerndhub.sec.samsung.net/its/browse/LOYOP-3312 = DONE
+- Increase in http 400x(Client error) in USSM ELB
+- Monitor USSM API servers
+- COMMOP-1127 Community Web app is down = DONE
+- File OT Feb 17, 2022 
+- LOYOP-3309 Korea HQ  Traffic Estimated Concentration Date Feb 7 2023
+- LOYOP-3324 Korea HQ  Traffic Estimated Concentration Date Feb 14 2023
+- LOYOP-3326 Korea HQ  Traffic Estimated Concentration Date Feb 17 2023
+
+
+
+===========================================
+- Share RCA to Aundre = DONE
+- Request firewall registration for Gio
+- Korea HQ  Traffic Estimated Concentration Date:: Feb 7/14/17/20 2023
+- CAREOP-6245 Request deployment for Care server on Feb. 22nd = DONE
+- STI installation with Aundre
+- Check Cholo skillup = DONE
+	Send result via email
+- CAREOP-6274 [CHAT] Restart EKS Node / Timeout error in members-benefit pod = DONE
+	 restarted node
+- CAREOP-6272 - [Notice][STI] AWS WAF Log Filtering 람다 함수 업데이트 공지 (AWS WAF Log Filtering Lambda Function Update Notice) = DONE
+
+==========================================
+Hello Mama joyce, sino pala maghandle tom ng CAREOp-1302?
+- Delete SG rule that allows jumphost access to smem-releng-workernode
+	10.255.21.234/32
+- Security Alert #1c7ff507 = DONE
+- CAREOP-6294 Security Alert #299d3d19 = DONE
+- CAREOP-6299 [AUDIT][stgv2c] Activating VPC Flow Service = DONE
+- CAREOP-6303 [EMAIL][CONFIRMATION] Request to check the statistics of new members in February인 요청의 건  = DONE
+- Remove systemadmin policy in care-sgw-instance-role
+- [Members-OPS] A security advisory on minimist affects at least one of your repositories 
+- [조치요청] MX사업부 업무사이트 보안취약점 조치 件 
+	Need to coordinate with Dev team
+- CAREOP-6308 Create Container for Logstash = DONE
+- CAREOP-6333 Care API Logrotation - 2023-03-03 = DONE
+
+========================================
+
+
+
+
+
+- CAREOP-6335 Fix Github Security Vulnerabilities - 2023-03-03
+- CAREOP-6338 MembersCare Deployment = DONE
+- [Remind] [조치요청] MX사업부 업무사이트 보안취약점 조치 件 
+- Workday Goals 2023 (deadline: March 15, 2023) = DONE
+- [멤버스 장비 방화벽 문의][Info][ERMS-상담] 멤버스 FAIL 건 발생 하였습니다 2023/03/08 09:01:00
+- CAREOP-6351 Use our containerized logstash on care-pgl-sgw-was#2 = DONE
+- CAREOP-6350 [EMAIL] ERMS connectivity issue = DONE
+- scouter server is not working
+	restart common 1, 3, 4, 5, 6, 7, 8
+
+=========================================
+- Urgent!! CAREOP-5929 Upgrade Ubuntu Instances
+	api 2-9
+	Propagate script
+	Create a detailed workplan
+- STI installation
+- Sec Audit
+- CAREOP-6281 Add Liveness Probe to auto kill unhealthy pods
+	Confirm with Dev Team
+- CAREOP-6336 [AUDIT][stgv2c]  Prohibit S3 Access Control List
+	Update smem-releng-accesslogs in pulumi
+- [SRPH] [People Group] Annual Personal Information Update Annual personal information udate
+- Check and compare config of sgw was 1 and 3
+- CAREOP-6335 Fix Github Security Vulnerabilities - 2023-03-03 = DONE
+- CAREOP-6379 User is unable to telnet care-pgl-sgw-prx#1 on port 443 = DONE
+- COMMOP-1134 [AUDIT] Access Key Rotation (community-snspublish-user) - 20230314
+- CAREOP-6380 [AUDIT] Access Key Rotation (s3.all) - 20230314
+- s3.galaxycare-betatest-all | confirm with dev team if this can be removed
+- CAREOP-6381 [AUDIT] Access Key Rotation (samba_monitoring) - 20230314
+- CAREOP-6388 Dockerize logstash and upgrade OS version
+	care-pgl-api-was-prd#2 - encountered curl access issue 
+- Urgent!! Cloud 보안 이행진단 실시 - 취약점 Fail 확인 요청건 / Security check = 
+- CAREOP-6398 Expired TLS certification on Jenkins server = DONE
+- Backup postgres DB keycloak =  DONE
+	https://github.com/sageroom/pg_dump-to-s3/blob/master/backup.sh
+
+
+===========================================
+
+- Q1 1on1 with Aundre https://mobilerndhub.sec.samsung.net/wiki/display/SRPHSYSOPS/1+on+1+-+Schedule
+- Create guide for scouter installation = DONE
+- CAREOP-6414 Scouter not running again = DONE
+- Created Wiki for OS upgrade work plan and list of servers = DONE
+- Check helm chart from comm dev and stg
+- Create ticket for log rotation
+- Return s3 bucket policy of care-log
+- Q1 Quarterly Report slides submit early for checking, as early as April 3-5. Actual schedule of presenetation is April 11. / Make sure timeline and gant chart is accurate and organized. / Template
+ https://mosaic.sec.samsung.net/kms/comty.do?comtyId=576341331&menuId=576356444&page=list&type=DOCS&docsFileId=ENC_DKrRd9BsdT9Ae8Vg9CNHZqd37IKQcLW5jciUowkxhYsmqV79C9B0TyWSnzbSEsxGnFWqlJxn4l9CnDcvZkbGhEowbLs9AR9B9AQzYlPu4eEhnKMlGUT7EQwB4I9AgL9BnnoA3ob3F9As9CqbTNBlR5ieScF9BH5PmGnJAQGp5xLUjmgoVG8KZOm37EQwB4I9AgL9BrvrZoEKrl0dvGU9Avcx5n5zn5Xs9ByoRShQz
+- Remove ICMP allow all from - care-pgl-common-node-sg
+- Care Logrotation ticket
+
+
+============================================
+- CAREOP-6445 Care API Logrotation - 2023-03-27 = DONE
+- CAREOP-6388 - Dockerize logstash and upgrade OS version
+- CAREOP-6234 - STI agent installation status
+- CAREOP-6228 - [AUDIT][stgv2c] EBS Volume Encryption
+- CAREOP-5929 - Upgrade Ubuntu Instances
+- CAREOP-6446 Request deployment for Care Server on Mar.29th. = DONE
+- ISAMS 사용 중인 Host 현황 안내
+
+
+================================================
+
+- Attended CLP Intro to Cloud computing
+- CAREOP-6478 Security Alert #20a2387f = DONE
+- Revise workplan
+- CAREOP-6488 Security Alert #32b14e22 = DONE
+- CAREOP-6484 Care API Logrotation - 2023-03-04 = DONE
+- CAREOP-6491 Configure lifecycle rules for samsungmembers-elb-accesslog = ONGOING
+-  ISAMS 사용 중인 Host 현황 안내
+- CAREOP-6496 [처리완료][TCK230403000010][Cloud Security][Normal] SamsungMembers Intrusion Detection Detection Notification(Command Injection)
+
+
+================================================
+- CAREOP-6528 Security Alert #f515bf0b = DONE
+- CAREOP-6529 Security Alert #17d6063a = DONE
+- elasticache community cluster node failover = 
+	Create AWS support ticket
+- CAREOP-6534 Request deployment for Care Server on Apr.19th.
+- CAREOP-6491 Configure lifecycle rules for samsungmembers-elb-accesslog = DONE
+- COMMOP-1094 [Cache Job] Redis Data Enhancement PRD deployment
+- CAREOP-6549 Migrate care service restart and script propagator ansible config to repo server = DONE
+
+- Add S3 folder and oplicy in com-adm bucket = DONE
+- Create ticket for report and workplan
+- Proxy Exception will be expired = DONE
+	[IT4U] ESCORT 차단해제 신청 만기 7일전 알림(Your ESCORT Unblock request will be expired in 7 days.)
+- File OT https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-6513
+- Leads Meeting
+	Update meeting minutes
+
+
+===============================================
+
+- COMMOP-1147 [Community Admin] PRD deployment = DONE
+- Test health check endpoint = DONE
+- CAREOP-6562 - [TCK230416000010][Cloud Security][Normal] SamsungMembers Detection Detection Notification(File Download) = DONE 
+- CAREOP-6563 A security advisory on vm2 affects at least one of your repositories = DONE
+- COMMOP-1146 [SMembers] Value of /secrets/community/app/webview/jasyptToken  = DONE
+
+- Confirm when to upgrade OS on community admin = DONE
+- COMMOP-1145 Request for system check from HQ = Alex
+- Follow up OS upgrade ubuntu with Shinil
+
+
+- Logging of servers = DONE
+	Must be a bug that occurs yearly
+- CAREOP-6574 STI personal information protection due diligence of the 'Samsung Members' = DONE
+- !!!! https://mobilerndhub.sec.samsung.net/wiki/pages/viewpage.action?spaceKey=MSO&title=Server+OS+Version+Upgrade = DONE
+- Send updated workplan to Care dev team = DONE
+- [MobileR&DHub: Permission] Notification of expiration of Login Permission = DONE
+- Community API Disk clean up = DONE
+- COMMOP-1134 [AUDIT] Access Key Rotation (community-snspublish-user) - 20230314 = DONE
+- Pa file ng mga request time off / wfh = DONE
+
+- Checked ansible assignment of aaron = DONE
+
+=============================================
+
+
+- https://se.srph.net/jira-new/browse/ITS-22271 Exception approval = DONE
+- CAREOP-6601 [TCK230421000001] Intrusion attempt detection - 20230424 = DONE
+- [SECURITY][SVE-2023-0663,0671,0676,0677] Reflected XSS on Samsung Members 
+- jump us care
+- CAREOP-5929 Upgrade Ubuntu Instances = DONE
+- CAREOP-6388 Dockerize logstash and upgrade OS version = DONE
+- [Reminder] (업무협조) 클라우드 Access Key 보안조치 일정 수립 件
+
+
+============================================
+- Dockerize scouter
+	Test the deployment script = DONE
+- CAREOP-6628 [AWS WAF] Logfiltering Lambda 함수 최신 코드 반영 요청 건 (Request to update the latest AWS WAF Logfiltering Lambda Function Code) = DONE
+- [2022년 개인정보보호 실사] 'Samsung Members' 잔여 이슈 개선일자 도래 알림
+- Source code transfer and Inspection tool Application Guide (~5/19)
+- File OT 04/25 = DONE
+
+- CAREOP-6646 Dockerize scouter = DONE
+
+=====================================
+
+- CAREOP-6637 Create new AWS Resources (MSK, ElastiCache, etc)
+- Create workplan for care-prx
+- Missing Community Tab
+
+- [2022년 개인정보보호 실사] 'Samsung Members' 잔여 이슈 개선일자 도래 알림 = DONE
+- Are personal information of high severity encrypted? (If risk can be improved by encryption after PIA measurement, action is recommended)
+- Are procedures for safe encryption key creation, use, storage, distribution, and destruction established and implemented to safely store encrypted personal information in the personal information processing system?
+- Do you limit unauthorized access by limiting access rights to the personal information processing system by IP address, etc.?
+- [ASAP]FW: FW: FW: (진단)Cloud 취약점 조치 현황 사전 공유 건 
+- Create list of questions for jake
+
+- CAREOP-6380 [AUDIT] Access Key Rotation (s3.all) - 20230314 = DONE
+- Deleted user s3.galaxycare-betatest-all = DONE
+- CAREOP-6688 Backup the files into a temporary directory = DONE
+- CAREOP-6700 Request to check UTC time synchronization of server infra = DONE
+- CAREOP-6705 Update S3 file = DONE
+
+
+============================================
+
+- CAREOP-6689 Delete all old files other than the ones in the list. = DONE
+- CAREOP-6726 Care API servers are unable to send server metrics to Niffler = DONE
+- Shell monitor agent = DONE
+	i-008a751bc7df88c23 
+	i-06064a4314fbfc417 care-pgl-api-was-prd#4-legacy stopped
+	i-00c49142cdc8c8f9b care-pgl-api-was-myproduct#2 running
+- CAREOP-6711 FW: RE:(5) FW:(5) [SECURITY][SVE-2023-0663,0671,0676,0677,0678, 0688] Reflected XSS on Samsung Members= DONE
+- CAREOP-6707 Request to set the environment variable for log analytics = DONE
+- CAREOP-6706 Request deployment for Care Server on May. 17th = DONE
+- CAREOP-6675 Upgrade Ubuntu Instances (Batch2) = DONE
+- [SECURITY][SVE-2023-0663,0671,0676,0677,0678, 0688] Reflected XSS on Samsung Members 
+	https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/example-function-add-security-headers.html
+- CAREOP-6724 Add security headers to the response = DONE
+
+============================================
+
+
+- https://mobilerndhub.sec.samsung.net/wiki/display/SRPHSYSOPS/%5BSMEM%5D+New+Hire+Onboarding
+- Display ACM SSL certificate
+- 20230518_Exit Process_Encina 
+- SAMSUNGMEMBERS WEEKLY REPORT 20230515-20230519 
+
+- CAREOP-6718 Request deployment for Care Server on May. 25th = DONE
+- CAREOP-6729 Upgrade Ubuntu Instances (Batch3) = DONE
+- CAREOP-6742 Refuse to display 'https://static.samsungmembers.com/' in a frame because it set 'X-Frame-Options' to 'deny'. = DONE
+- Access key rotation for s3.galaxycare-betatest-all = DONE
+-  CAREOP-6771 Samsung Account Service issue = DONE
+
+
+
+
+- CAREOP-6228 [AUDIT][stgv2c] EBS Volume Encryption  = DONE
+- CAREOP-6234 STI agent installation status = DONE
+- COMMOP-1174 [Community] Check JDK type and version = 
+
+==================================================
+
+- CAREOP-6783 Upgrade Ubuntu Instances (Batch4) = 
+- Monitor com-pgl-adm shifting = DONE
+- Reports ni Jene = DONE
+- https://download.samsungmembers.com/
+- Niffler registration
+
+- CAREOP-6827 Create IAM user account for aa.achico = DONE
+- Security Audit
+
+- [2022년 개인정보보호 실사] 'Samsung Members' 잔여 이슈 개선일자 도래 알림
+- CAREOP-6838 MembersCare Deployment = 
+- COMMOP-1180 [USSM] Implement AWS Param Store
+- COMMOP-1179 [USSM] PRD deployment 
+- USCAREOP-213 [USSM] Implement AWS Param Store = DONE
+- USCAREOP-214 = DONE
+- USCAREOP-215 [USSM] Download TAR file = 
+- Purposeful brownbag
+- Test old com-pgl-adm and delete
+- create workplan community 
+- Dev created new opensearch in dev env
+- Apply IT4U to access workmachine
+- File WFH
+- stop old com-pgl-adm
+- [긴급] AWS service endpoint에서 TLS 1.0 & 1.1의 지원이 2023/6/28 종료됩니다 
+
+-[SRPH-GA] Exit Clearance Reminder - p.encina

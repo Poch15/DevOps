@@ -1,0 +1,177 @@
+ssh pencina@13.124.177.211 -p 2285   --->   SSH to Work machine
+private IP: 10.1.101.54
+
+PW: Qwerty@12
+
+Default server user
+US: common.smem-prod
+PW: zjajs2020!2
+
+US: common
+PW: zjajs2016!2
+PW: zjajs2017!2
+PW: zjajs2018!2
+PW: zjajs2019!2
+PW: zjajs2020!2
+PW: zjajs2021!2
+
+
+https://members-sso.samsungmembers.com/auth/realms/samsungmembers/protocol/saml/clients/aws
+US: p.encina
+PW: Qwerty@12
+
+3.- CARE dev env
+US: p.encina
+PW:  Qwerty@24 / 31@Qwerty
+
+https://bixby2m-dev.signin.aws.amazon.com/console
+US: bixby-test-user
+PW: Skill2022!
+sydney
+
+https://bixby-cm-dev.signin.aws.amazon.com/console
+US: bixby-test-user
+PW: Skill2022!
+Access Key ID: AKIATXPTVMAYLX52WGPN
+Secret Access Key: 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
+
+https://srph-skillsmatrix-dev.signin.aws.amazon.com/console
+US: p.encina
+PW: Qwerty@12
+
+https://srph-samsung321-dev.signin.aws.amazon.com/console
+US: p.encina
+PW: Qwerty@12
+
+https://samsung-srph.signin.aws.amazon.com/console
+US: p.encina
+PW: Qwerty@12
+
+
+Scouter
+52.79.54.247:6100 - Care
+52.78.222.32 - Community
+34.197.222.100:6100 - US Care
+US: admin
+PW: admin
+
+https://github.ecodesamsung.com/Members-OPS
+US: p-encina
+PW: Qwerty@12
+
+
+https://www.samsungvpn.com/
+US: p.encina
+PW: Qwerty@13
+
+http://www.samsung.net/portal/default.jsp - knox portal
+US: p.encina
+PW: Qwerty@13
+
+https://corpadpss.secsso.net/home/Index?aspxerrorpath=/Howme/EPcheck - Corp pass 
+US: p.encina
+PW: Qwerty@31
+
+https://samsungu.udemy.com/organization/home/
+US: p.encina@samsung.com
+PW: AD
+
+https://learn.acloud.guru/
+US: k.samonte@samsung.com
+PW: Acloudguru@sre1
+
+https://account.samsung.com/membership
+US: p.encina@samsung.com
+PW: Qwerty@12
+http://mosaic.sec.samsung.net/kms/comtyMainPost.do?method=docsView&docsFileId=MNFbSOV9C9AoclmsZxE4uyzwz&comtyId=576341331&menuId=576356444&&&repeatFlag=Y
+
+https://ipa.samsungsre.com/Home
+US: p.encina
+PW: Qwerty@123 12@Qwerty
+hosts password: Qwerty@123
+
+https://se.srph.net/jira-new
+US: p.encina
+PW: Qwerty@12
+
+https://deploy.samsungmembers.com/ - Jenkins Public /
+US: pencina
+PW: Qwerty@12
+Server: mem-pgl-deploy / prd-tokyo
+
+http://10.251.22.185:9100/ - Jenkins HQ
+US: pencina
+PW: Qwerty@12
+
+sgmp2.net - SGMP
+US: p.encina@samsung.com
+PW: Qwerty@12
+429414316
+407844360
+
+PIB
+US: paulencina15
+PW: 3Nc!n@111589
+
+ODB
+US: paulencina15
+PW: Summ3r@041614
+
+Union
+US: paulencina15
+PW: Summ3r@041414
+
+https://members-sso.samsungmembers.com/auth/realms/samsungmembers/protocol/saml/clients/aws
+
+https://se.srph.net/confluence/pages/viewpage.action?pageId=3113143  =  PASSWORD CHANGE
+
+https://shoor.com.ph/
+US: sre1teamB@yahoo.com
+PW: IBcK7B9!!^vR
+
+twilio:
+US: encina.paul15@gmail.com
+PW for encrypting/decrypting 2FA tokens: 3Nc!n@111589
+
+http://srph.giftaway.ph
+US: paul.encina15@gmail.com
+PW: Qwerty@123
+
+https://wcs.sharetreats.ph/srphrewards/index.html
+US: paul.encina15@gmail.com / encina.paul15@gmail.com / p.encina@samsung.com
+PW: Qwerty@12
+
+https://m-events.samsungph.net/
+PW: Qwerty@123
+
+1161482021@
+
+AWS stg-v2c
+US: common
+PW: 1234567890
+
+AWS Account - SKILLUP
+https://samsung-srph.signin.aws.amazon.com/console 
+User: cot.skillup
+Pass: Sam@135!
+Access Key ID: AKIAYUVEAJVQUUG754O6
+Secret Access Key : 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
+
+https://bixby-cm-dev.signin.aws.amazon.com/console
+US: bixby-test-user
+PW: Skill2022!
+Access Key ID: AKIATXPTVMAYLX52WGPN
+Secret Access Key: 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
+
+Benefits jenkins
+http://10.251.210.42:8081/
+	ID : benefit.sec`
+	PW : zjajs2022!@#
+Nexus
+http://10.91.134.171:8082/
+
+
+knox portal pw: Qwerty@21 21@Qwerty
+corp pw: 12@Qwerty Qwerty@23
+svpn pw: 13@Qwerty Qwerty@32
+pay pw: Qwerty@12

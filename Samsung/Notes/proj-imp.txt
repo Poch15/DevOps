@@ -1,0 +1,3 @@
+- Notify in slack the expiry date in WAF
+- Search for latest kubernetes version API
+	https://docs.aws.amazon.com/eks/latest/userguide/platform-versions.html

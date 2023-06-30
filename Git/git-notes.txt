@@ -1,4 +1,4 @@
-# Configure local git system
+6# Configure local git system
 git config --global user.name "Paul John Encina"
 git config --global user.email "p.encina@samsung.com"
 git config --global --list

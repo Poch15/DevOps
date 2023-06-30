@@ -1,0 +1,64 @@
+RESUME
+
+Responsibilities:
+
+•	Evaluation of requirements and turning them into codes and/or infrastructures, including testing, deployment, and monitoring
+•	Design, maintain and update application and infrastructure documentations, troubleshooting, etc
+•	Oversee application lifecycle from requirements to production monitoring
+•	Implementation of CI/CD to ensure continuous code deployment and application testing
+•	Identify and implement solutions, code and/or infrastructure, to meet objectives and reach goals
+•	Provide operational support for application testing, configuration, documentation, troubleshooting, updates, etc
+
+	Key Projects/Participations:
+
+•	Multiple customer-facing client launches and migrations providing end-to-end support
+•	AWS infrastructure updates and/or fixes (e.g. Lambda NodeJS runtime upgrade, Fargate Migration, S3 Bucket Reduction & Management, KMS Encryption, etc.)
+•	Jenkins pipelines creation
+•	Multiple Blue/Green application set-up
+•	Participation in several critical investigations (e.g. fraud, outages, security fixes, etc.)
+
+
+========================================================================
+
+SUMMARY:
+- An AWS Solutions Architect Associate and Red Hat Certified System Administrator with around 7+ years of experience in IT industry as DevOps, Technical Architect, System Administrator and Platform Engineer
+- Primary duties include coming up with combination of Automation tools and Processes to achieve Continuous Delivery for various application by integrating tools like Git, Docker, Ansible, Packer, and Jenkins
+- Automate, Configure and Deploy microservices in platform such as AWS Elastic Container Service, Elastic Kubernetes Service and EC2 wwith focus on performance, reliability and scalability
+- Experience writing various custom ansible playbooks and modules for deployment orchestration
+- Install, Configure and Manage Monitoring tools such as Scouter, Niffler, Telegraf and Grafana
+- Experience in installation and configuration of application using App Servers like Web Sphere, IIS and JBoss
+- Extensive experience in Installation, Configuration, Maintenance and Administration of Linux Server
+- Worked on several tools and services for managing secrets such as Hashicorp Vault, AWS Secrets Manager, AWS KMS,  AWS Parameter Store and ACM
+
+
+
+
+
+Responsibilities:
+- Designed and Implemented Ansible Configuration management sytem to automate Installation and Configuration of required Samsung Security Applications
+- Automated building, provisioning and managing of infrastructure using Pulumi and Terraform
+- Involved in setting up the CI/CD pipeline using Github, Docker, Ansible, AWS and Bash for automating application deployment
+- Participated in migrating application from Elastic Container Service to Elastic Kubernetes Service and setting up of Argo CD as deployment tool
+- Dockerize Logstash, Telegraf and Fluentbit to make the application portable
+- Maintain and Support Infrastracture used by ELK (Elastic search, Log stash and Kibana) stack on AWS
+- Participated in building and implementing centralized logging using Fluentbit and then store logs into S3 bucket
+- Manage cloud environments and infrastructure in accordance with strict company security audit and guidelines
+- Developed an Interceptor Tool using Python, Lambda, API Gateway and Jenkins to allow custom action to the alert sent by Niffler monitoring tool
+- Utilize Jenkins to configure, manage and automate most of the operational tasks such as log rotation, service health check, installation and restart of application
+- Manage and support the AWS infrastructure of Hashicorp Vault service used by internal projects in Samsung for secrets management
+- Monitor infrastructure and services metrics and logs for any upcoming and existing problems using Scouter, Niffler and Grafana
+- Troubleshoot problems, provide fault diagnosis, resolve operational issues and performance bottlenecks
+- Automate repetitive daily operational tasks by creating scripts and tools using Bash, Python and NodeJS
+- On-Call Support for mission critical services 24x7
+
+
+
+
+
+
+- Used
+- Experience
+- Worked 
+- Exposure
+
+

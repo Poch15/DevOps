@@ -1,0 +1,819 @@
+ terraform destroy -target=module.security_groups.aws_security_group.bastion-sg
+
+/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images
+
+install_telegraf.sh
+------------
+CARE
+------------
+ssh common.smem-prod@52.78.92.160 -p 2285  = care-pgl-jmp
+ssh common@52.78.92.160 -p 2285
+ssh common.smem-prod@52.79.46.55 -p 2285  = care-pgl-jmp-db
+ssh common@52.79.46.55 -p 2285
+ssh common.smem-prod@30.0.151.31 -p 2285  = care-pgl-api-was-prd-dk2#3
+ssh common.smem-prod@30.0.151.32 -p 2285  = care-pgl-api-was-prd-dk2#1
+ssh common.smem-prod@30.0.152.32 -p 2285  = care-pgl-api-was-prd-dk2#2
+ssh common.smem-prod@30.0.152.31 -p 2285  = care-pgl-api-was-prd-dk2#4
+ssh common.smem-prod@30.0.151.34 -p 2285  = care-pgl-api-was-prd-dk3#1
+ssh common.smem-prod@30.0.151.27 -p 2285  = care-pgl-msk-consumer-legacy
+ssh common.smem-prod@30.0.151.224 -p 2285 = care-pgl-msk-consumer
+ssh common.smem-prod@30.0.151.67 -p 2285 = care-pap-sch6-chn
+ssh common@30.0.151.67 -p 2285 = care-pgl-sgw-prx#2
+ssh common.smem-prod@30.0.151.137 -p 2285 = care-pgl-analytics
+ssh common.smem-prod@30.0.12.72 -p 2285 = care-pgl-sgw-prx#2-2
+ssh common.smem-prod@30.0.11.80 -p 2285 = care-pgl-rmc
+ssh common@30.0.11.80 -p 2285  zjajs2020!2 NOT WORKING!!
+ssh common.smem-prod@30.0.11.70 -p 2285 = care-pgl-sgw-prx#1 i-0e3941384a5c34fce
+# ssh common@30.0.11.70 -p 2285    zjajs2016!2
+ssh common.smem-prod@30.0.12.70 -p 2285 = care-pgl-sgw-prx#2
+ssh common@30.0.12.70 -p 2285   zjajs2020!2
+ssh common.smem-prod@30.0.12.72 -p 2285 = care-pgl-sgw-prx#2 new
+ssh common@30.0.12.72 -p 2285   zjajs2020!2
+ssh common.smem-prod@30.0.11.185 -p 2285 = care-pgl-sgw-prx#3
+ssh common.smem-prod@30.0.12.71 -p 2285 = care-pgl-sgw-prx#4
+ssh common.smem-prod@30.0.151.72 -p 2285 = care-pgl-bat#1-legacy
+ssh common.smem-prod@30.0.151.50 -p 2285 = care-pgl-bat#1
+ssh common.smem-prod@30.0.152.72 -p 2285 = care-pgl-bat#2-legacy
+ssh common.smem-prod@30.0.152.120 -p 2285 = care-pgl-bat#2
+ssh common.smem-prod@30.0.151.10 -p 2285 = care-pgl-adm
+ssh common@30.0.151.10 -p 2285   zjajs2016!2
+ssh common.smem-prod@30.0.151.130 -p 2285 = care-pgl-api-was-prd#1
+ssh common@30.0.151.130 -p 2285   zjajs2020!2
+ssh common.smem-prod@30.0.152.30 -p 2285 = care-pgl-api-was-prd#2-legacy 
+ssh common.smem-prod@30.0.152.231 -p 2285 = care-pgl-api-was-prd#2
+ssh common.smem-prod@30.0.151.40 -p 2285 = care-pgl-api-was-prd#3-legacy 
+ssh common.smem-prod@30.0.151.38 -p 2285 = care-pgl-api-was-prd#3  
+ssh common.smem-prod@30.0.152.40 -p 2285 = care-pgl-api-was-prd#4-legacy
+ssh common.smem-prod@30.0.152.169 -p 2285 = care-pgl-api-was-prd#4
+ssh common.smem-prod@30.0.151.37 -p 2285 = care-pgl-api-was-prd#5-legacy
+ssh common.smem-prod@30.0.151.128 -p 2285 = care-pgl-api-was-prd#5
+ssh common.smem-prod@30.0.151.156 -p 2285 = care-pgl-api-was-prd#6-legacy
+ssh common.smem-prod@30.0.151.173 -p 2285 = care-pgl-api-was-prd#6
+ssh common.smem-prod@30.0.152.98 -p 2285 = care-pgl-api-was-prd#7-legacy
+ssh common.smem-prod@30.0.152.220 -p 2285 = care-pgl-api-was-prd#7
+ssh common.smem-prod@30.0.151.185 -p 2285 = care-pgl-api-was-prd#8-legacy
+ssh common.smem-prod@30.0.151.43 -p 2285 = care-pgl-api-was-prd#8
+ssh common.smem-prod@30.0.152.96 -p 2285 = care-pgl-api-was-prd#9-legacy
+ssh common.smem-prod@30.0.152.218 -p 2285 = care-pgl-api-was-prd#9
+ssh common.smem-prod@30.0.151.41 -p 2285 = care-pgl-api-was-prd#10
+ssh common.smem-prod@30.0.152.41 -p 2285 = care-pgl-api-was-prd#11
+ssh common.smem-prod@30.0.151.77 -p 2285 = care-pgl-discover-prd#1
+ssh common.smem-prod@30.0.152.77 -p 2285 = care-pgl-discover-prd#2
+ssh common.smem-prod@30.0.151.91 -p 2285 = care-pgl-repository
+ssh common@30.0.151.91 -p 2285
+ssh common.smem-prod@30.0.151.70 -p 2285 = care-pgl-sgw-was#1-legacy
+ssh common.smem-prod@30.0.151.57 -p 2285 = care-pgl-sgw-was#1
+ssh common.smem-prod@30.0.152.70 -p 2285 = care-pgl-sgw-was#2-legacy
+ssh common.smem-prod@30.0.152.17 -p 2285 = care-pgl-sgw-was#2
+ssh common@30.0.152.70 -p 2285
+ssh common.smem-prod@30.0.51.183 -p 2285 = care-pgl-fb-sch-main
+ssh common.smem-prod@30.0.152.183 -p 2285 = care-pgl-sch-fb
+ssh common@30.0.152.183 -p 2285 = care-pgl-sch-fb
+ssh common.smem-prod@30.0.151.65 -p 2285 = care-pgl-sch-slr6-mst
+ssh common@30.0.151.65 -p 2285
+ssh common.smem-prod@30.0.151.66 -p 2285 = care-pgl-sch-slr6-slv#1-new
+ssh common@30.0.152.66 -p 2285 = care-pgl-sch-slr6-slv#2-new
+ssh common.smem-prod@30.0.151.67 -p 2285 = care-pap-sch6-chn
+ssh common.smem-prod@30.0.151.33 -p 2285 = care-pgl-api-was-myproduct#1-legacy
+ssh common.smem-prod@30.0.151.225 -p 2285 = care-pgl-api-was-myproduct#1
+ssh common.smem-prod@30.0.152.33 -p 2285 = care-pgl-api-was-myproduct#2-legacy
+ssh common.smem-prod@30.0.152.117 -p 2285 = care-pgl-api-was-myproduct#2
+ssh common.smem-prod@30.0.151.123 -p 2285 = care-pgl-sentry#1-2
+ssh common.smem-prod@30.0.152.38 -p 2285 = care-pgl-sentry#2-2
+ssh common.smem-prod@30.0.151.75 -p 2285 = care-pgl-bat-bdp-new
+ssh common@30.0.151.75 -p 2285   zjajs2020!2
+ssh common.smem-prod@30.0.51.75 -p 2285 = care-pgl-bat-bdp
+ssh common@30.0.51.75 -p 2285   zjajs2016!2
+ssh common.smem-prod@30.0.151.138 -p 2285 = care-pgl-ksqldb
+ssh common@30.0.151.138 -p 2285 zjajs2020!2
+
+ssh common.smem-prod@30.0.151.116 -p 2285 = care-pgl-workernode-asg
+
+
+
+ssh common.smem-prod@30.0.151.63 -p 2285 = care-pgl-elk-legacy
+ssh common.smem-prod@30.0.151.73 -p 2285 = care-pgl-elk
+ssh common@30.0.151.63 -p 2285
+
+ssh common@30.0.151.22 -p 2285 = care-pgl-api-prx-prd#1-new
+zjajs2020!2
+ssh common@30.0.152.22 -p 2285  = care-pgl-api-prx-prd#2-new
+zjajs2020!2
+ssh common@30.0.151.23 -p 2285 = care-pgl-api-prx-prd#3-new
+zjajs2020!2
+
+
+
+ssh common.smem-prod@30.0.11.70 -p 2285 = care-pgl-sgw-prx#1
+ssh common@30.0.11.70 -p 2285  zjajs2016!2
+ssh common.smem-prod@30.0.12.70 -p 2285 = care-pgl-sgw-prx#2
+ssh common@30.0.12.70 -p 2285
+ssh common.smem-prod@30.0.11.71 -p 2285 = care-pgl-sgw-prx#3
+ssh common@30.0.11.71 -p 2285
+
+
+ssh common.smem-prod@30.0.151.50 -p 2285 = test
+
+------------
+COMMUNITY
+------------
+ssh common.smem-prod@52.78.228.249 -p 2285 = com-pgl-jmp
+ssh common@52.78.228.249 -p 2285
+ssh community-dev.smem-prod@52.78.228.249 -p 2285
+ssh common.smem-prod@52.78.244.78 -p 2285 = com-pgl-jmp-db#2
+ssh common@52.78.244.78 -p 2285
+ssh common.smem-prod@20.0.151.42 -p 2285 = com-pgl-webview#1
+ssh common.smem-prod@20.0.152.42 -p 2285 = com-pgl-webview#2
+ssh common.smem-prod@20.0.151.41 -p 2285 = com-pgl-web#1-legacy
+ssh common@20.0.151.41 -p 2285
+ssh common.smem-prod@20.0.151.22 -p 2285 = com-pgl-web#1
+ssh common@20.0.151.41 -p 2285
+ssh common.smem-prod@20.0.152.41 -p 2285 = com-pgl-web#2
+ssh common@20.0.151.41 -p 2285 
+ssh common.smem-prod@20.0.152.10 -p 2285 = com-pgl-adm
+# ssh common@20.0.152.10 -p 2285  zjajs2016!2
+ssh common.smem-prod@20.0.151.10 -p 2285 = com-pgl-adm-new
+#ssh common@20.0.151.10 -p 2285  zjajs2020!2
+ssh common.smem-prod@20.0.151.30 -p 2285 = com-pgl-api#1-legacy
+ssh common.smem-prod@20.0.151.131 -p 2285 = com-pgl-api#1
+ssh common.smem-prod@20.0.152.30 -p 2285 = com-pgl-api#2-legacy
+ssh common.smem-prod@20.0.152.239 -p 2285 = com-pgl-api#2
+ssh common.smem-prod@20.0.151.32 -p 2285 = com-pgl-api#3-legacy
+ssh common.smem-prod@20.0.151.66 -p 2285 = com-pgl-api#3
+ssh common.smem-prod@20.0.11.80 -p 2285 = com-pgl-rmc
+ssh common@20.0.11.80 -p 2285 not working
+ssh common.smem-prod@20.0.151.31 -p 2285 = com-pgl-iapi#1
+ssh common.smem-prod@20.0.152.31 -p 2285 = com-pgl-iapi#2
+ssh common.smem-prod@20.0.151.40 -p 2285 = com-pgl-mwb#1-2
+ssh common@20.0.151.40 -p 2285
+ssh common.smem-prod@20.0.152.54 -p 2285 = com-pgl-mwb#2-2-new
+ssh common@20.0.152.54 -p 2285
+ssh common.smem-prod@20.0.151.60 -p 2285 = com-pgl-sch#1
+ssh common@20.0.151.60 -p 2285  zjajs2020!2
+ssh common.smem-prod@20.0.152.60 -p 2285 = com-pgl-sch#2
+ssh common@20.0.152.60 -p 2285 zjajs2016!2
+
+
+ssh common@20.0.152.85 -p 2285 = com-pgl-sts-asg 1
+ssh common@20.0.152.85 -p 2285
+ssh common.smem-prod@20.0.152.109 -p 2285 = com-pgl-sts-asg 2
+ssh common@20.0.151.144 -p 2285 = com-pgl-sts-asg 3
+ssh common.smem-prod@20.0.151.144 -p 2285
+
+
+
+ssh common@20.0.152.91 -p 2285 = com-pgl-workernode-asg
+ssh common.smem-prod@20.0.152.91 -p 2285
+------------
+BENEFIT
+------------
+ssh common.smem-prod@54.180.179.52 -p 2285 = bnf-pap-jmp
+ssh common@54.180.179.52 -p 2285   zjajs2019!2
+ssh common.smem-prod@54.180.177.70 -p 2285 = bnf-pap-jmp-db
+ssh common@54.180.177.70 -p 2285
+ssh common.smem-prod@10.153.12.90 -p 2285
+ssh common@10.153.12.90 -p 2285
+ssh common.smem-prod@10.153.11.80 -p 2285 = bnf-pap-rmc
+ssh common@10.153.11.80 -p 2285
+ssh common.smem-prod@10.153.51.172 -p 2285 = bnf-pap-bat-bdp 
+ssh common@10.153.51.172 -p 2285 zjajs2020!2
+ssh common.smem-prod@10.153.51.173 -p 2285 = bnf-pap-bat-bdp-old
+ssh common@10.153.51.173 -p 2285 zjajs2016!2 
+ssh common@10.153.51.173 -p 2285 = bnf-pap-bat-bdp-new zjajs2016!2
+ssh common.smem-prod@10.153.52.153 -p 2285 = bnf-pap-web-asg
+ssh common@10.153.52.153 -p 2285
+ssh common@10.153.53.143 -p 2285 = bnf-pap-web-asg
+ssh common.smem-prod@10.153.53.143 -p 2285
+ssh common.smem-prod@10.153.53.163 -p 2285 = bnf-pap-web-asg 
+ssh common.smem-prod@10.153.53.133 -p 2285 = bnf-pap-api-asg 
+ssh common.smem-prod@10.153.53.165 -p 2285 = bnf-pap-sgw-asg
+ssh common@10.153.52.172 -p 2285 = bnf-pap-adm-asg old zjajs2019!2
+ssh common@10.153.51.164 -p 2285 = bnf-pap-api-asg new
+ssh common@10.153.53.49 -p 2285 = bnf-pap-redshift-asg
+ssh common.smem-prod@10.153.53.144 -p 2285 = bnf-pap-cfg-asg
+ssh common@10.153.53.144 -p 2285
+ssh common.smem-prod@10.153.53.147 -p 2285 = bnf-pap-auth-asg
+ssh common@10.153.53.147 -p 2285
+ssh common.smem-prod@10.153.53.73 -p 2285 = bnf-pap-bash-asg
+ssh common@10.153.51.172 -p 2285 = bnf-pap-bat-bdp zjajs2016!2
+
+ssh common@10.153.52.149 -p 2285
+
+------------
+US CARE
+------------
+ssh common.smem-prod@34.206.169.230 -p 2285 = ussm-pus-jump
+ssh common.smem-prod@34.200.144.242 -p 2285 = ussm-pus-jump-db
+ssh common@34.206.169.230 -p 2285 zjajs2021!2 = ILLEGAL user!!!
+ssh common.smem-prod@30.1.11.238 -p 2285 = ussm-pus-rmc
+ssh common@30.1.11.238 -p 2285 zjajs2020!2
+
+
+ssh common.smem-prod@30.1.52.133 -p 2285 = ussm-pus-api-asg
+
+ssh common.smem-prod@30.1.53.121 -p 2285 = ussm-pus-logger-asg
+
+ssh common.smem-prod@30.1.52.37 -p 2285 = ussm-pus-eureka-asg
+
+
+ssh common@20.0.151.157 -p 2285
+
+
+-----------------------------------
+SMEM WORK MACHINES, JUMP and DEPLOY(Jenkins)
+----------------------------------
+# connect jmp first
+# ssh common.smem-prod@13.115.66.0 -p 2285 = mem-pgl-jmp
+ssh common@13.115.66.0 -p 2285
+ssh common.smem-prod@30.0.51.80 -p 2285 = mem-pgl-deploy
+ssh common.smem-prod@30.0.52.204 -p 2285 = mem-pgl-deplopy-ubuntu20
+ssh common@30.0.52.204 -p 2285
+ssh common@30.0.51.80 -p 2285 zjajs2016!2
+ssh common@30.0.51.180 -p 2285 zjajs2016!2
+
+
+ssh -o TCPKeepAlive=yes common.smem-prod@13.115.66.0 -p 2285
+
+------------------------------------------------------------------------
+
+
+[care-pgl-api-was-prd-1]
+30.0.151.30
+
+[care-pgl-api-was-prd-2]
+30.0.152.30
+
+[care-pgl-api-was-prd-3]
+30.0.151.40
+
+[care-pgl-api-was-prd-4]
+30.0.152.40
+
+[care-pgl-api-was-prd-5]
+30.0.151.37
+
+[care-pgl-api-was-prd-6]
+30.0.151.156
+
+[care-pgl-api-was-prd-7]
+30.0.152.98
+
+[care-pgl-api-was-prd-8]
+30.0.151.185
+
+[care-pgl-api-was-prd-9]
+30.0.152.96
+
+# Old Instances
+[care-pgl-api-was-prd-1-old]
+30.0.51.30
+
+[care-pgl-api-was-prd-2-old]
+30.0.52.30
+
+[care-pgl-api-was-prd-3-old]
+30.0.51.40
+
+[care-pgl-api-was-prd-4-old]
+30.0.52.40
+
+[care-pgl-api-was-prd-5-old]
+30.0.51.37
+
+[care-pgl-api-was-prd-6-old]
+30.0.51.156
+
+[care-pgl-api-was-prd-7-old]
+30.0.52.98
+
+[care-pgl-api-was-prd-8-old]
+30.0.51.185
+
+[care-pgl-api-was-prd-9-old]
+30.0.52.96
+
+# End Old Instances
+
+[care-pgl-api-was-prd-dk2-1]
+30.0.151.32
+
+[care-pgl-api-was-prd-dk2-2]
+30.0.152.32
+
+[care-pgl-api-was-prd-dk3-1]
+30.0.151.34
+
+[care-pgl-api-was-prd-dk2-3]
+30.0.151.31
+
+[care-pgl-api-was-prd-dk2-4]
+30.0.152.31
+
+#Start Old dk2
+
+[care-pgl-api-was-prd-dk2-1-old]
+30.0.51.32
+
+[care-pgl-api-was-prd-dk2-2-old]
+30.0.52.32
+
+[care-pgl-api-was-prd-dk3-1-old]
+30.0.51.34
+
+[care-pgl-api-was-prd-dk2-4-old]
+30.0.52.31
+
+#End Old dk2
+
+[care-pgl-sgw-was-1]
+30.0.151.70
+
+[care-pgl-sgw-was-2]
+30.0.152.70
+
+#Start Old sgw-was-old
+
+[care-pgl-sgw-was-1-old]
+30.0.51.70
+
+[care-pgl-sgw-was-2-old]
+30.0.52.70
+
+#end Old sgw-was-old
+
+[care-pgl-bat-1]
+30.0.151.72
+
+[care-pgl-bat-2]
+30.0.152.72
+
+[care-pgl-rmc]
+30.0.11.80
+
+[care-pgl-discover-prd-1]
+30.0.51.77
+
+[care-pgl-discover-prd-2]
+30.0.52.77
+
+[care-pgl-sgw-prx-1]
+30.0.11.70
+
+[care-pgl-sgw-prx-2]
+30.0.12.70
+
+[care-pgl-sgw-prx-3]
+30.0.11.72
+
+[care-pgl-sgw-prx-4]
+30.0.12.71
+
+[care-pgl-api-was-myproduct-1]
+30.0.151.33
+
+[care-pgl-api-was-myproduct-2]
+30.0.152.33
+
+# Old Myproduct
+[care-pgl-api-was-myproduct-1-old]
+30.0.51.33
+
+[care-pgl-api-was-myproduct-2-old]
+30.0.52.33
+# End Old Myproduct
+
+[care-pgl-adm]
+30.0.151.10
+
+[care-pgl-api-prx-1]
+30.0.151.21
+
+[care-pgl-api-prx-2]
+30.0.152.21
+
+[care-pgl-bat-bdp]
+30.0.51.75
+
+[care-pgl-debugger]
+30.0.52.5
+
+[care-pgl-api-was-prd-10]
+30.0.151.41
+
+[care-pgl-api-was-prd-11]
+30.0.152.41
+
+[care-pgl-api-was-prd-10-old]
+30.0.51.41
+
+[care-pgl-api-was-prd-11-old]
+30.0.52.41
+
+# NON-WAS
+[care-pgl-sch-slr6-slv-1]
+30.0.51.66
+
+[care-pgl-sch-slr6-slv-2]
+30.0.51.66
+
+[care-pgl-sch-slr6-mst]
+30.0.51.65
+
+[care-pgl-sch-fb]
+30.0.52.183
+
+[care-pgl-msk-consumer]
+30.0.151.27
+# END NON-WAS
+
+# end raw servernames
+
+[common:children]
+care-pgl-api-was-prd-9 = DONE
+care-pgl-api-was-prd-8 = DONE
+care-pgl-api-was-prd-7 = DONE
+care-pgl-api-was-prd-6 = DONE
+care-pgl-api-was-prd-5 = DONE
+care-pgl-api-was-prd-4 = DONE
+care-pgl-api-was-prd-3 = DONE
+care-pgl-api-was-prd-2 = DONE
+care-pgl-api-was-prd-1 = DONE
+
+
+[common-old:children]
+care-pgl-api-was-prd-9-old
+care-pgl-api-was-prd-8-old
+care-pgl-api-was-prd-7-old
+care-pgl-api-was-prd-6-old
+care-pgl-api-was-prd-5-old
+care-pgl-api-was-prd-4-old
+care-pgl-api-was-prd-2-old
+care-pgl-api-was-prd-1-old
+care-pgl-api-was-prd-3-old
+
+[oauth2-old:children]
+care-pgl-api-was-prd-9-old
+care-pgl-api-was-prd-8-old
+care-pgl-api-was-prd-7-old
+care-pgl-api-was-prd-6-old
+care-pgl-api-was-prd-5-old
+care-pgl-api-was-prd-4-old
+care-pgl-api-was-prd-2-old
+care-pgl-api-was-prd-1-old
+care-pgl-api-was-prd-3-old
+
+[oauth2:children]
+care-pgl-api-was-prd-9 DONE
+care-pgl-api-was-prd-8 DONE
+care-pgl-api-was-prd-7 DONE
+care-pgl-api-was-prd-6
+care-pgl-api-was-prd-5
+care-pgl-api-was-prd-4
+care-pgl-api-was-prd-3
+care-pgl-api-was-prd-2
+care-pgl-api-was-prd-1
+
+
+[user:children]
+care-pgl-api-was-prd-9 
+care-pgl-api-was-prd-8 
+care-pgl-api-was-prd-7 
+care-pgl-api-was-prd-6 
+care-pgl-api-was-prd-5 
+care-pgl-api-was-prd-4 
+care-pgl-api-was-prd-3 
+care-pgl-api-was-prd-2 
+care-pgl-api-was-prd-1 
+ 
+
+[user-old:children]
+care-pgl-api-was-prd-9-old
+care-pgl-api-was-prd-8-old
+care-pgl-api-was-prd-7-old
+care-pgl-api-was-prd-6-old
+care-pgl-api-was-prd-5-old
+care-pgl-api-was-prd-4-old
+care-pgl-api-was-prd-2-old
+care-pgl-api-was-prd-1-old
+care-pgl-api-was-prd-3-old
+
+[feedback:children]
+care-pgl-api-was-prd-dk2-1
+care-pgl-api-was-prd-dk2-2
+care-pgl-api-was-prd-dk3-1
+
+[feedback-old:children]
+care-pgl-api-was-prd-dk2-1-old
+care-pgl-api-was-prd-dk2-2-old
+care-pgl-api-was-prd-dk3-1-old
+
+[beta:children]
+care-pgl-api-was-prd-dk2-1
+care-pgl-api-was-prd-dk2-2
+
+[beta-old:children]
+care-pgl-api-was-prd-dk2-1-old
+care-pgl-api-was-prd-dk2-2-old
+
+[content:children]
+care-pgl-api-was-prd-dk2-1
+care-pgl-api-was-prd-dk2-2
+care-pgl-api-was-prd-dk3-1
+care-pgl-api-was-prd-dk2-3
+care-pgl-api-was-prd-dk2-4
+
+[content-old:children]
+care-pgl-api-was-prd-dk2-1-old
+care-pgl-api-was-prd-dk2-2-old
+care-pgl-api-was-prd-dk3-1-old
+# care-pgl-api-was-prd-dk2-4-old -> this instance is already in new subnet.
+# care-pgl-api-was-prd-dk2-3-old -> this instance is already in new subnet.
+
+
+[search:children]
+care-pgl-api-was-prd-dk2-3
+care-pgl-api-was-prd-dk2-1
+care-pgl-api-was-prd-dk3-1
+
+[search-old:children]
+care-pgl-api-was-prd-dk2-1-old
+care-pgl-api-was-prd-dk3-1-old
+# care-pgl-api-was-prd-dk2-3-old -> this instance is already in new
+
+[log:children]
+care-pgl-api-was-prd-dk2-1
+care-pgl-api-was-prd-dk3-1
+
+[log-old:children]
+care-pgl-api-was-prd-dk2-1-old
+care-pgl-api-was-prd-dk3-1-old
+
+[log-consumer:children]
+care-pgl-msk-consumer
+
+[feedback-consumer:children]
+care-pgl-msk-consumer
+
+[content-consumer:children]
+care-pgl-msk-consumer
+
+[test]
+30.0.152.210
+
+[solr:children]
+care-pgl-sch-fb
+care-pgl-sch-slr6-mst
+care-pgl-sch-slr6-slv-1
+care-pgl-sch-slr6-slv-2
+
+[all]
+30.0.151.37
+30.0.151.156
+30.0.151.185
+30.0.152.98
+30.0.152.96
+30.0.52.12
+30.0.151.30
+30.0.152.30
+30.0.151.40
+30.0.152.40
+30.0.151.32
+30.0.152.32
+30.0.52.70
+30.0.51.70
+30.0.51.72
+30.0.51.33
+30.0.52.33
+30.0.151.34
+30.0.51.41
+30.0.52.41
+30.0.51.42
+30.0.52.42
+30.0.51.43
+30.0.52.43
+30.0.151.31
+30.0.152.31
+30.0.151.41
+30.0.152.41
+
+
+[external:children]
+care-pgl-sgw-was-1
+care-pgl-sgw-was-2
+
+[external-old:children]
+care-pgl-sgw-was-1-old
+care-pgl-sgw-was-2-old
+
+[migration:children]
+care-pgl-sgw-was-1
+care-pgl-sgw-was-2
+
+[bat:children]
+care-pgl-bat-1
+care-pgl-bat-2
+
+[batch-myproduct:children]
+care-pgl-bat-2
+
+[batch-beta:children]
+care-pgl-bat-1
+
+[batch-reminder:children]
+care-pgl-bat-1
+
+[survey:children]
+care-pgl-api-was-myproduct-1
+care-pgl-api-was-myproduct-2
+
+[survey-old:children]
+care-pgl-api-was-myproduct-1-old
+care-pgl-api-was-myproduct-2-old
+
+[myproduct:children]
+care-pgl-api-was-myproduct-1
+care-pgl-api-was-myproduct-2
+
+[myproduct-old:children]
+care-pgl-api-was-myproduct-1-old
+care-pgl-api-was-myproduct-2-old
+
+[batch-diagmon:children]
+care-pgl-bat-1
+
+[batch-erms:children]
+care-pgl-bat-1
+
+[batch-fota:children]
+care-pgl-bat-1
+
+[batch-internal:children]
+care-pgl-bat-1
+
+[batch-omnis:children]
+care-pgl-bat-1
+
+[batch-push:children]
+care-pgl-bat-1
+
+[inbox:children]
+care-pgl-api-was-myproduct-1
+care-pgl-api-was-myproduct-2
+
+[inbox-old:children]
+care-pgl-api-was-myproduct-1-old
+care-pgl-api-was-myproduct-2-old
+
+[batch-inbox:children]
+care-pgl-bat-2
+
+[batch-voc:children]
+care-pgl-bat-1
+
+[batch-feedback:children]
+care-pgl-bat-1
+
+[banner:children]
+care-pgl-api-was-prd-10
+care-pgl-api-was-prd-11
+
+[banner-old:children]
+care-pgl-api-was-prd-10-old
+care-pgl-api-was-prd-11-old
+
+[api-was-prd-dk2:children]
+care-pgl-api-was-prd-dk2-1
+care-pgl-api-was-prd-dk2-2
+
+[api-was-prd-dk2-old:children]
+care-pgl-api-was-prd-dk2-1-old
+care-pgl-api-was-prd-dk2-2-old
+
+[api-was-prd-dk3:children]
+care-pgl-api-was-prd-dk3-1
+
+[api-was-prd-dk3-old:children]
+care-pgl-api-was-prd-dk3-1-old
+
+[api-was-prd-dk4:children]
+care-pgl-api-was-prd-dk2-4
+
+[rmc:children]
+care-pgl-rmc
+
+[api-was:children]
+care-pgl-api-was-prd-9
+care-pgl-api-was-prd-8
+care-pgl-api-was-prd-7
+care-pgl-api-was-prd-6
+care-pgl-api-was-prd-5
+care-pgl-api-was-prd-4
+care-pgl-api-was-prd-3
+care-pgl-api-was-prd-2
+care-pgl-api-was-prd-1
+care-pgl-api-was-prd-10
+care-pgl-api-was-prd-11
+
+[api-was-old:children]
+care-pgl-api-was-prd-10-old
+care-pgl-api-was-prd-11-old
+care-pgl-api-was-prd-9-old
+care-pgl-api-was-prd-8-old
+care-pgl-api-was-prd-7-old
+care-pgl-api-was-prd-6-old
+care-pgl-api-was-prd-5-old
+care-pgl-api-was-prd-4-old
+care-pgl-api-was-prd-3-old
+care-pgl-api-was-prd-2-old
+care-pgl-api-was-prd-1-old
+
+[discover:children]
+care-pgl-discover-prd-1
+care-pgl-discover-prd-2
+
+[sgw-was:children]
+care-pgl-sgw-was-1
+care-pgl-sgw-was-2
+
+[sgw-was-old:children]
+care-pgl-sgw-was-1-old
+care-pgl-sgw-was-2-old
+
+[sgw-prx:children]
+care-pgl-sgw-prx-1
+care-pgl-sgw-prx-2
+care-pgl-sgw-prx-3
+care-pgl-sgw-prx-4
+
+[prx:children]
+care-pgl-api-prx-1
+care-pgl-api-prx-2
+
+[edge:children]
+care-pgl-api-prx-1
+care-pgl-api-prx-2
+
+[api-was-myproduct:children]
+care-pgl-api-was-myproduct-1
+care-pgl-api-was-myproduct-2
+
+[api-was-myproduct-old:children]
+care-pgl-api-was-myproduct-1-old
+care-pgl-api-was-myproduct-2-old
+
+[bat-bdp:children]
+care-pgl-bat-bdp
+
+[adm:children]
+care-pgl-adm
+
+[test-server:children]
+care-pgl-api-was-prd-10
+
+[all-api:children]
+api-was-prd-dk2
+api-was-prd-dk3
+
+[msk:children]
+care-pgl-msk-consumer
+
+#rmc
+api-was
+discover
+sgw-was
+sgw-prx
+prx
+api-was-myproduct
+batch-myproduct
+bat
+#bat-bdp
+adm
+
+[allservers:children]
+api-was-prd-dk2
+api-was-prd-dk2-old
+api-was-prd-dk3
+api-was-prd-dk3-old
+api-was-prd-dk4
+rmc
+api-was
+api-was-old
+discover
+sgw-was
+sgw-was-old
+sgw-prx
+prx
+api-was-myproduct
+api-was-myproduct-old
+batch-myproduct
+bat
+bat-bdp
+adm
+search
+search-old
+solr
+msk
+
+[allservers:vars]
+ansible_ssh_user=common
+ansible_ssh_port=2285

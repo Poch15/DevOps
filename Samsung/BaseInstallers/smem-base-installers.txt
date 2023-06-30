@@ -1,0 +1,410 @@
+Needs to be installed in care-pgl-api-prx-prd#1-new
+1. HIDS = OK
+2. STI = OK
+3. IPA = 
+4. create folder sa /home/common.smem-prod/nginx/nginx.conf = 
+5. nginx through docker na may --restart unless-stopped tapos lagay mo sa volume yung path sa #4 = 
+6. yung scouter  = 
+7. scouter config  = 
+8. build_edge.sh = 
+9. telegraf = 
+10. chrony = OK
+
+==========
+SCOUTER
+==========
+# Use common user
+# Sync folder in S3
+
+cd ~ && aws s3 sync s3://smem-base-installers/MISC/api-prx/docker/ ./docker/
+
+Update obj_hostname in all configs in /home/common/docker/scouter/agent.host/conf/
+
+
+====================
+For SCOUTER in RMC
+====================
+Download tar (scouter-all-2.17.1.tar.gz) in https://github.com/scouter-project/scouter/releases
+
+~/scouter/server/conf/scouter.conf = update
+~/scouter/server/startup.sh  = to start
+
+
+====
+HIDS
+====
+Using root user
+Download installers from s3 and store in /temp
+# aws s3 cp s3://smem-base-installers/HIDS/HIDS_Installer.sh HIDS_Installer.sh
+
+To verify
+# ps -ef | grep ds_agent
+# ps -ef | grep Shell
+
+
+====
+STI 
+====
+Using root user
+Download installers from s3 and store in /temp
+# aws s3 cp s3://smem-base-installers/STI/stiInstall.sh stiInstall.sh --> deprecated
+
+or create a script
+#!/bin/bash
+  
+cd /tmp/ && aws s3 cp s3://smem-base-installers/STI/splunkforwarder-8.1.4-17f862b42a7c-Linux-x86_64.tgz . &&
+
+cd /tmp/ && tar -xvzf ./splunkforwarder-8.1.4-17f862b42a7c-Linux-x86_64.tgz &&
+
+rm -rf /opt/splunkforwarder &&
+
+mv /tmp/splunkforwarder /opt/splunkforwarder && chown -R root. /opt/splunkforwarder &&
+
+mkdir -p /opt/splunkforwarder/etc/apps && chmod -R 755 /opt/splunkforwarder/etc/apps &&
+
+aws s3 cp s3://smem-base-installers/STI/STI8_Agent_Installer_SamsungMembers.tar /opt/STI_Agent_Installer_SamsungMembers.tar &&
+
+cd /opt && tar -xvf /opt/STI_Agent_Installer_SamsungMembers.tar &&
+
+chmod +x /opt/install.sh &&
+
+cd /opt && ./install.sh
+
+
+To verify
+# netstat -ano | grep 19997
+
+====
+IPA
+====
+# use root
+# set tags
+
+Create a script
+
+#!/bin/bash
+
+mkdir -p /opt/ipa-client;
+cd /opt/ipa-client;
+wget https://ipa-client.samsungsre.com/download-ipa-client.sh;
+bash ./download-ipa-client.sh aws smem-prod
+
+
+--UPDATED--
+
+#!/bin/bash
+
+mkdir -p /opt/ipa-client
+
+cd /opt/ipa-client
+
+aws s3 cp s3://smem-base-installers/IPA/ipa-client.tar.gz /opt/ipa-client
+
+tar xvfz ipa-client.tar.gz
+
+chmod +x setup-ipa-client.sh
+
+./setup-ipa-client.sh aws smem-prod ZW5yb2xsX3NtZW0tcHJvZGFZbjRWcSQlSE4=
+
+===================
+CREATE nginx config file --> for api-prx
+==================
+# user common user
+# vi /home/common/nginx/nginx.conf
+
+Create 404.html and 403.html
+
+---
+
+server {
+        server_name _;
+
+        location /  {
+            default_type application/json;
+#            return 200 '{"precheck" : 4,"startTime":1623114000000, "endTime":1623128400000 }';
+#return 200 '{ "launch": false, "precheck": 1 }';  # °f ¾÷Ì®, ¼¹ö°ËÀÈ
+
+#return 200 '{"precheck" : 4,"startTime":1491271200000, "endTime":1491291000000}';
+#            return 200 '{"precheck" : 4,"startTime":1491271200000, "endTime":1491291000000}';
+#             return 200 '{ "launch": false, "precheck": 1 }'; Ò
+           # return 200 '{"precheck" : 4,"startTime":1472452200000, "endTime":1472457600000}';
+           # return 200 '{"precheck" : 4,"startTime": 1472446800000, "endTime":1472457600000}';
+            #return 200 '{"precheck" : 4,"startTime": 1463094000000, "endTime":1463097600000}';
+            #return 200 '{"precheck" : 4,"startTime": 1462946400000, "endTime":1462950000000}';
+            #return 200 '{"precheck" : 4,"startTime": 1485306000000, "endTime":1485309600000}';
+         }
+}
+
+server {
+        listen 60;
+
+        location / {
+                default_type application/json;
+                return 200 '{ "launch": false, "precheck": 1 }';
+
+        }
+        access_log /var/log/nginx/access-p60.log;
+}
+
+
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server ipv6only=on;
+	client_max_body_size 100M;
+
+        root /usr/share/nginx/html;
+        index index.html index.htm;
+        resolver 30.0.0.2 valid=10s;
+        # Make site accessible from http://172.17.0.1/
+        server_name _;
+
+        error_page 403 /403.html;
+        location = /403.html {
+                root /usr/share/nginx/html;
+                internal;
+        }
+
+        error_page 404 /404.html;
+        location = /404.html {
+                root /usr/share/nginx/html;
+                internal;
+        }
+
+
+        location ~ /members/v2/.*/internal/gdpr/(.*) {
+             #block gdpr traffic
+             deny all;
+        }
+
+
+        location /oauth {
+                #if ( $http_x_mbrs_info ~ "^3uk8q817f7/(?!9999)" ) {
+                #    return 200 '{"precheck" : 4, "startTime":1579669200000, "endTime":1579676400000}';
+                #}
+
+                proxy_set_header X-Forwarded-Host $host;
+                proxy_set_header X-Forwarded-Server $host;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_pass http://172.17.0.1:8080/members/v2/oauth;
+
+        }
+
+
+        location /members/v2 {
+                #if ( $http_x_mbrs_info ~ "^3uk8q817f7/(?!9999)" ) {
+                #    return 200 '{"precheck" : 4, "startTime":1579669200000, "endTime":1579676400000}';
+                #}
+                proxy_set_header X-Forwarded-Host $host;
+                proxy_set_header X-Forwarded-Server $host;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_pass http://172.17.0.1:8080/members/v2;
+        }
+
+
+#        location /health {
+#                return 200;
+#        }
+
+        # Only for nginx-naxsi used with nginx-naxsi-ui : process denied requests
+        location /health {
+                allow 30.0.0.0/16;
+                deny all;
+
+                proxy_set_header X-Forwarded-Host $host;
+                proxy_set_header X-Forwarded-Server $host;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_pass http://172.17.0.1:8080/management/health;
+
+        }
+
+
+       location /management/health {
+                allow 30.0.0.0/16;
+                deny all;
+
+                proxy_set_header X-Forwarded-Host $host;
+                proxy_set_header X-Forwarded-Server $host;
+                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+                proxy_pass http://172.17.0.1:8080/management/health;
+
+        }
+
+}
+
+===================
+Dockerize nginx  => api-prx-prd
+==================
+# Use common user
+# Create run_nginx.sh
+
+#!/bin/bash
+
+docker stop nginx;
+docker rm nginx;
+
+HOSTNAME=$(hostname)
+docker run -h $HOSTNAME \
+    --restart unless-stopped \
+    -v /home/common/nginx:/etc/nginx/conf.d \
+    -v /home/common/nginx/404.html:/usr/share/nginx/html/404.html \
+    -v /home/common/nginx/403.html:/usr/share/nginx/html/403.html \
+    -v /home/common/nginx-log:/var/log/nginx \
+    --net host \
+    --name nginx -itd nginx:1.21
+
+
+Create 404.html and 403.html
+
+---
+
+# Use root
+# Add /etc/logrotate.d/nginx-docker
+
+/home/common/nginx-log/*.log {
+        hourly
+        missingok
+        maxsize 150M
+        rotate 8
+        compress
+        delaycompress
+        notifempty
+        create 0640 common common
+        sharedscripts
+        prerotate
+                if [ -d /etc/logrotate.d/httpd-prerotate ]; then \
+                        run-parts /etc/logrotate.d/httpd-prerotate; \
+                fi \
+        endscript
+        postrotate
+                docker exec -it nginx nginx -s reload
+        endscript
+}
+
+
+
+
+
+
+=============
+DOCKERIZE EDGE -> for api-prx-prd
+=============
+# Use common user
+aws s3 cp s3://smem-base-installers/CARE/build_edge.sh build_edge.sh
+
+#!/bin/bash
+module_name=edge-server
+java_port=8080
+EUREKA_CONFIG="-Deureka.client.service-url.defaultZone=http://discovery.memberscare.internal:8761/eureka/"
+
+docker stop $module_name
+docker rm $module_name
+
+sed -ir 's/obj_name.*$/obj_name=edge-server/' ~/docker/scouter/agent.host/conf/java_agent.conf
+
+cd docker
+docker build --tag $module_name --build-arg JARNAME=$module_name"-2.0.0-SNAPSHOT.jar" .
+docker run --log-opt max-size=10m --log-opt max-file=2 -d -p $java_port:$java_port -v /home/common/members-log/$module_name:/members-log --net="host" --name $module_name $module_name:latest java -jar -Dspring.profiles.active=default $EUREKA_CONFIG -javaagent:/scouter/agent.java/scouter.agent.jar -Dscouter.config=/scouter/agent.host/conf/java_agent.conf /jar-image/$module_name-2.0.0-SNAPSHOT.jars
+
+==========
+CHRONY
+==========
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html
+
+watch -n 600 echo "$(date +'%d/%m/%Y %H:%M:%S:%3N')"
+echo "$(date +'%d/%m/%Y %H:%M:%S:%3N')"
+
+# install chrony in ubuntu
+apt install chrony
+
+# add the following line before any other server or pool
+server 169.254.169.123 prefer iburst minpoll 4 maxpoll 4
+vi /etc/chrony/chrony.conf
+
+# restart chrony service
+/etc/init.d/chrony restart
+
+# Verify that chrony is using the 169.254.169.123 
+chronyc sources -v
+
+# Verify the time synchronization metrics that are reported by chrony
+chronyc tracking
+
+==========
+TELEGRAF
+==========
+Download installers from s3, use root, store in /root and set exec permission
+# aws s3 cp s3://smem-base-installers/CARE/install_telegraf_ubuntu.sh install_telegraf_ubuntu.sh
+
+
+==========
+FLUENTD
+==========
+Using commonuser
+./fluentd.sh
+#!/bin/bash
+  
+docker run -v /home/common/fluentd:/fluentd \
+    -p 24224:24224 \
+    --restart unless-stopped \
+    -v /home/common/fluentd-cache:/var/log/fluentd \
+    --name fluentd \
+    -tid bitnami/fluentd:1.11.1 /opt/bitnami/fluentd/bin/fluentd -c /fluentd/td-agent.conf
+
+-------------
+td-agent.conf
+-------------
+<source>
+    @type forward
+    @id input_forward
+</source>
+<filter parsed.**>
+    @type record_transformer
+    <record>
+        loggerInstanceId "i-0193ec93"
+    </record>
+</filter>
+<match *.api.log.**>
+@type copy
+    <store>
+        @type s3
+        @log_level debug
+        s3_bucket log-community
+        s3_region ap-northeast-2
+        path logs/${tag[1]}/%Y/%m/%d/%H/%M/${tag[3]}/
+        s3_object_key_format %{path}%{time_slice}.i-0193ec93.${tag[4]}.%{file_extension}
+        time_slice_format %Y-%m-%d-%H:%M:%S %z
+        check_object false
+        <buffer tag,time>
+            @type file
+            path /var/log/fluentd/s3/api
+            timekey 300 # 5m partition
+            timekey_wait 5m
+            timekey_use_utc true # use utc
+        </buffer>
+        <format>
+            @type json
+        </format>
+    </store>
+    <store>
+        @type stdout
+    </store>
+</match>
+
+
+
+==========
+SAMBA
+==========
+
+1) Create dbmadm user
+2) Download dbmadm.tar.gz from com-pgl-backups
+3) Create dbmadm user | password = zjajs2020!2
+/home/dbmadm/rmc_producer/bin/start.sh
+/home/dbmadm/agent/aurorards/bin/start.sh
+/home/dbmadm/agent/elasticache/bin/start.sh
+
+
+===================
+RUN MWB application
+===================
+java -Xms512m -Xmx1024m -XX:-HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/opt/app/community-web -javaagent:/home/software/scouter/agent.java/scouter.agent.jar -Dscouter.config=/home/software/scouter/agent.host/conf/scouter_prd2.conf -Dspring.profiles.active=prd2 -jar /opt/app/community-web/community-web-2.0-prd2.jar

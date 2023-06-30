@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Start-Class: com.samsungmembers.v2.platform.MembersCommonApplication
-Spring-Boot-Classes: BOOT-INF/classes/
-Spring-Boot-Lib: BOOT-INF/lib/
-Spring-Boot-Version: 1.5.15.RELEASE
-Main-Class: org.springframework.boot.loader.JarLauncher
-

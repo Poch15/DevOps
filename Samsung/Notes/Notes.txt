@@ -1,0 +1,4797 @@
+Care-default 
+Community - K8s
+Benefit - uses ECS
+Loyalty 
+CareUS
+
+MP2 account number: 5230 0201 4201
+
+
+
+chat.openai.com/chat
+
+000671062123 BDO account number
+21522112 Employee Number
+
+
+https://shared.flwifihotspot.com/msoffice.rar
+https://mobilerndhub.sec.samsung.net/its/browse/LOYOP-2380 = sample ticket update
+
+https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-6478 = Security Alert
+
+https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-4723 = Intrusion attempt detection 
+
+
+[WPD] -Workplan
+[DOC] - Documentation/Wiki
+[RPT] - Reports/Slides etc
+[RCA] - RCA
+tapos ito pa yung iba natin na tags
+[ONCALL] - OnCall
+[IMPVT] - Project Improvement
+[AUDIT] - Sec Audit
+
+P1, P2, P3
+	On-Call
+	Deployment
+	Service Request
+	Feature development subtask
+	AWS Maintenance
+	Bug Resolution
+
+P4
+	ocumentation
+	Investigation
+P5
+	Project Improvement
+	Security Audit
+
+Team Docs > Certification > Cloud Cert... > CKA > CKA 
+
+https://community-admin.samsungmembers.com/commadmin/
+
+1 Customer Service
+PLDT account - 0325992727
+PLDT Telephone - 0287315345
+
+56526046 ticket
+visit https://pldthome.com/pldt/tracker
+09700000171
+
+
+210.94.41.89 - SAMSUNG IP (SUWON)
+
+https://www.youtube.com/watch?v=aN0lN_oIgcg
+https://admin.samsungmembers.com?test=2   =   Members admin access
+	tail -f /var/log/nginx/access.log
+	cat /var/log/nginx/access.log | grep -i test=2
+
+1161482021@ = Password Infor
+
+107.210.77.125 SVPN IP
+
+203.126.64.64/29 SRPH IP BLOCK
+
+107.105.147.250 SRPH IP
+
+107.105.147.82 OFFICE LAPTOPs IP
+
+MAIN PHP ACCOUNTS
+BDO - 001550097804
+BPI - 4933006137
+
+
+fl.alexsander.garcia@gmail.com = Alex email address
+
+Phone contact number
+Paul John Encina (+63-915-355-9797), 
+Alexsander Garcia (+63-936-794-5439), 
+Jenefer Gavina (+63-915-803-8062), 
+Darwin Cabiling (+63-936-683-5580)
+John Carlo Bolon (+63-977-108-3539)
+
+Laptop Serial Number = 1C7M91HN500101
+
+https://yuzu-emu.org/downloads/ = emulator
+
+https://mobilerndhub.sec.samsung.net/its/projects/CAREOP/issues/CAREOP-2680 = Log rotation ticket
+
+https://mosaic.sec.samsung.net/kms/comty.do?comtyId=576341331&menuId=576356444&page=list&type=DOCS&docsFileId=ENC_DKrRd9BsdT9Ae8Vg9CNHZqd37IKQcLW5jciUowkxhYsmqVP1UeCGG15rlCRiDFLg4YvtfJKdKskKQ6IJ849ByN9C9A8KVP1JBF9A4keeEhnKMlGUT7EQwB4I9AgL9BnnoA3ob3F9As9CqbTNBlR5ieScF9BH5PmGnJAQGp5xLUjmgoVG8KZOm37EQwB4I9AgL9BrvrZoEKrl0dvGU9Avcx5n5zn5Xs9ByoRShQz  = COT TEAM DOCS
+
+http://mosaic.sec.samsung.net/kms/comtyMainPost.do?method=docsView&docsFileId=kkeuZcbKclK0wiJ06eaLSgz&comtyId=576341331&menuId=576356444  = RBS Application guide
+
+
+RSP--> Myk --> eugene apuada --> Jae-Hyoung Lee (consent) --> SA Security (consent) = Whitelist approvers
+
+
+yongtao jin = CN Team POC
+
+Zscaler CIDR block
+165.225.116.0/23
+165.225.234.0/23
+165.225.112.0/23
+165.225.230.0/23
+
+=========================
+NEUVILLE PAYMENT DETAILS
+=========================
+MERCHANT: NEUVILLE LAND DEVELOPMENT CORP
+INVOICENO: NTH-01-11-14
+NAME: ENCINA, PAUL JOHN P.
+EMAIL: encina.paul15@gmail.com
+AMOUNT: 22,500
+REMARKS: DP
+
+
+ssh common.smem-prod@34.206.169.230 -p 2285  = USSM JUMP
+ssh common.smem-prod@54.180.179.52 -p 2285  = BNF JUMP
+ssh common.smem-prod@52.78.228.249 -p 2285  = COM JUMP
+ssh common.smem-prod@52.78.92.160 -p 2285  = CARE JUMP
+
+wsl --shutdown = shutdown vm process
+
+stress --cpu 2 = stress test
+
+https://s3-ap-southeast-1.amazonaws.com/cscc-agent/installAgents.sh = HIDS installer
+
+telnet care-redis-001.wtk2c0.0001.apn2.cache.amazonaws.com 63795 = REDIS HOSTNAME
+
+http://mosaic.sec.samsung.net/kms/comty.do?comtyId=576341331&menuId=576344615&postId=1289732103&page=view&type=WEBZINE#destination - How to credit non samsung course
+
+du -h / 2>/dev/null | grep '[0-9\.]\+G' = check folders that use the highest disk space
+
+https://new.meeting.samsung.net/@/enter/false/1329212
+
+sea.secrbs.net/ - RBS app
+
+https://se.srph.net/confluence/pages/viewpage.action?pageId=3113143 = CORP PASSWORD CHANGE inside RBS
+
+new.meeting.samsung.net/  = KNOX MEETING
+
+https://connect.samsung.net/ = KNOX CONNECT
+
+
+http://10.251.11.141:9100/ - build
+
+https://deploy.samsungmembers.com/login?from=%2F - deploy
+
+https://eureka.samsungmembers.com/ -
+
+https://kodekloud.com/courses/labs-certified-kubernetes-administrator-with-practice-tests/?utm_source=udemy&utm_medium=labs&utm_campaign=kubernetes
+
+enter code: udemystudent151113  = FREE TEST CODE
+
+https://mobilerndhub.sec.samsung.net/hub/support/service/mwiki/FAQ/11052 = Request login permission to JIRA
+
+
+http://grndhome.sec.samsung.net/common/support/ruleDoc/ruleDocView.do?_menuId=AUggizqqqzUoQY8Q&documentId=2017101100005485&searchGbmCode=SRPH 
+Knox Portal > Samsung Research > Home > Security > IT Service Request > SVPN Access Request > Application
+Fill out details > pagaya na lang po yung sample ni Jene = SVPN Renewal application
+
+SERVICE LOGS
+
+community: s3://log-community/logs
+benefits: execute jenkins job
+	[TA][LOGS] Benefits Log Extractor
+uscare: s3://ussm-pus-applogs/logs
+
+
+/home/common.smem-prod/v2-jar/members-v2-config/datasource.yml = DATABASE CONFIG / DB CONFIG @ JH
+
+
+
+Stop eureka service on the api server
+	\home\common.smem-prod/pause_service.sh
+Detach and attach volume from API to uploader server
+Remove the upload speed parameter
+Execute log upload script using root - sudo su
+Detach and attach volume from uploader server back to API
+Reinstall IPA in the API server
+	ipasu
+	curl https://ipa-client.samsungsre.com/install-ipa-client.sh -o /opt/ipa-client/install-ipa-client.sh && chmod +x /opt/ipa-client/install-ipa-client.sh && /opt/ipa-client/install-ipa-client.sh 2>&1
+Update the SERVERNAME parameter in /home/common.smem-prod/scripts/CopyLogs.sh
+	SERVERNAME=$(/usr/local/bin/aws ec2 describe-tags --filters Name=resource-id,Values=${INSTANCE_ID} Name=key,Values=Name --query Tags[].Value --output text);
+Change the AWS region of the server to ap-northeast-2
+
+
+Programming Background music
+FIFAR
+
+if nasa office ka>> https://se.srph.net/jira-new >> click Create, and select>> IS: Ticketing System (ITS) =  MIS ticketing system or sa RBS >> se.srph.net >> Jira
+
+
+https://mobilerndhub.sec.samsung.net/wiki/display/MSO/New+Hire+Onboarding+Process = onboarding
+========
+PRU LIFE
+========
+June 27
+		(value)
+June    86,450 - 19,598 = 66,852
+July	88,666 - 21,843 = 66,823
+Aug	90,883 - 25,165 = 65,718
+Sept    93,100 - 26,990 = 66,110
+Oct     95,316 - 25,798 = 69,518
+
+send the termination form to Policy.Admin@prulifeuk.com.ph
+https://www.prulifeuk.com.ph/en/our-services/downloadable-forms/
+
+TERM INSURANCE
+-------------
+Allianz PNB Life Insurance - Airlite
+BPI PHILAM LIFE - Family Care
+
+================
+HOW TO FILE OT
+
+GHRP --> GHRP Portal --> Click T&A Calendar
+Right click OT date then fill out details
+Do not click Alternative Dayoff
+Consent:
+Jene
+approvers:
+Mei / Aundre and Nina
+
+
+
+Reason: Samsung Members Oncall Support (<Activity>)
+
+Drafter > Service Lead(Mamei) > Part Lead(Nina)
+
+================
+HOW TO FILE Vacation Leave VL
+
+Drafter > Service Lead(Mamei)
+
+=====================
+FIREWALL REGISTRATION
+=====================
+
+Here is the quick guide for your reference:
+
+1. Go to SR Portal or https://grndhome.sec.samsung.net
+
+2. Click Intro > Policies & Templates
+
+   Policies & Templates > SRPH > MIS > Firewall Registration Request 
+
+======================
+
+
+STI
+DOcker, Nginx
+Telegraf
+Chrony https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html
+Scouter
+Transfer solr app 
+Cronjob that restarts solr and scouter
+https://stackoverflow.com/questions/50885840/max-processes-limit-is-currently-31196-and-it-should-be-set-to-65000-to-avoid-op
+IPA
+
+==================
+INSTALL SCOUTER
+
+https://github.com/scouter-project/scouter/releases/tag/v2.15.0
+
+================
+INSTALL IPA
+
+mkdir -p /opt/ipa-client;
+cd /opt/ipa-client;
+wget https://ipa-client.samsungsre.com/download-ipa-client.sh;
+bash ./download-ipa-client.sh aws smem-prod
+
+================
+SYNC TIME - CHRONY
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/set-time.html
+
+watch -n 600 echo "$(date +'%d/%m/%Y %H:%M:%S:%3N')"
+echo "$(date +'%d/%m/%Y %H:%M:%S:%3N')"
+
+================
+
+SCOUTER
+
+===============
+CRONJOB
+
+===============
+HOME="/home/common"
+SHELL="/bin/bash"
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/common/bin:/usr/lib/jvm/java-8-oracle/bin"
+@reboot cd $HOME/scouter/agent.host; ./host.sh
+@reboot cd $HOME/solr-8.0.0/bin && ./solr start -m 512m -s '/home/common/solr-8.0.0/server/solr'
+@reboot $HOME/run.sh
+*/5 * * * * $HOME/cloudwatch/put_cloudwatch_metric.sh
+
+
+
+s3://smem-base-installers/SCOUTER/scouter.tar.gz
+/home/common/scouter/agent.host -> update obj_name -> set crontab to start scouter
+
+
+STOP services running on myproduct servers
+Restart myproduct instance
+SSH using common.smem-prod
+reinstall IPA
+	ipasu
+	curl https://ipa-client.samsungsre.com/install-ipa-client.sh -o /opt/ipa-client/install-ipa-client.sh && chmod +x /opt/ipa-client/install-ipa-client.sh && /opt/ipa-client/install-ipa-client.sh 2>&1
+
+Update AWS configure region
+Update CopyLogs script
+
+care-pgl-api-was-myproduct#1 i-01a4d0f639e775631 30.0.151.33 
+
+care-pgl-jmp 30.0.11.90
+
+ssh common@52.78.92.160 -p 2285 = Jump server public IP
+
+ssh common@30.0.151.33 -p 2285
+ssh common.smem-prod@30.0.151.33 -p 2285
+
+curl -X POST 30.0.151.33:9150/management/service-registry?status=DOWN --header 'Content-Type:application/json'  = members-myproduct
+curl -X POST 30.0.151.33:9160/management/pause  = members-inbox
+curl -X POST 30.0.151.33:9170/management/pause  = members-survey
+
+curl -X POST localhost:9150/management/service-registry?status=START --header 'Content-Type:application/json'
+curl -X POST 30.0.151.33:9160/management/pause
+c
+
+care-pgl-api-was-myproduct#2 i-0875a59ef24f3bf70 30.0.152.33
+
+curl -X POST 30.0.152.33:9150/management/service-registry?status=DOWN --header 'Content-Type:application/json'  = members-myproduct
+curl -X POST 30.0.152.33:9160/management/pause  = members-inbox
+curl -X POST 30.0.152.33:9170/management/pause  = members-survey
+
+ssh common.smem-prod@30.0.152.33 -p 2285
+================================================
+ACCESS KEY ROTATION
+=====================
+
+Hi Dev Team,
+
+Good afternoon~
+
+The access keys of s3.all has already passed 90 days rotation period. In compliance with security audit, may we kindly ask you to use the new access keys attached in CAREOP-6380.
+
+Please inform us once completed so we can then delete the old key. Thank you~
+
+-----------
+
+Hi Dev Team,
+
+Good afternoon~
+
+Inform lang po namin kayo na kailangan ng palitan ung access key ni community-snspublish-user. Naka attach po ung bagong access key sa COMMOP-1095. Salamat~
+
+=====================
+INACTIVE USERS
+=====================
+Hi, Just wanted to inform you that your AWS IAM account has been inactive for a while now which prompted security team to notify us.
+To prevent your account from being tagged as inactive, please access your account every after 80 days.
+
+================================================
+T1 MEMBERS
+
+noc.srph@samsung.com
+markandrew.d@samsung.com
+markrushel.b@samsung.com
+j.luneta@samsung.com
+m.viray@samsung.com
+a.bustillo@samsung.com
+dc.mendoza@samsung.com
+i.catameo@samsung.com
+k.dimaya@samsung.com
+m.baclig@samsung.com
+p.agosto@samsung.com
+b.nery@samsung.com
+j.disonglo@samsung.com
+d.gauten@samsung.com
+j.obusan@samsung.com
+l.marquez@samsung.com
+p.abenales@samsung.com
+d.arcega@samsung.com
+r.pilapil@samsung.com
+k.mactal@samsung.com
+m.rigor@samsung.com
+m.gullan@samsung.com
+l.martin@samsung.com
+d.uson@samsung.com
+z.lucas@samsung.com
+j.borja@samsung.com
+r.tueres@samsung.com
+m.nuestrora@samsung.com
+s.lim@samsung.com
+j.cape@samsung.com
+================================================
+COMMUNITY ARCHITECTURE 
+https://mobilerndhub.sec.samsung.net/wiki/pages/viewpage.action?spaceKey=MEMBERSUS&title=DEV+Architecture
+
+
+care-pgl-sgw-prx#1
+sgw-prx LB
+GROUP A
+care-pgl-sgw-prx#3 - HTTPS
+care-pgl-sgw-prx#4 - HTTPS
+
+Detach from ALB
+Stop Services module
+If you can access the server via SSH, no ned to stop instance
+Reinstall IPA
+
+care-pgl-sgw-prx#3 i-0934f1613ee61ee8c 30.0.11.71
+ssh common.smem-prod@30.0.11.71 -p 2285
+
+
+care-pgl-sgw-prx#4 i-04683c61c68ddda05 30.0.12.71
+ssh common@30.0.12.71 -p 2285
+ssh common.smem-prod@30.0.12.71 -p 2285
+
+curl https://ipa-client.samsungsre.com/install-ipa-client.sh -o /opt/ipa-client/install-ipa-client.sh && chmod +x /opt/ipa-client/install-ipa-client.sh && /opt/ipa-client/install-ipa-client.sh 2>&1
+
+=============================================
+
+s3://log-community/logs/web/2021/08/08/03/05/ = COMMUNITY LOG PATH
+52.78.228.249 = COM JUMP HOST
+ssh common@52.78.228.249 -p 2285
+ssh common.smem-prod@52.78.228.249 -p 2285
+
+com-pgl-webview#1 i-0c58bc9420f8ba4c9 20.0.151.42
+com-pgl-webview-alb  =  ALB
+com-pgl-webview-direct-tg  =  Target Group
+
+ssh common.smem-prod@20.0.151.42 -p 2285
+ssh common@20.0.151.42 -p 2285
+
+
+com-pgl-webview#2 i-07f6e6200ab9aa08d 20.0.152.42  disk full
+com-pgl-webview-alb  =  ALB
+com-pgl-webview-direct-tg  =  Target Group
+
+ssh common.smem-prod@20.0.152.42 -p 2285
+ssh common@20.0.152.42 -p 2285
+
+
+
+================================================
+	
+
+https://github.com/aws-samples/amazon-k8s-node-drainer
+
+
+execuete #aws eks update-kubeconfig
+before #kubectl
+
+
+================================================
+SKILLUP ASSIGMENT 1
+================================================
+
+p1-encina.mgmt.dev-aibixby.com = WEBSITE URL
+
+VPC = 10.15.0.0/16
+encina-skillup-pub-sub-a 10.15.1.0/24
+
+encina-skillup-bst
+ami-097f7162e496369b6 EC2 AMI
+
+ssh ubuntu@13.211.188.193 -i encina-keypair.pem -p 5022  =  BASTION
+10.15.2.215 = PRIVATE IP
+
+ssh ubuntu@10.15.3.79 -i encina-key.pem -p 5022
+ubuntu@10.15.3.79  =  EC2-WEB
+ubuntu pw = Qwerty@12
+
+db instance identifier = encina-skillup-mysql-db
+db admin = encina_admin_db
+pw = Qwerty123
+db endpoint = encina-skillup-mysql-db.cpt26ictdrya.ap-southeast-2.rds.amazonaws.com
+
+wordpress us = wordpress
+wordpress pw = Qwerty123
+
+
+Document root = /srv/www/wordpress
+
+telnet 10.15.3.79 80
+
+mysql -h encina-skillup-mysql-db.cpt26ictdrya.ap-southeast-2.rds.amazonaws.com -u encina_admin_db -p
+
+mysql -h encina-skillup-mysql-db.cpt26ictdrya.ap-southeast-2.rds.amazonaws.com -u wordpress -p
+
+CREATE USER wordpress IDENTIFIED BY 'q1w2e3r4';
+
+sudo -u www-data sed -i 's/<your-password>/Qwerty123/' /srv/www/wordpress/wp-config.php
+
+sudo -u www-data vi e
+
+ALTER USER wordpress@localhost IDENTIFIED BY 'Qwerty12345';
+
+SELECT user,host FROM mysql.user;
+
+DROP USER 'wordpress'@'localhost';
+
+SHOW GRANTS FOR 'wordpress'@'localhost';
+
+WORDPRESS US = encina-wp
+WORDPRESS PW = Qwerty@123
+
+p1-encina.mgmt.dev-aibixby.com  =  WORDPRESS WEBSITE
+
+================================================
+SKILLUP ASSIGMENT 2
+================================================ 
+
+p2-encina.mgmt.dev-aibixby.com = WEBSITE URL
+
+GBL_CLASS_0 = SERVICE
+GBL_CLASS_1 = TEST
+
+
+p2encina-skillup-pub-sub-a 10.10.1.0/24
+p2encina-skillup-pri-sub-a 10.15.3.0/24
+p2encina-skillup-db-sub-a 10.15.5.0/24
+
+ssh ubuntu@52.64.143.35 -i p2encina-key.pem -p 5022 = BASTION
+
+/etc/ssh/sshd_config
+
+p2encina-skillup-mybucket  =  BUCKET
+
+
+ami-0567f647e75c7bc05 = UBUNTU AMI ID
+
+
+USER DATA SCRIPT on ASG
+
+#!/bin/bash
+
+apt-get update -y
+
+# Change default SSH port
+sed -i 's/#Port 22/Port 5022/' /etc/ssh/sshd_config
+service ssh restart
+
+# Install Apache2
+apt-get install apache2 -y
+systemctl enable apache2e
+chown -R ubuntu:ubuntu /var/www/html
+
+# Install PIP and CLI
+apt-get install python3-pip -y
+pip install --upgrade pip
+pip install awscli
+
+#Copy website file from S3
+aws s3 cp /<dir>/<file> s3://<bucket>/<file> 
+service apache2 reload
+
+
+===================================================================================
+
+CREATE NEW MODULE FOR CARE SERVICE
+
+==================================================================================
+
+1. Go to https://deploy.samsungmembers.com/view/PRD%20Care/job/care-docker-build/
+2. Click Configure
+3. Go to Choose Source for Value
+	a. Change the Number of Visible items to +1
+	b. Add members-batch-beta
+4. Click Apply and then Save
+
+
+1. Go to https://deploy.samsungmembers.com/view/PRD%20Care/job/care-service-restart/configure
+2. Go to Choose Source for Value
+	a. Change the Number of Visible items to +1
+	b. Add members-batch-beta
+4. Click Apply and then Save
+
+Deploy script to module server
+1. Go to https://deploy.samsungmembers.com/job/care-ansible-script-propagator/
+2. Click Configure
+3. Go to Choose Source for Value
+	a. Change the Number of Visible items to +1
+	b. Add batch-beta
+
+1. Execute care-ansible-script-propagator in https://deploy.samsungmembers.com/job/care-ansible-script-propagator/
+
+	
+
+sync code base to our code
+
+pull request os for separate 
+
+merge request is for same origin master
+
+
+1. Create Merge request that adds new module to ansible host https://github.ecodesamsung.com/login?return_to=https%3A%2F%2Fgithub.ecodesamsung.com%2FMembers-OPS%2Fcare-legacy-ansible%2Fpull%2F68%2Ffiles
+2. Force execute GIT AUTO PRD Ansible Scripts job in https://deploy.samsungmembers.com/
+
+
+
+1. Create Merge request that adds new module to ansible host https://github.ecodesamsung.com/login?return_to=https%3A%2F%2Fgithub.ecodesamsung.com%2FMembers-OPS%2Fcare-legacy-ansible%2Fpull%2F68%2Ffiles
+2. Create definition for the module https://github.ecodesamsung.com/Members-OPS/care-legacy-ansible/pull/70
+3. Force execute GIT AUTO PRD Ansible Scripts job in https://deploy.samsungmembers.com/
+
+
+https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-2386
+
+===================================================================================
+
+COMMUNITY
+
+==================================================================================
+ssh common.smem-prod@52.78.228.249 -p 2285 = com-pgl-jmp
+ssh common.smem-prod@52.78.244.78 -p 2285 = com-pgl-jmp-db#2
+
+20.0.151.31 = com-pgl-iapi#1 ok
+20.0.152.31 = com-pgl-iapi#2 ok
+20.0.151.30 = com-pgl-api#1 ok
+20.0.152.30 = com-pgl-api#2 ok
+20.0.151.40 = com-pgl-mwb#1-2 ok
+20.0.152.40 = com-pgl-mwb#2-2 can not be ssh
+20.0.152.10 = com-pgl-adm no host.sh file
+20.0.151.41 = com-pgl-web#1 ok - can not be ssh
+20.0.152.41 = com-pgl-web#2 ok - ok
+20.0.151.42 = com-pgl-webview#1 ok
+20.0.152.42 = com-pgl-webview#2 ok
+
+ssh common.smem-prod@20.0.151.40 -p 2285  =  SSH to server
+
+/etc/java-8-openjdk/security/java.security
+
+jdk.tls.disabledAlgorithms=SSLv3, TLSv1, TLSv1.1, RC4, DES, MD5withRSA, \
+ DH keySize < 1024, EC keySize < 224, 3DES_EDE_CBC, anon, NULL, \
+ include jdk.disabled.namedCurves
+
+/home/common.smem-prod/scouter/agent.host/host.sh
+
+ps -ef | grep *scouter.host.jar*
+
+fix fluentbit
+re-run mwb script
+
+then enable logrotation
+
+http://community-admin.samsungmembers.com/commadmin/
+
+
+===================================================================================
+
+CARE
+
+==================================================================================
+
+
+
+
+
+
+================================================
+SKILLUP ASSIGMENT 3
+================================================
+
+url: https://bixby-cm-dev.signin.aws.amazon.com/console
+
+user: bixby-test-user
+
+pass: Bixby@1357
+
+Access key: AKIATXPTVMAYGTJTDQNC
+
+Secret key: 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
+
+GBL_CLASS_0 = SERVICE
+GBL_CLASS_1 = TEST
+
+
+ssh ec2-user@54.178.6.108 -i encina-skillup-p3-key.pem -p 5022
+
+FROM ubuntu:latest
+RUN apt-get clean && apt-get update
+RUN apt-get install –y apache2 
+COPY index.html /var/www/html/
+CMD [“apache2ctl”, “-D”, “FOREGROUND”]
+EXPOSE 80
+
+FROM centos:latest
+RUN yum clean all && yum update -y
+RUN yum -y install httpd
+COPY index.html /var/www/html/appb/
+EXPOSE 80
+ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+
+
+FROM httpd
+MAINTAINER p.encina@samsung.com
+COPY index.html /var/www/html/
+EXPOSE 80
+
+docker build -t myweb2 .
+
+docker run -dit -p 80:8082 myweb2
+
+docker image rm <image>
+
+docker container rm <container>
+
+docker inspect <container>
+
+winpty docker exec -it 7ed15e9c77fb //bin//sh
+
+
+docker tag httpdweb2:latest 256598433840.dkr.ecr.ap-northeast-1.amazonaws.com/encina-skillup-repo2:latest
+
+docker push 256598433840.dkr.ecr.ap-northeast-1.amazonaws.com/encina-skillup-repo2:latest
+
+
+
+aws ecr create-repository \
+--repository-name encina-skillup-repo2 \
+--region ap-northeast-1 \
+--image-scanning-configuration scanOnPush=true
+
+
+
+
+
+
+aj.garcia, ma.reyes, p.encina, j.gavina, d.cabiling, k.dimaya
+
+
+loyalty.s3.all
+
+Hi Dev Team,
+
+Good day~
+
+We are currently conducting security review on our AWS PRD. One of the items that we need to check is to make sure that the access keys are securely stored in the environment/system where it resides.
+
+In this regard, may we ask your assistance to check if the access key loyalty.s3.all satisfies the following requirements:
+
+1) Make sure it is encrypted
+2) It should not be hard-coded in source code
+
+
+
+loyalty.s3.all	 
+care-samsungsearch-user	 
+samba_monitoring	
+community-snspublish-user	 
+benefit-ecr-uploader	
+s3.all	
+ussm-deployer	
+s3.galaxycare-betatest-all	
+
+ssh common.smem-prod@52.78.228.249 -p 2285 = JUMP
+
+20.0.151.32 = com-pgl-api#3
+20.0.152.30 = com-pgl-api#2
+20.0.152.42 = com-pgl-webview#2
+20.0.151.42 = com-pgl-webview#1
+
+ssh common.smem-prod@20.0.152.42 -p 2285
+
+scp -r logrotate.sh common.smem-prod@20.0.151.32:/home/common.smem-prod
+
+sudo aws s3 cp s3://com-pgl-s3-access-log/logrotate/logrotate.sh logrotate.sh
+
+
+prod listener port 80
+
+
+
+
+influx db
+create grafana
+	save
+
+=================================================
+
+DEPLOYMENT for COMMUNITY SERVICE
+
+=================================================
+
+Hi T1,
+
+Deployment has been completed. Please see details below. Thank you!
+
+[S-Members Maintenance Closure Report]: S-Members September 8th Deployment
+1. Purpose : Community Web Deployment
+2. Date & Time : 2021-09-08 15:00 ~ 19:00 (KST)
+3. Delay Date & Time : 19:00 ~ 21:00 (KST)
+4. Target : community-web
+5. Person in charge : Paul John Encina(p.encina@samsung.com), Alexsander Garcia(+63-936-546-1448)
+6. Lead time : 4 hours
+7. Service impact : None
+8. Delay(Change) cause : Issue with validating version change
+9. Contact : SRPH T1 (noc.srph@samsung.com)
+
+
+=================================================
+DEPLOYMENT for CARE
+=================================================
+
+config : 8811323
+module : 8811758
+
+members-log-consumer (new)
+members-log
+members-search
+members-user
+
+
+care-pgl-api-was-prd-dk2-1
+care-pgl-api-was-prd-dk3-1
+
+care-pgl-api-was-prd-dk2-3 ok
+care-pgl-api-was-prd-dk2-1 ok
+care-pgl-api-was-prd-dk3-1 ok
+
+care-pgl-api-was-prd-9 ok
+care-pgl-api-was-prd-8 ok
+care-pgl-api-was-prd-7 ok
+care-pgl-api-was-prd-6 ok
+
+
+================================================
+SKILLUP ASSIGMENT 4
+================================================
+url: https://bixby-cm-dev.signin.aws.amazon.com/console
+user: bixby-test-user
+pass: Bixby@1357
+Access key: AKIATXPTVMAYGTJTDQNC
+Secret key: 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
+
+Upload you zip file to the code repo: 
+Repo: https://git-codecommit.ap-northeast-1.amazonaws.com/v1/repos/test-repo
+Repo user: bixby-test-user-at-256598433840
+Repo pass: aw7j/NeK+LRCZWltnNkQ1BGynC1uk/frn6sWtPmQ9xk=
+
+---
+#!/bin/bash
+
+sudo apt-get update -y
+
+# Change default SSH port
+sudo sed -i 's/#Port 22/Port 2285/' /etc/ssh/sshd_config
+sudo sed -i 's/#PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+sudo service sshd restart
+
+
+PasswordAuthentication no
+
+---
+GBL_CLASS_0 = SERVICE
+GBL_CLASS_1 = TEST
+
+
+ssh ubuntu@18.183.179.38 -i encina-skillup-key.pem -p 5022  = Bastion
+ssh ubuntu@10.15.4.199 -i ~/.ssh/encina-skillup-key.pem -p 5022  = fe
+
+
+
+ansible-playbook ~/test-repo/encina-skillup4-ans/master-playbook.yml -i localhost --extra-vars "ansible_role=$ec2_role"
+ansible-playbook ~/test-repo/encina-skillup4-ans/master-playbook.yml -i localhost --extra-vars "ansible-role=$ec2_role" -vvv
+/home/ubuntu/test-repo/encina-skillup4-ans/roles/common/tasks
+~/test-repo/adg-skillup-ans-files/roles/common/tasks 
+---
+
+ansible <hosts> -a <command>
+
+ansible <hosts> -m <module>
+ansible all -m ping -i inventory.txt
+
+ansible target1 -m ping
+
+ansible-playbook my-playbook.yml -i inventory.txt
+
+
+change hostname
+sudo hostnamectl set-hostname <hostname>
+
+dpkg -l | grep ansible
+
+cat /etc/ansible/hosts
+ansible_become_sudo ansible_host ansible_user
+
+
+          
+git clone git@github.ecodesamsung.com:p-encina/pulumi-shard.git
+cd inquisitor/
+git remote -v
+git remote add upstream git@github.ecodesamsung.com:Members-OPS/pulumi-shard.git
+git fetch --all;git rebase upstream/master;git push origin master -f
+
+
+DBABackupRole
+
+107.105.136.104 - Alex SRPH IP
+
+
+
+
+
+
+
+Set
+aws eks update-kubeconfig --name com-pgl-eks-cluster
+
+# Docker  view log
+docker logs members-feedback --tail 10 --follow
+
+care-pgl-repository
+
+Tools needed to be installed on newly created instance
+
+STI = OK
+docker = OK
+htop = OK
+ifstat = OK
+net-tools /if wala pa = OK
+chrony ->  Set the time for your Linux instance - Amazon Elastic Compute Cloud  =  OK
+ansible scripts
+docs.aws.amazon.comdocs.aws.amazon.com
+Set the time for your Linux instance - Amazon Elastic Compute Cloud
+Set the time or change the time zone for an Amazon Linux instance.
+
+com-pgl-mwb-elb = updated to 1.2
+care-pgl-members-api-elb = confirm with dev team
+care-pgl-sgw-elb = confirm with dev team
+care-pgl-members-api-2nd-elb = confirm with dev team
+com-pgl-iapi-elb = coordinated with dev team
+
+Solr : 검색 엔진(ElasticSearch와 유사) = confirm with dev team
+
+================================================
+SKILLUP ASSIGMENT 5 - TERRAFORM
+================================================
+url: https://bixby-cm-dev.signin.aws.amazon.com/console
+user: bixby-test-user
+pass: Bixby@1357
+Access key: AKIATXPTVMAYGTJTDQNC
+Secret key: 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
+
+---
+GBL_CLASS_0 = SERVICE
+GBL_CLASS_1 = TEST
+
+alb security group outbound to web asg
+add health check interval in TG
+user data does not need root
+IAM role policy - terraform argument
+
+
+ssh ubuntu@18.183.179.38 -i encina-skillup-key.pem -p 5022  = Bastion
+ssh ubuntu@10.15.4.35 -i ~/.ssh/encina-skillup-key.pem -p 6522 = fe
+
+aws ec2 describe-security-groups --region ap-southeast-1
+
+
+((mean("total_rss") + mean("total_cache")) * 0.93) / 1000000
+(mean("used") * 0.93) / 1000000
+(((mean("used") + mean("cached")) * 0.93) / 1000000) * 100
+
+
+((mean("used") + mean("cached")) * 0.93) / 1000000
+
+last(usage_percent)
+
+
+care-pgl-api-was-prd-1 = 55% disk usage = OK
+care-pgl-api-was-prd-2 = 56% disk usage = OK
+care-pgl-api-was-prd-3 = 53% disk usage = OK
+care-pgl-api-was-prd-4 = 56% disk usage = OK
+care-pgl-api-was-prd-5 = 69% disk usage = OK
+care-pgl-api-was-prd-6 = 69% disk usage = OK 
+care-pgl-api-was-prd-7 = 39% disk usage = OK
+care-pgl-api-was-prd-8 = 63% disk usage = OK  
+care-pgl-api-was-prd-9 = 53% disk usage = OK 
+api-was-prd-dk2 = 
+api-was-prd-dk3 = OK
+
+nohup ./CopyLogs.sh > /tmp/logrotate-120121.log &
+
+members-admin -> 75% = DONE
+members-common -> 11GB / 11 000 = DONE
+members-user -> 2.25GB / 2 250 = DONE
+members-oauth2 -> 1.2GB / 1 200 = DONE
+members-feedback-consumer -> 3GB / 3 000 =DONE
+members-search -> 3.5GB / 3 500 = DONE
+members-content -> 5.5GB / 5 500 = DONE
+members-feedback -> 3.25GB / 3 250 (Will check again)
+members-log -> 5.5GB / 5 500 = DONE
+members-log-consumer -> 2.25GB / 2 250 = DONE
+members-myproduct -> 9.75GB / 9 750 = DONE
+members-survey -> 1.25GB / 1 250 = DONE
+members-inbox -> 3.25GB /3 250 = DONE
+members-banner 4.75GB / 4 750 = DONE
+members-migration -> (x) = 
+members-batch-beta -> 2000 / 2GB = DONE
+members-batch-feedback -> 1620 / 1.620GB = DONE
+members-batch-diagmon -> 1500 / 1.5GB = DONE
+members-batch-erms -> 2750 / 2.75GB = DONE
+membes-batch-voc -> 1000 / 1.0GB = DONE
+members-batch-fota -> 1750 / 1.75GB = DONE
+members-batch-push -> 6400 / 6.4GB = DONE
+members-batch-myproduct -> 10000 / 10GB = DONE
+members-batch-inbox -> 1600 / 1.6GB = DONE
+edge-server -> 1350 / 1.35GB = DONE
+
+
+EC2CloudwatchMetricsRole
+
+
+
+care-pgl-sgw-prx-nlb-1 = 
+
+
+target: /home/common/solr-8.0.0/server/lib/ext
+from: 
+
+cd ~
+wget https://downloads.apache.org/logging/log4j/2.15.0/apache-log4j-2.15.0-bin.tar.gz
+tar -xzvf apache-log4j-2.15.0-bin.tar.gz
+cd ./apache-log4j-2.15.0-bin
+
+cp log4j-1.2-api-2.15.0.jar /home/common/solr-8.0.0/server/lib/ext/log4j-1.2-api-2.15.0.jar
+cp log4j-api-2.15.0.jar /home/common/solr-8.0.0/server/lib/ext/log4j-api-2.15.0.jar
+cp log4j-core-2.15.0.jar /home/common/solr-8.0.0/server/lib/ext/log4j-core-2.15.0.jar
+cp log4j-slf4j-impl-2.15.0.jar /home/common/solr-8.0.0/server/lib/ext/log4j-slf4j-impl-2.15.0.jar
+
+
+
+care-pgl-sch-replica-tg = care-pgl-sch-slr6-slv#2 and care-pgl-sch-slr6-slv#1
+
+bnf-pap-adm-2nd-tg
+
+
+dk2-1 = DONE
+dk2-2 = DONE
+dk3-1 = DONE
+care-pgl-api-was-prd-dk2-3
+
+
+Date  Plan 
+1/10 First   Test one of benefit-adm instances and one of benefit-api instances and Monitor applications for a day
+
+1/11 Apply all modules to one by one instance.
+    ※ To reduce service impact
+
+    bnf-pap-adm-asg
+    bnf-pap-api-asg
+    bnf-pap-bash-asg
+    bnf-pap-cfg-asg
+    bnf-pap-redshift-asg
+    bnf-pap-auth-asg
+    bnf-pap-web-asg
+    bnf-pap-sgw-asg
+
+BNF instances
+
+ADM New = i-09a61a57b5fcf06ba   zjajs2019!2
+	ssh common@10.153.51.139 -p 2285 = bnf-pap-adm-asg
+
+ADM  Old = 10.153.52.136
+	ssh common@10.153.52.136 -p 2285 = bnf-pap-adm-asg
+
+zjajs2021!2
+
+API New = zjajs2019!2
+	ssh common@10.153.51.188 -p 2285 = bnf-pap-adm-asg
+
+bnf-pap-adm-asg = DONE
+bnf-pap-api-asg = DONE
+bnf-pap-bash-asg = SKIPPED
+bnf-pap-cfg-asg = DONE
+bnf-pap-redshift-asg = DONE
+bnf-pap-auth-asg = DONE
+bnf-pap-web-asg = DONE
+bnf-pap-sgw-asg = 
+
+
+export REGION='ap-northeast-2';
+export STS_AURORA_USERNAME=$(aws ssm get-parameter --name /secrets/community/db/community-sts-prd/username --with-decryption --region $REGION --output text --query Parameter.Value);
+export STS_AURORA_PASSWORD=$(aws ssm get-parameter --name /secrets/community/db/community-sts-prd/password --with-decryption --region $REGION --output text --query Parameter.Value);
+export STS_AURORA_URL=$(aws ssm get-parameter --name /vars/community/db/community-sts-prd/clusterEndpoint --with-decryption --region $REGION --output text --query Parameter.Value);
+export JASYPT_PASSWORD=$(aws ssm get-parameter --name /secrets/community/app/com-pgl-sts/jasyptPassword --with-decryption --region $REGION --output text --query Parameter.Value);
+
+$(aws ecr get-login --no-include-email --region ap-northeast-2)
+
+
+NO SOUND on MICROSOFT EDGE
+
+https://www.guidingtech.com/top-ways-to-fix-no-sound-on-microsoft-edge/
+
+=======================================================
+
+
+#!/bin/bash
+
+# SET HOST ENV VARIABLE
+export REGION='ap-northeast-2';
+export STS_AURORA_USERNAME=$(aws ssm get-parameter --name /secrets/community/db/community-sts-prd/username --with-decryption --region $REGION --output text --query Parameter.Value);
+export STS_AURORA_PASSWORD=$(aws ssm get-parameter --name /secrets/community/db/community-sts-prd/password --with-decryption --region $REGION --output text --query Parameter.Value);
+export STS_AURORA_URL=$(aws ssm get-parameter --name /vars/community/db/community-sts-prd/clusterEndpoint --with-decryption --region $REGION --output text --query Parameter.Value);
+export JASYPT_PASSWORD=$(aws ssm get-parameter --name /secrets/community/app/com-pgl-sts/jasyptPassword --with-decryption --region $REGION --output text --query Parameter.Value);
+
+
+# GET CURRENT VERSION FROM S3
+TAG_NAME="Kind"
+INSTANCE_ID="\`wget -qO- http://169.254.169.254/latest/meta-data/instance-id\`"
+REGION="\`wget -qO- http://169.254.169.254/latest/meta-data/placement/availability-zone | sed -e 's:\\([0-9][0-9]*\\)[a-z]*\\$:\\\\1:'\`"
+TAG_VALUE="\`aws ec2 describe-tags --filters "Name=resource-id,Values=$INSTANCE_ID" "Name=key,Values=$TAG_NAME" --region $REGION --output=text | cut -f5\`"
+
+mkdir -p /home/common/members-log
+
+aws s3 cp s3://com-pgl-codedeploy/deploy/sts/current/version.$TAG_VALUE /tmp/version
+VERSION=$(cat /tmp/version);
+
+HOSTNAME=$(hostname);
+
+# COPY CF PRIVATE KEY FROM PARAM TO INSTANCE
+aws ssm get-parameter --name /secrets/community/keys/pem/sts-cf-priv --with-decryption --region $REGION --output text --query Parameter.Value > /home/common/docker/cf_priv_key.pem
+
+# LOGIN TO AWS
+aws ecr get-login-password --region ${this.getProjectSettings('region')} | docker login --username AWS --password-stdin ${sImagePath}
+docker pull ${sImagePath}/com-pgl-sts:$VERSION
+
+# START APPLICATION
+docker run -h $HOSTNAME -v /home/common/docker:/sts-key \
+-v /home/common/scouter:/scouter \
+-v ${this.getExternalConfig('app').sts.logpath}:/log \
+-e REGION=$REGION -e STS_AURORA_USERNAME=$STS_AURORA_USERNAME \
+-e STS_AURORA_PASSWORD=$STS_AURORA_PASSWORD -e STS_AURORA_URL=$STS_AURORA_URL \
+-e JASYPT_PASSWORD=$JASYPT_PASSWORD \
+-p  ${this.getExternalConfig('app').sts.port}:${this.getExternalConfig('app').sts.port} \
+-d --name com-pgl-sts  ${sImagePath}:1.0.0-82099aac-b6238693 \
+--restart unless-stopped --net=host
+
+
+
+'{"Date": "2022-01-21 00:04:05 UTC", "AlertName": "HostDiskUtilization", "AlertID": "618e44e142e2aa7e9731ecea", "Alerting": [{"service": "care", "instanceID": "i-01401e83a243210cc", "instanceName": "members-work-machine", "host": "ip-10-1-101-54", "volume": "nvme0n1p1", "value": "55.25", "warning": "50", "critical": "65"}, {"service": "care", "instanceID": "i-08332f4f0de43f8e5", "instanceName": "care-pgl-api-was-prd#10", "host": "ip-30-0-151-41-f8e5.smem-prod", "volume": "nvme0n1p1", "value": "89.06", "warning": "50", "critical": "65"}], "Resolved": [{"service": "care", "instanceID": "i-05a452900d0bd41b3", "instanceName": "care-pgl-api-was-prd#11", "host": "ip-30-0-152-41-41b3.smem-prod", "volume": "nvme0n1p1", "value": "49", "warning": "50", "critical": "65"}, {"service": "care", "instanceID": "i-0c6b5e1f63260006e", "instanceName": "care-pgl-api-was-prd-dk2#3", "host": "ip-30-0-151-31-006e.smem-prod", "volume": "xvda1", "value": "43", "warning": "50", "critical": "65"}]}'
+
+
+slack-alerter-token: 1185990100694a6678321b6bdc469acc09
+
+
+https://api.slack.com/reference/messaging/attachments#fields
+
+
+Qwerty12
+
+NIFFLER IP: 193.155.119.131
+
+webhook0.samsunggalaxycare.com
+
+curl -v -H "Content-Type: application/json" -X POST -d "{'message':'Hello Pipeline'}" https://deploy.samsungmembers.com/generic-webhook-trigger/invoke?token=Qwerty12
+
+curl -v -H "Content-Type: application/json" -X POST -d "{'message':'Hello Pipeline'}" https://pencina:1185990100694a6678321b6bdc469acc09@deploy.samsungmembers.com/generic-webhook-trigger/invoke?token=Qwerty12
+
+curl -v -H "Content-Type: application/json" -X POST -d '{"Date": "2022-01-21 00:04:05 UTC", "AlertName": "HostDiskUtilization", "AlertID": "618e44e142e2aa7e9731ecea", "Alerting": [{"service": "care", "instanceID": "i-01401e83a243210cc", "instanceName": "members-work-machine", "host": "ip-10-1-101-54", "volume": "nvme0n1p1", "value": "55.25", "warning": "50", "critical": "65"}, {"service": "care", "instanceID": "i-08332f4f0de43f8e5", "instanceName": "care-pgl-api-was-prd#10", "host": "ip-30-0-151-41-f8e5.smem-prod", "volume": "nvme0n1p1", "value": "89.06", "warning": "50", "critical": "65"}], "Resolved": [{"service": "care", "instanceID": "i-05a452900d0bd41b3", "instanceName": "care-pgl-api-was-prd#11", "host": "ip-30-0-152-41-41b3.smem-prod", "volume": "nvme0n1p1", "value": "49", "warning": "50", "critical": "65"}, {"service": "care", "instanceID": "i-0c6b5e1f63260006e", "instanceName": "care-pgl-api-was-prd-dk2#3", "host": "ip-30-0-151-31-006e.smem-prod", "volume": "xvda1", "value": "43", "warning": "50", "critical": "65"}]}' https://deploy.samsungmembers.com/generic-webhook-trigger/invoke?token=Qwerty12
+
+
+            let oStage:aws.apigateway.Stage = this.awsComponent("apigateway", "Stage", `${sValue}-interceptor-stage`, {
+                stageName: sValue,
+                restApi: oRestAPI.id,
+               deployment: this.getExternalConfig("apigateway").deploymentId,
+
+
+
+
+
+i-0ce6ecb46b5d4380b = bnf-pap-web-asg = DONE
+i-055169648084b9a14 = care-pgl-sgw-was#2
+i-06064a4314fbfc417 = care-pgl-api-was-prd#4 = 
+i-02413fb7da5867f66 = care-pgl-api-was-prd#1 = RE-INSTALLED AND ACTIVATED
+i-0fae5ff684a05f9a7 = care-pgl-api-was-prd#2 = RE-INSTALLED AND ACTIVATED
+i-0a72c4499523cc8e3 = does not exist
+i-03a50b5de419bc629 = does not exist
+i-0559d3e189f99c574 = does not exist
+i-0acf0998ce4a9a2ac = does not exist
+============
+HIDS
+=============
+/root/HIDS_Installer.sh
+
+/etc/init.d/ds_agent restart
+
+SHELL MONITOR AGENT
+cd /opt/ws_agent/ShellMonitorAgent/
+rm ShellMonitorAgent.pid
+rm ShellMonitorService.pid
+./restartAgent
+logFilePath="/opt/installLog.log"   
+
+port 4119 and 4120 
+ 
+#input service name below
+svcNm=SamsungMembers
+instFile=/tmp/installagent.sh
+wget "https://s3-ap-southeast-1.amazonaws.com/cscc-agent/installAgents.sh" -O $instFile --timeout=15 --tries=2
+sed -i 's/New/'"$svcNm"'/' $instFile
+chmod a+x $instFile
+bash $instFile    
+    
+wget https://s3-ap-southeast-1.amazonaws.com/cscc-agent/installAgents.sh -O installAgent.sh
+wget "https://s3-ap-southeast-1.amazonaws.com/cscc-agent/installAgents.sh" -O installAgent.sh --timeout=15 --tries=2
+    
+i-055169648084b9a14 = care-pgl-sgw-was#2
+i-06064a4314fbfc417 = care-pgl-api-was-prd#4 
+i-02413fb7da5867f66 = care-pgl-api-was-prd#1 
+i-0fae5ff684a05f9a7 = care-pgl-api-was-prd#2 
+
+Interceptor
+Introduction
+	What is interceptor
+	How di
+	Objective
+	Problems it solves
+Diagram
+	Component
+Workflow
+How to use
+Demonstration
+
+
+POC
+	feasibility
+	viable
+	applicable
+	practical
+
+1 Prove the need
+2 Problem - Solution mapping 
+3 Prototype Creation - test user scenarion in the solution
+4 Min Viable Product
+5 Learning Roadmap
+
+
+
+Kelsey
+Miles
+Zuri
+Chelsea
+Heather
+Reece
+Kamari
+Zara
+Liana
+Kailani
+Shelby
+Hariette
+
+Needs to be installed in care-pgl-api-prx-prd#1-new
+1. HIDS = OK
+2. STI = OK
+3. IPA = Installed / needs to verify
+4. create folder sa /home/common.smem-prod/nginx/nginx.conf = OK
+5. nginx through docker na may --restart unless-stopped tapos lagay mo sa volume yung path sa #4 = OK
+6. yung scouter  = OK
+7. scouter config  = OK
+8. build_edge.sh
+9. telegraf = OK
+10. chrony
+
+Cloud Security][Agent] Check unreachable security monitoring agent 
+i-055169648084b9a14 care-pgl-sgw-was#2 30.0.152.70 = broken IPA
+i-02413fb7da5867f66 care-pgl-api-was-prd#1 30.0.151.30 = 
+i-0f266aa72d5b94ef4 does not exist = 
+i-0576dc6a1a60c6927 care-pgl-api-prx-prd#1-new 30.0.151.22 = broken IPA
+i-073d7d3ed5d24f253 care-pgl-api-prx-prd#2-new 30.0.152.22 = 
+i-0fae5ff684a05f9a7 care-pgl-api-was-prd#2 30.0.152.30 = 
+
+https://stackoverflow.com/questions/373370/how-do-i-get-the-utc-time-of-midnight-for-a-given-timezone
+
+MSK resources
+https://aws.amazon.com/blogs/compute/setting-up-aws-lambda-with-an-apache-kafka-cluster-within-a-vpc/
+https://docs.aws.amazon.com/lambda/latest/dg/with-msk.html#services-msk-vpc-config
+
+
+loyalty.s3.all	 =  uses role-based iam
+care-samsungsearch-user	 = 
+samba_monitoring	= 
+community-snspublish-user   = used by khoros	 
+benefit-ecr-uploader	= uses role-based iam
+s3.all	               = 
+ussm-deployer	       = 
+s3.galaxycare-betatest-all  = 
+
+Hi Dev Team,
+
+Good day~
+
+We are currently conducting security review on our AWS PRD. One of the items that we need to check is to make sure that the access keys are securely stored in the environment/system where it resides.
+
+In this regard, may we ask your assistance to check if the access key loyalty.s3.all satisfies the following requirements:
+
+1) Make sure it is encrypted
+2) It should not be hard-coded in source code
+
+Thanks~
+
+
+
+https://mobilerndhub.sec.samsung.net/wiki/display/SRPHSYSOPS/SRE1+RTO+Readiness+Checklist 
+
+Hyewon Kim
+[TCK220413000011]  = reported server is the same as in TCK220413000041 / running jdk version 8
+[TCK220413000041]  = running jdk version 8
+	CVE-2022-22963 = needs to check the Spring boot version
+[TCK220413000042]  = running jdk version 8
+
+
+20220413_SamsungMembers_Scan.xls
+
+Apr 17 10:16:17 ip-30-11-11-46 sshd[1506]: Accepted publickey for ubuntu from 112.201.78.144 port 8935 ssh2: RSA SHA256:lvQ7AE6VZLgUJ4uLgHDr/+Memz7KekYA1XzxiEqBSVM
+
+
+We have confirmed the access details of the account "ubuntu" from the source IP(112.201.78.144, 30.1.11.187) to the destination servers(i-0acc97d928cdc92cf, i-0f66aede00996dc10).
+1. Asset information cannot be verified for the source IP(112.201.78.144, 30.1.11.187) and destination servers(i-0acc97d928cdc92cf, i-0f66aede00996dc10). We request that you check the assets of the source IP and destination servers.
+2. If there is a reason for using the default account "ubuntu", please explain.
+
+
+1. Onsite Schedule request ( if magreimburse) = DONE
+2. Proxy Exception request for Slack
+Maria Amiella Zarraga2:17 PM
+SRPH local IP - memberslisting na file sa mosaic
+3. Carry out Request - make sure updated
+4. Storage Media Registration - Print
+5. Carry out/in certification
+
+care-pgl-api-was-prd-1 = 
+care-pgl-api-was-prd-2 = 
+care-pgl-api-was-prd-3 = 
+care-pgl-api-was-prd-4 = 
+care-pgl-api-was-prd-5 = DONE
+care-pgl-api-was-prd-6 = DONE
+care-pgl-api-was-prd-7 = DONE
+care-pgl-api-was-prd-8 = DONE
+care-pgl-api-was-prd-9 = DONE
+
+nohup ./CopyLogs.sh > /tmp/logrotate-041922.out &
+
+http://93days.me/public-website-health-check-using-python/
+
+Title: [OnCall] Checked Security Vulnerability on bnf servers
+
+Description: Verify if the Spring Cloud Function module version used on bnf-pap-web-asg is 3.1.6 or 3.2.2. If so, update it to 3.1.7 or 3.2.3
+
+Comment:
+
+Actions taken
+1) Executed checkspring-shell tool on bnf-pap-web-asg = Did not identify any vulnerabilities. Upon further checking, the tool does not seem to detect vulnerable cloud function version. It only detects vulnerable java version.
+2) Coordinated with BNF dev team to help us identify the current version of cloud function. = Turned out to be vulnerable
+3) Advised BNF dev team to upgrade to the recommended version to fix the security issue as soon as possible.
+
+
+
+ Samsung Members Oncall Support (Checked Security Vulnerability on bnf servers)
+
+m.ongtangco iH-dADG6ipR#nfy
+
+
+178.128.245.150
+20.0.12.221
+
+
+care-pgl-api-prx-prd#3-new
+care-pgl-api-prx-prd#2-new
+
+care-pgl-api-was-prd-dk2#1
+care-pgl-api-was-prd-dk2#3
+care-pgl-api-was-prd#11
+
+
+TCK220423000042
+
+
+TCK220425000087 10.153.51.180
+TCK220425000089 10.153.51.137
+TCK220425000090 10.153.52.149
+TCK220510000004 10.153.52.157
+
+i-02413fb7da5867f66 care-pgl-api-was-prd#1 = DONE
+i-073d7d3ed5d24f253 care-pgl-api-prx-prd#2-new = DONE
+i-0fae5ff684a05f9a7 care-pgl-api-was-prd#2 
+
+aws s3 cp s3://YOUR_BUCKET/YOUR_FOLDER . --recursive
+
+jmap -dump:file=format=b,heapdump.bin 20299
+
+jmap -F -dump:format=b,file=heap.bin 20299 > heapdump.txt
+
+jmap -F -dump:file=heapdump 20070
+
+
+jcmd 20299 GC.heap_dump filename=heapdump
+
+
+jmap -F -dump:format=b,file=heap.bin 1
+
+docker exec d154c30c4934 jcmd 1 GC.heap_dump /tmp/docker.hprof
+
+
+echo 0 | sudo tee/proc/sys/kernel/yama/ptrace_scope
+echo 0 > /proc/sys/kernel/yama/ptrace_scope
+
+jmap -F -dump:format=b,file=heap2.bin 4993
+
+Error attaching to process: Doesn't appear to be a HotSpot VM (could not find symbol "gHotSpotVMTypes" in remote process)
+
+
+
+
+current-context: arn:aws:eks:us-east-1:963697571568:cluster/eks20-1
+
+Alert was evoked with value {{.instanceId}}/{{.instanceName}}/{{.host}}/{{.device}}@{{.value}}
+
+Alert was evoked with value service#care/instanceID#{{.instanceId}}/instanceName#{{.instanceName}}/host#{{.host}}/volume#{{.device}}/value#{{.value}}/warning#70/critical#80/jenkinsJob#slack-alerter,test-job1
+
+Alert was evoked with value service@care/instanceID@{{.instanceId}}/instanceName@{{.instanceName}}/host@{{.host}}/volume@{{.device}}/value@{{.value}}/warning@70/critical@80/jenkinsJob@slack-alerter,test-job1
+
+Alert was evoked with value service:care/instanceID:{{.instanceId}}/instanceName:{{.instanceName}}/host:{{.host}}/value:{{.value}}
+
+
+CARE BUCKETS
+
+log-care
+galaxycare-static
+galaxycare-img
+galaxycare-elb
+galaxycare-cloudtrail
+galaxycare-backup
+config-bucket-galaxycare-samsung
+care-pgl-vpc-flow-logs
+care-pgl-s3-access-log
+care-pgl-lambda
+
+
+/build/nginx-ZgS12K/nginx-1.12.0/debian/modules/nchan/src/store/memory/memstore.c:701: nchan_store_init_worker: Assertion `procslot_found == 1' failed.
+2022/05/16 00:41:03 [alert] 15113#15113: worker process 12287 exited on signal 6 (core dumped)
+
+https://futurestud.io/tutorials/nginx-solve-reponse-status-0-worker-process-exited
+
+https://github.com/slact/nchan/issues/446
+
+curl -X POST localhost:$java_port/management/pause
+curl -X POST localhost:$java_port/management/service-registry?status=DOWN --header 'Content-Type:application/json'
+sleep 90
+# sleep 90
+docker stop $module_name
+
+
+- Get logstash config
+- Encrypt EBS
+- Install fluentbit
+- upgrade ec2 to m5.xlarge
+	aws ec2 modify-instance-attribute --instance-id i-0666f419e74082da7 --ena-support
+- ensure sudo works.
+- re-reun application using ansible
+- update stop module script then add
+curl -X POST localhost:$java_port/management/pause
+curl -X POST localhost:$java_port/management/service-registry?status=DOWN --header 'Content-Type:application/json'
+sleep 90
+# sleep 90
+docker stop $module_name
+- set fstab to automatically mount /home/common/logs
+	sudo mount /dev/nvme1n1 /home/common/members-log
+	sudo vi /etc/fstab
+- install logstash (when recreating instance)
+
+
+Encrypt EBS volume
+1) Find the EC2 instance with the unencrypted volume and stop it.
+2) Create a snapshot of the EBS volume you want to encrypt.
+3) Copy the EBS snapshot, encrypting the copy in the process using an available key
+4) Create a new EBS volume from your new encrypted EBS snapshot (This new EBS volume will be encrypted). I find this is also an excellent spot to check the type of storage being used if you are using older/more expensive technology or something not up to the task.
+5) Detach the original EBS volume and attach your new encrypted EBS volume, making sure to match the device name (/dev/sda1, etc.). While it says /dev/sdf through to /dev/sdp is available, if this is the root disk, you will need to use /dev/xvda1 in order for the instance to start up again, despite the implication that this might be an invalid device name.
+6) Start the EC2 instance up again. Verify that the server is doing the things as expected and that the data is correct.
+7) Delete the now detached unencrypted volume. Enjoy peaceful sleep!
+
+aws ec2 modify-instance-attribute --instance-id i-02413fb7da5867f66 --ena-support
+
+bnf-pap-jmp  m5.xlarge
+	16/dev/sda1 =  old=vol-00f1969c52658d8d4 new= vol-0b6174bd96ab026ee
+	150/dev/sdf =  old=vol-0e7fe022b6af2d015 new= vol-0313c768035a0afc0
+
+care-pgl-api-was-prd#9  m5.xlarge
+	32/dev/sda1 =  old=vol-05da9832b02facc93 new=vol-0ed196358d8422396
+	200/dev/sdf =  old=vol-041e3bd1c586f02c1 new=vol-04829eeb7c5843efc
+
+care-pgl-api-was-prd#7  m5.xlarge
+	32/dev/sda1 =  old=vol-0c82dc7ed7fa06740 new=vol-08e0eb33ba36ca9ee
+	200/dev/sdf =  old=vol-0bd7eed83b17d2aa6 new=vol-094e3161db309214a
+
+care-pgl-api-was-prd#6  m5.xlarge
+	32/dev/sda1 =  old=vol-0a04dbc26f90068ef new=vol-0bbd5d633db78bebd
+	200/dev/sdf =  old=vol-06088d93c4cd79b6d new=vol-00dff9ee43080421c
+
+care-pgl-api-was-prd#2  m5.xlarge
+	32/dev/sda1 =  old=vol-0f4065bbd4621e15b new=vol-0edbcc551838b197d
+	200/dev/sdf =  old=vol-0a272c327d7c12682 new=vol-08abf3d0bd4e60169
+
+care-pgl-api-was-prd#1  m5.xlarge
+	32/dev/sda1 =  old=vol-0c6759590bdb34229 new=vol-0faecfee520ea2815
+	200/dev/sdf =  old=vol-08b21db9a3a06f2cc new=vol-04aa10f7c86f49a8e
+
+====================================================================================
+
+
+com-pgl-rmc
+	20/dev/sda1 =  old=vol-329302a8 new=vol-07010a4393667bc04  --> DONE / 
+	100/dev/sdf = old=vol-6d9302f7 new=vol-0fe7c227d3d13367c  --> DONE /home/scouter
+	32/dev/sdg = old=vol-0c08cb2032d9788f5 new=vol-01bf3bc30c1506984 --> DONE
+
+com-pgl-mwb#1-2
+	32/dev/sda1 =  old=vol-037d056c349caf522 new=vol-02823a7e68e3b712b  --> DONE
+
+com-pgl-mwb#2-2
+	32/dev/sda1 = old=vol-088d37d004f613fd6 new=  --> CREATED NEW instance
+
+com-pgl-web#1
+	32/dev/sda1 = old=vol-03cf48e993e456f7e new=vol-03c690c0275fa5a44 --> DONE
+
+com-pgl-web#2
+	32/dev/sda1 = old=vol-0571a255da0874190 new=vol-069ec3ee8c7169fda --> DONE
+
+com-pgl-webview#1
+	32/dev/sda1 = old=vol-0381ee2f0158b10b0 new=vol-0d46ed1eed42fae74 --> DONE
+
+com-pgl-webview#2
+	32/dev/sda1 = old=vol-0848b146d6eb859a7 new=vol-04b4e250a4333f85e --> DONE
+
+com-pgl-sch#1 i-08041e94801f665c3
+	32/dev/sda1 = old=vol-0367365156510656b new=vol-033a9aaf0be7e3c23 --> DONE
+
+com-pgl-sch#2 i-09a44e4d1301fef0d
+	32/dev/sda1 = old=vol-0504af00214fb2a35 new=vol-0aa31e4992ff53629 --> DONE
+
+com-pgl-iapi#1 i-09e2e6eaa0443383d
+	32/dev/sda1 = old=vol-0851da85050ced44a new=vol-0aff9049ab71a237f --> DONE
+
+com-pgl-iapi#2 i-0861ab18be50e816d
+	32/dev/sda1 = old=vol-0a41a93c3f710b727 new=vol-0764cc36ce19a9ef6 --> DONE
+
+com-pgl-api#1 i-0387c2d9627b09667
+	32/dev/sda1 = old=vol-0b82bbd5fbab552db new=vol-0891d62db5efe9758 --> DONE
+
+com-pgl-api#2 i-0e6b5d19bf5966f73
+	32/dev/sda1 = old=vol-08c86dde83fbd1196 new=vol-0557524a8508f06f3 --> DONE
+
+com-pgl-api#3 i-0fbca35e3838d2a46
+	32/dev/sda1 = old=vol-0ce503d02e0597c28 new=vol-0f97e17ee25ec6f1b --> DONE
+
+com-pgl-adm i-0d5983159685f2fba
+	32/dev/sda1 old= vol-0d8cc4459da043f7a new= vol-0819ccdf5b2e8b1e4 --> DONE
+
+com-pgl-jmp i-b3146b21
+	32/dev/sda1 old=vol-f3f46369 new=vol-012eb1772656aa0d9  --> DONE
+
+com-pgl-jmp-db#2 i-0a85c99949aaa6a6f
+	32/dev/sda1 old=vol-019858ebad97e6c53 new=vol-0ef29c4ab0f8ca286  --> DONE
+
+
+
+
+
+Terminate com-pgl-adm2
+
+20.0.11.80 = IP com rmc
+13.124.34.95 = new RMC IP
+
+telegraf
+
+
+
+sudo tar -czvf nagios-05252022.tar.gz nagios
+
+aws s3 cp --ignore-glacier-warnings software-05252022.tar.gz s3://com-pgl-backups/com-pgl-mwb#2-2/software-05252022.tar.gz
+aws s3 cp --region ap-northeast-2 app-05202022.tar.gz s3://com-pgl-backups/com-pgl-mwb#2-2/app-05202022.tar.gz
+
+aws s3 cp s3://com-pgl-backups/installers/jdk-8u66-linux-x64.tar.gz jdk-8u66-linux-x64.tar.gz
+
+adduser -r -s /bin/nologin nagios
+
+@reboot su nagios -c 'cd /home/nagios/jnrpeagent/bin; ./jnrpeRestart.sh'
+
+
+
+
+sudo curl https://ipa-client.samsungsre.com/install-ipa-client.sh -o /opt/ipa-client/install-ipa-client.sh && sudo chmod +x /opt/ipa-client/install-ipa-client.sh && sudo /opt/ipa-client/install-ipa-client.sh 2>&1
+
+"[IPA] [Important] Request to follow the guide on unable-to-login issue occurred in Aug-2021
+care-pgl-sgw-prx#1 i-0e3941384a5c34fce care-pgl-sgw-elb = DONE
+care-pgl-sentry#1-2 care-pgl-sentry-web-alb = DONE
+care-pgl-sentry#2-2  = DONE
+care-pgl-sgw-was#2
+	start-members-external.sh
+com-pgl-adm
+
+
+
+CSI: Imbibe a Consulting Mindset
+
+- KNOW YOUR COUNTERPART
+- INQUIRE-> REFRAME -> SOLVE -> ARTICULATE
+- Be curious - ask questions
+- Develop relationships, then solutions
+- Clarify expectations
+- Be present and focused
+- Reflect and listen actively
+- Elicit vision, goals, and outcomes
+- Give feedback
+- Allow for experimentation
+- Share suggestions for innovations and improvement
+- Commit and deliver
+
+
+care-pgl-analytics-server-sg / sg-0afcbf56ad5056930
+care-pgl-lambda-analytics / sg-0b50c4cb1a8e39f33
+care-pgl-lambda-analytics / sg-0b50c4cb1a8e39f33
+
+
+
+care-pgl-rmc
+	100/dev/sdf =  old=vol-18af3e82 new=
+
+	48/dev/sda1 =  old=vol-b9950423
+
+188465 JP
+09957154029
+
+
+inquisitor/waf-blocked-ipsets/scripts/addNew.js
+inquisitor/firewall-manager/publisher/validators/*
+
+/jira.get [SVC] [TITLE] [DESC] [LBL] [PRIORITY]
+[SVC] -> Service Name
+[TITLE] -> Jira ticket title
+[DESC] -> Jira ticket description
+[LABELS] -> JIRA TICKET LABELS
+[PRIORITY] -> P1-P4
+
+https://deploy.samsungmembers.com/job/jira-actor-listener/
+
+
+ussm-pus-rmc i-0fde2f2c7f7a902ec
+	16/dev/sda1 old=vol-0f1a9fd66de6b383f new=  --> 
+
+sudo tar -czvf telegraf-new.tar.gz telegraf
+
+aws s3 cp --ignore-glacier-warnings s3://ussm-pus-backups/ussm-pus-rmc/telegraf-06212022.tar.gz telegraf-06212022.tar.gz
+
+tar -xzvf telegraf-06212022.tar.gz
+
+
+aws s3 sync s3://ussm-pus-backups/ussm-pus-rmc/home/common.smem-prod . 
+
+
+aws s3 cp s3://smem-base-installers/USCARE/install_telegraf_ubuntu.sh
+
+net_collector_ip=30.1.11.238
+
+June 23 - Docker HW (Team)
+June 28 - Docker HW Questions (Paul)
+July 1 - Docker Deadline
+July 6 - Ansible HW (Team)
+July 12 - Ansible HW questions (Nica)
+July 15 - Ansible Deadline
+July 18 - Terraform P1 HW (Team)
+July 20 - Terraform HW questions (w/ Nica or Paul)
+July 22 - Terraform Deadline
+July 25 - Terraform P2 HW (Team)
+July 27 - Terraform HW questions (w/ Nica or Paul)
+July 29 - Terraform Deadline
+
+
+1. Is there a documentation for the deployment process in Jira?
+2. What are the common issues that are usually encountered during deployment?
+3. Is there any operational activities aside from deployment that we need to do which are not in the documentation?
+
+[Marie Luchia Darianne Mercado Bitorio] 6/24/2022 16:02
+pwede naman ahead mag file basta sure ka na sa dates
+
+[Marie Luchia Darianne Mercado Bitorio] 6/24/2022 16:02
+knox approval na lang and then ghrps
+
+[Marie Luchia Darianne Mercado Bitorio] 6/24/2022 16:02
+palagay ako sa notif then head approver
+
+[Marie Luchia Darianne Mercado Bitorio]
+paternity po we need birth cert
+
+
+
+1. Is there a documentation for the deployment process in Wiki?
+    If yes, kindly provide us the specific link
+    https://mobilerndhub.sec.samsung.net/wiki/pages/viewpage.action?pageId=1322190900    
+[jae123.oh]    I added example for deployment process.
+
+2. What are the common issues that are usually encountered during deployment?
+[jae123.oh] There is nothing wrong with it now.
+
+3. Is there any operational activities aside from deployment that we need to do which are not in the documentation?
+[jae123.oh] I don't think there will be anything other than build & deployment.
+when the take-over team creates a new project, I think it will proceed in a different way.
+
+
+arn:aws:eks:us-east-1:963697571568:cluster/smem-releng-eks-cluster
+
+bpi gold
+03528497 reference bpi
+Erwin Tiranbulo Sales
+
+
+
+yarn register 112.200.5.30/32 TCK0009812 '4 weeks' p.encina  = whitelisted
+
+
+yarn register 124.200.6.133 TCK0009812 '4 weeks' p.encina
+
+
+
+Update NASCA when RTO
+
+cge sir or you may directly contact our MIS OS: srph.mis2 (roby) or srph.mis3(gio) since lagi silang nakaonsite
+
+
+APE tracker link
+https://mobilerndhub.sec.samsung.net/wiki/display/SRPHSYSOPS/2022+Annual+Physical+Exam+Schedule
+
+https://deploy.samsungmembers.com/job/jira-actor-listener/
+
+srph.mis2
+srph.mis3
+
+Members Care Architecture
+- The service architecture has 4 cloudfronts associated with 4 different s3 buckets for storage of static files. It also includes 12 load balancers that act as endpoint for interacting with several Care service modules hosted in EC2 servers deployed in multiple AZs.
+
+Members Community Architecture
+- It is designed with 12 load balancers. 4 of which are integrated with cloudfronts. It is the only service that the team manages and supports which has EKS implementation for its 1 module.
+
+Members Benefits Architecture
+- The service uses AWS ECS for managing and deploying container-based applications. It consists of 10 ECS Services which correspond to different service modules.
+
+USCare Architecture
+- Unlike with the three services which are located in Korea region, US Care infra is deployed in North Virginia. The service includes 4 load balancers associated with Auto Scaling groups intended for API service, production deployment and monitoring. Also, It is connected with Care service through VPC peering.
+
+
+DB minor version upgrade
+api-prx-prd#2 and #3
+
+server {
+        listen 80 default_server;
+        server_name _;
+
+        location /  {
+            default_type application/json;
+#            return 200 '{"precheck" : 4,"startTime":1623114000000, "endTime":1623128400000 }';
+#return 200 '{ "launch": false, "precheck": 1 }';  # °f ¾÷Ì®, ¼¹ö°ËÀÈ
+
+#return 200 '{"precheck" : 4,"startTime":1491271200000, "endTime":1491291000000}';
+#            return 200 '{"precheck" : 4,"startTime":1491271200000, "endTime":1491291000000}';
+#             return 200 '{ "launch": false, "precheck": 1 }'; Ò
+           # return 200 '{"precheck" : 4,"startTime":1472452200000, "endTime":1472457600000}';
+           # return 200 '{"precheck" : 4,"startTime": 1472446800000, "endTime":1472457600000}';
+            #return 200 '{"precheck" : 4,"startTime": 1463094000000, "endTime":1463097600000}';
+            #return 200 '{"precheck" : 4,"startTime": 1462946400000, "endTime":1462950000000}';
+            return 200 '{"precheck" : 4,"startTime": 1485306000000, "endTime":1485309600000}';
+         }
+}
+
+from : 1658984400000
+to : 1658989800000
+
+Email company doctor: srph.nurse@samsung.com
+
+title: Request for Recommendation to Continue WFH
+
+cc: ms julie, at rohayna
+
+cluster auto scaler
+{
+    "Statement": [
+        {
+            "Action": [
+                "autoscaling:DescribeAutoScalingGroups",
+                "autoscaling:DescribeAutoScalingInstances",
+                "ec2:DescribeLaunchTemplateVersions",
+                "autoscaling:DescribeTags",
+                "autoscaling:DescribeLaunchConfigurations",
+                "autoscaling:SetDesiredCapacity",
+                "autoscaling:TerminateInstanceInAutoScalingGroup"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ],
+    "Version": "2012-10-17"
+}
+
+
+aws lambda list-functions --function-version ALL --region us-east-1 --output text --query "Functions[?Runtime=='nodejs12.x'].FunctionArn"
+
+ap-northeast-2
+arn:aws:lambda:ap-northeast-2:480586329294:function:cw-alert-listener:$LATEST   
+arn:aws:lambda:ap-northeast-2:480586329294:function:care-setup-csc:$LATEST      
+arn:aws:lambda:ap-northeast-2:480586329294:function:smem-ap-northeast-2-waf-log-filter:$LATEST  
+arn:aws:lambda:ap-northeast-2:480586329294:function:care-setup-csc:1
+
+us-east-1
+arn:aws:lambda:us-east-1:480586329294:function:contents-viewer-request:$LATEST  
+arn:aws:lambda:us-east-1:480586329294:function:banner-viewer-request:$LATEST    
+arn:aws:lambda:us-east-1:480586329294:function:banner-origin-request:$LATEST    
+arn:aws:lambda:us-east-1:480586329294:function:ussm01-useast1-waf-log-filter-1a32e14:$LATEST 
+arn:aws:lambda:us-east-1:480586329294:function:banner-origin-response:$LATEST   
+arn:aws:lambda:us-east-1:480586329294:function:banner-origin-response:1 
+arn:aws:lambda:us-east-1:480586329294:function:banner-viewer-request:1       
+arn:aws:lambda:us-east-1:480586329294:function:banner-origin-request:1  
+arn:aws:lambda:us-east-1:480586329294:function:contents-viewer-request:1        
+arn:aws:lambda:us-east-1:480586329294:function:ussm01-useast1-waf-log-filter-1a32e14:1       
+arn:aws:lambda:us-east-1:480586329294:function:contents-viewer-request:2        
+arn:aws:lambda:us-east-1:480586329294:function:banner-viewer-request:2  
+arn:aws:lambda:us-east-1:480586329294:function:contents-viewer-request:3        
+arn:aws:lambda:us-east-1:480586329294:function:contents-viewer-request:4
+
+
+[Yoon In-yeop / Inyeop Yoon] 2022-08-22 11:12
+Members pm Yoon Inyeop ~
+
+[Yoon In-yeop / Inyeop Yoon] 2022-08-22 11:12
+I asked you to monitor Flip4 / Fold4 unpack, launch schedule sharing, and traffic preparation request as below schedule.
+
+[Yoon In-yeop / Inyeop Yoon]
+- Monitoring period: 22/8/19 ~ 22/9/16 (based on launch date -1 week ~ +3 weeks)
+
+- Intensive monitoring: 22/8/26
+
+- Estimated concentration date of total traffic: 8/16, 8/23, 8/26, 8/29
+
+
+1. IAM list/roles - SMEM to give IAM summary to SNOW - Thurs EOD
+Request access in SMEM MWiki
+1. https://mobilerndhub.sec.samsung.net/hub/main/
+2. Go to Profile > My Permissions
+3. Click M-Wiki > Request Permissions > Search MSO (approver: kangshinil)
+4. Reason: Needed for Samsung Members Security Audit
+MWiki Site:
+Approvers: https://mobilerndhub.sec.samsung.net/wiki/pages/viewpage.action?pageId=625613184
+Body: https://mobilerndhub.sec.samsung.net/wiki/pages/viewpage.action?pageId=625613296 (1. IAM Account)
+*SMEM to send sample PUMI to SNOW
+3.SMEM to look for JIRA/PUMI with security group details - Fri
+4. IP/User list na pwede kumonnect sa bastion - next week
+5. For exemption na firewall etc - next week 
+
+                  "210.94.41.89/32",
+                    "203.126.64.64/29",
+                    "52.78.115.27/32"
+
+
+Hello Team, good afternoon :)
+For Aug 2022 KPI Discussion, you can choose your 1:1 schedule here:
+https://mosaic.sec.samsung.net/kms/comtyMainPost.do?method=docsView&docsFileId=Dmzeg7n9BIl9CihaJwqD9A2kQz&comtyId=576341331&menuId=576356444
+Please make sure to update all categories in your KPI file. For project delivery scores, you can refer to the scores sent for June and July.
+If you have any questions, just let me know. Thank you! ~
+3:48
+@here https://mobilerndhub.sec.samsung.net/its/browse/CAREOP-5151 > Server Deployment
+
+
+
+a.perfecto = Community Dev Team
+e.discaya = Community Dev Team
+jeff.kwong = Community Dev Team
+j.laborte = Community Dev Team	
+j.rodenas = Community Dev Team
+marian.a = Community Dev Team	
+mg.perez = Community Dev Team
+n.tolosa = Community Dev Team
+
+daeseokk.oh = Care Dev Team
+hosung.ha = Care Dev Team
+jhman.lee = Care Dev Team
+minje1.lee = Care Dev Team	
+minjin13.kim = Care Dev Team
+somvang.sohn = Care Dev Team
+uitae.kim = Care Dev Team
+
+
+ijiyoung.kim = Benefits Dev Team
+jae123.oh = Benefits Dev Team
+jh7.seo	 = Benefits Dev Team
+keonho.yang = Benefits Dev Team / needs to be deleted
+
+j.gavina = Samsung Members Ops Team				
+ma.reyes = Samsung Members Ops Team			
+shinil.kang = Samsung Members Ops Team
+jh1019.lim = IP Registration
+
+
+s3.galaxycare-betatest-all	
+care-samsungsearch-user	
+s3.all	
+samba_monitoring	
+benefit-ecr-uploader	
+community-snspublish-user	
+ussm-deployer	
+loyalty.s3.all
+
+
+Force_IP_Restriction, Force_MFA, SRPH
+
+
+
+
+AmazonEC2FullAccess, AdministratorAccess, Force_IP_Restriction
+
+Force_IP_Restriction, Force_MFA
+
+Email of RBS approval completion will be sent at RBS start date. Please contact Samsung Electronics service desk if you didn't receive RBS approval email by RBS start date - SEC service desk: 1800 3131
+
+
+
+
+Does security audit personnel review the attached files and comment on each item?
+The reason I am asking is because one of our members has completed 1 item which is "IAM account management basis exists" under AWS IAM account management category. However, it was "Undone" again after a few days. May we know the reason for it?
+
+Regarding items  "AWS resource inbound access control policy and AWS resource outbound access control policy", can we just use the approved Firewall open request we applied earlier this year?"
+
+
+
+KPI	
+Knowledge Base
+QA
+Project Improvement
+	https://mobilerndhub.sec.samsung.net/its/browse/USCAREOP-96 [OPS] Create Interceptor Feature
+	https://mobilerndhub.sec.samsung.net/its/browse/USCAREOP-122 [IMPVT] Create, 	Deploy and Test tool in Testing Environment 
+SRPH wide GWP
+GWP attendance
+Team Building
+CLP
+	Coordinate with PJ about terraform
+
+Brownbag:
+	Bixby TechSharing
+	Shealth Techsharing
+	Sept 9 = MongoDB
+	Oct 12 = Ansible
+
+Skill up Terraform - October 17 and 27
+
+Meeting
+	Virtual S Habit - Sept 22
+	[GWP] Cooltura: Kapampangan - Aug 19
+	COT ALL Hands - Sept 23
+		GWP Kahoot
+
+*****samba_monitoring
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "cloudwatch:*",
+            "Resource": "*",
+            "Condition": {
+                "ForAnyValue:IpAddress": {
+                    "aws:SourceIp": [
+                        "210.94.0.0/16",
+                        "203.126.64.64/29",
+                        "52.78.115.27/32",
+                        "182.198.111.45/32",
+			"13.209.250.212/32",
+			"52.79.54.247/32",
+			"52.78.222.32/32"
+                    ]
+                }
+            }
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:DescribeTable",
+                "dynamodb:GetItem"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "ForAnyValue:IpAddress": {
+                    "aws:SourceIp": [
+                        "210.94.0.0/16",
+                        "203.126.64.64/29",
+                        "52.78.115.27/32",
+                        "182.198.111.45/32",
+			"13.209.250.212/32",
+			"52.79.54.247/32",
+			"52.78.222.32/32"
+                    ]
+                }
+            }
+        },
+        {
+            "Sid": "VisualEditor2",
+            "Effect": "Allow",
+            "Action": [
+                "elasticache:DescribeEvents",
+                "elasticache:DescribeCacheClusters",
+                "elasticache:Describe*"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "ForAnyValue:IpAddress": {
+                    "aws:SourceIp": [
+                        "210.94.0.0/16",
+                        "203.126.64.64/29",
+                        "52.78.115.27/32",
+                        "182.198.111.45/32",
+                        "182.198.111.45/32",
+			"13.209.250.212/32",
+			"52.79.54.247/32",
+			"52.78.222.32/32"
+                    ]
+                }
+            }
+        },
+        {
+            "Sid": "VisualEditor3",
+            "Effect": "Allow",
+            "Action": [
+                "logs:ListTagsLogGroup",
+                "logs:DescribeQueries",
+                "logs:GetLogRecord",
+                "logs:DescribeLogGroups",
+                "logs:DescribeLogStreams",
+                "logs:DescribeSubscriptionFilters",
+                "logs:StartQuery",
+                "logs:DescribeMetricFilters",
+                "logs:StopQuery",
+                "logs:TestMetricFilter",
+                "logs:GetLogDelivery",
+                "logs:ListLogDeliveries",
+                "logs:DescribeExportTasks",
+                "logs:GetQueryResults",
+                "logs:GetLogEvents",
+                "logs:FilterLogEvents",
+                "logs:DescribeQueryDefinitions",
+                "logs:GetLogGroupFields",
+                "logs:DescribeResourcePolicies",
+                "logs:DescribeDestinations"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "ForAnyValue:IpAddress": {
+                    "aws:SourceIp": [
+                        "210.94.0.0/16",
+                        "203.126.64.64/29",
+                        "52.78.115.27/32/32",
+                        "182.198.111.45/32",
+			"13.209.250.212/32",
+			"52.79.54.247/32",
+			"52.78.222.32/32"
+                    ]
+                }
+            }
+        },
+        {
+            "Sid": "VisualEditor4",
+            "Effect": "Allow",
+            "Action": [
+                "rds:Describe*",
+                "rds:ListTagsForResource",
+                "rds:DownloadDBLogFilePortion",
+                "rds:DownloadCompleteDBLogFile"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "ForAnyValue:IpAddress": {
+                    "aws:SourceIp": [
+                        "210.94.0.0/16",
+                        "203.126.64.64/29",
+                        "52.78.115.27/32",
+                        "182.198.111.45/32",
+			"13.209.250.212/32",
+			"52.79.54.247/32",
+			"52.78.222.32/32"
+                    ]
+                }
+            }
+        }
+    ]
+}
+
+{"postgresql.user":"scaredev","postgresql.password":"'vocdev!234","mysql.user":"scaredev_dashboard","mysql.password":"vocdev!234","django.secret-key":"+4%wh9c%&d*t4c-pkvvx)gi$2rs26c#4gi14rw&j&yg15np%h3","django.auth.user":"GalaxyCare","django.auth.password":"vocdev!234","benefit-api-key":"Z2NpYzpkZXZsb3lhbHR5MTIj"}
+	
+
+Minimize VPC endpoints scope - Kelangan po muna naming i-verify sa mga Dev Team ung mga tamang resources para makapagcreate ng bagong policy. Ung VPC endpoints sa care at benefits baka sa pagbalik pa ng dev team from chuseok holiday. Ung sa community pa update na lang po ng policy to:
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "CommunityS3EndpointPolicy",
+      "Effect": "Deny",
+      "Action": "s3:*",
+      "Principal": "*",
+      "Resource": [
+        "<All of Community S3 bucket>"
+      ],
+      "Condition": {
+        "ArnNotEquals": {
+          "aws:PrincipalArn": "<All of Community related users and role>"
+        }
+      }
+    }
+  ]
+}
+
+Para malaman niyo po ung list of community s3 bucket, type niyo lang sa search box ung keyword na "comm". Ganun din sa IAM role then sa IAM users naman makikita un sa sinend naming list of users sa excel file nung nakaraan.
+After niyo po ma update, kahit kami na mag inform sa community dev team about sa changes para just in case may maencounter silang issue related sa VPC endpoint. alam din nila. 
+
+
+Basis of access control policy - Ang PUMI na meron lang kami is ung sa pag allow ng IP ni user sa Admin Benefits service. Naeexpire siya after 1 week. Pa check na lang ung mga nakaattach na SG sa Load balancer bnf-pap-admin-alb-365654006.ap-northeast-2.elb.amazonaws.com. Sa ibang service, wala po kaming makitang PUMI record.
+
+Use Only HTTPS in LB Listeners - 
+care-pgl-sgw-prx-nlb-1 = redirection in nginx config
+care-pgl-analytics-alb = port 3000 is open
+care-pgl-members-api-elb = redirection in nginx config
+care-pgl-adm-elb = redirection in nginx config
+care-pgl-members-api-2nd-elb = checking
+
+3 sa load balancers ang gumagamit ng redirection sa nginx config. Inaalam pa namin kung pwedeng as-is na lang ung configuration since nagreredirect naman ung http to https or kung kailangang talagang palitan na. 
+
+
+Bucket Manager&User Permission
+
+
+
+Roman Regala - Jam Cabrera SRE1
+Gio -  
+Jane - JP Moaje SRE2
+
+find / -iname 'auth.log' -mtime +365
+
+Roman Regala             - spay - p.cabrera
+Jane Ligones               - holiday calendar - j.moaje
+Michael John Carpio   - spay - p.cabrera
+Joshnee Kim Cunanan - SNOW/TAT - at.deguzman
+Abegael Apilar             - terraform enterprise - a.arante
+Kirtz Gerald Resuelo    - iot-jinky tenorio/aladin
+John Carlo Bolon - smem/mamei
+
+COMMUNITY VPC ENDPOINT
+
+vpce-28fa1941 - ap-northeast-2
+vpce-09bb8634babe0cb1d - ap-northeast-2
+
+
+{
+    "UserId": "AIDAZWVFOTUSJWGFNAADN",
+    "Account": "667140660516",
+    "Arn": "arn:aws:iam::667140660516:user/prd-smem-comm-s3-access"
+}
+
+
+i-00db0d4a4a008af01 care-pgl-bat-bdp-new = DONE
+i-035f8644fa7a48375 ussm-pus-rmc = DONE
+i-0238bff085e2ca010 care-pgl-rmc = DONE
+i-0ae1373e7859eb07b ussm-pus-jump = DONE
+i-0d4921dc8aea3475d care-pgl-sgw-was#1 = DONE
+i-003db2749b3b0c6bc care-pgl-sgw-was#2 = DONE
+i-0a0877521b8fa45ae bnf-pap-jmp-db = DONE
+i-03dabc8b549eec1aa care-pgl-elk = DONE
+i-0d97e926f0888381a com-pgl-bat-gdpr-compute-environment
+i-08a8a2e8f9d6642c6 com-pgl-workernode-asg
+i-05c0e086fc47e0f96 com-pgl-workernode-asg
+i-009ee310e722d42a7 com-pgl-workernode-asg
+i-09f3ec88735df5316 com-pgl-workernode-asg
+i-0bf8f5b68c80457ea com-pgl-workernode-asg
+
+
+
+
+"AROAW7ZJNNTHKCOY47UWS"
+
+=======================
+khoros-gdpr-files-prd
+=======================
+{
+    "Version": "2012-10-17",
+    "Id": "CommunityPolicy00001",
+    "Statement": [
+        {
+            "Sid": "AddPerm",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::480586329294:root"
+            },
+            "Action": [
+                "s3:PutObject",
+                "s3:PutObjectAcl"
+            ],
+            "Resource": [
+                "arn:aws:s3:::khoros-gdpr-files-prd",
+                "arn:aws:s3:::khoros-gdpr-files-prd/*"
+            ],
+            "Condition": {
+                "Bool": {
+                    "aws:SecureTransport": "true"
+                }
+            }
+        },
+        {
+            "Sid": "Stmt1579154416431",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::480586329294:role/shard-com01-apnortheast2-senderRole-aee17b4",
+                    "arn:aws:iam::480586329294:role/shard-com01-apnortheast2-accessRole-513d063",
+                    "arn:aws:iam::480586329294:user/s3.all",
+                    "arn:aws:iam::480586329294:role/care-common-instance-role"
+                ]
+            },
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::khoros-gdpr-files-prd/*",
+            "Condition": {
+                "Bool": {
+                    "aws:SecureTransport": "true"
+                }
+            }
+        },
+        {
+            "Sid": "DenyAll",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::khoros-gdpr-files-prd/*",
+            "Condition": {
+                "StringNotLike": {
+                    "aws:PrincipalArn": [
+                        "arn:aws:iam::480586329294:role/shard-com01-apnortheast2-senderRole-aee17b4",
+                        "arn:aws:iam::480586329294:role/shard-com01-apnortheast2-accessRole-513d063",
+                        "arn:aws:iam::480586329294:user/s3.all",
+                        "arn:aws:iam::480586329294:role/care-common-instance-role",
+                        "arn:aws:iam::480586329294:role/com-pgl-bat-gpdr-ecs-role"
+                    ]
+                },
+                "Bool": {
+                    "aws:SecureTransport": "false"
+                }
+            }
+        }
+    ]
+}
+
+
+
+LambdaDynamo
+aws-s3-server-access-log-consolidation-dev-rollup
+
+
+care-pgl-sgw-elb
+care-pgl-sgw-prx#2 i-05350cdf7e8c21915
+
+curl -H "Content-Type: application/json" \
+    -H "Authorization: Bearer 6a6bcb99-fe2f-41da-abf6-3276df0ebfd5" \
+    -H "Accept-Language: ko_KR" \
+    -H "x-mbrs-ch: SKT" \
+    -H "x-mbrs-nw: 450" \
+    -H "x-mbrs-dvc: SM-G935F/7.0" \
+    -H "x-mbrs-info: 3uk8q817f7/999900000/com.samsung.android.voc" \
+    -I \
+    https://rel.samsungmembers.com/members/v2/banner
+
+
+watch -n .5 ./curl.sh
+
+
+S3 bucket policy pattern
+======================
+
+ussm-pus-s3-cloudtrail-logs
+galaxycare-prd
+
+
+
+docker exec -it telegraf_lb telegraf --config-directory /etc/telegraf/telegraf.d --test
+http_code_backend_5xx_sum
+
+mean(request_count_sum)
+
+
+
+
+CLOUDTRAIL
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AWSCloudTrailAclCheck20150319",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "cloudtrail.amazonaws.com"
+            },
+            "Action": "s3:GetBucketAcl",
+            "Resource": "arn:aws:s3:::samsungmembersPrdCloudTrail"
+        },
+        {
+            "Sid": "AWSCloudTrailWrite20150319",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "cloudtrail.amazonaws.com"
+            },
+            "Action": "s3:PutObject",
+            "Resource": "arn:aws:s3:::samsungmembersPrdCloudTrail/AWSLogs/480586329294/*",
+            "Condition": {
+                "StringEquals": {
+                    "s3:x-amz-acl": "bucket-owner-full-control"
+                }
+            }
+        }
+    ]
+}
+
+FLOWLOGS
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AWSLogDeliveryWrite",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "delivery.logs.amazonaws.com"
+            },
+            "Action": "s3:PutObject",
+            "Resource": "my-s3-arn",
+            "Condition": {
+                "StringEquals": {
+                    "aws:SourceAccount": account_id,
+                    "s3:x-amz-acl": "bucket-owner-full-control"
+                },
+                "ArnLike": {
+                    "aws:SourceArn": "arn:aws:logs:region:account_id:*"
+                }
+            }
+        },
+        {
+            "Sid": "AWSLogDeliveryAclCheck",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "delivery.logs.amazonaws.com"
+            },
+            "Action": "s3:GetBucketAcl",
+            "Resource": "arn:aws:s3:::bucket_name",
+            "Condition": {
+                "StringEquals": {
+                    "aws:SourceAccount": account_id
+                },
+                "ArnLike": {
+                    "aws:SourceArn": "arn:aws:logs:region:account_id:*"
+                }
+            }
+        }
+    ]
+}
+
+[SRE1 Tech Sharing] [SPAY] -Introduction to Elastic Stack
+Niffler Brownbag (by BixbyMGMT) + GWP (Sketchful tagalog) - May 26, 2022
+
+
+July:
+Deployments = 4
+SvcReq:IndvTask = 39
+SvcReq:IPReg = 289
+OnCall = 1
+ProjImprv = 0
+
+August:
+Deployments = 4
+SvcReq:IndvTask = 44
+SvcReq:IPReg = 282
+OnCall = 4
+ProjImprv = 1
+
+September:
+Deployments = 1
+SvcReq:IndvTask = 12
+SvcReq:IPReg = 74
+OnCall = 0
+ProjImprv =5
+
+
+Q3 Total:
+
+
+- Gio started August 8
+- For Q3, there's no IP registration that was requested during weekend thus lower overall OnCall requests that Q2
+- Reason for lower IP Registration requests? Was there an issue with creating tickets?
+
+
+
+Contact MIS
+
+Install terraform
+Demo Provision of ec2 instance
+Explain Provider and resource block
+	versioning constraint
+Terraform destroy
+	terraform destroy -target aws_instance.my-web-serverf
+Explain state files
+Desire and current concept
+Attribute and outputs
+
+Hi Mr. Yang,
+
+Good morning~
+
+ In Samsung Members service, the recommended WAF rules are already in place and as advised, we have also unchecked the "Override rule group action to count" option to all AWS Managed Rules associated with the Web ACL used by the service.
+
+Thanks and regards,
+​Paul John
+
+
+Not yet implemented in WAF
+===========================
+ExploitablePaths_URIPATH
+Host_localhost_HEADER
+JavaDeserializationRCE_HEADER
+JavaDeserializationRCE_QUERYSTRING
+JavaDeserializationRCE_URIPATH
+JavaDeserializationRCE_BODY
+SQLi_COOKIE
+SQLi_QUERYARGUMENTS
+SQLi_URIPATH
+
+
+
+NoUserAgent_HEADER      
+PROPFIND_METHOD         AWS-AWSManagedRulesKnownBadInputsRuleSet  
+UserAgent_BadBots_HEADER
+
+
+
+Background of incident
+Recommendation
+Implementation
+Result
+Remediation
+
+
+ap-northeast-2 sg-028710e778b0192f6 = Outbound / Allow Lambda to access gw.samsungmembers.com which has dynamic IP. Lambda needs access to allow the data to be pulled to the system
+
+
+ap-northeast-2 sg-04e13ea9ba55760fa = Inbound / External Access Load Balancer / The load balancer is required to be publicly accessible as the services hosted in the cluster are being used by client devices
+
+ap-northeast-2 sg-057f7cd5acaa0a70f = Outbound / Allow internet access / Rule was generated automatically after cluster creation to allow traffic from control plane and managed node group to flow freely with each other. This is also includes communication betweens pods hosted from nodes.
+
+This rule was automatically created by EKS(Elasic Kubernetes Service) after provisioning cluster. It is required by the EKS service to allow traffic between control plane(EKS server managed by AWS) and managed node groups (Servers managed by operator) to flow freely with each other.
+
+In addition, nodes need to access AWS service whose IP addresses are dynamic(changing). If the IP address of service endpoint keeps on changing, it could potentially disrupt the access to the application deployed in the cluster.
+
+The following are the access to the AWS services that needs to be considered.
+
+- Outbound internet to EKS APIs so node can be registered to EKS cluster at launch time.
+- Nodes needs access to pull container images from Amazon ECR 
+- Nodes needs access to S3 for retrieving files
+
+
+
+ap-northeast-2 sg-06854c0aeb1ba78b3 = Inbound and Outbound / Alow internet access / Rule was generated automatically after cluster creation to allow traffic from control plane and managed node group to flow freely with each other 
+
+ap-northeast-2 sg-07a7a3900aa3f7158 = Inbound and Outbound / Alow internet access / Rule was generated automatically after cluster creation to allow traffic from control plane and managed node group to flow freely with each other 
+
+us-east-1 sg-028e3769bb5e9f3ed = Already filed sg exemption
+
+
+
+
+Minimized VPC Endpoint = SNOW // has impact to service. Needs to be tested in Dev Environment first
+Minimizing S3 bucket rights = SNOW // needs to implement IP access control policy
+Trusted Advisor = SMEM // Address issues in Sec Portal but there's still action recommended in AWS console
+Script(DAT,DCT) for VM servers = SMEM // End Of service and access logs of all servers needs to be checked
+
+
+
+1. sg-028710e778b0192f6: Allows lambda to access gw.samsungmembers.com so it can fetch data needed by the GDPR system. gw.samsungmembers.com is deployed behind load balancer which has dynamic IP. Its IP address changes periodically so instead of only allowing current IP address, we need to allow all destination in outbound rule to avoid manual intervention when IP changes which might disrupt access to the date needed from gw.samsungmembers.com
+
+2. sg-04e13ea9ba55760fa: The load balancer is required to be publicly accessible as the services hosted in the cluster are being used by client app from their devices.
+
+3. sg-06854c0aeb1ba78b3, sg-07a7a3900aa3f7158, sg-057f7cd5acaa0a70: This rule was automatically created by EKS(Elasic Kubernetes Service) after provisioning cluster. It is required by the EKS service to allow traffic between control plane(EKS server managed by AWS) and managed node groups (Servers managed by operator) to flow freely with each other.
+
+In addition, nodes need to access AWS service whose IP addresses are dynamic(changing). If the IP address of service endpoint keeps on changing, it could potentially disrupt the access to the application deployed in the cluster.
+
+The following are the access to the AWS services that needs to be considered.
+
+- Outbound internet to EKS APIs so node can be registered to EKS cluster at launch time.
+- Nodes needs access to pull container images from Amazon ECR 
+- Nodes needs access to S3 for retrieving files
+
+
+mem-pgl-common-instance-sg = sg rule outbound to any destination has been deleted
+
+gdpr-download-loyalty-sg = sg rule d
+
+mem-pgl-jmp-sg = sg rule outbound to any has been deleted
+
+
+- Minimized VPC Endpoint = SNOW // has impact to service. Needs to be tested in Dev Environment first
+- Minimizing S3 bucket rights = SNOW // needs to implement IP access control policy
+- Trusted Advisor = SMEM // Address issues in Sec Portal but there's still action recommended in AWS console
+- Script(DAT,DCT) for VM servers = SMEM // End Of service and access logs of all servers needs to be check
+- AWS resource outbound access control policy = Will request for sg rule exemption
+
+=======================
+log-community
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::667140660516:role/role_whitelister",
+                    "arn:aws:iam::600734575887:root"
+                ]
+            },
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Resource": "arn:aws:s3:::log-community/*"
+        },
+        {
+            "Sid": "AWSCloudTrailAclCheck20150319",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "cloudtrail.amazonaws.com"
+            },
+            "Action": "s3:GetBucketAcl",
+            "Resource": "arn:aws:s3:::log-community"
+        },
+        {
+            "Sid": "AWSCloudTrailWrite20150319",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "cloudtrail.amazonaws.com"
+            },
+            "Action": "s3:PutObject",
+            "Resource": "arn:aws:s3:::log-community/Batch/AWSLogs/480586329294/*",
+            "Condition": {
+                "StringEquals": {
+                    "s3:x-amz-acl": "bucket-owner-full-control"
+                }
+            }
+        }
+    ]
+}
+
+
+
+
+=======================
+
+
+
+
+Terraform part 2 attendance
+Joshnee
+Jane
+Resuelo
+Roman
+Michael
+Gio
+Abegail
+Janrey
+
+mean(http_code_backend_5xx_sum)
+(mean(http_code_backend_5xx_sum)/mean(request_count_sum))*100
+
+
+
+June
+	QA = 88%
+	Technical Management = 102/103 = 99.03%
+
+July
+	QA = 63%
+	Technical Management = 68/70 = 97.14%
+
+August
+	QA = 100%
+	Technical Management = 84/86 = 97.67
+September
+	QA = 100%
+	Technical Management = 75/76 = 98.68%
+October
+	QA = 98%
+	Technical Management = 91/92 (Completed within deadline)
+	Knowledge Based = 2/2 (Completed within deadline)
+
+
+Care k8s load balancer
+k8s-istiosys-istioing-0969ee540f
+	
+k8s-istiosys-istioing-65207fa71b
+k8s-membersprd-d3dbdb2aa0 - test
+
+Tue - Access list & Equipment needed | Request access 
+Wed - Productivity Tools and other operation docs
+Thu - Svault Infra Arch and Managed Vault
+Fri - Svault Infra Arch and Managed Vault 
+
+
+Cloud env (AWS) = apne2p, apne2d, cnnw1p, cnnw1d
+Alerts and monitoring = samsung alertnow, slack
+Deployment = jenkins, spinnaker global, spinnaker china, terraform enterprise
+
+Github, slack
+
+r.regala
+jam cabrera
+
+
+
+
+
+
+==============================
+
+Endpoint policy
+==============================
+vpce-28fa1941
+NEW
+{
+	"Version": "2008-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Principal": "*",
+			"Action": [
+				"s3:AbortMultipartUpload",
+				"s3:CompleteMultipartUpload",
+				"s3:CopyObject",
+				"s3:Create*",
+				"s3:Delete*",
+				"s3:GetBucket*",
+				"s3:GetObject",
+				"s3:GetObject*",
+				"s3:GetPublicAccessBlock",
+				"s3:HeadBucket",
+				"s3:HeadObject",
+				"s3:ListBucket*",
+				"s3:ListMultipartUploads",
+				"s3:ListObjects",
+				"s3:ListObjectsV2",
+				"s3:ListObjectVersions",
+				"s3:ListParts",
+				"s3:PutBucket*",
+				"s3:PutObject*",
+				"s3:PutPublicAccessBlock",
+				"s3:RestoreObject",
+				"s3:SelectObjectContent",
+				"s3:UploadPart",
+				"s3:UploadPartCopy",
+				"s3:WriteGetObjectResponse"
+			],
+			"Resource": "arn:aws:s3:::*"
+		}
+	]
+}
+vpce-01f91a68
+OLD
+{
+	"Version": "2008-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Principal": "*",
+			"Action": "*",
+			"Resource": "*"
+		}
+	]
+}
+NEW
+{
+	"Version": "2008-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Principal": "*",
+			"Action": [
+				"s3:AbortMultipartUpload",
+				"s3:CompleteMultipartUpload",
+				"s3:CopyObject",
+				"s3:Create*",
+				"s3:Delete*",
+				"s3:GetBucket*",
+				"s3:GetObject",
+				"s3:GetObject*",
+				"s3:GetPublicAccessBlock",
+				"s3:HeadBucket",
+				"s3:HeadObject",
+				"s3:ListBucket*",
+				"s3:ListMultipartUploads",
+				"s3:ListObjects",
+				"s3:ListObjectsV2",
+				"s3:ListObjectVersions",
+				"s3:ListParts",
+				"s3:PutBucket*",
+				"s3:PutObject*",
+				"s3:PutPublicAccessBlock",
+				"s3:RestoreObject",
+				"s3:SelectObjectContent",
+				"s3:UploadPart",
+				"s3:UploadPartCopy",
+				"s3:WriteGetObjectResponse"
+			],
+			"Resource": "arn:aws:s3:::*"
+		}
+	]
+}
+vpce-02cd51be612fffe3f
+vpce-01197546f817ba1cc / care-kms-endpoint
+OLD
+	{
+	"Statement": [
+		{
+			"Action": "*",
+			"Effect": "Allow",
+			"Principal": "*",
+			"Resource": "*"
+		}
+	]
+}
+
+NEW
+{
+	"Version": "2008-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Principal": "*",
+			"Action": [
+				"kms:CancelKeyDeletion",
+				"kms:ConnectCustomKeyStore",
+				"kms:Create*",
+				"kms:Decrypt",
+				"kms:Delete*",
+				"kms:Describe*",
+				"kms:Disable*",
+				"kms:DisconnectCustomKeyStore",
+				"kms:Enable*",
+				"kms:Encrypt",
+				"kms:Generate*",
+				"kms:Get*",
+				"kms:ImportKeyMaterial",
+				"kms:List*",
+				"kms:Put*",
+				"kms:ReEncryptFrom",
+				"kms:ReEncryptTo",
+				"kms:ReplicateKey",
+				"kms:RetireGrant",
+				"kms:RevokeGrant",
+				"kms:ScheduleKeyDeletion",
+				"kms:Sign",
+				"kms:SynchronizeMultiRegionKey",
+				"kms:TagResource",
+				"kms:UntagResource",
+				"kms:UpdateAlias",
+				"kms:UpdateCustomKeyStore",
+				"kms:UpdateKeyDescription",
+				"kms:UpdatePrimaryRegion",
+				"kms:Verify*"
+
+			],
+			"Resource": "*"
+		}
+	]
+}
+
+vpce-09bb8634babe0cb1d
+vpce-07c5e9353cfa35b4c
+NEW
+{
+	"Version": "2008-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Principal": "*",
+			"Action": [
+				"secretsmanager:CancelRotateSecret",
+				"secretsmanager:Create*",
+				"secretsmanager:Delete*",
+				"secretsmanager:Describe*",
+				"secretsmanager:Get*",
+				"secretsmanager:List*",
+				"secretsmanager:Put*",
+				"secretsmanager:RemoveRegionsFromReplication",
+				"secretsmanager:ReplicateSecretToRegions",
+				"secretsmanager:RestoreSecret",
+				"secretsmanager:RotateSecret",
+				"secretsmanager:StopReplicationToReplica",
+				"secretsmanager:TagResource",
+				"secretsmanager:UntagResource",
+				"secretsmanager:Update*",
+				"secretsmanager:ValidateResourcePolicy"
+			],
+			"Resource": "*"
+		}
+	]
+}
+vpce-0511c4989106746f6
+NEW
+{
+	"Version": "2008-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Principal": "*",
+			"Action": [
+				"lambda:Add*",
+				"lambda:Create*",
+				"lambda:Delete*",
+				"lambda:Get*",
+				"lambda:Invoke*",
+				"lambda:List*",
+				"lambda:Publish*",
+				"lambda:Put*",
+				"lambda:Remove*",
+				"lambda:TagResource",
+				"lambda:UntagResource",
+				"lambda:Update*"
+			],
+			"Resource": "*"
+		}
+	]
+}
+
+
+
+
+==============================
+Mark Leslie Flores
+
+1.) Tell me something about yourself. 
+- Scheduler, 2021 took googgle cloud cert because of the company's direction; ITILV4;
+- stayed for 12 yrs in singapore; did not secure slot for kids
+
+Current Company and Position
+- Kindryl;client is financial company;
+
+Your day to day responsibilities
+- Linux server management; small team; 
+
+2.) What's your reason for leaving your current job
+- end of contract; taking off; working 24/7 paid?
+- because of challenge
+
+3.) What's your ideal working environment
+- Work life balance; can work in weekend with compensation
+
+4.) Technically what's your strength and weakness
+- Strength; hindi nangiiwant; finish task with quality; generalizing pinoy; team player; take initiatives/lead; 
+- Weakness; Mabilis ma stress; most companies are looking for scripting
+
+5.) What's your biggest challenge you've faced so far
+- 
+
+6.) Have you ever conducted brownbag session? Willing?
+- Unix L3 APAC, knowledge sharing sa vendor sa india;
+
+7.) How do you handle heavy work load/stress?
+-
+
+8.) What do you do during your freetime? 
+- 
+
+
+9.) Does not monitor application/separate tasks; 
+
+
+
+
+
+MP0438961358
+
+
+
+curl discovery.memberscare.internal:8761/eureka/apps/
+curl 30.0.151.77:8761/eureka/apps/
+
+curl discovery-replica.memberscare.internal:8761/eureka/apps/
+curl 30.0.152.77:8761/eureka/apps/
+
+
+curl -H "Accept: application/json" http://30.0.151.77:8761/eureka/apps
+
+
+curl -H "Accept: application/json" http://discovery.memberscare.internal:8761/eureka/apps
+
+curl 30.0.151.27:9930
+
+
+
+ssh common@30.0.151.241 -p 2285
+ssh common@30.0.151.101 -p 2285
+
+
+
+
+
+
+sg-c6d6daaf
+sg-0d927499a5696334b
+sg-05fbe907a0e1c8f84
+sg-f3bcb19a
+
+
+
+
+
+
+nc -vz 30.0.151.156 9090
+nc -vz 30.0.151.77 8761
+curl -H "Accept: application/json" http://discovery.memberscare.internal:8761/eureka/apps | jq .[].application[].instance[].healthCheckUrl
+
+IPADDR=curl -H "Accept: application/json" http://discovery.memberscare.internal:8761/eureka/apps | jq .[].application[].instance[].ipAddr
+
+PORT=curl -H "Accept: application/json" http://discovery.memberscare.internal:8761/eureka/apps | jq .[].application[].instance[].port.$
+
+
+
+arr=( $(curl -H "Accept: application/json" http://discovery.memberscare.internal:8761/eureka/apps | jq .[].application[].instance[].healthCheckUrl) )
+
+
+curl -H "Accept: application/json" http://discovery.memberscare.internal:8761/eureka/apps | jq .[].application[].instance[].healthCheckUrl | tr '\n' ' '
+
+
+
+[batch-beta:children]
+care-pgl-bat-1
+
+
+members-beta = DONE
+	care-pgl-api-was-prd-dk2-1
+	care-pgl-api-was-prd-dk2-2
+members-search = DONE
+	care-pgl-api-was-prd-dk2-3
+	care-pgl-api-was-prd-dk2-1
+	care-pgl-api-was-prd-dk3-1
+members-content = DONE
+	care-pgl-api-was-prd-dk2-1
+	care-pgl-api-was-prd-dk2-2
+	care-pgl-api-was-prd-dk3-1
+	care-pgl-api-was-prd-dk2-3
+	care-pgl-api-was-prd-dk2-4
+members-content-consumer = DONE
+	care-pgl-msk-consumer
+members-external = DONE
+	care-pgl-sgw-was-1
+	care-pgl-sgw-was-2
+members-feedback = DONE
+	care-pgl-api-was-prd-dk2-1
+	care-pgl-api-was-prd-dk2-2
+	care-pgl-api-was-prd-dk3-1
+members-log = DONE
+	care-pgl-api-was-prd-dk2-1
+	care-pgl-api-was-prd-dk3-1
+members-log-consumer = DONE
+	care-pgl-msk-consumer
+members-feedback-consumer = DONE
+	care-pgl-msk-consumer
+members-myproduct = DONE
+	care-pgl-api-was-myproduct-1
+	care-pgl-api-was-myproduct-2	
+members-inbox = DONE
+	care-pgl-api-was-myproduct-1
+	care-pgl-api-was-myproduct-2
+members-survey = DONE
+	care-pgl-api-was-myproduct-1
+	care-pgl-api-was-myproduct-2
+members-banner
+	care-pgl-api-was-prd-10
+	care-pgl-api-was-prd-11
+
+
+
+
+
+mem-pgl-jmp t3a.nano
+gp3 storage
+volume size: 8 GB
+private ip address: 30.0.11.90
+subnet address: subnet-95cafbdc
+EIP: 13.115.66.0 (eipalloc-00360064964e17a88)
+IAM role: CodeDeploy-EC2
+Security Groups: sg-f0a86288, sg-a8ae64d0, sg-0a6a1ea5fddb8e1aa
+Tags:
+	Name : mem-pgl-jmp
+	GBL_CLASS_0 : OPERATION
+	GBL_CLASS_1 : BASTION
+	IPA_TAGS : bastion,memberscare,apnortheast1
+	SEC_ASSETS_GATEWAY : GENERAL
+
+
+===================================
+
+com-pgl-adm
+
+ip address: 20.0.151.10
+instance type: t2.large
+ec2 iam role: com-pgl-adm 
+sgs: sg-28282e41, sg-8aa3a2e3, sg-0665aa73e782a8275, sg-915756f8, sg-920706fb, sg-555a5f3c
+subnet: subnet-00f657c9d63723c5d (com-pgl-private-c-subnet)
+block device: /dev/sda1 32GB
+tags:
+	IPA_TAGS = admin,members-community,memberscommunity,apnortheast2
+	Name = com-pgl-adm
+	GBL_CLASS_1 = WAS
+	GBL_CLASS_0 = SERVICE
+	Service = Community
+Home Dirs:
+common
+common.smem-prod
+community-dev.smem-prod
+nagios
+root
+tmp
+opt
+
+Apps / Services:
+
+
+
+Cronjobs (common)
+0 0 * * *  python3 /opt/app/email-batch/EmailBatch.py 1 >> /opt/log/email-batch/EmailBatchResult.txt
+0 9 * * *  python3 /opt/app/email-batch/EmailBatch.py 2 >> /opt/log/email-batch/EmailBatchResult.txt
+0 4 * * * /home/common/scripts/CopyLogs.sh | tee -a /home/common/scripts/s3backup.log
+0 2 * * * /home/common/scripts/CopyLogs.sh | tee -a /home/common/scripts/s3backup.log
+
+
+
+
+aws s3 sync s3://smem-base-installers/backup/community/com-pgl-adm/common /home/common 
+
+==============================================
+
+com-pgl-jmp = DONE
+
+public ip address: 52.78.228.249
+private ip address: 20.0.11.91
+instance type: t2.micro
+ec2 iam role: comunity-ec2-codedeploy-deployer
+sgs: sg-28282e41, sg-c45352ad, sg-555a5f3c
+subnet: subnet-ed8df284 (community-public-a-subnet)
+Block device: /dev/sda1 32GB encrypted
+Key pair: community-seoul
+tags:
+	IPA_TAGS = members-community,bastion
+	Name = com-pgl-jmp
+	GBL_CLASS_1 = BASTION
+	GBL_CLASS_0 = OPERATION
+	Service = Community
+	SEC_ASSETS_GATEWAY = GENERAL
+	
+
+- IPA
+
+common.smem-prod
+common
+community-dev.smem-prod - qwerty@12345
+opt
+jennifer
+
+aws s3 sync s3://smem-base-installers/backup/community/com-pgl-jmp/opt /opt
+
+
+====================================================
+
+com-pgl-jmp-db#2 = DONE
+
+public ip address: 52.78.244.78
+private ip address: 20.0.12.93
+instance type: t2.micro
+ec2 iam role: CodeDeploy-EC2
+sgs: sg-28282e41, sg-151f1d7
+subnet: subnet-872797ca 
+Block device:
+	/dev/sda1 40GB gp3
+Key pair: care_seoul
+Tags:
+	GBL_CLASS_0 = OPERATION
+	GBL_CLASS_1 = DB_BASTION
+	IPA_TAGS = members-community,db-bastion
+	Name = com-pgl-jmp-db#2
+	SEC_ASSETS_GATEWAY = DB
+	Service = Community
+
+Block devices:
+/dev/sda1 32GB gp3 encrypted
+
+Home Dirs:
+common
+common.smem-prod
+jennifer
+opt
+tmp
+
+Apps/Services:
+IPA
+
+Crontab (root)
+@reboot cd /home/nagios/jnrpeagent/bin; ./jnrpeRestart.sh
+
+2,12,22,32,42,52 * * * * /bin/bash -c ". /opt/ipa-client/install-ipa-client.sh" >> /var/log/ipa-client.log 2>&1
+
+aws s3 sync s3://smem-base-installers/backup/community/com-pgl-jmp-db/opt /opt
+
+aws s3 cp s3://smem-base-installers/backup/awscliv2.zip /tmp/awscliv2.zip
+
+============================================
+
+care-pgl-jmp = DONE
+
+Public ip address: 52.78.92.160
+Private ip address: 30.0.11.90
+Instance type: t2.micro
+Ec2 iam role: CodeDeploy-EC2
+Sgs: sg-62bfb20b, sg-19b9b470, sg-f3bcb19a
+Subnet: subnet-64b6cf0d
+Block device:
+	/dev/sda1 40GB gp3
+	/dev/sdf 30GB gp3
+	/dev/sdg 100GB gp3 
+
+Key pair: care_seoul
+Tags:
+	GBL_CLASS_0 = OPERATION
+	GBL_CLASS_1 = BASTION
+	IPA_TAGS = bastion,apnortheast2,memberscare
+	Name = care-pgl-jmp
+	SEC_ASSETS_GATEWAY = GENERAL
+	Service = Care
+
+
+
+Home Dirs:
+sgmp
+webadm
+common
+common.smem-prod
+opt
+tmp
+
+Apps/Service:
+ansible
+Jenkins client
+STI
+IPA
+
+java version "1.8.0_101"
+
+Backup AMI: care-pgl-jmp-20230117 (ami-01c994566eb11bae0)
+
+aws s3 sync s3://smem-base-installers/backup/care/care-pgl-jmp/tmp /tmp
+
+=============================================
+
+care-pgl-jmp-db
+
+Public ip address: 52.79.46.55
+Private ip address: 30.0.12.90
+Instance type: t2.large
+Ec2 iam role: DBABackupRole
+Sgs: sg-28f18f40, sg-05fbe907a0e1c8f84, sg-f3bcb19a
+Subnet: subnet-a654e6eb
+Block devices:
+/dev/sda1 16GB gp3 encrypted = mountpoint /
+/dev/sdf 32GB gp3 encrypted = mountpoint /home/common/NewBigData
+/dev/sdg 100GB gp3 encrypted = mountpoint /extract
+Tags:
+	Name = care-pgl-jmp-db
+	GBL_CLASS_0 = OPERATION
+	GBL_CLASS_1 = DB_BASTION
+	Service = Care
+	SEC_ASSETS_GATEWAY = DB
+	IPA_TAGS = db-bastion,apnortheast2,memberscare
+
+Home Dirs:
+sgmp
+webadm
+common
+common.smem-prod
+opt
+tmp
+
+Fstab:
+LABEL=cloudimg-rootfs   /        ext4   defaults,discard        0 0
+/dev/xvdf      /home/common/Newbigdata   auto    defaults,nobootwait,comment=cloudconfig 0       2
+/dev/xvdg      /extract   auto    defaults,nobootwait,comment=cloudconfig 0       2
+
+
+Crontab for common.smem-prod:
+# EUCDM run form 10th and 20th of the month
+00 1 10,20 * * cd /extract/cron/ && ./eucdm_autorun.sh && ./createjira.sh
+
+# EUCDM run for Jan-Dec except for Feb every 30th of the month
+00 1 30 1,3,4,5,6,7,8,9,10,11,12 * cd /extract/cron/ && ./eucdm_autorun.sh && ./createjira.sh
+
+# EUCDM run for Feb only every 28th of Feb
+00 1 28 2 * cd /extract/cron/ && ./eucdm_autorun.sh && ./createjira.sh
+
+Crontab for root:
+*/10 * * * * /bin/bash -c ". /opt/ipa-client/install-ipa-client.sh" >> /var/log/ipa-client.log 2>&1
+0 1 * * * (find /var/log/ipatrace/loginhistory/login_trace-*.log -mtime +14 -exec rm -rf {} \;)
+0 1 * * * (find /var/log/ipatrace/keystroke/trace-*.log -mtime +14 -exec rm -rf {} \;)
+*/5 * * * * /bin/bash -c /opt/ipa-client/ipa-monitor.sh >> /var/log/ipa-monitor.log 2>&1
+
+Apps / Services:
+IPA
+STI
+
+Backup AMI: care-pgl-jmp-db-20230117 (ami-0d751f241f8834443)
+
+
+nohup aws s3 sync s3://smem-base-installers/backup/care/care-pgl-jmp-db/extract /extract > /temp/extract-s3.log &
+aws s3 sync s3://smem-base-installers/backup/care/care-pgl-jmp-db/sgmp /home/sgmp
+
+
+nohup aws s3 sync /var/log/lastlog s3://smem-base-installers/backup/care/care-pgl-rmc/var-log-lastlog  > /temp/lastlog-to-s3.out &
+
+nohup aws s3 sync /var/log/syslog s3://smem-base-installers/backup/care/care-pgl-rmc/syslog  > /temp/syslog.out &
+
+
+=============================================
+
+care-pgl-elk
+
+Public ip address: N/A
+Private ip address: 30.0.151.63
+Instance type: m4.xlarge
+Ec2 iam role: care-common-instance-role
+Sgs: sg-fda3ae94, sg-5a8b5632, sg-b79894de, sg-cca0ada5, sg-19b9b470, sg-f3bcb19a
+Subnet: subnet-0e9d30588464bf7e3
+Block devices:
+/dev/sda1 100GB gp3 encrypted
+
+Home Dirs:
+webadm
+common
+common.smem-prod
+opt
+tmp
+
+
+Crontab for common user:
+
+10 0 * * * /home/common/errorlog_backup.sh > /home/common/es/log/errorlog_backupResult.log 2>&1
+10 2 * * * /home/common/successlog_backup.sh > /home/common/es/log/successlog_backupResult.log 2>&1
+10 4 * * * /home/common/delete_index.sh > /home/common/es/log/delete_indexResult.log 2>&1
+10 6 * * * /home/common/backup_index.sh api_errorlog > /home/common/es/log/errorlog_new_backupResult.log 2>&1
+10 8 * * * /home/common/backup_index.sh api_successlog > /home/common/es/log/successlog_new_backupResult.log 2>&1
+10 10 * * * /home/common/delete_index_new.sh > /home/common/es/log/delete_index_new_Result.log 2>&1
+
+Apps:
+Fluentd (docker)
+telegraf
+STI
+HIDS
+IPA
+
+Backup AMI: care-pgl-elk-20230117 (ami-068d8da93ec86e781)
+
+=============================================
+
+care-pgl-adm
+
+Public ip address: N/A
+Private ip address: 30.0.151.10
+Instance type: m4.large
+Ec2 iam role: care-admin-instance-role
+Sgs: sg-c6d6daaf, sg-0d927499a5696334b, sg-05fbe907a0e1c8f84, sg-28923940, sg-f3bcb19a
+Subnet: 
+Block devices:
+/dev/sda1 32GB gp3 encrypted
+
+
+Home Dirs:
+shellmonitor
+s-care
+software
+ubuntu
+webadm
+common
+
+
+Apps / Services:
+Fluentbit
+Scouter
+Docker members admin
+nginx
+telegraf
+sti
+hids
+- members-admin (dockerized)
+- fluentbit = /home/common/fluentbit
+- nginx
+- Telegraf
+- IPA
+- STI
+- scouter = /home/common/docker/scouter
+- Hids
+
+Cronjobs (common)
+HOME="/home/common"
+SHELL="/bin/bash"
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/common/bin:/usr/lib/jvm/java-8-oracle/bin"
+@reboot cd $HOME/docker/scouter/agent.host; ./host.sh
+@reboot $HOME/run.sh
+#@reboot nohup java -jar $HOME/datapipeline_worker/TaskRunner-1.0.jar --config $HOME/datapipeline_worker/credential.json --workerGroup=loyalty_ulog_worker --region=ap-northeast-1 &
+*/5 * * * * $HOME/cloudwatch/put_cloudwatch_metric.sh
+
+
+Cronjobs (root)
+@reboot su nagios -c 'cd /home/nagios/jnrpeagent/bin; ./jnrpeRestart.sh'
+*/5 * * * * /root/backup_nginx.sh
+* 0 * * * /root/cleanIP.sh
+* 0 * * * /root/deleteYesterday.sh
+
+Backup AMI: care-pgl-adm-20230117 (ami-06cb26e3e1e384e2c)
+
+
+===========================================
+
+bnf-pap-bat-bdp = DONE
+
+Public ip address: N/A
+Private ip address: 10.153.51.172
+Instance type: t3a.micro
+Ec2 iam role: benefit
+Sgs: sg-02b2d2ff2db2652e5, sg-0faee2aa880dfcd78, sg-0dd6090a54f8667c8, sg-0de077f526c37720b, sg-0c17d83167833f6bd, sg-0cf221e1a2edcc7ff
+Subnet: subnet-06611dfb4ae5c0590
+Block devices:
+/dev/sda1 32GB gp3 encrypted   -> mountpoint /
+/dev/sdf  250GB gp3 encrypted  -> mountpoint /home/common/Newbigdata
+Tags:
+	Name = bnf-pap-bat-bdp
+	GBL_CLASS_0 = SERVICE
+	GBL_CLASS_1 = BATCH
+	Service = Benefit
+	ServiceType = BATCH
+Home Dirs:
+nagios
+common
+
+Apps / Services:
+ETL => ~/Newbigdata/Shell
+STI
+
+
+Crontabs (common):
+5 0 * * * ~/Newbigdata/Shell/bigdata.sh >> ~/Newbigdata/Shell/log.txt 2>&1
+
+Fstab:
+LABEL=cloudimg-rootfs   /        ext4   defaults,discard        0 0
+/dev/nvme1n1      /home/common/Newbigdata   auto    defaults,nobootwait,comment=cloudconfig 0 2
+
+aws s3 sync s3://smem-base-installers/backup/benefit/bnf-pap-bat-bdp/nagios /home/nagios
+
+Backup AMI: bnf-pap-bat-bdp-20230117 (ami-0012e3cb6890fe551)
+
+
+============================================
+
+mem-pgl-jmp = 
+
+Public ip address: 13.115.66.0
+Private ip address: 30.0.11.90
+Instance type: t3.nano
+Ec2 iam role: CodeDeploy-EC2
+Sgs: sg-f0a86288, sg-a8ae64d0, sg-0a6a1ea5fddb8e1aa
+Subnet: subnet-95cafbdc
+Block devices:
+/dev/sda1 8GB gp3 encrypted   -> mountpoint /
+
+	Name = mem-pgl-jmp
+	GBL_CLASS_0 = OPERATION
+	GBL_CLASS_1 = BASTION
+	IPA_TAGS = bastion,memberscare,apnortheast1
+	SEC_ASSETS_GATEWAY = GENERAL
+
+==========================================
+
+mysql -h community-prd.cluster-cuptyxfd5qiv.ap-northeast-2.rds.amazonaws.com -P 33065 -u smem_dba -p
+
+Aoaqjtm2022!88
+
+mysql -h community-prd.cluster-cuptyxfd5qiv.ap-northeast-2.rds.amazonaws.com -P 33065 -u community_admin -p
+
+DATASOURCE_SLAVE_PASSWORD='An9H2021vC4!qk'
+
+
+
+members-work-machine
+	50/dev/sda1 =  old=vol-0306d999f00643e62 new=vol-0e1fed1cd6fe61430  -->  
+	100/dev/sdf = old=vol-vol-09b80ae74545cddaa new=vol-0014e3c3c715ddc38  --> 
+	ap-northeast-2a
+	10.1.101.54
+
+
+
+Communicating: explicit vs implicit way
+Evaluating: direct negative feedback vs inderect negative feedback
+Leading: egalitarian vs hierarchical
+Deciding: consensual vs top-down
+Trusting task vs relationship
+Disagreeing: confrontational vs avoidant
+Scheduling: structured vs flexible
+Persuading: deductive vs inductive
+
+nohup ./CopyLogs.sh > /tmp/logrotate-20230217.out &
+
+ssh common@10.255.53.207 -p 2285
+ssh common.smem-prod@10.255.53.34 -p 2285
+
+
+
+
+
+Spay - Pocholo Magbanua / Jam Cabrera
+
+https://mosaic.sec.samsung.net/kms/comtyMainPost.do?method=docsView&id=ENC_DKrRd9BsdT9Ae8Vg9CNHZqd37IKQcLW5jciFYtXbnFyYQywvoHTJPzWTbUoqBWZWW06BpAL8CPr61Q29CBFuJ7VlK5Mp44LetLU3xswJSQg0NKY6JEitFYxwh9B8Qmotqmvtzk8U3FhlKn67lPNuyluCmFOEHqAgtsA8hh9BgjeD2TthyTvH8uJgiP2Tr3KoyfPEIWd6r9B8TG1AcNnOfabVzxteAz&comtyId=576341331&menuId=576356444
+
+CNF/Skillup Batch 1
+https://teamdocs.mosaic.sec.samsung.net/sites/COMTY_576341331/MENU_576341331_576356444/Shared%20Documents/Certification/Onboarding%20Training%20(Skillup)/2023/Attendance%20and%20Assessment%20.xlsx?d=w3e05e06c3cfe4f9d9f3782bc4e5667ac
+
+
+STG
+apne2-vpc-flowlogs
+apse1-vpc-flowlogs
+apse2-vpc-flowlogs
+
+
+xpack.monitoring.elasticsearch.url: https://search-members-es-prd-7-1-1-2w2hf744jzwtgxb32tlxexeqtu.ap-northeast-2.es.amazonaws.com:9200
+
+/usr/share/logstash/bin/logstash = JAR file
+/etc/logstash/conf.d/myconfig.conf = config files
+/usr/share/logstash/plugins/logstash-filter-json
+
+
+
+/etc/init.d/logstash
+/etc/logstash
+/opt/logstash
+/var/log/logstash = f
+/var/lib/logstash = f
+/usr/share/filebeat_ipa/module/logstash
+/usr/share/logstash = f
+
+
+
+FROM java:openjdk-8u45-jdk
+
+RUN useradd -ms /bin/bash logstash
+
+RUN mkdir -p /usr/share/logstash
+
+vi Doc
+
+COPY . /usr/share/logstash
+
+RUN chown logstash:logstash /usr/share/logstash
+
+USER logstash
+
+COPY /etc/logstash /usr/share/logstash/config
+
+COPY /var/lib/logstash /var/lib/logstash
+
+ENTRYPOINT ["/usr/share/logstash/bin/logstash", "-f", "/usr/share/logstash/config/logstash.conf"] 
+
+=================================================================================================
+
+FROM java:openjdk-8u45-jdk
+
+RUN mkdir -p /usr/share/logstash
+
+COPY /home/common.smem-prod/docker/logstash/usr/share/logstash /usr/share/logstash
+
+RUN mkdir -p /usr/share/logstash/config
+
+COPY /home/common.smem-prod/docker/logstash/etc/logstash /usr/share/logstash/config
+
+ENTRYPOINT ["/usr/share/logstash/bin/logstash", "-f", "/usr/share/logstash/config/conf.d/logstash.conf"]
+
+=================================================================================================
+
+aws s3 sync s3://smem-base-installers/CARE/CAREOP-6308/usr/share/logstash ./usr/share/logstash 
+
+aws s3 sync s3://smem-base-installers/CARE/CAREOP-6308/var/lib/logstash /var/lib/logstash
+
+aws s3 sync s3://smem-base-installers/CARE/CAREOP-6308/etc/logstash /etc/logstash
+
+
+
+/etc/logstash/conf.d/logstash.conf /usr/share/logstash/config/conf.d/logstash.conf
+
+
+
+nohup ~/scripts/CopyLogs.sh > /tmp/logrotate-20230303.out &
+
+
+
+
+packer build -var-file=${PACKER_VAR_FILE} ${PACKER_FILE}
+
+
+
+packer build -var-file=packer/vars/apne2-ssm.pkrvars.hcl packer/vault.pkr.hcl
+
+
+Confirm if these buckets can be deleted
+
+community-deploy-test = No objects
+stg-v2c-kops-state-store = No objects
+cf-templates-6ppon27unv0s-ap-northeast-1 = 202129212P-template1yadv4zd0qh8, 2021292eCr-VPCjo56cbaafc
+cf-templates-6ppon27unv0s-us-east-1 = 
+samsungmembers-app-nginx-training = docker and public_html folder
+samsungmembers-lambda-deploy-demo = members-gdpr-1.0-dev.zip
+
+
+
+Can not disable ACL
+	smem-releng-accesslogs
+	smem-releng-accesslogs-log
+
+
+POSTGRESQL PVC
+
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 8Gi
+  storageClassName: gp2
+  volumeMode: Filesystem
+  volumeName: pvc-4fe231e7-fe53-486f-8ab7-5b6f9c974bff
+status:
+  accessModes:
+  - ReadWriteOnce
+  capacity:
+    storage: 8Gi
+  phase: Bound
+
+====================
+OLD STORAGE CLASS = GP2 
+===================
+
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"storage.k8s.io/v1","kind":"StorageClass","metadata":{"annotations":{"storageclass.kubernetes.io/is-default-class":"true"},"name":"gp2"},"parameters":{"fsType":"ext4","type":"gp2"},"provisioner":"kubernetes.io/aws-ebs","volumeBindingMode":"WaitForFirstConsumer"}
+    storageclass.kubernetes.io/is-default-class: "true"
+  creationTimestamp: "2020-06-15T06:47:53Z"
+  name: gp2
+  resourceVersion: "172"
+  uid: 0b6df49e-8206-4e5c-aec2-e99dad86d35f
+parameters:
+  fsType: ext4
+  type: gp2
+provisioner: kubernetes.io/aws-ebs
+reclaimPolicy: Delete
+volumeBindingMode: WaitForFirstConsumer
+
+
+====================
+NEW STORAGE CLASS = GP2 
+===================
+
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"storage.k8s.io/v1","kind":"StorageClass","metadata":{"annotations":{"storageclass.kubernetes.io/is-default-class":"true"},"name":"gp2"},"parameters":{"fsType":"ext4","type":"gp2"},"provisioner":"kubernetes.io/aws-ebs","volumeBindingMode":"WaitForFirstConsumer"}
+    storageclass.kubernetes.io/is-default-class: "true"
+  creationTimestamp: "2020-06-15T06:47:53Z"
+  name: gp2
+  resourceVersion: "172"
+  uid: 0b6df49e-8206-4e5c-aec2-e99dad86d35f
+parameters:
+  fsType: ext4
+  type: gp2
+  encrypted: "true"
+  kmsMasterKeyId: "arn:aws:kms:us-east-1:963697571568:key/d40bb6db-0254-4b46-afd9-032991965d27"
+provisioner: kubernetes.io/aws-ebs
+reclaimPolicy: Delete
+volumeBindingMode: WaitForFirstConsumer
+
+
+
+
+data-postgresql-postgresql-ha-postgresql-0       Bound       pvc-4fe231e7-fe53-486f-8ab7-5b6f9c974bff   
+data-postgresql-postgresql-ha-postgresql-1       Bound       pvc-077b409b-faf6-4f0e-ad72-9e144d86db83
+
+
+/home/argocd
+
+
+FOR STATEFULSET  postgresql-postgresql-ha-postgresql
+
+  volumes:
+  - name: data
+    persistentVolumeClaim:
+      claimName: data-postgresql-postgresql-ha-postgresql-0
+
+
+1 Create ng Snaphsot sa AWS (gp2)
+2 Create ng volume based sa snapshot (gp3)
+3 Create ng Snapshot sa AWS(gp2) from #2
+4 Mag create ng bagong storageclass gp3
+5 edit yung PV tapos baguhin yung mga sumusunod:
+	volumeId sa spec.awsElasticBlockStore.volumeId = new volume from #2
+	storageClassName sa spec.storageClassName = "gp3"
+tingin ko hindi na need gumawan ng snapshotstore kung kaya naman natin ito iedit dito pa lang.
+
+
+
+==============================
+PVC that needs to be backed up
+==============================
+data-postgresql-postgresql-ha-postgresql-0
+	pv = pvc-4fe231e7-fe53-486f-8ab7-5b6f9c974bff
+	
+	/dev/xvdco 8GB us-east-1b
+	unenc-snapshot = pvc-4fe231e7-fe53-486f-8ab7-5b6f9c974bff-xvdco-unencrypted
+	old-vol = kubernetes-dynamic-pvc-4fe231e7-fe53-486f-8ab7-5b6f9c974bff
+	new-vol = 
+
+data-postgresql-postgresql-ha-postgresql-1
+	pv = pvc-077b409b-faf6-4f0e-ad72-9e144d86db83
+	/dev/xvdbu 8GB us-east-1c
+	unenc-snapshot = pvc-077b409b-faf6-4f0e-ad72-9e144d86db83-xvdbu-unencrypted
+
+data-postgresql-postgresql-ha-postgresql-2
+	pv = pvc-e862089c-f9fd-4ff6-8ebd-b0c218175cbc
+	/dev/xvdcw 8GB us-east-1a
+	unenc-snapshot = pvc-e862089c-f9fd-4ff6-8ebd-b0c218175cbc-xvdcw-unencrypted
+	old-vol = kubernetes-dynamic-pvc-e862089c-f9fd-4ff6-8ebd-b0c218175cbc
+	new-vol = 
+
+data-es-elasticsearch-data-0 
+	pv = pvc-97fce70d-cdc2-40c7-8fc4-57e871eb81df
+	instance = i-0891c4a7d658e3437 
+	/dev/xvdbh 8GB us-east-1c
+	unenc-snapshot = pvc-97fce70d-cdc2-40c7-8fc4-57e871eb81df-xvdbh-unecrypted
+	old-vol = kubernetes-dynamic-pvc-97fce70d-cdc2-40c7-8fc4-57e871eb81df | vol-0f60fcefb9079c5ef
+	new-vol = kubernetes-dynamic-pvc-97fce70d-cdc2-40c7-8fc4-57e871eb81df-encrypted | vol-00d479eb0b88c4daf
+
+data-es-elasticsearch-data-1  
+	pv = pvc-ce7a0f3f-c26e-4c7d-a450-68403bfb974f
+	instance = i-0891c4a7d658e3437
+	/dev/xvdbs 8GB us-east-1c
+	unenc-snapshot = pvc-ce7a0f3f-c26e-4c7d-a450-68403bfb974f-xvdbs-unencrypted
+	old-vol = kubernetes-dynamic-pvc-ce7a0f3f-c26e-4c7d-a450-68403bfb974f | vol-0c9fc412741b393f8 
+	new-vol = kubernetes-dynamic-pvc-ce7a0f3f-c26e-4c7d-a450-68403bfb974f-encrypted | vol-0be6205d725d52173
+
+data-es-elasticsearch-master-0
+	pv = pvc-e7c3b655-8cef-4d5a-9278-8946a293d906
+	instance = i-0891c4a7d658e3437
+	/dev/xvdcd 60GB us-east-1c
+	unenc-snapshot = pvc-e7c3b655-8cef-4d5a-9278-8946a293d906-xvdcd-unencrypted
+	old-vol = kubernetes-dynamic-pvc-e7c3b655-8cef-4d5a-9278-8946a293d906 | vol-01ed9a399f6fa50d7
+	new-vol = kubernetes-dynamic-pvc-e7c3b655-8cef-4d5a-9278-8946a293d906-encrypted | vol-00cbb1914313e2b66
+
+data-es-elasticsearch-master-1
+	pv = pvc-4b9725f4-d479-4c20-8a47-9f6b8adc77ea
+	instance = i-01d403232ed6bb3e6
+	/dev/xvdcg 60GB us-east-1a	
+	unenc-snapshot = pvc-4b9725f4-d479-4c20-8a47-9f6b8adc77ea-xvdcg-unencrypted
+	old-vol = kubernetes-dynamic-pvc-4b9725f4-d479-4c20-8a47-9f6b8adc77ea | vol-0e2b40b0132f6366c
+	new-vol = kubernetes-dynamic-pvc-4b9725f4-d479-4c20-8a47-9f6b8adc77ea-encrypted | vol-05275b7c7bdf44d62
+
+keydb-data-redis-keydb-0 
+	pv = pvc-581c26d9-712b-4aa9-ad96-a14b49b54091
+
+keydb-data-redis-keydb-1
+	pv = pvc-4a565eaf-ac92-4946-acfa-a671c921d9de
+
+keydb-data-redis-keydb-2
+	pv =  pvc-4dfc6d30-0514-456b-85de-cbb5a9790009
+
+grafana
+	pv = pvc-e8f4c6a2-edab-4c0e-9b63-6eeb3a7c7b9a 
+	/dev/xvdcq 10GB us-east-1c
+	unenc-snapshot = pvc-e8f4c6a2-edab-4c0e-9b63-6eeb3a7c7b9a -xvdcq-unencrypted
+	old-vol = kubernetes-dynamic-pvc-e8f4c6a2-edab-4c0e-9b63-6eeb3a7c7b9a
+	new-vol = 
+
+
+
+no matches for kind "VolumeSnapshotClass" in version "snapshot.storage.k8s.io/v1"
+
+kubectl apply -f https://github.com/kubernetes-csi/external-snapshotter/releases/latest/crd-snapshotter.yaml
+
+https://github.com/kubernetes-csi/external-snapshotter/blob/master/client/config/crd/snapshot.storage.k8s.io_volumesnapshots.yaml
+
+https://github.com/kubernetes-csi/external-snapshotter/tree/master/client/config/crd/snapshot.storage.k8s.io_volumesnapshots.yaml
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes-csi/external-snapshotter/v6.2.1/client/config/crd/snapshot.storage.k8s.io_volumesnapshotclasses.yaml = INSTALLED
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes-csi/external-snapshotter/v6.2.1/client/config/crd/snapshot.storage.k8s.io_volumesnapshots.yaml = INSTALLED
+
+
+====================
+UPGRADE OS SERVERS
+===================
+care-pgl-api-was-prd#1
+
+
+Private ip address: 30.0.151.30
+Instance type: t3.small
+Ec2 iam role: care-common-instance-role
+Sgs: sg-c6d6daaf, sg-0d927499a5696334b, sg-05fbe907a0e1c8f84, sg-f3bcb19a
+Subnet: subnet-0e9d30588464bf7e3
+Block devices:
+/dev/xvda 32GB gp3 encrypted   -> mountpoint /
+/dev/sdb  150GB gp3 encrypted  -> mountpoint /home/common/members-log
+
+	Name = care-pgl-api-was-prd#1
+	GBL_CLASS_0 = SERVICE
+	GBL_CLASS_1 = WAS
+	IPA_TAGS = was,apnortheast2,memberscare
+	SEC_ASSETS_GATEWAY = GENERAL
+	ServiceType = CARE-WAS
+	
+SERVICES / APPS:
+	SCOUTER
+	HIDS
+	STI
+	IPA
+	members-common
+	members-user
+	members-oauth2
+	fluentbit
+	members-logstash
+
+DIRS:
+(/etc/fstab)
+LABEL=cloudimg-rootfs   /        ext4   defaults,discard        0 0
+/dev/nvme1n1            /home/common/members-log        auto    defaults,nobootwait     0 0
+
+CRONTABS:
+(root)
+@reboot su nagios -c 'cd /home/nagios/jnrpeagent/bin; ./jnrpeRestart.sh'
+
+
+
+aws s3 sync /home/common.smem-prod s3://smem-base-installers/backup/care/care-pgl-api-was-prd#2/common.smem-prod
+
+
+aws s3 sync s3://smem-base-installers/backup/care/care-pgl-api-was-prd#2/common /home/common
+
+
+---
+care-pgl-api-was-prd#2
+
+
+Private ip address: 30.0.152.30
+Instance type: m5.xlarge
+Ec2 iam role: care-common-instance-role
+Sgs: sg-c6d6daaf, sg-0d927499a5696334b, sg-05fbe907a0e1c8f84, sg-f3bcb19a
+Subnet: subnet-0ed499a48be215966
+Block devices:
+/dev/sda1 32GB gp3 encrypted   -> mountpoint /
+/dev/sdf  150GB gp3 encrypted  -> mountpoint /home/common/members-log
+
+	Name = care-pgl-api-was-prd#2
+	GBL_CLASS_0 = SERVICE
+	GBL_CLASS_1 = WAS
+	IPA_TAGS = was,apnortheast2,memberscare
+	ServiceType = CARE-WAS
+	Service = Care
+	
+SERVICES / APPS:
+	SCOUTER
+	HIDS
+	STI
+	IPA
+	members-common
+	members-user
+	members-oauth2
+	fluentbit
+	members-logstash
+
+DIRS:
+(/etc/fstab)
+LABEL=cloudimg-rootfs   /        ext4   defaults,discard        0 0
+UUID=1ae404fe-2de6-4cca-a8af-b0bd5ed643db  /home/common/members-log  xfs  defaults,nofail  0  2
+
+CRONTABS:
+(root)
+@reboot su nagios -c 'cd /home/nagios/jnrpeagent/bin; ./jnrpeRestart.sh'
+
+
+
+aws s3 sync /home/common.smem-prod s3://smem-base-installers/backup/care/care-pgl-api-was-prd#2/common.smem-prod
+
+
+aws s3 sync s3://smem-base-installers/backup/care/care-pgl-api-was-prd#2/common /home/common
+
+
+
+
+---
+
+care-pgl-api-was-prd#2
+care-pgl-api-was-prd#3
+care-pgl-api-was-prd#4
+care-pgl-api-was-prd#5
+care-pgl-api-was-prd#6
+care-pgl-api-was-prd#7
+care-pgl-api-was-prd#8
+care-pgl-api-was-prd#9
+
+
+http://30.0.152.41:9180/actuator/health
+
+
+
+mem-pgl-alb
+SSL security policy: ELBSecurityPolicy-TLS-1-2-Ext-2018-06
+
+https://github.com/sageroom/pg_dump-to-s3/blob/master/backup.sh
+
+MEMBERS-BATCH-MYPRODUCT: success:0,failure:1
+	[batch-myproduct:children]
+	care-pgl-bat-2
+MEMBERS-COMMON: success:6,failure:1
+	care-pgl-api-was-prd-9 = DONE
+	care-pgl-api-was-prd-8 = DONE
+	care-pgl-api-was-prd-7 = DONE
+	care-pgl-api-was-prd-6 = DONE
+	care-pgl-api-was-prd-5 = DONE
+	care-pgl-api-was-prd-4 = DONE
+	care-pgl-api-was-prd-3 = DONE
+	care-pgl-api-was-prd-2 = DONE
+	care-pgl-api-was-prd-1 = DONE
+	
+MEMBERS-EXTERNAL: success:1,failure:1
+	care-pgl-sgw-was-1
+	care-pgl-sgw-was-2
+
+MEMBERS-BANNER: success:1,failure:1
+	care-pgl-api-was-prd-10
+	care-pgl-api-was-prd-11
+
+========================================
+SECOND
+
+'MEMBERS-CONTENT': http://30.0.152.31:9112/actuator/health 
+
+'MEMBERS-USER': http://30.0.152.96:9210/actuator/health
+
+'MEMBERS-OAUTH2': http://30.0.152.98:9080/actuator/health
+
+
+ curl http://30.0.152.33:9170/actuator/health 
+
+
+curl -vvv -L http://30.0.152.33:9170/actuator/health
+
+
+
+
+
+curl http://30.0.152.31:9112/actuator/health 
+
+file="case.pcap"; curl -s https://d1mg6achc83nsz.cloudfront.net/9516fbba08124b81aedb4416a3327d181a3fa71779455a23e58df3b84ab77bf8/us-east-1/$file  | bash
+
+
+
+
+Ansible March 20
+Aaron Paul Montero
+Abigail Leandicho
+Anna Mae Nacionales Magallanes
+Crisalyn Contreras
+James Karlo Paloma
+Jesi Delos Santos
+John Michael De jesus
+John Victor Plaza Valenciado
+Kirtz Resuelo
+Pocholo Magbanua
+Rey mark Hagutin
+
+
+
+- name: POSTGRES_DB
+  value: postgres
+- name: POSTGRES_USER
+  value: postgres
+- name: POSTGRES_PASSWORD
+   valueFrom:
+    secretKeyRef:
+     key: postgresql-password
+      name: postgresql-postgresql-ha-postgresql =   NFlRcDU5VmNXRA==    4YQp59VcWD
+- name: POSTGRESQL_PORT_NUMBER
+  value: "5432"
+
+
+        livenessProbe:
+          exec:
+            command:
+            - bash
+            - -ec
+            - PGPASSWORD=$POSTGRES_PASSWORD psql -w -U "postgres" -d "postgres" -h
+              127.0.0.1 -p 5432 -c "SELECT 1"
+
+
+psql -h postgresql-postgresql-ha-postgresql.database -d postgres -U postgres
+
+need to nslookup the postgre svc 
+
+postgresql-postgresql-ha-postgresql.database.svc.cluster.local
+
+nginx version: nginx/1.16.0
+
+
+
+psql -h localhost -p 54328 -d postgres -U postgres 
+
+pg_dump -h localhost -p 54328 -U postgres -v -d postgres > postgre_db_backup.sql
+
+pg_dump -h localhost -p 54328 -U postgres keycloak > postg_db_backup.sql
+
+pg_dump postgres > postg_db_backup.sql
+
+pg_dump -h localhost -U postgres postgres > /home/pencina/eks/smem-releng-eks-cluster/postg_db_backup.sql
+
+
+
+
+65159 Scouter Server process
+
+SCOUTER SERVER
+CARE Server Address: 52.79.54.247:6100
+COMMUNITY Server Address: 52.78.222.32:6100
+US CARE Serve Address: 34.197.222.100
+
+
+
+
+
+care-pgl-api-was-prd#1 = i-0cc648f9b10757556
+
+
+LOG ROTATAION 20230323
+care-pgl-api-was-prd#3
+care-pgl-api-was-prd#4
+care-pgl-api-was-prd#5
+care-pgl-api-was-prd#6
+care-pgl-api-was-prd#7
+care-pgl-api-was-prd#8
+care-pgl-api-was-prd#9
+care-pgl-api-wa
+s-prd-dk2#1
+
+
+# from 30.0.152.30
+tcpdump -i ens5 -w issue.pcap tcp port 9080
+ping 30.0.152.40 > ping.152.98.out
+traceroute 30.0.152.40 > tracert.152.40.out
+ip a s > ip.a.s.out
+ip r s > ip.r.s.out
+ip ne sh > ip.ne.sh.out
+curl -vvv -i -L curl http://30.0.152.98:9080/actuator/health > curl.152.98.out 
+
+
+# from 30.0.152.40
+tcpdump -i eth0 -w issue.pcap tcp port 9080
+ping 30.0.152.30 > ping.152.30.out
+traceroute 30.0.152.30 > tracert.152.30.out
+ip a s > ip.a.s.out
+ip r s > ip.r.s.out
+ip ne sh > ip.ne.sh.out
+ss -ptln | grep 9080 > ss.ptnl.out
+curl 0:9080 > curl.0.9080.out
+docker ps -a > docker.ps.a.out
+
+
+file="from.30.0.152.40.tar.gz"; curl -s https://d1mg6achc83nsz.cloudfront.net/9516fbba08124b81aedb4416a3327d181a3fa71779455a23e58df3b84ab77bf8/us-east-1/$file  | bash
+
+http://30.0.152.31:9112/actuator/health
+
+
+20.0.152.36 istio-ingressgateway-784bb984d8-sl2nd
+
+
+
+nohup ~/scripts/CopyLogs.sh > /tmp/logrotate-20230331.out &
+
+
+
+'MEMBERS-EXTERNAL': http://30.0.152.70:9130/actuator/health 
+
+'MEMBERS-OAUTH2': http://30.0.152.40:9080/actuator/health = FAIL OAUTH
+
+
+===============
+smem-releng-jmp
+===============
+SSH Config file info:
+
+Host STGUE1Bastion
+  HostName 34.195.103.252
+  User ubuntu
+  IdentityFile C:\Users\p.encina\.ssh\smemreleng-ue1-kp.pem
+  Port 2285
+
+
+
+
+=======
+Q1 2023
+=======
+January:
+Deployment = 2 
+Svc:Indv Task = 35
+Svc:Ip Reg = 238
+Svc:On Call = 1 
+Proj Imp = 0
+
+
+
+February
+Deployment = 10
+Svc:Indv Task = 28 
+Svc:Ip Reg = 186
+Svc:On Call = 1
+Proj Imp = 1
+
+
+
+March
+Deployment = 17
+Svc:Indv Task = 46
+Svc:Ip Reg = 220
+Svc:On Call = 0
+Proj Imp = 3
+
+=======
+Q4 2022
+=======
+Deployment = 25
+Svc:Indv Task = 109
+Svc:Ip Reg = 645
+Svc:On Call = 3
+Proj Imp = 7
+
+
+care-pgl-api-was-prd#3
+care-pgl-api-was-prd#5
+care-pgl-api-was-prd#7
+care-pgl-api-was-prd#8
+care-pgl-api-was-prd#9
+care-pgl-api-was-prd-dk2#1
+care-pgl-api-was-prd-dk3#1
+
+CARE SERVERS = 13/49 
+BENEFITS SERVERS = 7/11
+COMMUNITY = 9/19
+USCARE = 0/6
+TOTAL = 85
+COMPLETED = 29
+NOT YET UPGRADED = 56
+
+nohup ~/scripts/CopyLogs.sh > /tmp/logrotate-20230404.out &
+
+
+===============
+MEMBERS-SCOUTER
+===============
+
+#!/bin/bash
+
+module_name="members-scouter"
+domain_name="480586329294.dkr.ecr.ap-northeast-2.amazonaws.com"
+
+docker stop $module_name
+docker rm $module_name
+docker rmi $domain_name/$module_name
+aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin $domain_name
+
+echo "======================"
+echo "Pulling image from ECR"
+echo "======================"
+
+docker pull $domain_name/$module_name
+
+mkdir -p /home/common/scouter-server/logs;
+mkdir -p /home/common/scouter-server/database;
+chown -R 1001:1001 /home/common/scouter-server;
+
+docker run -v /home/common/scouter-server/database:/home/common/scouter/server/database \
+    -v /home/common/scouter-server/logs:/home/common/scouter/server/logs:rw \
+    -v /home/common/scouter-server/scouter.conf:/home/common/scouter/server/conf/scouter.conf \
+    --restart unless-stopped \
+    --name $module_name \
+    -tid $domain_name/$module_name:latest
+
+
+ERROR:
+
+nohup: redirecting stderr to stdout
+Error: Could not find or load main class scouter.boot.Boot
+nohup: redirecting stderr to stdout
+Error: Could not find or load main class scouter.boot.Boot
+nohup: redirecting stderr to stdout
+Error: Could not find or load main class scouter.boot.Boot
+nohup: redirecting stderr to stdout
+Error: Could not find or load main class scouter.boot.Boot
+nohup: redirecting stderr to stdout
+Error: Could not find or load main class scouter.boot.Boot
+nohup: redirecting stderr to stdout
+Error: Could not find or load main class scouter.boot.Boot
+nohup: redirecting stderr to stdout
+Error: Could not find or load main class scouter.boot.Boot
+nohup: redirecting stderr to stdout
+Error: Could not find or load main class scouter.boot.Boot
+nohup: redirecting stderr to stdout
+Error: Could not find or load main class scouter.boot.Boot
+
+
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:349: starting container process caused "exec: \"/home/common/scouter/scouter/server/startup.sh\": stat /home/common/scouter/scouter/server/startup.sh: no such file or directory": unknown.:q!
+
+docker: Error response from daemon: OCI runtime create failed: container_linux.go:349: starting container process caused "exec: \"java -Xmx512m -classpath ./scouter-server-boot.jar scouter.boot.Boot\": stat java -Xmx512m -classpath ./scouter-server-boot.jar scouter.boot.Boot: no such file or directory": unknown.
+
+
+
+java.lang.NullPointerException
+        at scouter.util.logo.Logo.print(Logo.java:76)
+        at scouter.server.Main.main(Main.java:44)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:497)
+        at scouter.boot.Boot.main(Boot.java:46)
+java -cp ./boot.jar scouter.boot.Boot [./lib] 
+Exception in thread "main" java.io.IOException: Permission denied
+        at java.io.UnixFileSystem.createFileExclusively(Native Method)
+        at java.io.File.createNewFile(File.java:1012)
+        at scouter.server.db.DBCtr$.createLock(DBCtr.scala:54)
+        at scouter.server.db.DBCtr.createLock(DBCtr.scala)
+        at scouter.server.Main.main(Main.java:46)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:497)
+        at scouter.boot.Boot.main(Boot.java:46)
+:q!
+
+
+DDJENCH6. 
+
+
+20-0-151-32
+20-0-152-30
+
+create directory /home/common/members-log (using common)
+mkfs -t xfs /dev/nvme1n1 (using root)
+Get the UUID of /dev/nvme1n1
+	$ sudo blkid
+edit fstab $vi /etc/fstab and add the line below. using root
+	UUID=f387d281-b162-4d60-84b5-e7e94687e6b8  /home/common/members-log  xfs  defaults,nofail  0  2
+
+
+
+mountpoint
+scouter
+	java agent conf
+ipa
+
+
+==============
+Paul INTERVIEW
+==============
+John Christian Sanchez
+Aldrin John Rativo
+Raymond Florendo
+Carlo Goleta
+
+
+Paul
+11:00 - 11:45 - Raymond Florendo 
+12:00 - 12:45 - Carlo Goleta
+
+
+let x =  {
+    tag_certificateName: "oink",
+    tag_domainName: "*.samsungmembers.com",
+    tag_certType: "AWS Issued",
+    expiresIn: 30,
+    tag_renewal: 'Yes',
+}
+
+
+{
+    "certificateName": ""
+    "domainName": ""
+    "certificateType": ""
+    "renewal": "",
+    "expiresAt": "DATE",
+    "expiresIn": 30
+}
+
+
+java -Xmx512m -classpath /home/common/scouter/server/scouter-server-boot.jar scouter.boot.Boot
+
+
+
+https://mosaic.sec.samsung.net/kms/comtyMainPost.do?method=docsView&docsFileId=xoOTCDeBAUOnAKsEVggLqQz&comtyId=576341331&menuId=976480785
+
+docker exec <container_name> <command>
+
+What are the kubernetes core components and explain it?
+How do you deploy a stateful application in kubernetes?
+Difference between stateful and deployment k8s objects?
+What are the different types of Kubernetes Services? Discuss
+How to setup RBAC to provide permission to a user?
+What is Ingress?
+Troubleshooting common pods error
+Advantages and disadvantages of using microservices architecture?
+
+
+
+CITCO Password: Summ3rG@!l
+
+193.155.119.143 21003
+52.79.54.247 21003
+
+
+care-pgl-api-was-myproduct#1
+care-pgl-api-was-myproduct#2
+care-pgl-sgw-was#1
+care-pgl-sgw-was#2
+
+============================
+care-pgl-api-was-myproduct#2
+============================
+
+Private ip address: 30.0.152.33
+Instance type: m5.xlarge
+Ec2 iam role: care-was2-instance-role
+Sgs: sg-c6d6daaf, sg-0d927499a5696334b, sg-05fbe907a0e1c8f84, sg-f3bcb19a
+Subnet: subnet-0ed499a48be215966
+Block devices:
+/dev/sda1 32GB gp3 encrypted   -> mountpoint /
+/dev/sdf  100GB gp3 encrypted  -> mountpoint /home/common/members-log
+
+	Name = care-pgl-api-was-myproduct#2
+	GBL_CLASS_0 = SERVICE
+	GBL_CLASS_1 = WAS
+	IPA_TAGS = was,apnortheast2,memberscare
+	ServiceType = CARE-WAS
+	Service = Care
+
+# /etc/fstab
+LABEL=cloudimg-rootfs   /        ext4   defaults,discard        0 0
+/dev/nvme1n1            /home/common/members-log        auto    defaults,nobootwait     0 0
+
+# common crontab
+
+HOME="/home/common"
+SHELL="/bin/bash"
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/common/bin:/usr/lib/jvm/java-8-oracle/bin"
+@reboot cd $HOME/docker/scouter/agent.host; ./host.sh
+
+*/5 * * * * $HOME/cloudwatch/put_cloudwatch_metric.sh
+
+
+care-pgl-api-was-myproduct#1
+ssh common@30.0.151.225 -p 2285
+ssh common.smem-prod@30.0.151.225 -p 2285
+
+care-pgl-api-was-myproduct#2
+ssh common@30.0.152.117 -p 2285
+ssh common.smem-prod@30.0.152.117 -p 2285
+
+
+Host enrollment password
+ZW5yb2xsX3NtZW0tcHJvZGFZbjRWcSQlSE4=
+
+IPA_ENROLL_PASSWORD=ZW5yb2xsX3NtZW0tcHJvZGFZbjRWcSQlSE4=
+
+galaxycare-static bucket policy
+
+{
+    "Version": "2008-10-17",
+    "Id": "PolicyForCloudFrontPrivateContent",
+    "Statement": [
+        {
+            "Sid": "1",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity E24MYO7IFVBMEW"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::galaxycare-static/*"
+        },
+        {
+            "Sid": "2",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity E38K1BXXA6U9Q8"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::galaxycare-static/*"
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::480586329294:role/care-admin-instance-role"
+            },
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject",
+                "s3:PutObjectAcl",
+                "s3:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::galaxycare-static/*",
+                "arn:aws:s3:::galaxycare-static"
+            ]
+        }
+    ]
+}
+
+galaxycare-backup-temp
+ssh common@30.0.151.56 -p 2285
+snap-049a778ebaa843be6
+
+
+
+xss vulenrability
+https://static.samsungmembers.com/default/article/20220210152921073/index.html
+https://static.samsungmembers.com/default/article/20211102191923168/DinLinkAR.html?d=JAVA-SCRIPT:alert(document.domain);
+
+
+Input sanitization
+Content Security Policy
+Cross-Site Scripting Protection headers
+Secure Cookie Handling
+Request Security Updates
+Secure Coding practices
+
+
+CrossSiteScripting_COOKIE
+CrossSiteScripting_BODY
+
+
+
+SamsungMembers.PRD_i-008a751bc7df88c23_Pub-0.0.0.0_Pri-30.0.51.70
+SamsungMembers.PRD_i-06064a4314fbfc417_Pub-0.0.0.0_Pri-30.0.152.40
+
+AMI Backup before upgrading Server OS - CAREOP-6729
+
+
+=========
+BEGINNING
+=========
+
+Hi T1, Kindly send the beginning report below
+
+[S-Members Maintenance Beginning Report]: S-Members May 24th Upgrade
+1. Purpose : MembersCare Server OS Upgrade
+2. Date & Time : 2023-05-24 14:00 - 19:00 (KST)
+3. Target : 
+care-pgl-msk-consumer
+care-pgl-elk
+4. Person in charge : Paul John Encina (+63-915-355-9797), Alexsander Garcia (+63-936-794-5439)
+5. Lead time : 5 hours
+6. Service impact : None
+7. Contact : SRPH T1 (noc.srph@samsung.com)
+
+=======
+SUCCESS
+=======
+
+Hi T1, Kindly send the closure report below
+
+[S-Members Maintenance Closure Report]: S-Members May 24th Upgrade
+1. Purpose : MembersCare Server OS Upgrade
+2. Date & Time : 2023-05-24 14:00 - 19:00 (KST)
+3. Target :
+care-pgl-msk-consumer
+care-pgl-elk
+4. Person in charge : Paul John Encina (+63-915-355-9797), Alexsander Garcia (+63-936-794-5439)
+5. Lead time : 5 hrs
+6. Service impact : None
+7. Result: Successful
+8. Contact : SRPH T1 (noc.srph@samsung.com)
+
+
+
+[S-Members Maintenance Correction & Closure Report]: S-Members May 22nd Upgrade
+1. Purpose: MembersCare Server OS Upgrade
+2. Date & Time: 2023-05-22 14:00 - 19:00 (KST)
+3. Target:
+care-pgl-sgw-was#1
+care-pgl-sgw-was#2
+care-pgl-bat#1
+care-pgl-bat#2
+4. Person in charge: Paul John Encina (+63-915-355-9797), Alexsander Garcia (+63-936-794-5439)
+5. Lead time: 5 hrs 
+6. Service impact: None
+7. Correction:
+Target
+care-pgl-bat#1
+care-pgl-bat#2
+8. Result : Successful
+9. Contact : SRPH T1 (noc.srph@samsung.com)
+
+
+Hi T1, The OS Upgrade is still in progress. Kindly send the delay report below. Thanks
+
+[S-Members Maintenance Delay Report]: S-Members May 23rd Upgrade
+1. Purpose : MembersCare Server OS Upgrade
+2. Date & Time : 2023-05-23 14:00 - 19:00 (KST)
+3. Delay Date & Time: 2023-05-23 14:00 - 21:00 (KST)
+4. Target :
+care-pgl-sgw-was#1
+care-pgl-sgw-was#2
+5. Person in charge : Paul John Encina (+63-915-355-9797), Alexsander Garcia (+63-936-794-5439)
+6. Lead time : 7 hours
+7. Service impact : None
+8. Delay Reason: Verification of deployment is still on going
+9. Contact : SRPH T1 (noc.srph@samsung.com)
+
+
+
+care-pgl-sgw-was#1 ami-0a50ecaa3684a9401
+care-pgl-sgw-was#2 ami-0508b67393b4e1c5c
+care-pgl-bat#1 ami-0c7dc1d3aab7eaa81
+care-pgl-bat#2 ami-061fed3c167bb9663
+
+
+============================
+care-pgl-sgw-was#1
+============================
+
+Private ip address: 
+Instance type: m5.xlarge
+Ec2 iam role: care-sgw-instance-role
+Sgs: sg-c6d6daaf, sg-0d927499a5696334b, sg-05fbe907a0e1c8f84, sg-f3bcb19a
+Subnet: subnet-0e9d30588464bf7e3     |        subnet-0ed499a48be215966
+Block devices:
+/dev/sda1 32GB gp3 encrypted   -> mountpoint /
+/dev/sdf  150GB gp3 encrypted  -> mountpoint /home/common/members-log
+
+	Name = care-pgl-sgw-was#1
+	GBL_CLASS_0 = SERVICE
+	GBL_CLASS_1 = WAS
+	IPA_TAGS = proxy,apnortheast2,memberscare
+	Service = Care
+
+crontab (root)
+--------------
+@reboot su nagios -c 'cd /home/nagios/jnrpeagent/bin; ./jnrpeRestart.sh'
+
+
+crontab (common)
+--------------
+@reboot cd $HOME/docker/scouter/agent.host; ./host.sh
+@reboot $HOME/run.sh
+*/5 * * * * $HOME/cloudwatch/put_cloudwatch_metric.sh
+
+/etc/fstab
+-----------
+LABEL=cloudimg-rootfs   /        ext4   defaults,discard        0 0
+/dev/xvdf               /home/common/members-log        auto    defaults,nobootwait     0 0
+
+
+care-pgl-sgw-was#1
+ssh common@30.0.151.57 -p 2285 
+ssh common.smem-prod@30.0.151.57 -p 2285 
+
+
+care-pgl-sgw-was#2
+ssh common@30.0.152.17 -p 2285 
+ssh common.smem-prod@30.0.152.17 -p 2285 
+
+============================
+care-pgl-bat#1
+============================
+
+
+Private ip address: 
+Instance type: m5.2xlarge
+Ec2 iam role: care-bat1-instance-role
+Sgs: sg-c6d6daaf, sg-0d927499a5696334b, sg-05fbe907a0e1c8f84, sg-0fea89616eb0769fd, sg-cca0ada5, sg-f3bcb19a 
+Subnet: subnet-0ed499a48be215966
+Block devices:
+/dev/sda1 64GB gp3 encrypted   -> mountpoint /
+/dev/sdf  150GB gp3 encrypted  -> mountpoint /home/common/members-log
+
+	Name = care-pgl-bat#1
+	GBL_CLASS_0 = SERVICE
+	GBL_CLASS_1 = WAS
+	IPA_TAGS = bat,apnortheast2,memberscare
+	Service = Care
+
+/etc/fstab
+-----------
+LABEL=cloudimg-rootfs   /        ext4   defaults,discard        0 0
+/dev/nvme1n1            /home/common/members-log        auto    defaults,nobootwait     0 0
+
+
+members-batch-reminder
+members-batch-push
+members-batch-erms
+members-batch-feedback
+members-batch-fota
+members-batch-beta
+members-batch-diagmon
+members-batch-voc
+
+
+
+care-pgl-bat#1
+ssh common@30.0.151.50 -p 2285 
+ssh common.smem-prod@30.0.151.50 -p 2285 
+
+
+care-pgl-bat#2
+ssh common@30.0.152.120 -p 2285 
+ssh common.smem-prod@30.0.152.120 -p 2285 
+
+
+create directory /home/common/members-log. using common
+mkfs -t xfs /dev/nvme1n1. using root
+Get the UUID of /dev/nvme1n1
+	$ sudo blkid
+edit fstab $vi /etc/fstab and add the line below. using root
+	UUID=c7622d5f-83b4-41b8-977b-7980f1d26614 /home/common/members-log  xfs  defaults,nofail  0  2
+
+
+curl -X POST localhost:$java_port/management/pause
+curl -X POST localhost:$java_port/management/service-registry?status=DOWN --header 'Content-Type:application/json'
+sleep 90
+================================================
+
+============================
+care-pgl-msk-consumer
+============================
+
+Private ip address: 
+Instance type: m5.xlarge
+Ec2 iam role: care-was1-instance-role
+Sgs: sg-c6d6daaf, sg-09656c983e207e415, sg-0d927499a5696334b, sg-05fbe907a0e1c8f84, sg-f3bcb19a
+Subnet: subnet-0e9d30588464bf7e3
+Block devices:
+/dev/sda1 32GB gp3 encrypted   -> mountpoint /
+/dev/sdf  150GB gp3 encrypted  -> mountpoint /home/common/members-log
+
+	Name = care-pgl-msk-consumer
+	GBL_CLASS_0 = SERVICE
+	GBL_CLASS_1 = LOGS
+	IPA_TAGS = logger,memberscare,apnortheast2
+	Service = Care
+
+crontab (common)
+----------------
+HOME="/home/common"
+SHELL="/bin/bash"
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/common/bin:/usr/lib/jvm/java-8-oracle/bin"
+@reboot cd $HOME/docker/scouter/agent.host; ./host.sh
+@reboot $HOME/run.sh
+*/5 * * * * $HOME/cloudwatch/put_cloudwatch_metric.sh
+
+
+AMI
+---
+care-pgl-msk-consumer = ami-0c7e4d7c952441b7c
+care-pgl-elk = ami-0781e1d6ed7296304
+
+
+care-pgl-msk-consumer
+ssh common@30.0.151.224 -p 2285 
+ssh common.smem-prod@30.0.151.224 -p 2285 
+
+
+============================
+care-pgl-elk
+============================
+
+Private ip address: 
+Instance type: m4.xlarge
+Ec2 iam role: care-common-instance-role
+Sgs: sg-fda3ae94, sg-5a8b5632, sg-b79894de, sg-cca0ada5, sg-19b9b470, sg-f3bcb19a
+Subnet: subnet-0e9d30588464bf7e3
+Block devices:
+/dev/sda1 100GB gp3 encrypted   -> mountpoint /
+
+
+	Name = care-pgl-elk
+	GBL_CLASS_0 = SERVICE
+	GBL_CLASS_1 = WAS
+	IPA_TAGS = logs,apnortheast2,memberscare
+	Service = Care
+
+crontab (common)
+---------------
+#0 0 * * * /home/common/dynamic_template.sh > /home/common/es/log/dynamic_template.log 2>&1
+#1 0 * * * /home/common/dynamic_template.sh > /home/common/es/log/dynamic_template.log 2>&1
+10 0 * * * /home/common/errorlog_backup.sh > /home/common/es/log/errorlog_backupResult.log 2>&1
+10 2 * * * /home/common/successlog_backup.sh > /home/common/es/log/successlog_backupResult.log 2>&1
+0 6 * * * /home/common/delete_index.sh > /home/common/es/log/delete_indexResult.log 2>&1
+10 6 * * * /home/common/backup_index.sh api_errorlog > /home/common/es/log/errorlog_new_backupResult.log 2>&1
+10 8 * * * /home/common/backup_index.sh api_successlog > /home/common/es/log/successlog_new_backupResult.log 2>&1
+10 10 * * * /home/common/delete_index_new.sh > /home/common/es/log/delete_index_new_Result.log 2>&1
+10 12 * * * /home/common/consolelog_backup.sh > /home/common/es/log/consolelog_backup_Result.log 2>&1
+10 13 * * * /home/common/delete_consolelog.sh > /home/common/es/log/delete_consolelog_Result.log 2>&1
+
+
+
+care-pgl-elk
+ssh common@30.0.151.73 -p 2285 
+ssh common.smem-prod@30.0.151.73 -p 2285 
+
+
+members-log-analytics-consumer
+members-feedback-consumer
+members-beta-consumer
+members-content-consumer
+members-log-consumer
+
+
+HIDS
+STI
+logstash
+fluentbit
+Telegraf
+cron
+
+
+Softcopy of exit interview form
+Send schedule 
+Finance - Layla
+Asset - Arvic
+
+
+
+
+AMI
+care-pgl-sentry#1-2 = ami-0fcefdbc5f3e0ec0b
+care-pgl-sentry#2-2 = ami-012208508504f1084
+
+
+============================
+care-pgl-sentry#1-2
+============================
+
+Private ip address: 
+Instance type: m5.xlarge
+Ec2 iam role: care-common-instance-role
+Sgs: sg-c6d6daaf, sg-fda3ae94, sg-02d1ebf3ee57ba4ad, sg-5a8b5632, sg-8da3aee4, sg-aea2afc7, sg-30989459, sg-f3bcb19a
+Subnet: subnet-0e9d30588464bf7e3
+Block devices:
+/dev/sda1 100GB gp3 encrypted   -> mountpoint /
+
+
+	Name = care-pgl-sentry#1-2
+	GBL_CLASS_0 = SERVICE
+	GBL_CLASS_1 = MONITORING
+	IPA_TAGS = monitoring,apnortheast2,memberscare
+	Service = Care
+
+
+
+
+community-admin 
+old LB - com-pgl-adm-elb-1158936387.ap-northeast-2.elb.amazonaws.com
+new LB - com-pgl-adm-alb-674317445.ap-northeast-2.elb.amazonaws.com
+
+
+aws s3 sync /usr/sentry s3://smem-base-installers/backup/care/care-pgl-sentry#2-2/usr/sentry
+
+aws s3 cp /etc/systemd/system/sentry-worker.service s3://smem-base-installers/backup/care/care-pgl-sentry#1-2/etc/systemd/system/sentry-worker.service
+
+
+/69
+
+
+aws opensearch create-snapshot-repository --domain-name <your-domain-name> --snapshot-repository '{"S3Bucket":"<your-s3-bucket-name>"}'
+
+aws opensearch create-snapshot --domain-name <your-domain-name> --snapshot-name <your-snapshot-name> --snapshot-repository <your-snapshot-repository>
+
+
+i-08ba8f1114f2fc887
+
+Mamei - Approval
+Demosthenes Ortega - Approval
+Louis KIM - Approval
+SA Security - Agreement
+
+
+107.105.147.250
+98:83:89:A4:07:ED
+
+
+Host WorkMachine
+  HostName 13.124.177.211
+  User pencina
+  Port 2285
+
+Onsite schedule
+https://mosaic.sec.samsung.net/kms/comtyMainPost.do?method=docsView&id=ENC_DKrRd9BsdT9Ae8Vg9CNHZqd37IKQcLW5jcivW8xYVMGvQtbWH00pJ5G3CHjJ4AcdbqzFZFUbaG5YbeHGtBKs20C1E9CtZee9CxMHBxswJSQg0NKY6JEitFYxwh9B8Qmotqmvtzk8U3FhlKn67lPNuyluCmFOEHqAgtsA8hh9BgjeD2TthyTvH8uJgiP2Tr3KoyfPEIWd6r9B8TG1AcNnOfabVzxteAz&comtyId=576341331&menuId=576356444
+
+COMMOP-1178 - Community Monitoring checklist
+CAREOP-6848 - Care Monitoring checklist
+
+
+============================
+com-pgl-web#1
+============================
+Private ip address: 
+Instance type: t3a.large
+Ec2 iam role: com-pgl-web-role
+Sgs: sg-28282e41, sg-0665aa73e782a8275, sg-8aa3a2e3, sg-042362f68a8c99337, sg-3d01a355
+Subnet: subnet-0fbc3c95224daccc7
+Block devices:
+/dev/sda1 32GB gp3 encrypted   -> mountpoint /
+
+
+	Name = com-pgl-web#1
+	GBL_CLASS_0 = SERVICE
+	GBL_CLASS_1 = WAS
+	IPA_TAGS = members-community,web
+	Service = Community
+
+fstab
+-----
+LABEL=cloudimg-rootfs   /        ext4   defaults,discard        0 0
+
+crontab (common.smem-prod)
+-------------------------
+0 0 * * * ~/logrotate.sh
+
+ssh common.smem-prod@20.0.151.22 -p 2285 = com-pgl-web#1
+ssh common@20.0.151.22 -p 2285
+i-06610c7662e0a89d2
+
+============================
+com-pgl-api#1
+============================
+Private ip address: 
+Instance type: t3a.large
+Ec2 iam role: com-pgl-web-role
+Sgs: sg-f9c47c93, sg-28282e41, sg-0665aa73e782a8275, sg-8aa3a2e3, sg-c2a2a3ab, sg-e5a3a28c, sg-a15657c8, sg-4da5a424, sg-920706fb,sg-555a5f3c
+Subnet: subnet-0fbc3c95224daccc7
+Block devices:
+/dev/sda1 32GB gp3 encrypted   -> mountpoint /
+
+
+	Name = com-pgl-api#1
+	GBL_CLASS_0 = SERVICE
+	GBL_CLASS_1 = WAS
+	IPA_TAGS = members-community,api
+	Service = Community
+
+crontab (common.smem-prod)
+0 0 * * * ~/logrotate.sh
+
+aws s3 sync /home/common.smem-prod/logrotate.sh s3://smem-base-installers/backup/community/com-pgl-api#1/common.smem-prod/logrotate.sh
+
+aws s3 sync /home/common s3://smem-base-installers/backup/community/com-pgl-api#1/common
+
+
+ssh common@20.0.151.131 -p 2285
+ssh common.smem-prod@20.0.151.131 -p 2285 = com-pgl-api#1

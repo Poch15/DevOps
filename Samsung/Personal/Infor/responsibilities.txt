@@ -1,0 +1,4 @@
+experience in desgining and optimizing workflows, automating software builds and release configurations and implementing best practices to ensure faster software delivery with greater quality
+
+
+Skills: IT Automation tools, process documentation, CI/CD, Devliery solutions, config management, container, IAC, data privacy, automation release, 24x7 deployment support, source code management, system installation maintenance

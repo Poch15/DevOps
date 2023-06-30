@@ -1,0 +1,21 @@
+Responsibilities:
+
+•	Evaluation of requirements and turning them into codes and/or infrastructures, including testing, deployment, and monitoring
+•	Design, maintain and update application and infrastructure documentations, troubleshooting, etc
+•	Oversee application lifecycle from requirements to production monitoring
+•	Implementation of CI/CD to ensure continuous code deployment and application testing
+•	Identify and implement solutions, code and/or infrastructure, to meet objectives and reach goals
+•	Provide operational support for application testing, configuration, documentation, troubleshooting, updates, etc
+
+	Key Projects/Participations:
+
+•	Multiple customer-facing client launches and migrations providing end-to-end support
+•	AWS infrastructure updates and/or fixes (e.g. Lambda NodeJS runtime upgrade, Fargate Migration, S3 Bucket Reduction & Management, KMS Encryption, etc.)
+•	Jenkins pipelines creation
+•	Multiple Blue/Green application set-up
+•	Participation in several critical investigations (e.g. fraud, outages, security fixes, etc.)
+
+
+========================================================================
+
+
