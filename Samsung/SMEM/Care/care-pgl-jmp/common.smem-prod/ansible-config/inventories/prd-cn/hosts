@@ -1,0 +1,250 @@
+# This is the default ansible 'hosts' file.
+#
+# It should live in /etc/ansible/hosts
+#
+#   - Comments begin with the '#' character
+#   - Blank lines are ignored
+#   - Groups of hosts are delimited by [header] elements
+#   - You can enter hostnames or ip addresses
+#   - A hostname/ip can be a member of multiple groups
+
+# Ex 1: Ungrouped hosts, specify before any group headers.
+
+## green.example.com
+## blue.example.com
+## 192.168.100.1
+## 192.168.100.10
+
+# Ex 2: A collection of hosts belonging to the 'webservers' group
+
+## [webservers]
+## alpha.example.org
+## beta.example.org
+## 192.168.1.100
+## 192.168.1.110
+
+# If you have multiple hosts following a pattern you can specify
+# them like this:
+
+## www[001:006].example.com
+
+# Ex 3: A collection of database servers in the 'dbservers' group
+
+## [dbservers]
+##
+## db01.intranet.mydomain.net
+## db02.intranet.mydomain.net
+## 10.25.1.56
+## 10.25.1.57
+
+# Here's another example of host ranges, this time there are no
+# leading 0s:
+
+## db-[99:101]-node.example.com
+
+# RAW servername goes here
+
+[care-pcn-api-was-prd-1]
+30.0.51.30
+
+[care-pcn-api-was-prd-2]
+30.0.52.30
+
+[care-pcn-api-was-prd-3]
+30.0.51.40
+
+[care-pcn-api-was-prd-4]
+30.0.52.40
+
+[care-pcn-api-was-prd-dk2-1]
+30.0.51.32
+
+[care-pcn-api-was-prd-dk2-2]
+30.0.52.32
+
+[care-pcn-sgw-was-1]
+30.0.51.70
+
+[care-pcn-sgw-was-2]
+30.0.52.70
+
+[care-pcn-bat-1]
+30.0.51.72
+
+[care-pcn-bat-2]
+30.0.51.72
+
+[care-pcn-rmc]
+30.0.11.80
+
+[care-pcn-discover-prd-1]
+30.0.51.77
+
+[care-pcn-discover-prd-2]
+30.0.52.77
+
+[care-pcn-sgw-prx-1]
+30.0.11.70
+
+[care-pcn-sgw-prx-2]
+30.0.12.70
+
+[care-pcn-api-was-myproduct-1]
+30.0.51.33
+
+[care-pcn-api-was-myproduct-2]
+30.0.52.33
+
+[care-pcn-adm]
+30.0.51.10
+
+[care-pcn-api-prx-1]
+30.0.51.31
+
+[care-pcn-api-prx-2]
+30.0.52.31
+
+[care-pcn-batch-myproduct]
+30.0.52.72
+
+[care-pcn-debugger]
+30.0.52.5
+
+# end raw servernames
+
+[common:children]
+care-pcn-api-was-prd-4
+care-pcn-api-was-prd-3
+care-pcn-api-was-prd-2
+care-pcn-api-was-prd-1
+
+[oauth2:children]
+care-pcn-api-was-prd-4
+care-pcn-api-was-prd-3
+care-pcn-api-was-prd-2
+care-pcn-api-was-prd-1
+
+[user:children]
+care-pcn-api-was-prd-4
+care-pcn-api-was-prd-3
+care-pcn-api-was-prd-2
+care-pcn-api-was-prd-1
+
+[feedback:children]
+care-pcn-api-was-prd-dk2-1
+care-pcn-api-was-prd-dk2-2
+
+[beta:children]
+care-pcn-api-was-prd-dk2-1
+care-pcn-api-was-prd-dk2-2
+
+[content:children]
+care-pcn-api-was-prd-dk2-1
+care-pcn-api-was-prd-dk2-2
+
+[search:children]
+care-pcn-api-was-prd-dk2-1
+care-pcn-api-was-prd-dk2-2
+
+[log:children]
+care-pcn-api-was-prd-dk2-1
+care-pcn-api-was-prd-dk2-2
+
+[external:children]
+care-pcn-sgw-was-1
+care-pcn-sgw-was-2
+
+[migration:children]
+care-pcn-sgw-was-1
+care-pcn-sgw-was-2
+
+[bat:children]
+care-pcn-bat-1
+
+[batch-myproduct:children]
+care-pcn-batch-myproduct
+
+[myproduct:children]
+care-pcn-api-was-myproduct-1
+care-pcn-api-was-myproduct-2
+
+[batch-diagmon:children]
+care-pcn-bat-1
+
+[batch-erms:children]
+care-pcn-bat-1
+
+[batch-fota:children]
+care-pcn-bat-1
+
+[batch-internal:children]
+care-pcn-bat-1
+
+[batch-omnis:children]
+care-pcn-bat-1
+
+[batch-push:children]
+care-pcn-bat-1
+
+[api-was-prd-dk2:children]
+care-pcn-api-was-prd-dk2-1
+care-pcn-api-was-prd-dk2-2
+
+[rmc:children]
+care-pcn-rmc
+
+[inbox:children]
+care-pcn-api-was-myproduct-1
+care-pcn-api-was-myproduct-2
+
+[batch-inbox:children]
+care-pcn-bat-2
+
+[api-was:children]
+care-pcn-api-was-prd-4
+care-pcn-api-was-prd-3
+care-pcn-api-was-prd-2
+care-pcn-api-was-prd-1
+
+[discover:children]
+care-pcn-discover-prd-1
+care-pcn-discover-prd-2
+
+[config:children]
+care-pcn-discover-prd-1
+care-pcn-discover-prd-2
+
+[sgw-was:children]
+care-pcn-sgw-was-1
+care-pcn-sgw-was-2
+
+[sgw-prx:children]
+care-pcn-sgw-prx-1
+care-pcn-sgw-prx-2
+
+[prx:children]
+care-pcn-api-prx-1
+care-pcn-api-prx-2
+
+[api-was-myproduct:children]
+care-pcn-api-was-myproduct-1
+care-pcn-api-was-myproduct-2
+
+[adm:children]
+care-pcn-adm
+
+[allservers:children]
+api-was-prd-dk2
+rmc
+api-was
+discover
+sgw-was
+sgw-prx
+prx
+api-was-myproduct
+batch-myproduct
+bat
+
+[allservers:vars]
+ansible_ssh_user=common
+ansible_ssh_port=2285

@@ -1,0 +1,5 @@
+---
+- hosts: "{{ service_name }}"
+  serial: 1
+  roles:
+    - healthcheck

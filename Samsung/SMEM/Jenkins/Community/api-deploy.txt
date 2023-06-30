@@ -1,0 +1,110 @@
+#!/bin/sh
+
+JH_SERVER="52.78.228.249"
+#SERVER="20.0.151.30"
+SERVER="20.0.151.131"
+
+echo "######## SERVER : ${SERVER} ######## "
+
+echo "# run deploy script on release server1..."
+sshpass -pzjajs2020!2 ssh -p 2285 -o StrictHostKeyChecking=no -o ProxyCommand="sshpass -pzjajs2020!2 ssh -p 2285 -o StrictHostKeyChecking=no -W %h:%p common.smem-prod@$JH_SERVER" common.smem-prod@$SERVER /bin/sh << \EOF
+
+#!/bin/sh
+
+#Today's date
+TODAY=`date +%Y%m%d`
+
+#Deploy Country site code
+REGION_CODE="ap-northeast-2"
+
+# set env
+SERVER_TYPE="prd"
+
+RELEASED_PATH="/home/common.smem-prod/release/community-server"
+APP_PATH="/opt/app/"
+APP_NAME="community-server"
+SELECTION_STRING="active=${SERVER_TYPE} -jar ${APP_PATH}/${APP_NAME}"
+
+SCOUTER_HOME="/home/common.smem-prod/scouter"
+
+JAVA="java"
+LOG_PATH="/opt/log"
+LOG_FILE="${LOG_PATH}/${APP_NAME}/${SERVER_TYPE}-${APP_NAME}.log"
+LOG_ERROR_FILE="${LOG_PATH}/${APP_NAME}/${SERVER_TYPE}-${APP_NAME}.error.log"
+CMDLINE_ARGUMENTS="-Dspring.profiles.active=${SERVER_TYPE}"
+JAR_NAME="community-api-build-2.3.10.jar"
+#S3_JAR_NAME="community-api-2.5-stg.jar"
+S3_JAR_NAME="community-api-2.3.10.jar"
+
+        
+DB_MASTER_URL="jdbc:mysql://community-prd.cluster-cuptyxfd5qiv.ap-northeast-2.rds.amazonaws.com:33065/community?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&useSSL=false"
+DB_MASTER_USERNAME="community_was"
+DB_MASTER_PASSWORD="ENC(5RdBdOVTwzoyL6/ivanMkNp47YpbUjBb)"
+DB_SLAVE_URL="jdbc:mysql://community-prd.cluster-ro-cuptyxfd5qiv.ap-northeast-2.rds.amazonaws.com:33065/community?allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false";
+DB_SLAVE_USERNAME=$DB_MASTER_USERNAME
+DB_SLAVE_PASSWORD=$DB_MASTER_PASSWORD
+
+REGION="ap-northeast-2"
+PARAM_PATH="/secrets/community/app/api/jasyptToken"
+JASYPT_PASS=$(aws ssm get-parameter --name $PARAM_PATH --with-decryption --region $REGION --output text --query Parameter.Value)
+
+/usr/local/bin/aws s3 cp s3://com-pgl-codedeploy/api-pgl/app/${S3_JAR_NAME} ${RELEASED_PATH}/${JAR_NAME}
+
+JAR=`ls -lt "${RELEASED_PATH}"/${JAR_NAME} | awk 'NR==1 {print $9}'`
+PID=`ps aux | grep "${SELECTION_STRING}" | grep -v grep | awk '{ print $2 }'`
+
+echo "jar=${JAR}"
+echo "pid=${PID}"
+
+if [ -z ${JAR} ]; then
+        echo "# not found latest jar file"
+else
+        echo "# found latest jar file: $JAR"
+
+        if [ -n "${PID}" ]; then
+                echo "# stop ${PID} server..."
+                kill -9 ${PID}
+        fi
+
+        echo "# delete current $APP_NAME app..."
+        if [ -f ${JAR}.${TODAY} ]; then
+                rm -f ${APP_PATH}/${APP_NAME}/${JAR_NAME}
+        else
+                mv ${APP_PATH}/${APP_NAME}/${JAR_NAME} ${JAR}.${TODAY}
+        fi
+
+        echo "# make directories..."
+        mkdir -p "${APP_PATH}"/"${APP_NAME}"
+        mkdir -p "${LOG_PATH}"/"${APP_NAME}"
+
+        echo "# copy new $APP_NAME app..."
+        cp -f "${JAR}" "${APP_PATH}"/"${APP_NAME}"/
+
+        JAR=`ls -lt "${APP_PATH}"/"${APP_NAME}"/${JAR_NAME} | awk 'NR==1 {print $9}'`
+        echo "# start ${JAR} server..."
+        #cd "${APP_PATH}"/"${APP_NAME}"
+        #echo "${JAVA} -Dfile.encoding=UTF8 -Xms1g -Xmx1g -XX:-HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=${APP_PATH}/${APP_NAME} -javaagent:${SCOUTER_HOME}/agent.java/scouter.agent.jar -D -Dscouter.config=${SCOUTER_HOME}/agent.host/conf/java_agent.conf -DRegionCode=${REGION_CODE} ${CMDLINE_ARGUMENTS} -jar ${JAR}  --logging.file=${LOG_FILE} > /dev/null 2>&1 &" 
+
+        #echo "# Make a Run script"
+        #rm  /home/common.smem-prod/run.sh
+        #echo "#!/bin/sh" > /home/common.smem-prod/run.sh
+        #echo "${JAVA} -Dfile.encoding=UTF8 -Xms1g -Xmx1g -XX:-HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=${APP_PATH}/${APP_NAME} -javaagent:${SCOUTER_HOME}/agent.java/scouter.agent.jar -Dscouter.config=${SCOUTER_HOME}/agent.host/conf/java_agent.conf -DRegionCode=${REGION_CODE} ${CMDLINE_ARGUMENTS} -jar ${JAR}  --logging.file=${LOG_FILE} > /dev/null 2>&1 &" >> /home/common.smem-prod/run.sh
+        #chown common:users /home/common.smem-prod/run.sh
+        #chmod 755 /home/common.smem-prod/run.sh
+
+        #nohup "${JAVA}" -Dfile.encoding=UTF8 -Xms1g -Xmx1g -XX:-HeapDumpOnOutOfMemoryError -XX:HeapDumpPath="${APP_PATH}/${APP_NAME}" -javaagent:${SCOUTER_HOME}/agent.java/scouter.agent.jar -Dscouter.config=${SCOUTER_HOME}/agent.host/conf/java_agent.conf -DRegionCode="${REGION_CODE}" "${CMDLINE_ARGUMENTS}" -jar "${JAR}"  --logging.file=${LOG_FILE} > /dev/null 2>&1 &
+        #echo "# completed!"
+        
+        cd "${APP_PATH}"/"${APP_NAME}"
+        echo "${JAVA} -Dfile.encoding=UTF8 -Xms1g -Xmx1g -XX:-HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=${APP_PATH}/${APP_NAME} -Ddatasource.master.url=\"${DB_MASTER_URL}\" -Ddatasource.master.username=\"${DB_MASTER_USERNAME}\" -Djasypt.encryptor.password=\"${JASYPT_PASS}\" -Ddatasource.master.password=\"${DB_MASTER_PASSWORD}\" -Ddatasource.slave.url=\"${DB_SLAVE_URL}\" -Ddatasource.slave.username=\"${DB_SLAVE_USERNAME}\" -Ddatasource.slave.password=\"${DB_SLAVE_PASSWORD}\" -javaagent:${SCOUTER_HOME}/agent.java/scouter.agent.jar -Dscouter.config=${SCOUTER_HOME}/agent.host/conf/java_agent.conf -DRegionCode=${REGION_CODE} ${CMDLINE_ARGUMENTS} -jar ${JAR}  --logging.file=${LOG_FILE} > /dev/null 2>&1 &" 
+
+        echo "# Make a Run script"
+        rm  /home/common.smem-prod/run.sh
+        echo "#!/bin/sh" > /home/common.smem-prod/run.sh
+        echo "${JAVA} -Dfile.encoding=UTF8 -Xms1g -Xmx1g -XX:-HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=${APP_PATH}/${APP_NAME} -Ddatasource.master.url=\"${DB_MASTER_URL}\" -Ddatasource.master.username=\"${DB_MASTER_USERNAME}\" -Djasypt.encryptor.password=\"${JASYPT_PASS}\" -Ddatasource.master.password=\"${DB_MASTER_PASSWORD}\" -Ddatasource.slave.url=\"${DB_SLAVE_URL}\" -Ddatasource.slave.username=\"${DB_SLAVE_USERNAME}\" -Ddatasource.slave.password=\"${DB_SLAVE_PASSWORD}\" -javaagent:${SCOUTER_HOME}/agent.java/scouter.agent.jar -Dscouter.config=${SCOUTER_HOME}/agent.host/conf/java_agent.conf -DRegionCode=${REGION_CODE} ${CMDLINE_ARGUMENTS} -jar ${JAR}  --logging.file=${LOG_FILE} > /dev/null 2>&1 &" >> /home/common.smem-prod/run.sh
+        chmod 755 /home/common.smem-prod/run.sh
+
+        nohup "${JAVA}" -Dfile.encoding=UTF8 -Xms1g -Xmx1g -XX:-HeapDumpOnOutOfMemoryError -XX:HeapDumpPath="${APP_PATH}/${APP_NAME}" -Ddatasource.master.url="${DB_MASTER_URL}" -Ddatasource.master.username="${DB_MASTER_USERNAME}" -Djasypt.encryptor.password="${JASYPT_PASS}" -Ddatasource.master.password="${DB_MASTER_PASSWORD}" -Ddatasource.slave.url="${DB_SLAVE_URL}" -Ddatasource.slave.username="${DB_SLAVE_USERNAME}" -Ddatasource.slave.password="${DB_SLAVE_PASSWORD}" -javaagent:${SCOUTER_HOME}/agent.java/scouter.agent.jar -Dscouter.config=${SCOUTER_HOME}/agent.host/conf/java_agent.conf -DRegionCode="${REGION_CODE}" "${CMDLINE_ARGUMENTS}" -jar "${JAR}"  --logging.file=${LOG_FILE} > /dev/null 2>&1 &
+        echo "# completed!"    
+fi
+EOF

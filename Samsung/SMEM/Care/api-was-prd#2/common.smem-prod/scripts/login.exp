@@ -1,0 +1,24 @@
+#!/usr/bin/expect
+proc usage {} {
+    puts "usage: host id password command"
+    exit 1
+}
+set argc [llength $argv]
+set timeout -1
+set USERID "user"
+
+set PASSWD "zjajs2015!2"
+spawn docker login registry.samsungmembers.com 
+expect {
+#    -re "No route" { exit 1 }
+#    -re "try again" { exit 1 }
+#    -re "yes/no" { send "yes\r"; exp_continue }
+    -nocase "username" { send "$USERID\n"}
+
+#    -nocase "password" { sleep 1 ; send "$PASSWD\r" }
+}
+
+expect {
+-nocase "password:" { sleep 1 ; send "$PASSWD\r" }
+}
+interact

@@ -1,0 +1,4 @@
+Ref: https://samsungu.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/learn/lecture/21145350#overview
+https://github.com/Poch15/aws-eks-kubernetes-masterclass/tree/master/17-EKS-Autoscaling-Cluster-Autoscaler
+
+

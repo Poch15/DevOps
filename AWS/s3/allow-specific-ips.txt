@@ -1,0 +1,21 @@
+{
+    "Id": "IPLimitedAccessPolicy",
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowTrustedIPs",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::cc-webapp-backups/*",
+            "Condition": {
+                "IpAddress": {
+                    "aws:SourceIp": [
+                        "54.197.25.93/32",
+                        "54.240.143.3/32"
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,146 @@
+#!/bin/bash
+sService='benefits';
+version=1.17.3;
+arch=amd64;
+cd /tmp/
+aws s3 cp s3://smem-base-installers/telegraf/telegraf_${version}-1_${arch}.deb .
+dpkg -i telegraf_${version}-1_${arch}.deb
+
+#Install and start the Telegraf service
+apt-get install -y telegraf
+service telegraf start
+
+#Configure Telegraf
+rm -rf /etc/telegraf/telegraf.conf
+cd /etc/telegraf
+aws s3 sync s3://smem-base-installers/niffler/${sService}/ .
+
+export AZ=$(wget -q -O - http://169.254.169.254/latest/meta-data/placement/availability-zone)
+export REGION="ap-northeast-2"
+export INSTANCETYPE=$(wget -q -O - http://169.254.169.254/latest/meta-data/instance-type)
+export INSTANCEID=$(wget -q -O - http://169.254.169.254/latest/meta-data/instance-id)
+export SERVERNAME=$(/usr/local/bin/aws ec2 describe-tags --filters Name=resource-id,Values=$INSTANCEID Name=key,Values=Name --query Tags[].Value --output text --region $REGION)
+rm /etc/telegraf/telegraf.conf;
+tee -a /etc/telegraf/telegraf.conf > /dev/null << EOT
+[global_tags]
+  region = "${REGION}"
+  availability-zone = "${AZ}"
+  instance-type = "${INSTANCETYPE}"
+  instance-id = "${INSTANCEID}"
+  instance-name = "${SERVERNAME}"
+[agent]
+  interval = "10s"
+  round_interval = true
+  metric_batch_size = 5000
+  metric_buffer_limit = 10000
+  collection_jitter = "0s"
+  flush_interval = "10s"
+  flush_jitter = "0s"
+  precision = ""
+  omit_hostname = false
+[[outputs.http]]
+  url = "https://niffler.samsungsre.com:3333/v1/influx"
+  timeout = "5s"
+  method = "POST"
+  data_format = "influx"
+  content_encoding = "gzip"
+  insecure_skip_verify = true
+  name_prefix = "rn-"
+  tls_ca = "/etc/telegraf/cert/ca.pem"
+  tls_cert = "/etc/telegraf/cert/cert.pem"
+  tls_key = "/etc/telegraf/cert/key.pem"
+[[inputs.cpu]]
+  percpu = true
+  totalcpu = true
+  collect_cpu_time = false
+  report_active = false
+[[inputs.disk]]
+  ignore_fs = ["tmpfs", "devtmpfs", "devfs", "iso9660", "overlay", "aufs", "squashfs"]
+[[inputs.diskio]]
+[[inputs.kernel]]
+[[inputs.mem]]
+[[inputs.processes]]
+[[inputs.swap]]
+[[inputs.system]]
+EOT
+
+service telegraf restart
+
+
+
+
+==================================================================
+
+
+1. download telegraf from s3
+aws s3 sync s3://smem-base-installers/niffler/USSM/ .
+
+cd telegraf file
+
+2. change telegraf conf and change rmc server values
+
+  region = "us-east-1"
+  availability-zone = "us-east-1a"
+  instance-type = "t3.small"
+  instance-id = "i-0fde2f2c7f7a902ec"
+  instance-name = "ussm-pus-rmc"
+  instanceName = "ussm-pus-rmc"
+  instanceType = "t3.small"
+  instanceId = "i-0fde2f2c7f7a902ec"
+  availabilityZone = "us-east-1a"
+
+
+
+## telegraf cloudwatch Github docu
+https://github.com/influxdata/telegraf/tree/master/plugins/inputs/cloudwatch
+
+3. to check ALL AWS cloudwatch metrics
+aws cloudwatch list-metrics --namespace AWS/EC2 --region ap-northeast-2
+
+4. to check specific cloudwatch metrics ex. 2xx count
+aws cloudwatch list-metrics --namespace AWS/ApplicationELB --region ap-northeast-2 --metric HTTPCode_Target_2XX_Count
+
+5. Add this to telegraf config dependin on the metrics
+[[inputs.cloudwatch]]
+  period = "1m"
+  interval = "5m"
+  region = "us-east-1"
+  namespace = "AWS/ApplicationELB"
+
+  [[inputs.cloudwatch.metrics]]
+    names = ["HTTPCode_Target_4XX_Count"]
+    statistic_include = [ "sum" ]
+
+    ## Dimension filters for Metric (optional)
+    [[inputs.cloudwatch.metrics.dimensions]]
+      name = "TargetGroup"
+      value = "targetgroup/ussm-pus-*"
+
+    ## Dimension filters for Metric (optional)
+    [[inputs.cloudwatch.metrics.dimensions]]
+      name = "LoadBalancer"
+      value = "app/ussm-pus-*"
+
+   [[inputs.cloudwatch.metrics]]
+    names = ["HTTPCode_Target_5XX_Count"]
+    statistic_include = [ "sum" ]
+
+    ## Dimension filters for Metric (optional)
+    [[inputs.cloudwatch.metrics.dimensions]]
+      name = "TargetGroup"
+      value = "targetgroup/ussm-pus-*"
+
+6. to test telegraf config if working 
+telegraf --config telegraf.conf --input-filter cloudwatch --test
+
+telegraf --config telegraf.conf --input-filter cloudwatch --test | grep rds
+
+7. sample result
+> cloudwatch_aws_application_elb,availability-zone=ap-northeast-2a,availabilityZone=ap-northeast-2a,host=ip-10-1-101-54,instance-id=i-01401e83a243210cc,instance-name=members-work-machine,instance-type=t3a.large,instanceId=i-01401e83a243210cc,instanceName=members-work-machine,instanceType=t3a.large,load_balancer=app/k8s-istiosys-istioing-837f1a5e7c/67bef517cb8b12ba,region=us-east-1,target_group=targetgroup/k8s-istiosys-istioing-f167020cf9/08b5accb5cd2c824 request_count_sum=0,un_healthy_host_count_average=0 1642498980000000000
+> cloudwatch_aws_application_elb,availability-zone=ap-northeast-2a,availabilityZone=ap-northeast-2a,host=ip-10-1-101-54,instance-id=i-01401e83a243210cc,instance-name=members-work-machine,instance-type=t3a.large,instanceId=i-01401e83a243210cc,instanceName=members-work-machine,instanceType=t3a.large,load_balancer=app/smem-releng-members-listener-lb/17e61f1151d0cbc7,region=us-east-1,target_group=targetgroup/smem-releng-members-listener-tg/616db547cc1438f8 request_count_sum=0 1642498980000000000
+
+
+
+
+
+https://github.com/influxdata/telegraf/tree/master/plugins/inputs/cloudwatch   =  source from github

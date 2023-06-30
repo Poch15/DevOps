@@ -1,0 +1,11 @@
+1. Install AWS CLI
+
+2. Setup AWS account for authentication
+$ aws configure --profile pencina
+
+# Check profile
+$ aws sts get-caller-identity
+
+3. Connect to EKS cluster
+$ aws eks  update-kubeconfig --region ap-northeast-2 --name <name-of-cluster>
+

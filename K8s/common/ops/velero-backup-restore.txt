@@ -1,0 +1,8 @@
+https://github.com/marcel-dempers/docker-development-youtube-series/blob/master/kubernetes/velero/README.md
+
+https://github.com/vmware-tanzu/velero   =  Github source code
+
+# install curl & kubectl
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+chmod +x ./kubectl
+mv ./kubectl /usr/local/bin/kubectl

@@ -1,0 +1,5 @@
+---
+  - name: Checking and making file
+    file:
+      path: "/home/{{ ansible_ssh_user }}/check.ok"
+      state: touch

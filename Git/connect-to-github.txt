@@ -1,0 +1,28 @@
+USING SSH
+==========
+
+Generate SSH keys
+	$ ssh-keygen -t rsa -b 4096 -C "paul@gmail.com"
+
+Copy public key to github account
+	Github account -> Settings -> GPG keys ->
+
+Add the ssh key definition in ~/.ssh/config
+	Host github.com
+	  IdentityFile ~/.ssh/github_rsa
+
+In CLI, go to Git Proj home folder
+git init
+git remote -v
+git remote add origin <remote url>
+git push origin master
+
+
+
+
+
+
+
+Troubleshooting references:
+
+https://stackoverflow.com/questions/12940626/github-error-message-permission-denied-publickey

@@ -1,0 +1,16 @@
+-------------------------------------------
+BACKUP DB INSTALLED IN EKS USING HELM CHART
+------------------------------------------
+Make sure that the postgre sql client is compatible with the server
+
+# Port forward the service to access the db locally
+$ kubectl port-forward service/postgresql-postgresql-ha-postgresql 54328:54328 -n database
+
+# Command to backup the db
+pg_dump -h localhost -p 54328 -U postgres -v -d keycloak> keycloak_db_backup.sql
+
+
+
+------------------------
+RESTORE DB TO EKS
+------------------------

@@ -1,0 +1,5 @@
+---
+- hosts: "{{ targetServers }}"
+  serial: 1
+  roles:
+    - members-scripts

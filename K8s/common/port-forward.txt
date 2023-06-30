@@ -1,0 +1,8 @@
+kubectl port-forward service/mongo 28015:27017
+
+
+
+
+kubectl port-forward service/app1-nginx-nodeport-service 
+
+kubectl port-forward svc/argocd-repo-server 80:80 -n argocd

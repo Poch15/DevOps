@@ -1,0 +1,5 @@
+---
+- hosts: "{{ host_name }}"
+  serial: 1
+  roles:
+    - restart-service

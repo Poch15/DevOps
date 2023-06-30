@@ -1,0 +1,148 @@
+https://www.youtube.com/watch?v=xiV4MhL8bOQ => Thetips4you
+
+https://github.com/shazforiot/How-To-Setup-Influxdb-Telegraf-And-Grafana/blob/main/Instructions
+
+
+Steps for installation of INFLUXDB
+
+yum install wget -y
+
+Steps for installation of InfluxDB 2.0
+
+wget https://dl.influxdata.com/influxdb/releases/influxdb2-2.0.7-linux-amd64.tar.gz
+
+tar xvzf influxdb2-2.0.7-linux-amd64.tar.gz
+
+sudo cp influxdb2-2.0.7-linux-amd64/{influx,influxd} /usr/local/bin/
+
+./influxd
+
+http://ipaddress:8086/
+
+Set admin credentials
+US: admin
+PW: admin@123
+
+Bucket : telegraf-bucket
+
+CONFIGURATION:
+
+1. Create an account
+2. In the left pane, click data -> click telegraf tab -> create configuration
+3. Select system, click continue
+4. Name telegraf configuration file, click create and verify
+5. Copy export command to configure API token from telegraf machine
+	export INFLUX_TOKEN=SAkIF6kt6_htZFno5wUOlo9pAvberepupBbaavn6zkMw0uIxqrL7wienIO9gjU3BtP-h0hk6MssZGMQxLKhjbA==
+6. Run the 2nd command to start the telegraf agent
+
+
+TEST
+1. Go to Explore and select filtered metrics from the telegraf
+
+===================================================================
+
+Steps for installation of Telegraf
+
+
+wget https://dl.influxdata.com/telegraf/releases/telegraf-1.19.1_linux_amd64.tar.gz
+tar xvzf telegraf-1.19.1_linux_amd64.tar.gz
+cd telegraf-1.19.1_linux_amd64/usr/bin
+
+./telegraf config > telegraf.conf
+
+mkdir /etc/telegraf
+
+mv telegraf.conf /etc/telegraf/
+
+vi telegraf.conf
+
+Search for outputs.influxdb but we'll use influxdb conf to integrate telegraf
+
+./telegraf => needs to CONFIGURE writing to influxdb before it can run
+check telegraf command in PATH
+
+======================================================================
+
+Steps for installation of Grafana
+PORT 3000
+
+wget https://dl.grafana.com/oss/release/grafana-8.0.6.linux-amd64.tar.gz
+tar -zxvf grafana-8.0.6.linux-amd64.tar.gz
+cd grafana-8.0.6
+./bin/grafana-server web
+
+Default credentials
+US: admin
+PW: admin
+
+Set new credentials
+US: admin
+PW: admin@123
+
+
+CONFIGURATION
+1. In Home page, click data sources
+2. Search influx db data source
+3. Set the following:
+	Query Language: Flux
+	URL = http://<ip address of Influx DB>:8086
+4. Under Influx DB details, input the following:
+	Organization = Name of your company
+	Database = DB name
+	Token = <token from Influx DB>  Influx DB -> Data -> Tokens tab -> Admin tokens
+
+TO VERiFY
+1. There should be a Influx DB profile under Data Sources tab
+2. Go to explore, create an empty dashboard / Home -> Dashboard -> Add empty panel
+3. Use flux query to show metric data
+4. Click apply
+
+
+SAMPLE INFLUX DB QUERIES
+
+from(bucket: "telegraf-bucket")
+  |> range(start: -1d)
+  |> filter(fn: (r) => r._measurement == "cpu" and 
+  r.cpu == "cpu-total"
+  )
+  |> aggregateWindow(every: 1m, fn: mean)
+
+
+
+===================================================================
+
+Reference links: 
+
+https://docs.influxdata.com/telegraf/v1.19/introduction/installation/?t=RedHat+%26amp%3B+CentOS
+https://docs.influxdata.com/influxdb/v2.0/install/?t=Linux
+https://grafana.com/grafana/download?platform=linux
+https://docs.influxdata.com/influxdb/v2.0/query-data/get-started/
+
+====================================================================
+
+INFLUXDB Installation using deb package
+
+wget https://dl.influxdata.com/influxdb/releases/influxdb2-2.0.8-amd64.deb
+sudo dpkg -i influxdb2-2.0.8-amd64.deb
+
+-----
+
+TELEGRAF Installation using deb package
+
+wget https://dl.influxdata.com/telegraf/releases/telegraf_1.20.0-1_amd64.deb
+sudo dpkg -i telegraf_1.20.0-1_amd64.deb
+
+-----
+
+ [[outputs.influxdb_v2]]
+
+  urls = ["http://54.169.150.35:8086"]
+
+  ## Token for authentication.
+  token = "1e9_BPd5ABSEcZH98sYMx6jXz4GC21IcN2khpigA8TqyuRgfEFVPLvSF66_oFPAt6aIfsjdfgff1gw69Dr-Q9w=="
+
+  ## Organization is the name of the organization you wish to write to; must exist.
+  organization = "Paul Org"
+
+  ## Destination bucket to write into.
+  bucket = "SamsungMembersBucket"

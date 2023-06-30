@@ -1,0 +1,62 @@
+==============================
+CREATE A VOLUME SNAPSHOT FIRST 
+==============================
+
+---
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshotClass
+metadata:
+  name: aws-ebs-snapshot-class
+driver: ebs.csi.aws.com
+deletionPolicy: Retain
+parameters:
+  region: us-east-1
+
+---
+apiVersion: snapshot.storage.k8s.io/v1
+kind: VolumeSnapshot
+metadata:
+  name: es-snapshot
+spec:
+  volumeSnapshotClassName: aws-ebs-snapshot-class
+  source:
+    persistentVolumeClaimName: data-es-elasticsearch-data-0
+
+---
+
+
+kubectl apply -f es-data-0-snapshot.yaml
+
+kubectl apply -f grafana-snapshot.yaml
+
+kubectl get volumesnapshots
+
+
+============================================================
+ADD encrypted and kmsMasterKeyId PARAMETERS in STORAGE CLASS
+============================================================
+
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"storage.k8s.io/v1","kind":"StorageClass","metadata":{"annotations":{"storageclass.kubernetes.io/is-default-class":"true"},"name":"gp2"},"parameters":{"fsType":"ext4","type":"gp2"},"provisioner":"kubernetes.io/aws-ebs","volumeBindingMode":"WaitForFirstConsumer"}
+    storageclass.kubernetes.io/is-default-class: "true"
+  creationTimestamp: "2020-06-15T06:47:53Z"
+  name: gp2
+  resourceVersion: "172"
+  uid: 0b6df49e-8206-4e5c-aec2-e99dad86d35f
+parameters:
+  fsType: ext4
+  type: gp2
+  encrypted: "true"
+  kmsMasterKeyId: "arn:aws:kms:us-east-1:963697571568:key/d40bb6db-0254-4b46-afd9-032991965d27"
+provisioner: kubernetes.io/aws-ebs
+reclaimPolicy: Delete
+volumeBindingMode: WaitForFirstConsumer (edited) 
+
+
+
+
+

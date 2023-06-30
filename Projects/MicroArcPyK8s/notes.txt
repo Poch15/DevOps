@@ -1,0 +1,23 @@
+References: https://www.youtube.com/watch?v=hmkF77F9TLw
+
+Microservice arc - is an arc where application is developed as a collection of small service
+
+
+Tools / Technologies:
+Python
+MongoDB
+MySQL = installed locally
+RabbitMQ
+Docker
+Kubernetes = EKS
+
+Others:
+k9s
+kubectl
+
+# Create Auth service
+
+
+
+
+

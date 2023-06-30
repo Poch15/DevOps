@@ -1,0 +1,7 @@
+---
+# tasks file for restart-service
+- name: Restart Service
+  shell: "sleep {{ restart.timeout }} && /home/{{ ansible_ssh_user }}/scripts/start-{{ service_name }}.sh && sleep {{ restart.timeoutafter }}"
+
+- name: Waiting for application to start or it will fail in 5 minutes
+  shell: perl /home/{{ ansible_ssh_user }}/scripts/check-{{ service_name }}.pl

@@ -1,0 +1,30 @@
+20230425 05:14:23 Version 2.7.1 2020-01-04 06:36 GMT
+20230425 05:14:23 [A113] Counter Collector Started (#5)
+20230425 05:14:23 [A10] host agent boot seed=x41urdb594
+20230425 05:14:23 [A01] Scouter Host Agent Version 2.7.1 2020-01-04 06:36 GMT
+20230425 05:14:24 [A119] Agent UDP local.port=0
+20230425 05:14:24 [INFO] Num of Cpu Cores : 4
+20230425 05:17:25 Version 2.7.1 2020-01-04 06:36 GMT
+20230425 05:17:25 [A113] Counter Collector Started (#5)
+20230425 05:17:25 [A10] host agent boot seed=x62urdgmo8
+20230425 05:17:25 [A01] Scouter Host Agent Version 2.7.1 2020-01-04 06:36 GMT
+20230425 05:17:26 [A119] Agent UDP local.port=0
+20230425 05:17:26 [INFO] Num of Cpu Cores : 4
+20230425 05:29:17 [A145] SigarException trying to stat file system device /snap/core/9804
+org.hyperic.sigar.SigarException: No such file or directory: /snap/core/9804
+	org.hyperic.sigar.SigarProxyCache.invoke(SigarProxyCache.java:220)
+	com.sun.proxy.$Proxy2.getFileSystemUsage(Unknown Source)
+	scouter.agent.counter.task.HostNetDiskPerf.diskIO(HostNetDiskPerf.java:154)
+	scouter.agent.counter.task.HostNetDiskPerf.process(HostNetDiskPerf.java:81)
+	sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	scouter.agent.counter.CounterExecutingManager$Invocation.process(CounterExecutingManager.java:93)
+	scouter.agent.counter.CounterExecutingManager.run(CounterExecutingManager.java:58)
+20230425 06:47:00 Version 2.7.1 2020-01-04 06:36 GMT
+20230425 06:47:00 [A113] Counter Collector Started (#5)
+20230425 06:47:00 [A10] host agent boot seed=xj3hiriko1b
+20230425 06:47:00 [A01] Scouter Host Agent Version 2.7.1 2020-01-04 06:36 GMT
+20230425 06:47:01 [A119] Agent UDP local.port=0
+20230425 06:47:01 [INFO] Num of Cpu Cores : 4
+20230426 00:00:00 [A130] TCP unknown cmd=OBJECT_RESET_CACHE

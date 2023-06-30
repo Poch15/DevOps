@@ -1,0 +1,6 @@
+---
+- hosts: "{{ host_name }}"
+  serial: "{{ concurrency }}"
+  become: yes
+  roles:
+    - ipa-install

@@ -1,0 +1,18 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1234567890123",
+    "Statement": [
+        {
+            "Sid": "Stmt1234567890123",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::my_bucket/*",
+            "Condition": {
+                "StringEquals": {
+                    "aws:sourceVpc": "vpc-12345678"
+                }
+            }
+        }
+    ]
+}

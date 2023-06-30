@@ -1,0 +1,16 @@
+pipeline {
+    agent {
+        node {
+           label 'care-pgl-jmp'
+        }
+    }
+    stages{
+        stage('Upload Config Files') {
+            steps {
+                script {
+                    sh "cd ~ && bash -x ~/deploy_members_prd_config.sh"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+
+1. Cordon node
+	old: ip-20-0-151-28.ap-northeast-2.compute.internal new: 20.0.151.117
+	old: ip-20-0-151-35.ap-northeast-2.compute.internal new: 20.0.151.121
+	old: ip-20-0-152-80.ap-northeast-2.compute.internal new: 20.0.152.186
+	old: ip-20-0-152-87.ap-northeast-2.compute.internal new: 20.0.152.72
+	old: ip-20-0-152-160.ap-northeast-2.compute.internal new: 20.0.152.91
+2. Drain or delete all pods manually
+3. Terminate instance (node

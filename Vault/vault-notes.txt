@@ -1,0 +1,17 @@
+# check status of vault
+$ vault status
+
+# Initialize vault
+$ vault operator init
+
+# Unseal vault
+$ vault operator unseal
+
+# Login to vault
+$ vault login <token>
+
+# List secrets
+$ vault secrets list
+
+# 
+$ 

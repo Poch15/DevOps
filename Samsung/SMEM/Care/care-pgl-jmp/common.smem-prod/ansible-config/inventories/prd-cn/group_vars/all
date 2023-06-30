@@ -1,0 +1,75 @@
+---
+restart:
+  timeout: 30
+  timeoutafter: 30
+docker:
+  registry: registry.samsungmembers.com.cn:5000
+  region: cn-northwest-1
+  profile: default,china
+  modules:
+    config:
+      module_name: config-server
+      java_port: 8888
+    discover:
+      module_name: discover-server
+      java_port: 8761
+    external:
+      module_name: members-external
+      java_port: 9130
+    migration:
+      module_name: members-migration
+      java_port: 9140
+    batch-diagmon:
+      module_name: members-batch-diagmon
+      java_port: 9315
+    batch-fota:
+      module_name: members-batch-fota
+      java_port: 9316
+    batch-erms:
+      module_name: members-batch-erms
+      java_port: 9312
+    batch-internal:
+      module_name: members-batch-internal
+      java_port: 9317
+    batch-omnis:
+      module_name: members-batch-omnis
+      java_port: 9313
+    batch-myproduct:
+      module_name: members-batch-myproduct
+      java_port: 9318
+    batch-push:
+      module_name: members-batch-push
+      java_port: 9314
+    myproduct:
+      module_name: members-myproduct
+      java_port: 9150
+    log:
+      module_name: members-log
+      java_port: 9920
+    feedback:
+      module_name: members-feedback
+      java_port: 9110
+    content:
+      module_name: members-content
+      java_port: 9112
+    search:
+      module_name: members-search
+      java_port: 9120
+    beta:
+      module_name: members-beta
+      java_port: 9910
+    common:
+      module_name: members-common
+      java_port: 9010
+    user:
+      module_name: members-user
+      java_port: 9210
+    oauth2:
+      module_name: members-oauth2
+      java_port: 9080
+    inbox:
+      module_name: members-inbox
+      java_port: 9160
+    batch-inbox:
+      module_name: members-batch-inbox
+      java_port: 9320

@@ -1,0 +1,51 @@
+---
+# tasks file for members-scripts---
+  # - name: Copying startup script
+  #   file:
+  #     src: "start-{{ serviceName }}.sh"
+  #     dest: "/home/{{ ansible_ssh_user }}/scripts/start-{{ serviceName }}.sh"
+  #     mode: 0644
+- name: recreate folder
+  file: 
+    state: directory
+    path: "/home/{{ ansible_ssh_user }}/scripts"
+- name: Copying Login script
+  copy: 
+    src: "~/ansible-config/roles/members-scripts/files/Runnables/login.exp"
+    dest: "/home/{{ ansible_ssh_user }}/scripts/login.exp"
+    mode: 0755
+- name: Copying Startup Script
+  template:
+    src: "~/ansible-config/roles/members-scripts/templates/start-service.sh.j2"
+    dest: "/home/{{ ansible_ssh_user }}/scripts/start-{{ docker.modules[serviceName].module_name }}.sh" 
+    mode: 0755
+- name: Copying Stop Script
+  template:
+    src: "~/ansible-config/roles/members-scripts/templates/stop-service.sh.j2"
+    dest: "/home/{{ ansible_ssh_user }}/scripts/stop-{{ docker.modules[serviceName].module_name }}.sh" 
+    mode: 0755
+- name: Copying Evaluator Script
+  template:
+    src: "~/ansible-config/roles/members-scripts/templates/Checker.pl.j2"
+    dest: "/home/{{ ansible_ssh_user }}/scripts/check-{{ docker.modules[serviceName].module_name }}.pl" 
+    mode: 0755    
+- name: Copying logrotate Script
+  template:
+    src: "~/ansible-config/roles/members-scripts/templates/CopyLogs.sh.j2"
+    dest: "/home/{{ ansible_ssh_user }}/scripts/CopyLogs.sh"
+    mode: 0755
+- name: Copying endpoint checker Script
+  copy:
+    src: "~/ansible-config/roles/members-scripts/files/endpoints-checker.sh"
+    dest: "/home/{{ ansible_ssh_user }}/scripts/endpoints-checker.sh"
+    mode: 0755
+- name: Copying restart script
+  copy:
+    src: "~/ansible-config/roles/members-scripts/files/StartService.sh"
+    dest: "/home/{{ ansible_ssh_user }}/scripts/StartService.sh"
+    mode: 0755
+- name: Copying cloudwatch metric script
+  copy:
+    src: "~/ansible-config/roles/members-scripts/templates/put_cloudwatch_metric.sh"
+    dest: "/home/{{ ansible_ssh_user }}/cloudwatch/put_cloudwatch_metric.sh"
+    mode: 0755

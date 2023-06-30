@@ -1,0 +1,20 @@
+---
+# tasks file for sti_installer
+
+- name: Remove AWS Configuration
+  shell: mv /root/.aws/config /root/.aws/config.bk
+
+- name: Make new directory
+  shell: mkdir /root/ServerAssess && mkdir /root/ServerAssess/care
+
+- name: Get Server Assessment scripts
+  shell: cd /root/ServerAssess && aws s3 cp s3://smem-base-installers/ServerAssessment/ftp_test.sh . --region ap-northeast-2 && aws s3 cp s3://smem-base-installers/ServerAssessment/shell_agent_170322.sh . --region ap-northeast-2 && chmod 744 *
+
+- name: Execute Server Assessment script
+  shell: cd /root/ServerAssess/care && bash /root/ServerAssess/shell_agent_170322.sh
+
+- name: Upload XML file to s3
+  shell: cd /root/ServerAssess/ && aws s3 sync . s3://smem-base-installers/ServerAssessment/ --region ap-northeast-2
+  
+- name: Revert AWS Configuration
+  shell: mv /root/.aws/config.bk /root/.aws/config  

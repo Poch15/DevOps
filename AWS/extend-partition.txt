@@ -7,3 +7,13 @@ sudo resize2fs /dev/nvme0n1p1
 
 
 reference: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/recognize-expanded-volume-linux.html
+
+
+
+
+
+
+===================
+To mount new volume
+===================
+https://opensource.com/article/19/4/create-filesystem-linux-partition

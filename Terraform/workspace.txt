@@ -1,0 +1,15 @@
+# Create new workspace
+$ terraform workspace new <name>
+
+# List workspaces
+$ terraform workspace list
+
+# Show active workspace
+$ terraform workspace show
+
+# Switch workspace
+$ terraform workspace select <name>
+
+
+
+

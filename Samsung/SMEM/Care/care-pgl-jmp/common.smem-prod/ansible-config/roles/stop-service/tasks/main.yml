@@ -1,0 +1,4 @@
+---
+# tasks file for restart-service
+- name: Pause Traffic Service
+  shell: "sleep {{ restart.timeout }} && /home/{{ ansible_ssh_user }}/scripts/stop-{{ service_name }}.sh && sleep {{ restart.timeoutafter }}"

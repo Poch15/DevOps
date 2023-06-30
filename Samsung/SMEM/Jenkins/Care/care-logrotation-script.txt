@@ -1,0 +1,24 @@
+pipeline {
+    agent {
+        node {
+           label 'care-pgl-jmp'
+        }
+    }
+    
+    environment {
+        REPO="30.0.151.91"
+        SSHPASS=credentials('SERVER_PASSWORD_IPA')
+    }
+        
+    stages{
+        stage('Test') {
+            steps {
+                script {
+                    sh "sshpass -p '${env.SSHPASS}' ssh -p2285 ${env.REPO} 'cd ~/ansible-scripts && ./rotateLogs.sh ${env.ANSIBLE_SSH_USER} \"${SSHPASS}\" ${env.SERVER_NAME} ${env.CONCURRENCY}';"
+                    // sh("#!/bin/sh -e\n cd ~/ansible-config && ./rotateLogs.sh ${env.ANSIBLE_SSH_USER} '${env.ANSIBLE_SSH_PASS}' ${env.SERVER_NAME} ${env.CONCURRENCY}")
+                    sh "curl -X POST --data-urlencode 'payload={ \"text\": \"[CARE] Logrotation for ${env.SERVER_NAME} finished.\"}' https://hooks.slack.com/services/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"
+                }
+            }
+        }
+    }
+}

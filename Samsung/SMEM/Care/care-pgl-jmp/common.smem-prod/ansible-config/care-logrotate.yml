@@ -1,0 +1,5 @@
+---
+- hosts: "{{ host_name }}"
+  serial: "{{ concurrency }}"
+  roles:
+    - logrotate-s3

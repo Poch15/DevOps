@@ -1,0 +1,22 @@
+pipeline {
+    agent {
+        node {
+           label 'care-pgl-jmp'
+        }
+    }
+    
+    stages {
+     
+        stage('Update codebase') {
+            steps {
+                script {
+                    sh "pwd"
+                    sh "mkdir -p ~/ansible-config"
+                    sh "cp -r ./* ~/ansible-config"
+                }
+            }
+        }
+    }
+
+}
+

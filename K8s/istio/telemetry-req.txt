@@ -1,0 +1,5 @@
+1. You need a Envoy Side car (Proxy) running in each pod you want to monitor
+
+2. THe control plane needs to be running (i.e. istiod and kiali, jaeger, grafana)
+
+You do not need any specific istio yaml configuration (No need for virtual services, gateway etc)

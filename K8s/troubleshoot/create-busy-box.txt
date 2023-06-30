@@ -1,0 +1,10 @@
+
+# This will deploy busybox container that will die as soon as it exits
+$ kubectl run -i --tty --image busybox:1.28 dns-test --restart=Never --rm
+$ nslookup <service name>
+
+
+# 
+$ kubectl run -i --tty --image nginx:alpine test-pod --restart=Never --rm -- sh
+$ curl flask-normal
+$ curl <headless-service>:5000

@@ -1,0 +1,37 @@
+---
+# tasks file for sti_installer
+- name: Changing File Permissions
+  shell: chmod 700 /usr/bin/last && ls -lrt /usr/bin/last && chmod 700 /sbin/ifconfig && ls -lrt /sbin/ifconfig && chmod 400 /etc/shadow && ls -lrt /etc/shadow
+
+- name: Update system logs configuration
+  shell: sed -i 's/\$FileOwner syslog/\$FileOwner root/g' /etc/rsyslog.conf
+
+- name: Update system logs configuration
+  shell: sed -i 's/\$PrivDropToUser syslog/\$PrivDropToUser root/g' /etc/rsyslog.conf
+
+- name: Update system logs configuration
+  shell: sed -i 's/\$PrivDropToUser syslog/\$PrivDropToUser root/g' /etc/rsyslog.conf
+ 
+- name: Update system logs configuration
+  shell: sed -i 's/\$PrivDropToGroup syslog/\$PrivDropToGroup root/g' /etc/rsyslog.conf
+
+- name: Update system logs configuration
+  shell: sed -i 's/\$FileCreateMode 0640/\$FileCreateMode 0644/g' /etc/rsyslog.conf
+
+- name: Update system logs configuration
+  shell: sed -i 's/create 0664/create 0600/g' /etc/logrotate.conf
+
+- name: Restart rsyslog..
+  shell: service rsyslog restart
+
+- name: Modify owner /var/log/syslog*
+  shell: chown root /var/log/syslog*
+
+- name: Change Permission /var/log/syslog*
+  shell:  chmod 644 /var/log/syslog* && ls -lrt /var/log/syslog*
+ 
+- name: Modify owner /var/log/auth*
+  shell: chown root /var/log/auth*
+
+- name: Change Permission /var/log/auth*
+  shell: chmod 600 /var/log/auth* && ls -lrt /var/log/auth*

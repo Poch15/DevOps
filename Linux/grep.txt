@@ -1,0 +1,8 @@
+
+
+# Identify which service uses which port
+netstat -tulpn | grep -w ':20002'
+
+
+
+grep -o 'alb-ingress-controller-[A-Za-z0-9-]

@@ -1,0 +1,8 @@
+---
+# tasks file for logrotate-s3
+- name: Creating ipa client folder
+  shell: mkdir -p /opt/ipa-client
+- name: Downloading IPA client
+  shell: cd /opt/ipa-client && wget https://ipa-client.samsungsre.com/download-ipa-client.sh
+- name: Install IPA client
+  shell: cd /opt/ipa-client && bash ./download-ipa-client.sh aws smem-prod

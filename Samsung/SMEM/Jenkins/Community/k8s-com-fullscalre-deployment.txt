@@ -1,0 +1,111 @@
+def ITEMS
+
+pipeline {
+    agent {
+        node {
+           label 'master'
+        }
+    }
+    
+    environment {
+        AWS_PROFILE="stgv2c"
+        REDIS_PORT="63795"
+        REDIS_HOST="community-redis-prd.wtk2c0.ng.0001.apn2.cache.amazonaws.com" 
+        HEALTH_CHECK_PATH="/health-check"
+        ENABLE_AUTOSCALING=true
+        ACTUATOR_PORT=7071
+    }
+    
+    stages{
+        stage('ASSUMING ROLE') {
+            steps {
+                script {
+                    ITEMS= sh(
+                        returnStdout:true,
+                        script: "~/assumeRole.sh ${accountId}"
+                    ).split(",")
+                }
+            }
+        }
+        stage('Updating Kubeconfig') {
+            environment {
+                AWS_ACCESS_KEY_ID = "${ITEMS[0]}".trim()
+                AWS_SECRET_ACCESS_KEY = "${ITEMS[1]}".trim()
+                AWS_SESSION_TOKEN = "${ITEMS[2]}".trim()
+                AWS_PROFILE=""                
+            }
+            steps {
+                script {
+                    sh "aws eks list-clusters --region ${region};"
+                    sh "aws eks update-kubeconfig --name ${clusterName} --region ${region}"
+                }
+            }
+        }
+        stage('Executing Configuration') {
+            environment {
+                AWS_ACCESS_KEY_ID = "${ITEMS[0]}".trim()
+                AWS_SECRET_ACCESS_KEY = "${ITEMS[1]}".trim()
+                AWS_SESSION_TOKEN = "${ITEMS[2]}".trim()
+                AWS_PROFILE=""                
+            }   
+            steps {
+                script {
+                    sh "kubectl get pods --all-namespaces"
+                }
+            }
+        }
+        stage('Download Manifests') {
+            steps {
+                script {
+                    sh "aws s3 cp s3://care-stg-artifacts/community-was.tar.gz .";
+                    sh "aws s3 cp s3://care-stg-artifacts/router.tar.gz .";
+                    sh "mkdir -p community-was router";
+                    sh  "tar -C ./community-was -xvzf community-was.tar.gz";
+                    sh  "tar -C ./router -xvzf router.tar.gz";
+                }
+            }
+        }
+        stage('Iinstall Manifest') {
+            environment {
+                AWS_ACCESS_KEY_ID = "${ITEMS[0]}".trim()
+                AWS_SECRET_ACCESS_KEY = "${ITEMS[1]}".trim()
+                AWS_SESSION_TOKEN = "${ITEMS[2]}".trim()
+                AWS_PROFILE=""                
+            }            
+            steps {
+                script {
+                    BuildModule(false)
+                }    
+            }
+        }
+        stage('Route Traffic to Stable') {
+            environment {
+                AWS_ACCESS_KEY_ID = "${ITEMS[0]}".trim()
+                AWS_SECRET_ACCESS_KEY = "${ITEMS[1]}".trim()
+                AWS_SESSION_TOKEN = "${ITEMS[2]}".trim()
+                AWS_PROFILE=""                
+            }
+            steps {
+                script {
+                    BuildRouter(false)
+                }
+            }            
+        }
+    }
+}
+
+def BuildRouter(isCanary) {
+    domain = '${appRegion}-scgw-${environment}.community.samsungmembers.com';
+    if (environment == "prd") {
+        domain = '${appRegion}-scgw.community.samsungmembers.com'
+    }
+    sh "cd ./router && ./install.sh '${appName}-${appRegion}' '${appRegion}-service-gateway.community.samsungmembers.com' ${appName} false 1 '${appName}-${appRegion}' ${port}"
+}
+
+def BuildModule(isCanary) {
+    name="${appName}-${appRegion}"
+    if (isCanary) {
+        name="${appName}-${appRegion}-canary"
+    }
+    sh "cd ./community-was && ./install.sh '${appName}-${appRegion}' ${port} ${appRegion} ${environment} ${maxBurst} ${appName} ${imageTag} ${isCanary} ${appName} ${name} ${accountId} ${region} '${eurekaUrl}'"
+}

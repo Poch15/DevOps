@@ -1,0 +1,4 @@
+---
+# tasks file for restart-service
+- name: Waiting for application to start or it will fail in 5 minutes
+  shell: perl /home/{{ ansible_ssh_user }}/scripts/check-{{ docker.modules[service_name].module_name }}.pl

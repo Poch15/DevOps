@@ -1,0 +1,10 @@
+---
+# tasks file for member-jars
+- name: Creating Folder to Target Server
+  file:
+    state: directory
+    path: "/home/{{ ansible_ssh_user }}/docker"
+- name: Copy File
+  copy:
+    src: "~/v2-jar/{{ service_name }}-2.0.0-SNAPSHOT.jar"
+    dest: "/home/{{ ansible_user }}/docker/{{ service_name }}-2.0.0-SNAPSHOT.jar "

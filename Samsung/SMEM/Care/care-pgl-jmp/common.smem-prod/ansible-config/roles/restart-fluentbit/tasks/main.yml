@@ -1,0 +1,4 @@
+---
+# tasks file for logrotate-s3
+- name: Restarting Fluentbit
+  shell: docker restart fluentbit

@@ -1,0 +1,41 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1558938350886",
+    "Statement": [
+        {
+            "Sid": "Stmt1558938348404",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::600734575887:root"
+            },
+            "Action": "s3:*",
+            "Resource": "arn:aws:s3:::log-care/*"
+        },
+        {
+            "Sid": "DenyAll",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Resource": "arn:aws:s3:::log-care/*",
+            "Condition": {
+                "StringNotLike": {
+                    "aws:PrincipalArn": "arn:aws:iam::480586329294:role/care-common-instance-role"
+                },
+                "Bool": {
+                    "aws:SecureTransport": "true"
+                },
+                "StringNotEquals": {
+                    "aws:SourceVpc": [
+                        "vpc-ce5934a7",
+                        "vpc-d1274fb8",
+                        "vpc-0d091f55c7babebb6",
+                        "vpc-b40308d1"
+                    ]
+                }
+            }
+        }
+    ]
+}

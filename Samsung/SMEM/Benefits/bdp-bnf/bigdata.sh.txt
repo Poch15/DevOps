@@ -1,0 +1,56 @@
+#!/bin/bash
+rm -rf /home/common/Newbigdata/Done/*
+
+cd /home/common/Newbigdata/Shell
+./extractData.sh -group 2
+#extract=0
+./transferData.sh
+#transfer=200
+
+if [ "${extract}" -eq 0 ] && [ "${transfer}" -eq 0 ]; 
+then
+        echo "Data extraction and transfer was finished"
+
+
+                curl -X POST -H 'Content-Type: application/json' \
+                -d '{
+                        "text": {
+                                "channel": "srph-smem-ta-notif",
+                                "text": "Benefit BDP Extraction was Finished"
+                        }
+                }' \
+                'https://deploy.samsungmembers.com/generic-webhook-trigger/invoke?token=SRPH_FIREWALL2022'
+        exit
+elif [ "${extract}" -eq 0 ] && [ "${transfer}" -ne 0 ];
+then
+        #error_msg=$("`tail -35 /home/common/Newbigdata/Shell/log/transfer.log.2022-09-16 | grep -B 3 -i 'ERROR'`")
+        #error_msg=$(tail -35 /home/common/Newbigdata/Shell/log/transfer.log.2022-09-16 | grep -B 3 -i 'ERROR')
+        tail -35 '/home/common/Newbigdata/Shell/log/transfer.log' | grep -i '.log is' > '/tmp/error.txt'
+        log_msg=$(awk '{print $4}' /tmp/error.txt)
+        echo $log_msg 
+        #echo $error_msg
+        echo "Benefit BDP Transfer Failed"
+
+                curl -X POST -H 'Content-Type: application/json' \
+                -d '{
+                        "text": {
+                                "channel": "srph-smem-ta-notif",
+                                "text": "File `'${log_msg}'` was aborted during upload"
+                        }
+                }' \
+                'https://deploy.samsungmembers.com/generic-webhook-trigger/invoke?token=SRPH_FIREWALL2022'
+        exit
+
+
+
+fi
+
+curl -X POST -H 'Content-Type: application/json' \
+-d '{
+        "text": {
+                "channel": "srph-smem-ta-notif",
+                "text": "Benefit BDP Extraction Failed"
+        }
+}' \
+'https://deploy.samsungmembers.com/generic-webhook-trigger/invoke?token=SRPH_FIREWALL2022'
+echo "Data extraction and transfer failed"

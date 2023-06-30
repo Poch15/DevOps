@@ -1,0 +1,89 @@
+import re, sys, argparse
+import os, subprocess, shutil
+import datetime
+
+from datetime import datetime
+from modules import backup, reload, targetFile, s3
+
+# date set
+now = datetime.now()
+dateToday = now.strftime('%Y%m%d')
+timeToday = now.strftime('%H%M')
+
+def fileCreate():
+    s3File = 's3File_{}.txt'.format(dateToday)
+    checker = os.path.exists(s3File)
+    if checker is True:
+        print('file already created')
+    else:
+        newFile = open(s3File, 'w')
+        newFile.close()
+
+def ipExpired(sCapture):
+    expiredFile = open('s3File_{}.txt'.format(dateToday), 'a')
+    expiredFile.write(sCapture)
+    # backup(s3) # save to s3 bucket
+
+def main():
+    fileCreate() # create file for expired IP
+    # read file and save to variable
+    inFile = open(targetFile,'r+', encoding='utf-8')
+    lines = inFile.readlines()
+    inFile.close()
+
+    # clean-up and save updated data
+    outFile = open(targetFile,'w+', encoding='utf-8')
+    for line in lines:
+        
+        # If this line is empty, remove it
+        if not line.strip():
+            continue
+
+        # separate the IP address and the metadata
+        aLine = line.strip().split("#")
+                
+        # newlines and/or denyall contains only 1 line.
+        if len(aLine) == 1 or aLine[0] == "":
+            outFile.write(line)
+            continue
+
+        # if it uses the old format (wfh something) then do not write
+    
+        # aLine[1] now contains the metadata then split the metadata by commas.
+        aMetadata = aLine[1].split(",")
+
+        # invalid or old format only has one metadata line
+        if len(aMetadata) != 3:
+            print("uses old format")
+            if " WFH " in line:
+                print("Removing old format WFH")
+                ipExpired(line)
+                continue
+
+            outFile.write(line)
+            continue
+
+        # make sure to separate these variables first so that we can easily find them later
+        # uncomment email variable for future use.
+        # sEmail = aMetadata[0]
+        sIPType = aMetadata[1]
+        iExpiry = aMetadata[2]
+
+        # if the IP is past expiry and make sure it will only affect WFH peeps
+        if dateToday >= iExpiry and sIPType == "WFH":
+            ipExpired(line)
+            continue
+        
+        outFile.write(line)
+
+    outFile.close()
+
+
+if __name__ == '__main__':
+    # Backup first
+    backup(s3)
+    # do stuff
+    main()
+    # reload nginx
+    reload()
+    

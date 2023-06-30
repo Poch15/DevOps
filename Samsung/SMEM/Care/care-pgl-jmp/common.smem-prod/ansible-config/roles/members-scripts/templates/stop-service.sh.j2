@@ -1,0 +1,12 @@
+#!/bin/bash
+module_name="{{ docker.modules[serviceName].module_name }}"
+domain_name="{{ docker.registry }}"
+java_port="{{ docker.modules[serviceName].java_port }}"
+region="{{ docker.region }}"
+EUREKA_CONFIG="-Deureka.client.service-url.defaultZone={{ docker.eureka }}"
+
+curl -X POST localhost:$java_port/management/pause
+
+docker stop $module_name
+
+

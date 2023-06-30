@@ -1,0 +1,10 @@
+---
+# tasks file for logrotate-s3
+- name: Making cloudwatch directory
+  shell: mkdir -p /home/common.smem-prod/cloudwatch
+- name: Making scripts directory
+  shell: mkdir -p /home/common.smem-prod/scripts
+- name: Change ownership
+  shell: sudo chown -R 'common.smem-prod':'common.smem-prod' /home/common.smem-prod
+- name: Add user to docker
+  shell: sudo adduser 'common.smem-prod' docker

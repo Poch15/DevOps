@@ -1,0 +1,18 @@
+Task 1
+Deploy Vault in the local Kubernetes cluster and configure it to use the “Kubernetes Auth Method” for Pod authentication via Service Accounts.
+Create a Vault secret that includes two users and their credentials (daniel:password1 & robin:password2) .
+Create a new Helm Chart, which includes the NGINX image as default. Secure the default index.html with HTTP basic authentication using the
+credentials from the Vault secret.
+Create three test cURL requests to test the basic authentication
+Request with daniels authentication information - return code should be 200
+Request with robins authentication information - return code should be 200
+Request with invalid authentication information - return code should be 403
+
+Task 2
+Deploy a PostgreSQL database in the local Kubernetes cluster.
+To be able to dynamically create database roles / users connect the Vault instance from Task 1 to the PostgreSQL database via the “PostgreSQL
+Database Secrets Engine”.
+Create a minimal “Hello World” app in a programming language of your choice. The application should periodically check if it can connect to the
+PostgreSQL database via dynamic roles / credentials that are automatically obtained through Vault. It should output the result of the check to
+stdout.
+Deploy the application.

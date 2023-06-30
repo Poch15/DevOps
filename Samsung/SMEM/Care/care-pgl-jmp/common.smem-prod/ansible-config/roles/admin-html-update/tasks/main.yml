@@ -1,0 +1,5 @@
+---
+# tasks file for restart-service
+
+- name: Registering {{ ip_address }} for {{ requestor }}
+  shell: cd /home/common/scripts/ && ./adminHTMLdeploy.sh

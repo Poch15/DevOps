@@ -1,0 +1,11 @@
+LABEL=cloudimg-rootfs   /        ext4   defaults,discard        0 0
+/dev/nvme1n1            /home/common/members-log        auto    defaults,nobootwait     0 0
+
+
+
+
+
+/etc/fstab\
+
+
+mount -a

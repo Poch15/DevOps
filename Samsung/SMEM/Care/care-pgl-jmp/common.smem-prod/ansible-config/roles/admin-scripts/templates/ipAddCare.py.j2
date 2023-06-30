@@ -1,0 +1,62 @@
+import re, sys, argparse
+import os, subprocess, shutil
+import datetime
+import ipaddress
+
+from datetime import datetime, timedelta
+from sys import exit
+from ipaddress import ip_address
+from modules import backup, reload, targetFile
+
+# date set
+now = datetime.now() + timedelta(days=7) # expiration date set included
+dateToday = now.strftime('%Y%m%d')
+timeToday = now.strftime('%H%M')
+
+# variable set
+getIp = sys.argv[1] # ip address of requestor
+getEmail = sys.argv[2] # email address of the requestor
+getLocation = sys.argv[3] # location: ofc = office / wfh = work from home
+
+# check if valid IPv4 and Public IP verification
+def ipChecker():
+    try:
+        ipaddress.ip_network(getIp)
+    except (ipaddress.AddressValueError, ipaddress.NetmaskValueError, ValueError) as e:
+        valid = False
+        msg = 'Provided IP is not a valid network: {}.'.format(e)
+    else:
+        x = ipaddress.ip_network(getIp).is_private
+        if x == True:
+            print('DENIED: {} is a Private IP. Please use Public IP only'.format(getIp))
+            exit(1)
+        else:
+            main(getIp,getEmail,getLocation)
+        valid = True
+        msg = '{} is valid, for whitelisting in config.'.format(getIp)
+    return valid, msg
+
+# append whitelisted IP / format: 192.168.1.1 #p.manansala,wfh,date
+def main(sIp, sEmail, sLocation):
+    denyLine = 'deny all;'
+    addRequest = 'allow {}; #{},{},{}\n'.format(sIp,sEmail,sLocation,dateToday)
+    with open(targetFile,'r+', encoding='utf-8') as inFile:
+        lines = inFile.readlines()
+        inFile.seek(0)
+        for i in lines:
+            if sIp in i:
+                print('{} already exists.'.format(sIp))
+                exit(1)
+            elif i.strip() != denyLine:
+                inFile.write(i)
+        inFile.truncate()
+        inFile.close()
+    outFile = open(targetFile, 'a+', encoding='utf-8')
+    outFile.write(addRequest + denyLine)
+    outFile.close()
+    reload()
+
+if __name__ == '__main__':
+    backup() #run backup first
+    #main(getIp,getEmail,getLocation)
+    print(ipChecker())

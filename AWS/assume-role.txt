@@ -1,0 +1,14 @@
+#!/bin/bash
+account_id=$1;
+function assume_iam_role()
+{
+    local credential=$(aws sts assume-role --role-arn arn:aws:iam::${account_id}:role/smem-jenkins --role-session-name "jenkinsSession")
+
+    export AWS_ACCESS_KEY_ID=`echo $credential | jq -c -r '.Credentials.AccessKeyId'`
+    export AWS_SECRET_ACCESS_KEY=`echo $credential | jq -c -r '.Credentials.SecretAccessKey'`
+    export AWS_SESSION_TOKEN=`echo $credential | jq -c -r '.Credentials.SessionToken'`
+}
+
+assume_iam_role
+
+echo $AWS_ACCESS_KEY_ID,$AWS_SECRET_ACCESS_KEY,$AWS_SESSION_TOKEN;

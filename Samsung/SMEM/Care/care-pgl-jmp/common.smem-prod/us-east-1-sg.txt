@@ -1,0 +1,2310 @@
+{
+    "SecurityGroups": [
+        {
+            "Description": "Unmanaged Jumphost Security Groups.",
+            "GroupName": "ussm-pus-jh-sg-unmanaged",
+            "IpPermissions": [
+                {
+                    "FromPort": 2285,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "210.94.41.89/32",
+                            "Description": "HQ"
+                        },
+                        {
+                            "CidrIp": "15.164.148.61/32",
+                            "Description": "SRPHWM"
+                        },
+                        {
+                            "CidrIp": "30.1.11.24/32",
+                            "Description": "test"
+                        },
+                        {
+                            "CidrIp": "10.45.45.153/32",
+                            "Description": "j.gavina"
+                        },
+                        {
+                            "CidrIp": "112.201.102.49/32",
+                            "Description": "j.bolon,10-19-2022"
+                        },
+                        {
+                            "CidrIp": "136.158.32.241/32",
+                            "Description": "j.gavina,10-19-2022"
+                        },
+                        {
+                            "CidrIp": "49.144.11.59/32",
+                            "Description": "aj.garcia,10-20-2022"
+                        },
+                        {
+                            "CidrIp": "112.200.13.181/32",
+                            "Description": "p.encina,10-21-2022"
+                        },
+                        {
+                            "CidrIp": "114.108.228.133/32",
+                            "Description": "j.bolon,10-21-2022"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 2285,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-028e3769bb5e9f3ed",
+            "IpPermissionsEgress": [
+                {
+                    "FromPort": 88,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "34.86.86.44/32",
+                            "Description": "IPA ADD"
+                        },
+                        {
+                            "CidrIp": "35.245.90.128/32",
+                            "Description": "IPA ADD"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 636,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0",
+                            "Description": "Allow connection to Tokyo Load balancer (Dynamic IP)"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-jh-sg-unmanaged"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "Allows access to Eureka from Load balancer",
+            "GroupName": "ussm-pus-api-int-lb-sg",
+            "IpPermissions": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "30.0.0.0/16",
+                            "Description": "Allow Care Seoul VPC to API"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow ingress from API for Eureka",
+                            "GroupId": "sg-02ce89408a374165a",
+                            "UserId": "480586329294"
+                        },
+                        {
+                            "Description": "Allow API Servers to Access Eureka",
+                            "GroupId": "sg-08586f3516ca84c98",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 9020,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 9020,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow ingress for internal LB from API",
+                            "GroupId": "sg-02ce89408a374165a",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                }
+            ],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-057b106d8e0994fc9",
+            "IpPermissionsEgress": [
+                {
+                    "FromPort": 8080,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 8080,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allows access to Eureka instance",
+                            "GroupId": "sg-02ce89408a374165a",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 9020,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 9020,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow API Servers to Access Eureka",
+                            "GroupId": "sg-08586f3516ca84c98",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-api-int-alb-sg"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "Logger Load Balancer SG",
+            "GroupName": "ussm-pus-logger-alb-sg",
+            "IpPermissions": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allows api access to int LB",
+                            "GroupId": "sg-02ce89408a374165a",
+                            "UserId": "480586329294"
+                        },
+                        {
+                            "Description": "Allow Eureka Servers to Access Logger",
+                            "GroupId": "sg-08586f3516ca84c98",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                }
+            ],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-07a4000c5fbe127b7",
+            "IpPermissionsEgress": [
+                {
+                    "FromPort": 24224,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 24224,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow ELB to Access logger",
+                            "GroupId": "sg-0b0ec2d846ba3ebe0",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-logger-alb-sg"
+                },
+                {
+                    "Key": "owner",
+                    "Value": "SRPH"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "Pulumi"
+                },
+                {
+                    "Key": "Service",
+                    "Value": "USSM"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "RMC Server Security Group",
+            "GroupName": "ussm-pus-rmc-server-sg",
+            "IpPermissions": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "43.197.222.100/32",
+                            "Description": "RMC"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 21103,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "193.155.119.143/32",
+                            "Description": "RMC"
+                        },
+                        {
+                            "CidrIp": "193.155.119.144/31",
+                            "Description": "RMC"
+                        },
+                        {
+                            "CidrIp": "193.155.119.146/32",
+                            "Description": "RMC"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 21103,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 21321,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "43.197.222.100/32",
+                            "Description": "RMC"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 21321,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 25666,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "176.34.245.104/32",
+                            "Description": "SGMP Pub RMC Server"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 25666,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 5667,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "43.197.222.100/32",
+                            "Description": "RMC"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 5667,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 20010,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "54.229.220.34/32",
+                            "Description": "SGMP2 VPC GMC Server"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 20012,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 21003,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "43.197.222.100/32",
+                            "Description": "RMC"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 21005,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 19998,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "43.197.222.100/32",
+                            "Description": "RMC"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 19998,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 0,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "34.197.222.106/32",
+                            "Description": "HQ (Manual)"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 0,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "43.197.222.100/32",
+                            "Description": "RMC"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 6100,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "112.144.61.68/32",
+                            "Description": "Scouter"
+                        },
+                        {
+                            "CidrIp": "210.94.41.89/32",
+                            "Description": "Samsung HQ"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 6100,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 2285,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "52.58.41.105/32",
+                            "Description": "SAMBA"
+                        },
+                        {
+                            "CidrIp": "54.229.21.18/32",
+                            "Description": "SGMP2 VPC GMC Hub Server"
+                        },
+                        {
+                            "CidrIp": "13.230.157.85/32",
+                            "Description": "Jenkins"
+                        },
+                        {
+                            "CidrIp": "13.113.65.126/32",
+                            "Description": "Jenkins"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 2285,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 6100,
+                    "IpProtocol": "udp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "203.126.64.64/29",
+                            "Description": "SRPH"
+                        },
+                        {
+                            "CidrIp": "122.34.139.171/32",
+                            "Description": "Home"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 6100,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "API to Scouter",
+                            "GroupId": "sg-06c04f74eba025741",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                }
+            ],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-09a8ffdfcd67b5655",
+            "IpPermissionsEgress": [
+                {
+                    "FromPort": 21321,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "54.72.68.35/32",
+                            "Description": "SGMP2 VPC GMC Server"
+                        },
+                        {
+                            "CidrIp": "54.229.220.34/32",
+                            "Description": "RMC Outbound"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 21321,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 25666,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "30.11.52.0/24",
+                            "Description": "SGMP"
+                        },
+                        {
+                            "CidrIp": "30.11.51.0/24",
+                            "Description": "SGMP"
+                        },
+                        {
+                            "CidrIp": "176.34.245.104/32",
+                            "Description": "SGMP"
+                        },
+                        {
+                            "CidrIp": "30.11.53.0/24",
+                            "Description": "SGMP"
+                        },
+                        {
+                            "CidrIp": "176.34.24.112/32",
+                            "Description": "SGMP2 RMC Monitoring"
+                        },
+                        {
+                            "CidrIp": "43.197.222.100/32",
+                            "Description": "RMC Monitoring"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 25666,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 5667,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "54.72.68.35/32",
+                            "Description": "SGMP2 VPC EEH RMC Server"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 5667,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 21308,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "54.229.220.34/32",
+                            "Description": "RMC Outbound"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 21308,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 2285,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "43.197.222.100/32",
+                            "Description": "HUB for RMC Installation"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 2285,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 9093,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "193.155.119.140/30",
+                            "Description": "RMC Outbound"
+                        },
+                        {
+                            "CidrIp": "193.155.119.146/32",
+                            "Description": "RMC Outbound"
+                        },
+                        {
+                            "CidrIp": "193.155.119.144/31",
+                            "Description": "RMC Outbound"
+                        },
+                        {
+                            "CidrIp": "193.155.119.143/32",
+                            "Description": "RMC Outbound"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 9093,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 20010,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "43.197.222.100/32",
+                            "Description": "RMC Handler"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 20012,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 21003,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "54.229.220.34/32",
+                            "Description": "SGMP2 VPC GMC Server"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 21005,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 19998,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "54.245.227.99/32",
+                            "Description": "SGMP2 VPC Proxy Server"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 19998,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0",
+                            "Description": "AWS S3"
+                        },
+                        {
+                            "CidrIp": "54.229.215.35/32",
+                            "Description": "SGMP2 VPC Event Gateway"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 9092,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "193.155.119.146/32",
+                            "Description": "RMC Outbound"
+                        },
+                        {
+                            "CidrIp": "193.155.119.144/31",
+                            "Description": "RMC Outbound"
+                        },
+                        {
+                            "CidrIp": "193.155.119.143/32",
+                            "Description": "RMC Outbound"
+                        },
+                        {
+                            "CidrIp": "193.155.119.140/30",
+                            "Description": "RMC Outbound"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 9092,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-rmc-server-sg"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "Allows access into ipa servers",
+            "GroupName": "ussm-pus-ipa-sg",
+            "IpPermissions": [],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-09cb9e688aa94e322",
+            "IpPermissionsEgress": [
+                {
+                    "FromPort": 5044,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "34.84.73.136/32",
+                            "Description": "IPA LOGSTASH"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 5044,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 53,
+                    "IpProtocol": "udp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "35.200.48.194/32",
+                            "Description": "IPA UDP SLAVE"
+                        },
+                        {
+                            "CidrIp": "34.85.42.35/32",
+                            "Description": "IPA UDP Master"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 464,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "13.248.165.160/32",
+                            "Description": "IPA AWS GET TAGS Endpoint"
+                        },
+                        {
+                            "CidrIp": "76.223.47.194/32",
+                            "Description": "IPA AWS GET TAGS Endpoint"
+                        },
+                        {
+                            "CidrIp": "35.190.24.74/32",
+                            "Description": "IPA Client Storage"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 53,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "34.85.42.35/32",
+                            "Description": "IPA MASTER"
+                        },
+                        {
+                            "CidrIp": "35.200.48.194/32",
+                            "Description": "IPA SLAVE"
+                        },
+                        {
+                            "CidrIp": "34.86.86.44/32",
+                            "Description": "IPA SLAVE 2"
+                        },
+                        {
+                            "CidrIp": "35.245.90.128/32",
+                            "Description": "IPA SLAVE 3"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 636,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "ManagedBy",
+                    "Value": "Pulumi"
+                },
+                {
+                    "Key": "Service",
+                    "Value": "USSM"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-ipa-sg"
+                },
+                {
+                    "Key": "owner",
+                    "Value": "SRPH"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "Allows access to Eureka from Load balancer",
+            "GroupName": "ussm-pus-api-alb-sg",
+            "IpPermissions": [
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0",
+                            "Description": "Allow All External [EXCEPTION USCAREOP-33]"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-0dadf98061c26996d",
+            "IpPermissionsEgress": [
+                {
+                    "FromPort": 8080,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 8080,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allows access to API instance",
+                            "GroupId": "sg-02ce89408a374165a",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-api-alb-sg"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "ISAMS Security Group",
+            "GroupName": "ussm-pus-isams-sg",
+            "IpPermissions": [],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-01e14e4b251600107",
+            "IpPermissionsEgress": [
+                {
+                    "FromPort": 19997,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "54.209.124.187/32",
+                            "Description": "For STI / Splunk 03"
+                        },
+                        {
+                            "CidrIp": "18.211.135.145/32",
+                            "Description": "For STI / Splunk 04"
+                        },
+                        {
+                            "CidrIp": "34.225.116.243/32",
+                            "Description": "For STI / Splunk 05"
+                        },
+                        {
+                            "CidrIp": "54.156.228.147/32",
+                            "Description": "For STI / Splunk US 02"
+                        },
+                        {
+                            "CidrIp": "52.2.117.170/32",
+                            "Description": "For STI / Splunk US 01"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 19997,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 9997,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "34.225.116.243/32",
+                            "Description": "For STI / Splunk"
+                        },
+                        {
+                            "CidrIp": "18.211.135.145/32",
+                            "Description": "For STI / Splunk"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 9997,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 53009,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "13.209.247.244/32",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "112.106.156.144/29",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "13.209.162.108/32",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "13.209.180.42/32",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "13.209.204.113/32",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "112.106.156.148/31",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "13.209.187.127/32",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "13.209.220.166/32",
+                            "Description": "ISAMS Outbound Rule"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 53010,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 53004,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "112.106.156.144/29",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "13.209.162.108/32",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "13.209.247.244/32",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "13.209.204.113/32",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "13.209.180.42/32",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "112.106.156.148/31",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "13.209.187.127/32",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "13.209.220.166/32",
+                            "Description": "ISAMS Outbound Rule"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 53004,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 53006,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "112.106.156.144/30",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "13.209.180.42/32",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "13.209.204.113/32",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "13.209.162.108/32",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "13.209.247.244/32",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "13.209.220.166/32",
+                            "Description": "ISAMS Outbound Rule"
+                        },
+                        {
+                            "CidrIp": "13.209.187.127/32",
+                            "Description": "ISAMS Outbound Rule"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 53006,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-isams-sg"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "default VPC security group",
+            "GroupName": "default",
+            "IpPermissions": [],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-0917bb7baa32a7596",
+            "IpPermissionsEgress": [],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "For all instances of US MembersCare",
+            "GroupName": "ussm-pus-common-sg",
+            "IpPermissions": [
+                {
+                    "FromPort": 2285,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 2285,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Common Inbound",
+                            "GroupId": "sg-022c2bfdd98ad98cf",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                }
+            ],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-06c04f74eba025741",
+            "IpPermissionsEgress": [
+                {
+                    "FromPort": 19997,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "18.211.135.145/32",
+                            "Description": "STI - Universal Forwarder 04"
+                        },
+                        {
+                            "CidrIp": "52.2.117.170/32",
+                            "Description": "STI - Universal Forwarder 01"
+                        },
+                        {
+                            "CidrIp": "54.156.228.147/32",
+                            "Description": "STI - Universal Forwarder 02"
+                        },
+                        {
+                            "CidrIp": "54.209.124.187/32",
+                            "Description": "STI - Universal Forwarder 03"
+                        },
+                        {
+                            "CidrIp": "34.225.116.243/32",
+                            "Description": "STI - Universal Forwarder 05"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 19997,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "30.11.51.0/24",
+                            "Description": "Access to US MembersCare"
+                        },
+                        {
+                            "CidrIp": "0.0.0.0/0",
+                            "Description": "[EXCEPTION] required for IPA pre-startup installation"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 3333,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "103.216.193.35/32",
+                            "Description": "Allow Sending to Niffler Servers"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 3333,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 6100,
+                    "IpProtocol": "udp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 6100,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow servers to send scouter data through udp",
+                            "GroupId": "sg-09a8ffdfcd67b5655",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "30.11.51.0/24",
+                            "Description": "Access to US MembersCare"
+                        },
+                        {
+                            "CidrIp": "0.0.0.0/0",
+                            "Description": "Required for API Outbound"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [
+                        {
+                            "Description": "Allow Access to S3",
+                            "PrefixListId": "pl-63a5400a"
+                        }
+                    ],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 6100,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 6100,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow servers to send scouter data through tcp",
+                            "GroupId": "sg-09a8ffdfcd67b5655",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-common-sg"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "Allows access to Eureka from Load balancer",
+            "GroupName": "ussm-pus-eureka-lb-sg",
+            "IpPermissions": [
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "210.94.41.89/32",
+                            "Description": "Samsung HQ"
+                        },
+                        {
+                            "CidrIp": "203.126.64.64/29",
+                            "Description": "SRPH IP"
+                        },
+                        {
+                            "CidrIp": "59.12.29.193/32",
+                            "Description": "Alex Manual"
+                        },
+                        {
+                            "CidrIp": "34.197.222.100/32",
+                            "Description": "USSM Eureka External LB to be accessed by RMC Server for ES Curator"
+                        },
+                        {
+                            "CidrIp": "15.164.148.61/32",
+                            "Description": "Alex Manual 2"
+                        },
+                        {
+                            "CidrIp": "112.201.102.49/32",
+                            "Description": "j.bolon,10-19-2022"
+                        },
+                        {
+                            "CidrIp": "136.158.32.241/32",
+                            "Description": "j.gavina,10-19-2022"
+                        },
+                        {
+                            "CidrIp": "49.144.11.59/32",
+                            "Description": "aj.garcia,10-20-2022"
+                        },
+                        {
+                            "CidrIp": "112.200.13.181/32",
+                            "Description": "p.encina,10-21-2022"
+                        },
+                        {
+                            "CidrIp": "114.108.228.133/32",
+                            "Description": "j.bolon,10-21-2022"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-0d7a479889eb27ff1",
+            "IpPermissionsEgress": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow External Eureka LB to access Logger Server",
+                            "GroupId": "sg-0b0ec2d846ba3ebe0",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 8080,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 8080,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow Eureka LB to access API Canary",
+                            "GroupId": "sg-02ce89408a374165a",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 9020,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 9020,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allows access to Eureka instance",
+                            "GroupId": "sg-08586f3516ca84c98",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-eureka-lb-sg"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "Unmanaged DB Jumphost Security Groups",
+            "GroupName": "ussm-pus-db-jh-sg-unmanaged",
+            "IpPermissions": [
+                {
+                    "FromPort": 2285,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "13.124.177.211/32",
+                            "Description": "aj.garcia"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 2285,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-064ba0cf942d566b5",
+            "IpPermissionsEgress": [
+                {
+                    "FromPort": 9997,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "34.225.116.243/32",
+                            "Description": "STI - Universal Forwarder "
+                        },
+                        {
+                            "CidrIp": "18.211.135.145/32",
+                            "Description": "STI - Universal Forwarder "
+                        },
+                        {
+                            "CidrIp": "54.209.124.187/32",
+                            "Description": "STI - Universal Forwarder "
+                        },
+                        {
+                            "CidrIp": "54.156.228.147/32",
+                            "Description": "STI - Universal Forwarder "
+                        },
+                        {
+                            "CidrIp": "52.2.117.170/32",
+                            "Description": "STI - Universal Forwarder "
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 9997,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-db-jh-sg-unmanaged"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "external connections for Scouter",
+            "GroupName": "ussm-pus-rmc-ext-sg",
+            "IpPermissions": [
+                {
+                    "FromPort": 6100,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "112.201.102.49/32",
+                            "Description": "j.bolon,10-19-2022"
+                        },
+                        {
+                            "CidrIp": "136.158.32.241/32",
+                            "Description": "j.gavina,10-19-2022"
+                        },
+                        {
+                            "CidrIp": "49.144.11.59/32",
+                            "Description": "aj.garcia,10-20-2022"
+                        },
+                        {
+                            "CidrIp": "112.200.13.181/32",
+                            "Description": "p.encina,10-21-2022"
+                        },
+                        {
+                            "CidrIp": "114.108.228.133/32",
+                            "Description": "j.bolon,10-21-2022"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 6100,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-02df7c5658d419468",
+            "IpPermissionsEgress": [
+                {
+                    "FromPort": 9997,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "54.209.124.187/32",
+                            "Description": "STI - Universal Forwarder 03"
+                        },
+                        {
+                            "CidrIp": "34.225.116.243/32",
+                            "Description": "STI - Universal Forwarder 05"
+                        },
+                        {
+                            "CidrIp": "18.211.135.145/32",
+                            "Description": "STI - Universal Forwarder 04"
+                        },
+                        {
+                            "CidrIp": "52.2.117.170/32",
+                            "Description": "STI - Universal Forwarder 01"
+                        },
+                        {
+                            "CidrIp": "54.156.228.147/32",
+                            "Description": "STI - Universal Forwarder 02"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 9997,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-rmc-ext-sg"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "Allows access to Eureka",
+            "GroupName": "ussm-pus-eureka-instance-sg",
+            "IpPermissions": [
+                {
+                    "FromPort": 9020,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 9020,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow API Servers to Access Eureka",
+                            "GroupId": "sg-02ce89408a374165a",
+                            "UserId": "480586329294"
+                        },
+                        {
+                            "Description": "Allow API Servers to Access Eureka",
+                            "GroupId": "sg-057b106d8e0994fc9",
+                            "UserId": "480586329294"
+                        },
+                        {
+                            "Description": "Allows access from Eureka Load Balancer",
+                            "GroupId": "sg-0d7a479889eb27ff1",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "210.94.41.89/32",
+                            "Description": "Samsung HQ"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-08586f3516ca84c98",
+            "IpPermissionsEgress": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow Eureka Server to access internal LB for Hystrix Scraper",
+                            "GroupId": "sg-057b106d8e0994fc9",
+                            "UserId": "480586329294"
+                        },
+                        {
+                            "Description": "Allow Eureka to access logger server through load balancer",
+                            "GroupId": "sg-07a4000c5fbe127b7",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 8080,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 8080,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow Eureka to access Hystrix",
+                            "GroupId": "sg-02ce89408a374165a",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 9020,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 9020,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow Eureka Servers outbound Access to API",
+                            "GroupId": "sg-02ce89408a374165a",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-eureka-instance-sg"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "Allows access to logger server",
+            "GroupName": "ussm-pus-logger-sg",
+            "IpPermissions": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allows Logger instance to be accessed by ExtEureka",
+                            "GroupId": "sg-0d7a479889eb27ff1",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 24224,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 24224,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow ELB to Access logger",
+                            "GroupId": "sg-07a4000c5fbe127b7",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                }
+            ],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-0b0ec2d846ba3ebe0",
+            "IpPermissionsEgress": [],
+            "Tags": [
+                {
+                    "Key": "owner",
+                    "Value": "SRPH"
+                },
+                {
+                    "Key": "Service",
+                    "Value": "USSM"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-logger-sg"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "Pulumi"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "Allows access to API Servers",
+            "GroupName": "ussm-pus-api-instance-sg",
+            "IpPermissions": [
+                {
+                    "FromPort": 8080,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 8080,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allows access from Eureka Load Balancer",
+                            "GroupId": "sg-057b106d8e0994fc9",
+                            "UserId": "480586329294"
+                        },
+                        {
+                            "Description": "Allow Eureka Servers to access inbound for Tracing",
+                            "GroupId": "sg-08586f3516ca84c98",
+                            "UserId": "480586329294"
+                        },
+                        {
+                            "Description": "Allow access to canary instance from Eureka ALB",
+                            "GroupId": "sg-0d7a479889eb27ff1",
+                            "UserId": "480586329294"
+                        },
+                        {
+                            "Description": "Allows access from Eureka Load Balancer",
+                            "GroupId": "sg-0dadf98061c26996d",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 9020,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 9020,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow Eureka Servers intbound Access to API",
+                            "GroupId": "sg-08586f3516ca84c98",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "210.94.41.89/32",
+                            "Description": "Samsung HQ"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-02ce89408a374165a",
+            "IpPermissionsEgress": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "206.67.236.119/32",
+                            "Description": "Allows api access to int LB"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow API servers to register to Eureka",
+                            "GroupId": "sg-057b106d8e0994fc9",
+                            "UserId": "480586329294"
+                        },
+                        {
+                            "Description": "Allow API Servers to Access Logger",
+                            "GroupId": "sg-07a4000c5fbe127b7",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 33065,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 33065,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow API Servers to Access DB",
+                            "GroupId": "sg-01bf61b999cce478d",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 63795,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 63795,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow API Servers to Access Redis",
+                            "GroupId": "sg-0db5b389ef0f0b712",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 9020,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 9020,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow egress from API for internal LB",
+                            "GroupId": "sg-057b106d8e0994fc9",
+                            "UserId": "480586329294"
+                        },
+                        {
+                            "Description": "Allow API Servers to Access Eureka",
+                            "GroupId": "sg-08586f3516ca84c98",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-api-instance-sg"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "Allows access into db servers",
+            "GroupName": "ussm-pus-db-sg",
+            "IpPermissions": [
+                {
+                    "FromPort": 33065,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 33065,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow DB access from API servers",
+                            "GroupId": "sg-02ce89408a374165a",
+                            "UserId": "480586329294"
+                        },
+                        {
+                            "Description": "Allow DB access from Jumphost",
+                            "GroupId": "sg-08637aca9d102d7f6",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                }
+            ],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-01bf61b999cce478d",
+            "IpPermissionsEgress": [],
+            "Tags": [
+                {
+                    "Key": "Service",
+                    "Value": "USSM"
+                },
+                {
+                    "Key": "ManagedBy",
+                    "Value": "Pulumi"
+                },
+                {
+                    "Key": "owner",
+                    "Value": "SRPH"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-db-sg"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "Redis Security Group",
+            "GroupName": "ussm-pus-redis-cluster-sg",
+            "IpPermissions": [
+                {
+                    "FromPort": 63795,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 63795,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allow API Servers to Access Redis",
+                            "GroupId": "sg-02ce89408a374165a",
+                            "UserId": "480586329294"
+                        },
+                        {
+                            "GroupId": "sg-08637aca9d102d7f6",
+                            "UserId": "480586329294"
+                        },
+                        {
+                            "GroupId": "sg-022c2bfdd98ad98cf",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                }
+            ],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-0db5b389ef0f0b712",
+            "IpPermissionsEgress": [],
+            "Tags": [
+                {
+                    "Key": "CreatedAt",
+                    "Value": "USCAREOP-23"
+                },
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-redis-cluster-sg"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "default VPC security group",
+            "GroupName": "default",
+            "IpPermissions": [],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-056c9d62",
+            "IpPermissionsEgress": [],
+            "Tags": [
+                {
+                    "Key": "Environment",
+                    "Value": "Production"
+                }
+            ],
+            "VpcId": "vpc-b40308d1"
+        },
+        {
+            "Description": "Allow DBAs to access DB Jumphost",
+            "GroupName": "ussm-pus-db-jh-sg",
+            "IpPermissions": [
+                {
+                    "FromPort": 2285,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "112.106.187.186/32",
+                            "Description": "Samsung HQ IP"
+                        },
+                        {
+                            "CidrIp": "112.106.187.187/32",
+                            "Description": "Samsung HQ IP"
+                        },
+                        {
+                            "CidrIp": "211.189.57.60/32",
+                            "Description": "SBC NAT"
+                        },
+                        {
+                            "CidrIp": "10.45.0.0/16",
+                            "Description": "VDI"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 2285,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-08637aca9d102d7f6",
+            "IpPermissionsEgress": [
+                {
+                    "FromPort": 33065,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 33065,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Allows Jumphost to access DB",
+                            "GroupId": "sg-01bf61b999cce478d",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 63795,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 63795,
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-0db5b389ef0f0b712",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-db-jh-sg"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "Allow employees to access the whole infrastructure",
+            "GroupName": "ussm-pus-jumphost-sg",
+            "IpPermissions": [
+                {
+                    "FromPort": 2285,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "203.126.64.64/29",
+                            "Description": "SRPH"
+                        },
+                        {
+                            "CidrIp": "13.124.177.211/32",
+                            "Description": "Work Machine"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 2285,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-022c2bfdd98ad98cf",
+            "IpPermissionsEgress": [
+                {
+                    "FromPort": 63795,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 63795,
+                    "UserIdGroupPairs": [
+                        {
+                            "GroupId": "sg-0db5b389ef0f0b712",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 2285,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 2285,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "Common Inbound",
+                            "GroupId": "sg-06c04f74eba025741",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [
+                        {
+                            "Description": "Allow HTTPS access for 3.5.0.0/19, 52.216.0.0/15, 54.231.0.0/16",
+                            "PrefixListId": "pl-63a5400a"
+                        }
+                    ],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-jumphost-sg"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "SGMP Security Group",
+            "GroupName": "ussm-pus-sgmp-sg",
+            "IpPermissions": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "30.11.51.0/24",
+                            "Description": "SGMP Inbound"
+                        },
+                        {
+                            "CidrIp": "30.11.53.0/24",
+                            "Description": "SGMP Inbound"
+                        },
+                        {
+                            "CidrIp": "30.11.52.0/24",
+                            "Description": "SGMP Inbound"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 2010,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "54.229.220.34/32",
+                            "Description": "SGMP2 RMC Handler Port"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 2012,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 25666,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "30.11.51.0/24",
+                            "Description": "SGMP Inbound"
+                        },
+                        {
+                            "CidrIp": "176.34.245.104/32",
+                            "Description": "SGMP Inbound"
+                        },
+                        {
+                            "CidrIp": "30.11.53.0/24",
+                            "Description": "SGMP Inbound"
+                        },
+                        {
+                            "CidrIp": "30.11.52.0/24",
+                            "Description": "SGMP Inbound"
+                        },
+                        {
+                            "CidrIp": "176.34.24.112/32",
+                            "Description": "SGMP2 RMC Monitoring"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 25666,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "SGMP Inbound",
+                            "GroupId": "sg-09a8ffdfcd67b5655",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 2285,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "54.229.21.18/32",
+                            "Description": "SGMP2 Hub for RMC Installation"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 2285,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-0608dc3d5622730c1",
+            "IpPermissionsEgress": [
+                {
+                    "FromPort": 80,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "169.254.169.254/32",
+                            "Description": "SGMP Outbound"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 80,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 8761,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 8761,
+                    "UserIdGroupPairs": [
+                        {
+                            "Description": "SGMP Outbound",
+                            "GroupId": "sg-09a8ffdfcd67b5655",
+                            "UserId": "480586329294"
+                        }
+                    ]
+                },
+                {
+                    "FromPort": 4119,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "52.74.246.198/32",
+                            "Description": "HIDS wget installer"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 4119,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 4120,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "52.5.163.177/32",
+                            "Description": "HIDS - ds agent control"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 4120,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 53004,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "13.209.180.42/32",
+                            "Description": "ISAMS installer"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 53004,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 53006,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "13.209.180.42/32",
+                            "Description": "ISAMS installer"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 53006,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "54.229.215.35/32",
+                            "Description": "SGMP Outbound"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 7778,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "52.5.9.197/32",
+                            "Description": "HIDS - ShellMonitor Server(CTL)"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 7778,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-sgmp-sg"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        },
+        {
+            "Description": "Testing IPA SG",
+            "GroupName": "ussm-pus-ipa-sg-test",
+            "IpPermissions": [],
+            "OwnerId": "480586329294",
+            "GroupId": "sg-0180b09a9e62abf3b",
+            "IpPermissionsEgress": [
+                {
+                    "FromPort": 5044,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "34.84.73.136/32",
+                            "Description": "Logstash"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 5044,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 53,
+                    "IpProtocol": "udp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "34.85.42.35/32",
+                            "Description": "IPA UDP master"
+                        },
+                        {
+                            "CidrIp": "35.200.48.194/32",
+                            "Description": "IPA UDP slave"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 464,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 443,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "35.190.24.74/32",
+                            "Description": "IPA client storage"
+                        },
+                        {
+                            "CidrIp": "13.248.165.160/32",
+                            "Description": "IPA AWS GET tags feature endpoint"
+                        },
+                        {
+                            "CidrIp": "76.223.47.194/32",
+                            "Description": "IPA AWS GET tags feature endpoint"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 443,
+                    "UserIdGroupPairs": []
+                },
+                {
+                    "FromPort": 53,
+                    "IpProtocol": "tcp",
+                    "IpRanges": [
+                        {
+                            "CidrIp": "34.85.42.35/32",
+                            "Description": "IPA master"
+                        },
+                        {
+                            "CidrIp": "35.200.48.194/32",
+                            "Description": "IPA slave"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": [],
+                    "ToPort": 636,
+                    "UserIdGroupPairs": []
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "ussm-pus-ipa-sg-test"
+                }
+            ],
+            "VpcId": "vpc-0d091f55c7babebb6"
+        }
+    ]
+}

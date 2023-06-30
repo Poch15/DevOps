@@ -1,0 +1,11 @@
+  ____                  _            
+ / ___|  ___ ___  _   _| |_ ___ _ __ 
+ \___ \ / __/   \| | | | __/ _ \ '__|
+  ___) | (_| (+) | |_| | ||  __/ |   
+ |____/ \___\___/ \__,_|\__\___|_|                                      
+ Open Source S/W Performance Monitoring  
+ Scouter version 2.7.1
+ 
+Configure -Dscouter.config=./conf/scouter.conf
+Scouter Host Agent Version 2.7.1 2020-01-04 06:36 GMT
+System JRE version : 1.8.0_265

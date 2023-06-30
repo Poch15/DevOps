@@ -1,0 +1,13 @@
+#!/bin/bash
+
+month=$(date +%m)
+day=$(date +%d)
+year=$(date +%y)
+
+date="${month}${day}${year}"
+echo $date
+
+curl -X POST -H 'Content-Type: application/json' \
+-d '{ "title": "EUCDM Data Extraction - '$date' ", "description": "EUCDM Data Extraction - '$date'"}' \
+'https://deploy.samsungmembers.com/generic-webhook-trigger/invoke?token=eucdmjiraticket'
+

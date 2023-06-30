@@ -1,0 +1,70 @@
+Ref: https://www.youtube.com/watch?v=0YCst6w5Ajo
+
+
+1. Download istioctl
+
+https://istio.io/latest/docs/setup/getting-started/#download
+
+# Download the latest version
+$ curl -L https://istio.io/downloadIstio | sh -
+$ export PATH="$PATH:/home/ubuntu/Downloads/istio-1.15.1/bin"
+
+2. Istioctl profiles
+# Installs default profile
+$ istioctl install
+$ istioctl install --set profile=demo -y
+$ istioctl verify-install
+
+
+# Customizing the installation by generating manifest (OPTIONAL)
+$ istioctl manifest generate --set profile=demo > istio-installation.yaml
+$ kubectl apply -f istio-installation.yaml
+$ istioctl verify-install -f installation-yaml
+
+# Check Deployed object
+$ kubectl get all -n istio-system
+
+
+
+3. Enable Dashboards
+# Install the UI Manifests: istio\samples\addons
+# Change Service types of addons to Nodeport and apply
+$ kubectl apply -f kiali.yaml -f jaeger.yaml -f grafana.yaml -f prometheus.yaml
+
+# Access addon dashboard
+istioctl dashboard kiali
+
+
+4. Add sidecar/envoy proxy to namespace
+# $ kubectl label namespace default istio-injection=enabled
+
+
+To uninstall Istio
+# istioctl x uninstall --purge
+
+--------------------------------
+Inject istio sidecar to namespace
+--------------------------------
+$ kubect label namespace default istio-injection=enabled
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===============================================================
+
+# Display default profile
+$ istioctl profile list
+
+# Display profile in manifest file
+$ istioctl profile dump default > default_profile.yml
+$ istioctl apply -f default_profile.yml - Installs the manifest

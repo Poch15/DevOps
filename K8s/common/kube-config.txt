@@ -1,0 +1,47 @@
+
+Ref: https://stackoverflow.com/questions/72126048/circleci-message-error-exec-plugin-invalid-apiversion-client-authentication
+
+
+There is an issue in aws-cli. It is already fixed.
+
+Option 1:
+
+In my case, updating aws-cli + updating the ~/.kube/config helped.
+
+Update aws-cli (following the documentation)
+$ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+$ unzip awscliv2.zip
+$ sudo ./aws/install --update
+
+
+Update the kube configuration
+$ aws eks update-kubeconfig --region ${AWS_REGION}  --name ${EKS_CLUSTER_NAME}
+$ aws eks update-kubeconfig --region us-east-1  --name smem-releng-eks-cluster
+
+
+
+k9s --logFile /tmp/k9s-ubuntu.log
+
+
+=====================
+REFRESH WORKDER NODES
+=====================
+1. Cordon node
+	old: ip-20-0-151-28.ap-northeast-2.compute.internal new: 20.0.151.117
+	old: ip-20-0-151-35.ap-northeast-2.compute.internal new: 20.0.151.121
+	old: ip-20-0-152-80.ap-northeast-2.compute.internal new: 20.0.152.186
+	old: ip-20-0-152-87.ap-northeast-2.compute.internal new: 20.0.152.72
+	old: ip-20-0-152-160.ap-northeast-2.compute.internal new: 20.0.152.91
+2. Drain or delete all pods manually
+3. Terminate instance (node)
+
+
+
+======================================
+where KUBECTL looks for kubeconfig
+=====================================
+1. --kubeconfig
+2. KUBECONFIG env var
+3. ~/.kube/config
+
+

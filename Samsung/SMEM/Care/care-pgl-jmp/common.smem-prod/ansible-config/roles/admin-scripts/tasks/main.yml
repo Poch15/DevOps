@@ -1,0 +1,26 @@
+---
+# tasks file for members-scripts---
+  # - name: Copying startup script
+  #   file:
+  #     src: "start-{{ serviceName }}.sh"
+  #     dest: "/home/{{ ansible_ssh_user }}/scripts/start-{{ serviceName }}.sh"
+  #     mode: 0644
+- name: recreate folder
+  file: 
+    state: directory
+    path: "/home/common/scripts"
+- name: Copying Admin Registration Script
+  template:
+    src: "~/ansible-config/roles/admin-scripts/templates/ipAddCare.py.j2"
+    dest: "/home/common/scripts/ipAddCare.py" 
+    mode: 0755    
+- name: Copying Admin Registration Script
+  template:
+    src: "~/ansible-config/roles/admin-scripts/templates/ipCleanerCare.py.j2"
+    dest: "/home/common/scripts/ipCleanerCare.py" 
+    mode: 0755   
+- name: Copying Admin Registration Script
+  template:
+    src: "~/ansible-config/roles/admin-scripts/templates/modules.py.j2"
+    dest: "/home/common/scripts/modules.py" 
+    mode: 0755   

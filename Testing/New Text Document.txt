@@ -1,0 +1,8 @@
+ab -t 600 -c2 -H "Content-Type: application/json" \
+    -H "Authorization: Bearer 6a6bcb99-fe2f-41da-abf6-3276df0ebfd5" \
+    -H "Accept-Language: ko_KR" \
+    -H "x-mbrs-ch: SKT" \
+    -H "x-mbrs-nw: 450" \
+    -H "x-mbrs-dvc: SM-G935F/7.0" \
+    -H "x-mbrs-info: 3uk8q817f7/999900000/com.samsung.android.voc" \
+    https://rel.samsungmembers.com/members/v2/banner

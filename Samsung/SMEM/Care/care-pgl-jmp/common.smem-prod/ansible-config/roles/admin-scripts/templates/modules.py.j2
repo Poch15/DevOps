@@ -1,0 +1,65 @@
+import re, sys, argparse
+import os, subprocess, shutil
+import datetime
+
+from datetime import datetime
+
+
+# date set
+now = datetime.now()
+dateToday = now.strftime('%Y%m%d')
+timeToday = now.strftime('%H%M')
+
+# variable set
+targetFile = '{{ admin.nginx.allow_ip_path }}' # file to edit (full path)
+s3 = 'na' # for s3 function
+s3File = 's3File_{}.txt'.format(dateToday)
+
+# runner
+def run(*popenargs, **kwargs):
+    input = kwargs.pop("input", None)
+    check = kwargs.pop("handle", False)
+
+    if input is not None:
+        if 'stdin' in kwargs:
+            raise ValueError('stdin and input arguments may not both be used.')
+        kwargs['stdin'] = subprocess.PIPE
+
+    process = subprocess.Popen(*popenargs, **kwargs)
+    try:
+        stdout, stderr = process.communicate(input)
+    except:
+        process.kill()
+        process.wait()
+        raise
+    retcode = process.poll()
+    if check and retcode:
+        raise subprocess.CalledProcessError(
+            retcode, process.args, output=stdout, stderr=stderr)
+    return retcode, stdout, stderr
+
+# back up target file
+def backup(sAws=None):
+    global bakFile
+    bucketSave = sAws
+    if bucketSave == 's3':
+        print('save to s3')
+        # <include path here>
+    else:
+        print("creating backup")
+        bakFile = shutil.copy2(targetFile, targetFile + '.bak' + dateToday + timeToday)
+
+# reload nginx once append done
+def reload():
+    runCmd = '/usr/sbin/service nginx reload'
+    procRun = run(['/usr/sbin/nginx -t'], shell=True, universal_newlines=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    procStatus = procRun[0]
+
+    if procStatus == 0:
+        print('nginx: the configuration file /etc/nginx/nginx.conf syntax is ok.\n')
+        print('nginx: configuration file /etc/nginx/nginx.conf test is successful.\n')
+        print('reload nginx.')
+        os.system(runCmd)
+    else:
+        print('config file error, please check.\n reverting files.')
+        shutil.copy2(bakFile, targetFile)

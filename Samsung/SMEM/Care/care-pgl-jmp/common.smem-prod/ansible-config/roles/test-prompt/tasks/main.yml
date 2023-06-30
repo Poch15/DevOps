@@ -1,0 +1,10 @@
+---
+# tasks file for test-prompt
+- name: Rotating Script
+  expect:
+    shell: /home/common/scripts/CopyLogs.sh
+    responses:
+      Question:
+        - A
+        - B
+        - C

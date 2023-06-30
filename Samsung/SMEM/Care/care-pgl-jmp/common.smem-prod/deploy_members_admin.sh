@@ -1,0 +1,22 @@
+#!/bin/bash
+
+PASSWD=zjajs2016!2
+REPOSITORY_PASSWD=zjajs2015!2
+
+SSH_USER=common
+JAR_DIR=v2-jar
+DST_DIR=/home/common/docker
+DISCOVERY=("30.0.151.77" "30.0.152.77")
+PROXY=("30.0.151.31" "30.0.152.31")
+API1=("30.0.151.30" "30.0.152.30" "30.0.151.40" "30.0.152.40"  ) 
+API2=("30.0.151.32" "30.0.152.32" )
+MYPRODUCT=("30.0.151.33" "30.0.152.33" )
+GATEWAY=("30.0.151.70" "30.0.152.70" )
+BATCH=("30.0.151.72" )
+BATCH2=("30.0.152.72" )
+ADMIN=("30.0.151.10" )
+REPOSITORY=("30.0.51.91")
+
+for SERVER in "${ADMIN[@]}"; do
+        sshpass -p $PASSWD scp -P 2285 ${JAR_DIR}/members-admin* ${SSH_USER}@${SERVER}:$DST_DIR
+done

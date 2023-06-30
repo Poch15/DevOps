@@ -134,7 +134,7 @@ git remote add origin https://github.com/Poch15/DevOps.git
 
 # Creating a connection with the remote repo and named/alias it as origin
 git remote add origin git@github.com:peter/first_app.git
-# Pushing local
+# Pushing local to remote repo
 git push origin master
 
 
@@ -160,3 +160,6 @@ git fetch --all;git rebase upstream/master;git push origin master -f
  1081  git branch
  1082  git status
  1083  git push origin <branch> -f
+
+
+https://stackoverflow.com/questions/20101994/how-to-git-pull-from-master-into-the-development-branch

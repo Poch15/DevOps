@@ -240,6 +240,15 @@ kubectl get pods --namespace=kube-system
 # Change default namespace
 kubectl config set-context $(kubectl config current-context) --namespace=dev
 
+kubectl config set-context \
+dev-context \
+--namespace=dev-namespace \
+--cluster=docker-desktop \
+--user=dev-user
+
+# Allows you to switch between contexts using their name
+kubectl config use-context <CONTEXT_NAME>
+
 # Create service via CLI
 kubectl expose deployment simple-webapp-deployment --name=webapp-service --target-port=8080 --type=NodePort --port=8080 --dry-run=client -o yaml > svc.yaml
 
@@ -565,3 +574,9 @@ $ kubectl get pod nginx-pod -o yaml > nginx-pod.yaml
 # add toleration properties
 
 28) 
+
+
+
+Get ARGOCD default password
+===========================
+$ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d

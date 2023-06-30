@@ -1,0 +1,6 @@
+aws s3 sync s3://ussm-pus-applogs/logs/api/2022/09/ ./applogs/09/
+
+aws s3 sync s3://ussm-pus-lb-logs/ussm-pus/lb-iapi/log/AWSLogs/480586329294/elasticloadbalancing/us-east-1/2022/09 ./lbiapi-logs/09/
+
+
+tar cvzf lbiapi-logs-2022-09.tar.gz lbiapi-logs

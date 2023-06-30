@@ -1,0 +1,44 @@
+{
+    "Version": "2012-10-17",
+    "Id": "CommunityPolicy00001",
+    "Statement": [
+        {
+            "Sid": "DenyAll",
+            "Effect": "Deny",
+            "Principal": "*",
+            "Action": [
+		"s3:GetObject",
+		"s3:PutObject"		
+	    ],
+            "Resource": "arn:aws:s3:::ussm-pus-ccpa/*",
+            "Condition": {
+                "StringNotLike": {
+                    "aws:PrincipalArn": [
+                        "arn:aws:iam::480586329294:role/shard-ussm01-useast1-was-role-1cbf6a8",
+                        "arn:aws:iam::480586329294:role/shard-ussm01-useast1-was-role-1cbf6a8",
+                        "arn:aws:iam::480586329294:role/ussm-pus-logs-role-f17cffd",
+                        "arn:aws:iam::480586329294:role/ussm01-useast1-rmc-role-fadf262",
+                        "arn:aws:iam::480586329294:role/ussm01-useast1-jh-role-601f439"
+                    ]
+                },
+                "Bool": {
+                    "aws:SecureTransport": "false"
+                },
+                "StringNotEquals": {
+                    "aws:SourceVpc": [
+                        "vpc-ce5934a7",
+                        "vpc-d1274fb8",
+			"vpc-0d091f55c7babebb6",
+			"vpc-b40308d1"
+                    ]
+                }
+            }
+        }
+    ]
+}
+
+
+1. All KMS keys have been defined properly = DONE
+2. a. NAT gateway has been removed from DB subnets = DONE
+   b. We have yet to request for SG rule exemption for SG used by gateways = ONGOING
+   c. S3 buckets have been defined with IP control policy and minimized principal = DONE

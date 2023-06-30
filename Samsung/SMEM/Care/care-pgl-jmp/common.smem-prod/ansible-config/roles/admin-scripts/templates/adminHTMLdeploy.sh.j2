@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd /home/common
+
+mkdir -p {{ admin.html.local_folder }}
+
+cd {{ admin.html.local_folder }}
+
+aws s3 sync s3://{{ admin.html.s3_bucket }}{{ admin.html.s3_path }} . --delete

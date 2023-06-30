@@ -1,0 +1,13 @@
+$ curl -vvv -i -L .....
+$ tcpdump -i [nic] -w issue.pcap tcp port [port number]
+$ ip r s
+$ ip a s
+$ ip ne s
+$ nslookup -type=ns [domain in curl]
+$ nslookup -type=a [domain in curl]
+$ nslookup -type=ptr [webe server ip]]
+
+
+$ ss -ptnl sport :9112
+$ curl 0:9112
+$ docker ps

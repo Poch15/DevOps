@@ -1,0 +1,23 @@
+pipeline {
+    agent {
+        node {
+           label 'care-pgl-jmp'
+        }
+    }
+    environment {
+        REPO='30.0.151.91'
+    }
+    stages{
+        stage('Test') {
+            steps {
+                script {
+                    if(env.DOCKERFILE == '---') {
+                        echo "No docker specified. Will not build."
+                    }else {
+                        sh("#!/bin/sh -e\n sshpass -p '${env.COMMON_PASSWORD}' ssh -o StrictHostKeyChecking=no -p2285 common.smem-prod@${env.REPO} '~/ecr/build_module.sh ${env.Module_name} ${env.DOCKERFILE}'");
+                    }
+                }
+            }
+        }
+    }
+}

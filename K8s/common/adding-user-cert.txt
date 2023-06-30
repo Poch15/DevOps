@@ -1,0 +1,37 @@
+https://www.youtube.com/watch?v=XsFbUgZ0Ad8
+
+1. Create private key
+$ openssl genrsa -out paul.key 2048
+
+2. Generate CSR using private key for username paul and his org developers
+$ openssl req -new -key paul.key -out paul.csr -subj "/CN=paul/O=developers"
+
+
+===============================================
+TWO WAYS to get CA.crt from API Server (CLUSTER)
+===============================================
+
+A. MANUAL
+$ openssl x509 -req -in paul.csr -CA /etc/kubernetes/pki/ca.crt -CAkey /etc/kubernetes/pki/ca.key -CAcreateserial -out paul.crt -days 20
+
+
+
+# Use cert and key in kube config
+$ kubectl config set-credentials paul --client-cert paul.crt --client-key paul.key
+$ kubectl config set-context paul-cluster --user paul --cluster my-cluster
+
+
+================
+SET ROLE BINDING
+================
+
+$ kubetl create role allownslist --resource namespaces --verb list
+
+$ kubectl create rolebinding allownslist --role allownslist --user paul
+
+
+
+B. CREATE CSR Kubernetes Object
+	a. approve csr
+	$ kubectl certificate approve paul
+

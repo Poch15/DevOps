@@ -1,0 +1,121 @@
+------------------
+CLEAR CACHE MEMORY
+------------------
+https://www.tecmint.com/clear-ram-memory-cache-buffer-and-swap-space-on-linux/
+
+------------------
+TEST API REQUEST
+------------------
+$ while true; do curl localhost:300080/api; echo; done
+
+----------------------------
+DEBUGGING USING XTRACE MODE 
+----------------------------
+$ /usr/bin/bash -x ./script.sh
+
+
+--------------------------------------------------
+LINUX COMMON ISSUES DEBUGGING AND TROUBLESHOOTING
+--------------------------------------------------
+DISK PARTITION IS FULL
+	Find and delete Huge files
+		$ du -sh *
+FIND FILE AND DIRECTORY
+	$ find / -iname <filename>
+	$ find /home -type d -name <directory name>
+COMPARE TWO DIFF FILES
+	$ diff <file1> <file2>	
+HIGH CPU or RAM USAGE
+	$ top
+	$ free -m
+	$ lscpu
+	$ sar
+NETWORK RELATED ISSUES
+	$ ip addr
+	$ dmesg
+	$ dmidecode
+	$tcpdump -i any -s0
+SSH LOGIN issues
+	$ vi /var/log/audit/audit.log
+	
+
+
+-----------------------
+DISK IO TROUBLESHOOTING
+-----------------------
+Using top command check the following:
+	1. CPU usage percentage
+	2. CPU load average = it should not exceed to the number of CPU core4
+	3. WA/Waiting time = if it exceeds to 10-20% the issue is with the Disk.
+		Use "iostat -hymx 1 4" to identify which disk is having high utilization
+		Identify the process that is hogging the resources using "iotop -o"
+
+
+--------------------------------
+FOLDERS THAT HAS HIGH DISK USAGE
+--------------------------------
+
+du -h / 2>/dev/null | grep '[0-9\.]\+G'
+
+
+----------------------------------------------
+Network connection issue with other instance
+----------------------------------------------
+1. Since you have mentioned that you have docker application, please ensure that the routes on the instance are configured properly:
+
+	$ route -n
+        $ cat /etc/resolv.conf
+
+2. Can you verify if you are able to resolve to any other URLs from that instance.
+
+	$ nslookup google.com
+
+3. Please share the MTR output from the instance:
+
+	$ mtr --tcp -P 8761 discovery.memberscare.internal --report --report-cycles=10 --report-wide
+
+
+------------------------------------------------
+ADD DISK SPACE - extend partition and filesystem
+------------------------------------------------
+restart the server
+lsblk
+sudo growpart /dev/nvme1n1 1  => if the volume has partition
+df -hT
+sudo resize2fs /dev/nvme01n1
+
+
+----------------------
+LIST OF OPEN FILE
+---------------------
+lsof -u common
+lsof -i 9000  =  find process running on specific port
+lsof -i   =  list all network connections
+lsof -p 3004  =  list by process id
+
+
+
+-------------------------------
+keep the compressed file 
+-------------------------------
+
+gzip -dk console.2022-05-07.log.gz
+
+-------------------------------
+keep the compressed file 
+-------------------------------
+
+gzip -dk console.2022-05-07.log.gz
+
+
+
+
+
+create directory /home/common/members-log. using common
+mkfs -t xfs /dev/nvme1n1. using root
+Get the UUID of /dev/nvme1n1
+	$ sudo blkid
+edit fstab $vi /etc/fstab and add the line below. using root
+	UUID=f387d281-b162-4d60-84b5-e7e94687e6b8  /home/common/members-log  xfs  defaults,nofail  0  2
+
+

@@ -1,0 +1,113 @@
+---
+restart:
+  timeout: 1
+  timeoutafter: 1
+healthcheck:
+  timeout: 500
+  secondsToOk: 10
+docker:
+  registry: 480586329294.dkr.ecr.ap-northeast-2.amazonaws.com
+  eureka: http://discovery.memberscare.internal:8761/eureka/
+  region: ap-northeast-2
+  profile: default
+  modules:
+    config:
+      module_name: config-server
+      java_port: 8888
+    discover:
+      module_name: discover-server
+      java_port: 8761
+    external:
+      module_name: members-external
+      java_port: 9130
+    migration:
+      module_name: members-migration
+      java_port: 9140
+    batch-diagmon:
+      module_name: members-batch-diagmon
+      java_port: 9315
+    batch-fota:
+      module_name: members-batch-fota
+      java_port: 9316
+    batch-erms:
+      module_name: members-batch-erms
+      java_port: 9312
+    batch-internal:
+      module_name: members-batch-internal
+      java_port: 9317
+    batch-omnis:
+      module_name: members-batch-omnis
+      java_port: 9313
+    batch-myproduct:
+      module_name: members-batch-myproduct
+      java_port: 9318
+    batch-push:
+      module_name: members-batch-push
+      java_port: 9314
+    myproduct:
+      module_name: members-myproduct
+      java_port: 9150
+    log:
+      module_name: members-log
+      java_port: 9920
+    feedback:
+      module_name: members-feedback
+      java_port: 9110
+    content:
+      module_name: members-content
+      java_port: 9112
+    content-consumer:
+      module_name: members-content-consumer
+      java_port: 9113     
+    search:
+      module_name: members-search
+      java_port: 9120
+    beta:
+      module_name: members-beta
+      java_port: 9910
+    common:
+      module_name: members-common
+      java_port: 9010
+    user:
+      module_name: members-user
+      java_port: 9210
+    oauth2:
+      module_name: members-oauth2
+      java_port: 9080
+    inbox:
+      module_name: members-inbox
+      java_port: 9160
+    survey:
+      module_name: members-survey
+      java_port: 9170      
+    batch-inbox:
+      module_name: members-batch-inbox
+      java_port: 9320
+    batch-voc:
+      module_name: members-batch-voc
+      java_port: 9323
+    banner:
+      module_name: members-banner
+      java_port: 9180
+    batch-feedback:
+      module_name: members-batch-feedback
+      java_port: 9317
+    batch-reminder:
+      module_name: members-batch-reminder
+      java_port: 9326
+    batch-beta:
+      module_name: members-batch-beta
+      java_port: 9325
+    log-consumer:
+      module_name: members-log-consumer
+      java_port: 9930
+    feedback-consumer:
+      module_name: members-feedback-consumer
+      java_port: 9111
+admin:
+  nginx:
+    allow_ip_path: /etc/nginx/sites-available/allowed_ip.conf
+  html: 
+    local_folder: members-admin-v22
+    s3_bucket: smem-base-installers
+    s3_path: /MISC/CAREADMIN/front

@@ -1,0 +1,35 @@
+select A.* from (
+select * from loyalty_ap.CAMPAIGN where visible_conditions like '%allowSecondHandDevices%') as A
+where A.visible_conditions like '%true%' and date(A.modified_at) >= '2022-01-01';
+
+select A.* from (
+select * from loyalty_ap.CAMPAIGN where visible_conditions like '%allowSecondHandDevices%') as A
+where A.visible_conditions like '%false%' and date(A.modified_at) >= '2022-01-01';
+
+select A.* from (
+select * from loyalty_ap.CAMPAIGN where visible_conditions like '%allowSecondHandDevices%') as A
+where A.visible_conditions like '%true%' and date(A.modified_at) >= '2022-04-01';
+
+select A.* from (
+select * from loyalty_ap.CAMPAIGN where visible_conditions like '%allowSecondHandDevices%') as A
+where A.visible_conditions like '%false%' and date(A.modified_at) >= '2022-04-01';
+
+
+
+select A.* from (
+select * from loyalty_ap.CAMPAIGN where participation_conditions like '%allowSecondHandDevices%') as A
+where A.participation_conditions like '%true%' and date(A.modified_at) >= '2022-01-01';
+
+select A.* from (
+select * from loyalty_ap.CAMPAIGN where participation_conditions like '%allowSecondHandDevices%') as A
+where A.participation_conditions like '%false%' and date(A.modified_at) >= '2022-01-01';
+
+select A.* from (
+select * from loyalty_ap.CAMPAIGN where participation_conditions like '%allowSecondHandDevices%') as A
+where A.participation_conditions like '%true%' and date(A.modified_at) >= '2022-04-01';
+
+select A.* from (
+select * from loyalty_ap.CAMPAIGN where participation_conditions like '%allowSecondHandDevices%') as A
+where A.participation_conditions like '%false%' and date(A.modified_at) >= '2022-04-01';
+
+

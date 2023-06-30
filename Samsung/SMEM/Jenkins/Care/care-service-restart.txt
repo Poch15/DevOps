@@ -1,0 +1,38 @@
+pipeline {
+    agent {
+        node {
+           label 'care-pgl-jmp'
+        }
+    }
+    
+    environment {
+        SLACK_TOKEN = credentials('SLACK_TOKEN')
+        SLACK_CHANNEL = "srph-smem-ta"
+         REPO="30.0.151.91"
+        SSHPASS=credentials('SERVER_PASSWORD_IPA')
+    }
+    
+    stages{
+        stage('Test') {
+            steps {
+                script {
+                    sh "sshpass -p '${env.SSHPASS}' ssh -p2285 ${env.REPO} 'cd ~/ansible-scripts && ./restartService.sh ${env.ANSIBLE_SSH_USER} \"${SSHPASS}\" ${env.Module_Name} ${env.SERVER_NAME}';"
+                    // sh("#!/bin/sh -e\n cd ~/ansible-config && ./restartService.sh ${env.ANSIBLE_SSH_USER} '${env.ANSIBLE_SSH_PASS}' ${env.Module_Name} ${env.SERVER_NAME}")
+                }
+            }
+        }
+        stage('Send Slack') {
+            steps {
+                script {
+                    if (env.SEND_SLACK == "1") {
+                        SendToSlack("Server ${env.SERVER_NAME}/${env.Module_Name} has been restarted by ${env.REQUESTOR}")
+                    }
+                }
+            }
+        }
+    }
+}
+
+def SendToSlack(message) {
+    sh "curl -X POST -H 'Content-type: application/json' --data '{\"text\":\"${message}\", \"channel\": \"#${env.SLACK_CHANNEL}\"}' https://hooks.slack.com/services/TQFQDKR4K/BSG2EA2C9/${env.SLACK_TOKEN}"
+}

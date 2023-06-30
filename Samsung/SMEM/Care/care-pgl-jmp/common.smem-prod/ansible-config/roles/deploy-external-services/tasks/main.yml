@@ -1,0 +1,4 @@
+---
+# tasks file for deploy-config
+- name: Execute Build Function
+  shell: /home/common/build_{{ service_name }}.sh

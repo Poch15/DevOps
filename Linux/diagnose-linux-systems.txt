@@ -1,0 +1,12 @@
+dmesg - Kernel Buffer
+vmstat - vitual memory
+pidstat - checks every pid status
+mtr - checks network latency
+mpstat - checks every cpu usages
+iostat - checks disk status
+free - checks memory status
+ifconfig - checks network interfaces
+sar - checks complete system activity
+ss - checks connection performance
+iftop - checks network performance
+smem - checks memory allocated to per process

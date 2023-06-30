@@ -1,0 +1,5 @@
+---
+- hosts: "{{ serviceName }}"
+  serial: 1
+  roles:
+    - admin-scripts

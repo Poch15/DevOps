@@ -1,0 +1,137 @@
+May 23, 2023 9:29:07 AM hudson.remoting.Request$2 run
+WARNING: Failed to send back a reply to the request hudson.remoting.Request$2@7908ae1f
+java.io.IOException: Broken pipe
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:313)
+	at hudson.remoting.StandardOutputStream.write(StandardOutputStream.java:84)
+	at hudson.remoting.ChunkedOutputStream.sendFrame(ChunkedOutputStream.java:90)
+	at hudson.remoting.ChunkedOutputStream.sendBreak(ChunkedOutputStream.java:63)
+	at hudson.remoting.ChunkedCommandTransport.writeBlock(ChunkedCommandTransport.java:46)
+	at hudson.remoting.AbstractSynchronousByteArrayCommandTransport.write(AbstractSynchronousByteArrayCommandTransport.java:46)
+	at hudson.remoting.Channel.send(Channel.java:766)
+	at hudson.remoting.Request$2.run(Request.java:389)
+	at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:78)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+May 23, 2023 9:29:08 AM hudson.remoting.Request$2 run
+WARNING: Failed to send back a reply to the request hudson.remoting.Request$2@577d27bc
+java.io.IOException: Broken pipe
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:313)
+	at hudson.remoting.StandardOutputStream.write(StandardOutputStream.java:84)
+	at hudson.remoting.ChunkedOutputStream.sendFrame(ChunkedOutputStream.java:90)
+	at hudson.remoting.ChunkedOutputStream.drain(ChunkedOutputStream.java:86)
+	at hudson.remoting.ChunkedOutputStream.write(ChunkedOutputStream.java:55)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at hudson.remoting.ChunkedCommandTransport.writeBlock(ChunkedCommandTransport.java:45)
+	at hudson.remoting.AbstractSynchronousByteArrayCommandTransport.write(AbstractSynchronousByteArrayCommandTransport.java:46)
+	at hudson.remoting.Channel.send(Channel.java:766)
+	at hudson.remoting.Request$2.run(Request.java:389)
+	at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:78)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+May 23, 2023 9:29:07 AM hudson.slaves.ChannelPinger$1 onDead
+INFO: Ping failed. Terminating the channel channel.
+java.io.IOException: Broken pipe
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:313)
+	at hudson.remoting.StandardOutputStream.write(StandardOutputStream.java:84)
+	at hudson.remoting.ChunkedOutputStream.sendFrame(ChunkedOutputStream.java:90)
+	at hudson.remoting.ChunkedOutputStream.sendBreak(ChunkedOutputStream.java:63)
+	at hudson.remoting.ChunkedCommandTransport.writeBlock(ChunkedCommandTransport.java:46)
+	at hudson.remoting.AbstractSynchronousByteArrayCommandTransport.write(AbstractSynchronousByteArrayCommandTransport.java:46)
+	at hudson.remoting.Channel.send(Channel.java:766)
+	at hudson.remoting.Request.callAsync(Request.java:238)
+	at hudson.remoting.Channel.callAsync(Channel.java:1032)
+	at hudson.remoting.PingThread.ping(PingThread.java:110)
+	at hudson.remoting.PingThread.run(PingThread.java:90)
+
+May 23, 2023 9:29:09 AM hudson.remoting.Channel close
+WARNING: Having to terminate early
+java.io.IOException: Broken pipe
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:313)
+	at hudson.remoting.StandardOutputStream.write(StandardOutputStream.java:84)
+	at hudson.remoting.ChunkedOutputStream.sendFrame(ChunkedOutputStream.java:90)
+	at hudson.remoting.ChunkedOutputStream.drain(ChunkedOutputStream.java:86)
+	at hudson.remoting.ChunkedOutputStream.write(ChunkedOutputStream.java:55)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at hudson.remoting.ChunkedCommandTransport.writeBlock(ChunkedCommandTransport.java:45)
+	at hudson.remoting.AbstractSynchronousByteArrayCommandTransport.write(AbstractSynchronousByteArrayCommandTransport.java:46)
+	at hudson.remoting.Channel.send(Channel.java:766)
+	at hudson.remoting.Channel.close(Channel.java:1488)
+	at hudson.remoting.Channel.close(Channel.java:1455)
+	at hudson.remoting.Channel$CloseCommand.execute(Channel.java:1321)
+	at hudson.remoting.Channel$1.handle(Channel.java:607)
+	at hudson.remoting.SynchronousCommandTransport$ReaderThread.run(SynchronousCommandTransport.java:81)
+
+May 23, 2023 9:29:07 AM org.jenkinsci.plugins.workflow.log.GCFlushedOutputStream$FlushRef lambda$static$0
+WARNING: null
+java.io.IOException: Broken pipe
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:313)
+	at hudson.remoting.StandardOutputStream.write(StandardOutputStream.java:84)
+	at hudson.remoting.ChunkedOutputStream.sendFrame(ChunkedOutputStream.java:90)
+	at hudson.remoting.ChunkedOutputStream.sendBreak(ChunkedOutputStream.java:63)
+	at hudson.remoting.ChunkedCommandTransport.writeBlock(ChunkedCommandTransport.java:46)
+	at hudson.remoting.AbstractSynchronousByteArrayCommandTransport.write(AbstractSynchronousByteArrayCommandTransport.java:46)
+	at hudson.remoting.Channel.send(Channel.java:766)
+	at hudson.remoting.ProxyOutputStream.flush(ProxyOutputStream.java:158)
+	at hudson.remoting.RemoteOutputStream.flush(RemoteOutputStream.java:117)
+	at java.io.FilterOutputStream.flush(FilterOutputStream.java:140)
+	at org.jenkinsci.plugins.workflow.log.DelayBufferedOutputStream$FlushControlledOutputStream.flush(DelayBufferedOutputStream.java:131)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:141)
+	at org.jenkinsci.plugins.workflow.log.GCFlushedOutputStream$FlushRef.lambda$static$0(GCFlushedOutputStream.java:77)
+	at jenkins.security.ImpersonatingScheduledExecutorService$1.run(ImpersonatingScheduledExecutorService.java:67)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+May 23, 2023 9:29:07 AM hudson.remoting.Request$2 run
+WARNING: Failed to send back a reply to the request hudson.remoting.Request$2@2ca9538a
+java.io.IOException: Broken pipe
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:313)
+	at hudson.remoting.StandardOutputStream.write(StandardOutputStream.java:84)
+	at hudson.remoting.ChunkedOutputStream.sendFrame(ChunkedOutputStream.java:90)
+	at hudson.remoting.ChunkedOutputStream.sendBreak(ChunkedOutputStream.java:63)
+	at hudson.remoting.ChunkedCommandTransport.writeBlock(ChunkedCommandTransport.java:46)
+	at hudson.remoting.AbstractSynchronousByteArrayCommandTransport.write(AbstractSynchronousByteArrayCommandTransport.java:46)
+	at hudson.remoting.Channel.send(Channel.java:766)
+	at hudson.remoting.Request$2.run(Request.java:389)
+	at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:78)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+
+May 23, 2023 9:29:09 AM hudson.remoting.Request$2 run
+WARNING: Failed to send back a reply to the request hudson.remoting.Request$2@61d3bda3
+java.io.IOException: Broken pipe
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(FileOutputStream.java:313)
+	at hudson.remoting.StandardOutputStream.write(StandardOutputStream.java:84)
+	at hudson.remoting.ChunkedOutputStream.sendFrame(ChunkedOutputStream.java:90)
+	at hudson.remoting.ChunkedOutputStream.drain(ChunkedOutputStream.java:86)
+	at hudson.remoting.ChunkedOutputStream.write(ChunkedOutputStream.java:55)
+	at java.io.OutputStream.write(OutputStream.java:75)
+	at hudson.remoting.ChunkedCommandTransport.writeBlock(ChunkedCommandTransport.java:45)
+	at hudson.remoting.AbstractSynchronousByteArrayCommandTransport.write(AbstractSynchronousByteArrayCommandTransport.java:46)
+	at hudson.remoting.Channel.send(Channel.java:766)
+	at hudson.remoting.Request$2.run(Request.java:389)
+	at hudson.remoting.InterceptingExecutorService.lambda$wrap$0(InterceptingExecutorService.java:78)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:750)
+

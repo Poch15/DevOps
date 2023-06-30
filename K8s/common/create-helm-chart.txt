@@ -1,0 +1,96 @@
+1. Create chart directory - where you store all charts
+$ mkdir ~/charts/nginx
+
+2. Create Chart.yaml - this contains helm chart version and app version
+$ vi Charts.yml
+
+3. Create templates directory - contains kubenetes yaml files
+$ mkdir templates
+
+4. Deploy app in kubernetes cluster, extract the yaml files and copy to templates directory
+$ kubectl create deploy my-nginx --image nginx
+$ kubectl create deploy my-nginx --image nginx --dry-run -o yaml > nginx-deploy.yml
+$ cp nginx-deploy.yml ~/chart/nginx/deployment.yml
+$ kubectl delete deploy my-nginx
+
+5. Install helm chart locally from the yml files you manually created and not from repository
+$ cd ~/charts/nginx
+$ helm install --name nginx .
+$ watch -x kubectl get all
+$ helm list
+
+6. Upgrade chart
+# Deploy addition k8s object (service), transfer it to templates dir and update chart version in Charts.yml
+$ helm upgrade my-nginx .
+$ watch -x kubectl get all
+
+7. Rollback chart
+$ helm list
+# rollback to specific revision version
+$ helm rollback my-nginx 1
+
+8. Delete chart
+$ helm delete --purge my-nginx
+
+9. Paramerized the helm chart
+# Create values.yml in chart folder
+$ vi ~/charts/nginx/values.yml
+---
+replicaCount: 3
+---
+
+10. Update deploy.yml and change the values of its attributes to parameter
+---
+spec:
+   replicas: {{ .Values.replicaCount }}
+---
+
+11. Overwrite default values of helm charts
+$ helm install --name my-nginx . --set replicaCount=2
+
+# shows what options can be parameterized in the chart
+$ helm inspect values .
+$ helm inspect values . > /tmp/my-nginx.val
+$ vi /tmp/my-nginx.val
+
+12. Install helm chart using own values
+$ helm install --name my-nginx . --values /tmp/my-nginx.val
+$ helm list
+
+
+13. Create a helm chart template
+$ helm create myapp
+$ tree myapp
+
+14. Display helm k8s object to terminal
+$ helm install --name my-nginx . --debug --dry-run
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Referencse: 
+
+[ Kube 63 ] Creating your first Helm chart
+https://github.com/DeekshithSN/Helm_charts/blob/master/Tem_functions/templates/deployment.yaml
